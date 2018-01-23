@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerCtrl"
+                    android:layout_width="173dp"
+                    android:layout_height="60dp" />
+
+                <Button
+                    android:id="@+id/connectCtrl"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/connect" />
+
+                <!-- <Button
+                        android:id="@+id/disconnect"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="@string/disconnect" />-->
+
+                <Button
+                    android:id="@+id/refreshCtrl"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerRobot"
+                    android:layout_width="173dp"
+                    android:layout_height="60dp" />
+
+                <Button
+                    android:id="@+id/connectRobot"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/connect" />
+
+                <!-- <Button
+                     android:id="@+id/disconnect"
+                     android:layout_width="120dp"
+                     android:layout_height="40dp"
+                     android:text="@string/disconnect" />-->
+
+                <Button
+                    android:id="@+id/refreshRobot"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/BtnUp"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Forward" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/BtnL"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Left" />
+
+                <Button
+                    android:id="@+id/BtnMid"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Stop" />
+
+                <Button
+                    android:id="@+id/BtnR"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Right" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/BtnDown"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Backward" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/debugText1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <TextView
+                android:id="@+id/debugText2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <TextView
+                android:id="@+id/debugText3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
