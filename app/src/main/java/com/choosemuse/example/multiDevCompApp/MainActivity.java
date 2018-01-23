@@ -5,38 +5,14 @@
 
 package com.choosemuse.example.multiDevCompApp;
 
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.List;
-
-import java.util.concurrent.atomic.AtomicReference;
-
 import com.choosemuse.example.multiDevCompApp.drivers.Controller;
 import com.choosemuse.example.multiDevCompApp.drivers.MuseHeadsetDriver;
-import com.choosemuse.libmuse.Accelerometer;
-import com.choosemuse.libmuse.ConnectionState;
-import com.choosemuse.libmuse.Eeg;
-import com.choosemuse.libmuse.LibmuseVersion;
-import com.choosemuse.libmuse.Muse;
-import com.choosemuse.libmuse.MuseArtifactPacket;
-import com.choosemuse.libmuse.MuseConnectionListener;
-import com.choosemuse.libmuse.MuseConnectionPacket;
-import com.choosemuse.libmuse.MuseDataListener;
-import com.choosemuse.libmuse.MuseDataPacket;
-import com.choosemuse.libmuse.MuseDataPacketType;
-import com.choosemuse.libmuse.MuseFileWriter;
-import com.choosemuse.libmuse.MuseListener;
-import com.choosemuse.libmuse.MuseManagerAndroid;
-import com.choosemuse.libmuse.MuseVersion;
 
-import android.Manifest;
+
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.pm.PackageManager;
+
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
@@ -44,11 +20,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.bluetooth.BluetoothAdapter;
-
-
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-
 
 /**
  * This example will illustrate how to connect to a Muse headband,
@@ -78,37 +49,6 @@ public class MainActivity extends Activity implements OnClickListener{
      */
     private final String TAG = "TestLibMuseAndroid";
 
-    /**
-     * The MuseManager is how you detect Muse headbands and receive notifications
-     * when the list of available headbands changes.
-     */
-    //private MuseManagerAndroid manager;
-
-    /**
-     * A Muse refers to a Muse headband.  Use this to connect/disconnect from the
-     * headband, register listeners to receive EEG data and get headband
-     * configuration and version information.
-     */
-    //private Muse muse;
-
-    /**
-     * The ConnectionListener will be notified whenever there is a change in
-     * the connection state of a headband, for example when the headband connects
-     * or disconnects.
-     *
-     * Note that ConnectionListener is an inner class at the bottom of this file
-     * that extends MuseConnectionListener.
-     */
-    //private ConnectionListener connectionListener;
-
-    /**
-     * The DataListener is how you will receive EEG (and other) data from the
-     * headband.
-     *
-     * Note that DataListener is an inner class at the bottom of this file
-     * that extends MuseDataListener.
-     */
-    //private DataListener dataListener;
 
     /**
      * Data comes in from the headband at a very fast rate; 220Hz, 256Hz or 500Hz,
@@ -144,25 +84,7 @@ public class MainActivity extends Activity implements OnClickListener{
      */
     private ArrayAdapter<String> spinnerAdapterCtrl;
     private ArrayAdapter<String> spinnerAdapterRobot;
-
-    /**
-     * It is possible to pause the data transmission from the headband.  This boolean tracks whether
-     * or not the data transmission is enabled as we allow the user to pause transmission in the UI.
-     */
-    //private boolean dataTransmission = true;
-
-    /**
-     * To save data to a file, you should use a MuseFileWriter.  The MuseFileWriter knows how to
-     * serialize the data packets received from the headband into a compact binary format.
-     * To read the file back, you would use a MuseFileReader.
-     */
-    //private final AtomicReference<MuseFileWriter> fileWriter = new AtomicReference<>();
-
-    /**
-     * We don't want file operations to slow down the UI, so we will defer those file operations
-     * to a handler on a separate thread.
-     */
-    //private final AtomicReference<Handler> fileHandler = new AtomicReference<>();
+    private Controller controller;
 
     //--------------------------------------
     // Lifecycle / Connection code
@@ -171,37 +93,9 @@ public class MainActivity extends Activity implements OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //controller = new MuseHeadsetDriver();
+        controller = new MuseHeadsetDriver(this); //static
 
-        // We need to set the context on MuseManagerAndroid before we can do anything.
-        // This must come before other LibMuse API calls as it also loads the library.
-        //manager = MuseManagerAndroid.getInstance();
-        //manager.setContext(this);
-
-        Log.i(TAG, "LibMuse version=" + LibmuseVersion.instance().getString());
-
-        /*WeakReference<MainActivity> weakActivity =
-                new WeakReference<MainActivity>(this);
-        // Register a listener to receive connection state changes.
-        connectionListener = new ConnectionListener(weakActivity);
-        // Register a listener to receive data from a Muse.
-        dataListener = new DataListener(weakActivity);
-        // Register a listener to receive notifications of what Muse headbands
-        // we can connect to.
-        manager.setMuseListener(new MuseL(weakActivity));
-
-        // Muse 2016 (MU-02) headbands use Bluetooth Low Energy technology to
-        // simplify the connection process.  This requires access to the COARSE_LOCATION
-        // or FINE_LOCATION permissions.  Make sure we have these permissions before
-        // proceeding.
-        ensurePermissions();*/
-
-        // Load and initialize our UI.
         initUI();
-
-        // Start up a thread for asynchronous file operations.
-        // This is only needed if you want to do File I/O.
-        //fileThread.start();
 
         // Start our asynchronous updates of the UI.
         //handler.post(tickUi);
@@ -211,7 +105,7 @@ public class MainActivity extends Activity implements OnClickListener{
         super.onPause();
         // It is important to call stopListening when the Activity is paused
         // to avoid a resource leak from the LibMuse library.
-        manager.stopListening();
+        controller.stopListening();
     }
 
     public boolean isBluetoothEnabled() {
@@ -227,51 +121,18 @@ public class MainActivity extends Activity implements OnClickListener{
             // The user has pressed the "Refresh" button.
             // Start listening for nearby or paired Muse headbands. We call stopListening
             // first to make sure startListening will clear the list of headbands and start fresh.
-            manager.stopListening();
-            manager.startListening();
+            controller.stopListening();
+            controller.startListening();
+
+            Spinner spinnerCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
+            spinnerAdapterRobot.addAll(controller.getSpinnerCtrlList());
+            spinnerCtrl.setAdapter(spinnerAdapterCtrl);
 
         } else if (v.getId() == R.id.connectCtrl) {
             writeScreenLog("Connecting");
-            // The user has pressed the "Connect" button to connect to
-            // the headband in the spinner.
-
-            // Listening is an expensive operation, so now that we know
-            // which headband the user wants to connect to we can stop
-            // listening for other headbands.
-            manager.stopListening();
-
-            List<Muse> availableMuses = manager.getMuses();
+            controller.stopListening();
             Spinner spinnerCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
-
-            // Check that we actually have something to connect to.
-            if (availableMuses.size() < 1 || spinnerCtrl.getAdapter().getCount() < 1) {
-                Log.w(TAG, "There is nothing to connect to");
-            } else {
-
-                // Cache the Muse that the user has selected.
-                muse = availableMuses.get(spinnerCtrl.getSelectedItemPosition());
-                // Unregister all prior listeners and register our data listener to
-                // receive the MuseDataPacketTypes we are interested in.  If you do
-                // not register a listener for a particular data type, you will not
-                // receive data packets of that type.
-                muse.unregisterAllListeners();
-                muse.registerConnectionListener(connectionListener);
-                muse.registerDataListener(dataListener, MuseDataPacketType.EEG);
-                muse.registerDataListener(dataListener, MuseDataPacketType.ALPHA_RELATIVE);
-                muse.registerDataListener(dataListener, MuseDataPacketType.BETA_RELATIVE);
-                muse.registerDataListener(dataListener, MuseDataPacketType.GAMMA_RELATIVE);
-                muse.registerDataListener(dataListener, MuseDataPacketType.DELTA_RELATIVE);
-                muse.registerDataListener(dataListener, MuseDataPacketType.THETA_RELATIVE);
-                muse.registerDataListener(dataListener, MuseDataPacketType.ACCELEROMETER);
-                muse.registerDataListener(dataListener, MuseDataPacketType.BATTERY);
-                muse.registerDataListener(dataListener, MuseDataPacketType.DRL_REF);
-                muse.registerDataListener(dataListener, MuseDataPacketType.QUANTIZATION);
-
-                // Initiate a connection to the headband and stream the data asynchronously.
-                muse.runAsynchronously();
-                writeScreenLog("Connected");
-            }
-
+            controller.connect(spinnerCtrl.getSelectedItemPosition());
         }
 
         else if (v.getId() == R.id.refreshRobot) {
@@ -305,163 +166,10 @@ public class MainActivity extends Activity implements OnClickListener{
         }*/
     }
 
-    //--------------------------------------
-    // Permissions
+
+
 
     /**
-     * The ACCESS_COARSE_LOCATION permission is required to use the
-     * Bluetooth Low Energy library and must be requested at runtime for Android 6.0+
-     * On an Android 6.0 device, the following code will display 2 dialogs,
-     * one to provide context and the second to request the permission.
-     * On an Android device running an earlier version, nothing is displayed
-     * as the permission is granted from the manifest.
-     *
-     * If the permission is not granted, then Muse 2016 (MU-02) headbands will
-     * not be discovered and a SecurityException will be thrown.
-     */
-    /*private void ensurePermissions() {
-
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
-        {
-            // We don't have the ACCESS_COARSE_LOCATION permission so create the dialogs asking
-            // the user to grant us the permission.
-
-            DialogInterface.OnClickListener buttonListener =
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which){
-                            dialog.dismiss();
-                            ActivityCompat.requestPermissions(MainActivity.this,
-                                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
-                                    0);
-                        }
-                    };
-
-            // This is the context dialog which explains to the user the reason we are requesting
-            // this permission.  When the user presses the positive (I Understand) button, the
-            // standard Android permission dialog will be displayed (as defined in the button
-            // listener above).
-            AlertDialog introDialog = new AlertDialog.Builder(this)
-                    .setTitle(R.string.permission_dialog_title)
-                    .setMessage(R.string.permission_dialog_description)
-                    .setPositiveButton(R.string.permission_dialog_understand, buttonListener)
-                    .create();
-            introDialog.show();
-        }
-    }*/
-
-
-    //--------------------------------------
- /*   // Listeners
-
-    *//**
-     * You will receive a callback to this method each time a headband is discovered.
-     * In this example, we update the spinner with the MAC address of the headband.
-     *//*
-    public void museListChanged() {
-        final List<Muse> list = manager.getMuses();
-        spinnerAdapterCtrl.clear();
-        for (Muse m : list) {
-            spinnerAdapterCtrl.add(m.getName() + " - " + m.getMacAddress());
-        }
-    }
-
-    *//**
-     * You will receive a callback to this method each time there is a change to the
-     * connection state of one of the headbands.
-     * @param p     A packet containing the current and prior connection states
-     * @param muse  The headband whose state changed.
-     *//*
-    public void receiveMuseConnectionPacket(final MuseConnectionPacket p, final Muse muse) {
-
-        final ConnectionState current = p.getCurrentConnectionState();
-
-        // Format a message to show the change of connection state in the UI.
-        final String status = p.getPreviousConnectionState() + " -> " + current;
-        Log.i(TAG, status);
-
-        // Update the UI with the change in connection state.
-        handler.post(new Runnable() {
-            @Override
-            public void run() {
-
-                //final TextView statusText = (TextView) findViewById(R.id.con_status);
-                //statusText.setText(status);
-
-                final MuseVersion museVersion = muse.getMuseVersion();
-                //final TextView museVersionText = (TextView) findViewById(R.id.version);
-                // If we haven't yet connected to the headband, the version information
-                // will be null.  You have to connect to the headband before either the
-                // MuseVersion or MuseConfiguration information is known.
-                if (museVersion != null) {
-                    final String version = museVersion.getFirmwareType() + " - "
-                            + museVersion.getFirmwareVersion() + " - "
-                            + museVersion.getProtocolVersion();
-                    //museVersionText.setText(version);
-                } else {
-                    //museVersionText.setText(R.string.undefined);
-                }
-            }
-        });
-
-        if (current == ConnectionState.DISCONNECTED) {
-            Log.i(TAG, "Muse disconnected:" + muse.getName());
-
-            // We have disconnected from the headband, so set our cached copy to null.
-            this.muse = null;
-        }
-    }
-
-    *//**
-     * You will receive a callback to this method each time the headband sends a MuseDataPacket
-     * that you have registered.  You can use different listeners for different packet types or
-     * a single listener for all packet types as we have done here.
-     * @param p     The data packet containing the data from the headband (eg. EEG data)
-     * @param muse  The headband that sent the information.
-     *//*
-    public void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
-
-        // valuesSize returns the number of data values contained in the packet.
-        final long n = p.valuesSize();
-        switch (p.packetType()) {
-            case EEG:
-                debug(2, "eeg ch1:"+ p.getEegChannelValue(Eeg.EEG1) + " ch2:"+ p.getEegChannelValue(Eeg.EEG2) + " ch3:"+ p.getEegChannelValue(Eeg.EEG3) + " ch4:"+ p.getEegChannelValue(Eeg.EEG4));
-
-                //assert(eegBuffer.length >= n);
-                //getEegChannelValues(eegBuffer,p);
-                //eegStale = true;
-                break;
-            case ACCELEROMETER:
-                debug(3, "acc X:"+ p.getAccelerometerValue(Accelerometer.X) + " Y:"+ p.getAccelerometerValue(Accelerometer.Y) + " Z:"+ p.getAccelerometerValue(Accelerometer.Z));
-                //assert(accelBuffer.length >= n);
-                //getAccelValues(p);
-                //accelStale = true;
-                break;
-            case ALPHA_RELATIVE:
-                //assert(alphaBuffer.length >= n);
-                debug(1, "alpha ch1:"+ p.getEegChannelValue(Eeg.EEG1) + " ch2:"+ p.getEegChannelValue(Eeg.EEG2) + " ch3:"+ p.getEegChannelValue(Eeg.EEG3) + " ch4:"+ p.getEegChannelValue(Eeg.EEG4));
-                //getEegChannelValues(alphaBuffer,p);
-                //alphaStale = true;
-                break;
-            case BATTERY:
-            case DRL_REF:
-            case QUANTIZATION:
-            default:
-                break;
-        }
-    }
-
-    *//**
-     * You will receive a callback to this method each time an artifact packet is generated if you
-     * have registered for the ARTIFACTS data type.  MuseArtifactPackets are generated when
-     * eye blinks are detected, the jaw is clenched and when the headband is put on or removed.
-     * @param p     The artifact packet with the data from the headband.
-     * @param muse  The headband that sent the information.
-     *//*
-    public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
-    }
-
-    *//**
      * Helper methods to get different packet values.  These methods simply store the
      * data in the buffers for later display in the UI.
      *
@@ -538,6 +246,8 @@ public class MainActivity extends Activity implements OnClickListener{
         Spinner spinnerRobot = (Spinner) findViewById(R.id.spinnerRobot);
         spinnerRobot.setAdapter(spinnerAdapterRobot);
     }
+
+    public Handler getHandler() {return this.handler;}
 
     public void writeScreenLog(String toWrite) {
         TextView log = (TextView) findViewById(R.id.log);
@@ -696,52 +406,5 @@ public class MainActivity extends Activity implements OnClickListener{
             VolleyClient.volleyRequest("http://192.168.4.1/message?message=destra", getApplicationContext());
         }
     }*/
-/*    //--------------------------------------
-    // Listener translators
-    //
-    // Each of these classes extend from the appropriate listener and contain a weak reference
-    // to the activity.  Each class simply forwards the messages it receives back to the Activity.
-    class MuseL extends MuseListener {
-        final WeakReference<MainActivity> activityRef;
 
-        MuseL(final WeakReference<MainActivity> activityRef) {
-            this.activityRef = activityRef;
-        }
-
-        @Override
-        public void museListChanged() {
-            activityRef.get().museListChanged();
-        }
-    }
-
-    class ConnectionListener extends MuseConnectionListener {
-        final WeakReference<MainActivity> activityRef;
-
-        ConnectionListener(final WeakReference<MainActivity> activityRef) {
-            this.activityRef = activityRef;
-        }
-
-        @Override
-        public void receiveMuseConnectionPacket(final MuseConnectionPacket p, final Muse muse) {
-            activityRef.get().receiveMuseConnectionPacket(p, muse);
-        }
-    }
-
-    class DataListener extends MuseDataListener {
-        final WeakReference<MainActivity> activityRef;
-
-        DataListener(final WeakReference<MainActivity> activityRef) {
-            this.activityRef = activityRef;
-        }
-
-        @Override
-        public void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
-            activityRef.get().receiveMuseDataPacket(p, muse);
-        }
-
-        @Override
-        public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
-            activityRef.get().receiveMuseArtifactPacket(p, muse);
-        }
-    }*/
 }

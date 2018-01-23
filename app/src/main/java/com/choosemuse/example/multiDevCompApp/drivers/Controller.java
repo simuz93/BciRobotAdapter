@@ -1,5 +1,7 @@
 package com.choosemuse.example.multiDevCompApp.drivers;
 
+import java.util.ArrayList;
+
 /**
  * Created by sserr on 23/01/2018.
  */
@@ -11,7 +13,12 @@ public interface Controller {
     void turnL();
     void turnR();
 
-    boolean connect();
+    boolean connect(int index);
     boolean disconnect();
+
+    void stopListening();
+    void startListening();
+
+    ArrayList<String> getSpinnerCtrlList();
 
 }
