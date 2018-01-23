@@ -1,4 +1,4 @@
-#Tue Jan 23 16:08:06 CET 2018
-base.0=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+#Tue Jan 23 20:04:45 CET 2018
+base.0=D\:\\Documenti\\GitHub\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex

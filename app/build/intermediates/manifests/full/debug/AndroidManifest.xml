@@ -23,6 +23,7 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.choosemuse.example.multiDevCompApp.MainActivity"
@@ -33,6 +34,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.choosemuse.example.multiDevCompApp.SelectDevicesActivity"
+            android:exported="true" >
         </activity>
     </application>
 

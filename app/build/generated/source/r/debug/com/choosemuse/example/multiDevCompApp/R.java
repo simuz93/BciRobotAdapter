@@ -21,20 +21,25 @@ public final class R {
     public static final int BtnMid=0x7f030002;
     public static final int BtnR=0x7f030003;
     public static final int BtnUp=0x7f030004;
-    public static final int action_settings=0x7f030005;
-    public static final int connectCtrl=0x7f030006;
-    public static final int connectRobot=0x7f030007;
-    public static final int debugText1=0x7f030008;
-    public static final int debugText2=0x7f030009;
-    public static final int debugText3=0x7f03000a;
-    public static final int log=0x7f03000b;
-    public static final int refreshCtrl=0x7f03000c;
-    public static final int refreshRobot=0x7f03000d;
-    public static final int spinnerCtrl=0x7f03000e;
-    public static final int spinnerRobot=0x7f03000f;
+    public static final int ControllerName=0x7f030005;
+    public static final int RobotName=0x7f030006;
+    public static final int action_settings=0x7f030007;
+    public static final int connectCtrl=0x7f030008;
+    public static final int connectRobot=0x7f030009;
+    public static final int debugText1=0x7f03000a;
+    public static final int debugText2=0x7f03000b;
+    public static final int debugText3=0x7f03000c;
+    public static final int log=0x7f03000d;
+    public static final int refreshCtrl=0x7f03000e;
+    public static final int refreshRobot=0x7f03000f;
+    public static final int selectControllerBtn=0x7f030010;
+    public static final int selectRobotBtn=0x7f030011;
+    public static final int spinnerCtrl=0x7f030012;
+    public static final int spinnerRobot=0x7f030013;
   }
   public static final class layout {
     public static final int activity_main=0x7f040000;
+    public static final int select_devices_activity=0x7f040001;
   }
   public static final class menu {
     public static final int main=0x7f050000;
