@@ -59,6 +59,7 @@ public class MuseHeadsetDriver implements Controller {
         dataListener = new DataListener(weakDriver);
         manager.setMuseListener(new MuseL(weakDriver));
 
+        spinnerCtrlList = new ArrayList<>();
         ensurePermissions();
     }
 
@@ -189,7 +190,7 @@ public class MuseHeadsetDriver implements Controller {
         final String status = p.getPreviousConnectionState() + " -> " + current;
 
         // Update the UI with the change in connection state.
-        mainActivity.getHandler().post(new Runnable() {
+        /*mainActivity.getHandler().post(new Runnable() {
 
             @Override
             public void run() {
@@ -208,7 +209,7 @@ public class MuseHeadsetDriver implements Controller {
                     //museVersionText.setText(R.string.undefined);
                 }
             }
-        });
+        });*/
 
         if (current == ConnectionState.DISCONNECTED) {
             // We have disconnected from the headband, so set our cached copy to null.
