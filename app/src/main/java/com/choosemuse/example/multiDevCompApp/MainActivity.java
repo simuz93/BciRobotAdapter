@@ -28,19 +28,12 @@ import com.choosemuse.libmuse.MuseFileWriter;
 import com.choosemuse.libmuse.MuseListener;
 import com.choosemuse.libmuse.MuseManagerAndroid;
 import com.choosemuse.libmuse.MuseVersion;
-import com.orbotix.ConvenienceRobot;
-import com.orbotix.DualStackDiscoveryAgent;
-import com.orbotix.common.DiscoveryException;
-import com.orbotix.common.Robot;
-import com.orbotix.common.RobotChangedStateListener;
-import com.orbotix.le.RobotLE;
 
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -78,10 +71,8 @@ import android.support.v4.content.ContextCompat;
  * 7. You can pause/resume data transmission with the button at the bottom of the screen.
  * 8. To disconnect from the headband, press "Disconnect"
  */
-public class MainActivity extends Activity implements OnClickListener, RobotChangedStateListener {
+public class MainActivity extends Activity implements OnClickListener{
 
-    private ConvenienceRobot mRobot; //bot
-    private static final int REQUEST_CODE_LOCATION_PERMISSION = 42; //bot
     /**
      * Tag used for logging purposes.
      */
@@ -91,14 +82,14 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
      * The MuseManager is how you detect Muse headbands and receive notifications
      * when the list of available headbands changes.
      */
-    private MuseManagerAndroid manager;
+    //private MuseManagerAndroid manager;
 
     /**
      * A Muse refers to a Muse headband.  Use this to connect/disconnect from the
      * headband, register listeners to receive EEG data and get headband
      * configuration and version information.
      */
-    private Muse muse;
+    //private Muse muse;
 
     /**
      * The ConnectionListener will be notified whenever there is a change in
@@ -108,7 +99,7 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
      * Note that ConnectionListener is an inner class at the bottom of this file
      * that extends MuseConnectionListener.
      */
-    private ConnectionListener connectionListener;
+    //private ConnectionListener connectionListener;
 
     /**
      * The DataListener is how you will receive EEG (and other) data from the
@@ -117,7 +108,7 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
      * Note that DataListener is an inner class at the bottom of this file
      * that extends MuseDataListener.
      */
-    private DataListener dataListener;
+    //private DataListener dataListener;
 
     /**
      * Data comes in from the headband at a very fast rate; 220Hz, 256Hz or 500Hz,
@@ -158,23 +149,21 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
      * It is possible to pause the data transmission from the headband.  This boolean tracks whether
      * or not the data transmission is enabled as we allow the user to pause transmission in the UI.
      */
-    private boolean dataTransmission = true;
+    //private boolean dataTransmission = true;
 
     /**
      * To save data to a file, you should use a MuseFileWriter.  The MuseFileWriter knows how to
      * serialize the data packets received from the headband into a compact binary format.
      * To read the file back, you would use a MuseFileReader.
      */
-    private final AtomicReference<MuseFileWriter> fileWriter = new AtomicReference<>();
+    //private final AtomicReference<MuseFileWriter> fileWriter = new AtomicReference<>();
 
     /**
      * We don't want file operations to slow down the UI, so we will defer those file operations
      * to a handler on a separate thread.
      */
-    private final AtomicReference<Handler> fileHandler = new AtomicReference<>();
+    //private final AtomicReference<Handler> fileHandler = new AtomicReference<>();
 
-
-    //Controller controller; //prova int
     //--------------------------------------
     // Lifecycle / Connection code
 
@@ -186,12 +175,12 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
 
         // We need to set the context on MuseManagerAndroid before we can do anything.
         // This must come before other LibMuse API calls as it also loads the library.
-        manager = MuseManagerAndroid.getInstance();
-        manager.setContext(this);
+        //manager = MuseManagerAndroid.getInstance();
+        //manager.setContext(this);
 
         Log.i(TAG, "LibMuse version=" + LibmuseVersion.instance().getString());
 
-        WeakReference<MainActivity> weakActivity =
+        /*WeakReference<MainActivity> weakActivity =
                 new WeakReference<MainActivity>(this);
         // Register a listener to receive connection state changes.
         connectionListener = new ConnectionListener(weakActivity);
@@ -205,26 +194,10 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
         // simplify the connection process.  This requires access to the COARSE_LOCATION
         // or FINE_LOCATION permissions.  Make sure we have these permissions before
         // proceeding.
-        ensurePermissions();
+        ensurePermissions();*/
 
         // Load and initialize our UI.
         initUI();
-
-        //bot
-        DualStackDiscoveryAgent.getInstance().addRobotStateListener( this );
-
-        if( Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ) {
-            int hasLocationPermission = checkSelfPermission( Manifest.permission.ACCESS_COARSE_LOCATION );
-            if( hasLocationPermission != PackageManager.PERMISSION_GRANTED ) {
-                Log.e( "Sphero", "Location permission has not already been granted" );
-                List<String> permissions = new ArrayList<String>();
-                permissions.add( Manifest.permission.ACCESS_COARSE_LOCATION);
-                requestPermissions(permissions.toArray(new String[permissions.size()] ), REQUEST_CODE_LOCATION_PERMISSION );
-            } else {
-                Log.d( "Sphero", "Location permission already granted" );
-            }
-        }
-        //----------------------------------------
 
         // Start up a thread for asynchronous file operations.
         // This is only needed if you want to do File I/O.
@@ -302,16 +275,12 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
         }
 
         else if (v.getId() == R.id.refreshRobot) {
-            writeScreenLog("refRobot");
-            startDiscovery();
+            writeScreenLog("refreshRobot");
         }
 
         else if (v.getId() == R.id.BtnUp) writeScreenLog("Forward Pressed");
         else if (v.getId() == R.id.BtnL) writeScreenLog("Left Pressed");
-        else if (v.getId() == R.id.BtnMid) {
-            writeScreenLog("Stop Pressed");
-            blink(false);
-        }
+        else if (v.getId() == R.id.BtnMid) writeScreenLog("Stop Pressed");
         else if (v.getId() == R.id.BtnR) writeScreenLog("Right Pressed");
         else if (v.getId() == R.id.BtnDown) writeScreenLog("Backward Pressed");
 
@@ -350,7 +319,7 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
      * If the permission is not granted, then Muse 2016 (MU-02) headbands will
      * not be discovered and a SecurityException will be thrown.
      */
-    private void ensurePermissions() {
+    /*private void ensurePermissions() {
 
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
@@ -379,16 +348,16 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
                     .create();
             introDialog.show();
         }
-    }
+    }*/
 
 
     //--------------------------------------
-    // Listeners
+ /*   // Listeners
 
-    /**
+    *//**
      * You will receive a callback to this method each time a headband is discovered.
      * In this example, we update the spinner with the MAC address of the headband.
-     */
+     *//*
     public void museListChanged() {
         final List<Muse> list = manager.getMuses();
         spinnerAdapterCtrl.clear();
@@ -397,12 +366,12 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
         }
     }
 
-    /**
+    *//**
      * You will receive a callback to this method each time there is a change to the
      * connection state of one of the headbands.
      * @param p     A packet containing the current and prior connection states
      * @param muse  The headband whose state changed.
-     */
+     *//*
     public void receiveMuseConnectionPacket(final MuseConnectionPacket p, final Muse muse) {
 
         final ConnectionState current = p.getCurrentConnectionState();
@@ -443,13 +412,13 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
         }
     }
 
-    /**
+    *//**
      * You will receive a callback to this method each time the headband sends a MuseDataPacket
      * that you have registered.  You can use different listeners for different packet types or
      * a single listener for all packet types as we have done here.
      * @param p     The data packet containing the data from the headband (eg. EEG data)
      * @param muse  The headband that sent the information.
-     */
+     *//*
     public void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
 
         // valuesSize returns the number of data values contained in the packet.
@@ -482,17 +451,17 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
         }
     }
 
-    /**
+    *//**
      * You will receive a callback to this method each time an artifact packet is generated if you
      * have registered for the ARTIFACTS data type.  MuseArtifactPackets are generated when
      * eye blinks are detected, the jaw is clenched and when the headband is put on or removed.
      * @param p     The artifact packet with the data from the headband.
      * @param muse  The headband that sent the information.
-     */
+     *//*
     public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
     }
 
-    /**
+    *//**
      * Helper methods to get different packet values.  These methods simply store the
      * data in the buffers for later display in the UI.
      *
@@ -501,16 +470,16 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
      * of MuseDataPacketType for all of the available values.
      * Specific packet types like ACCELEROMETER, GYRO, BATTERY and DRL_REF have their own
      * getValue methods.
-     */
-    /*private void getEegChannelValues(double[] buffer, MuseDataPacket p) {
+     *//*
+    *//*private void getEegChannelValues(double[] buffer, MuseDataPacket p) {
         buffer[0] = p.getEegChannelValue(Eeg.EEG1);
         buffer[1] = p.getEegChannelValue(Eeg.EEG2);
         buffer[2] = p.getEegChannelValue(Eeg.EEG3);
         buffer[3] = p.getEegChannelValue(Eeg.EEG4);
         buffer[4] = p.getEegChannelValue(Eeg.AUX_LEFT);
         buffer[5] = p.getEegChannelValue(Eeg.AUX_RIGHT);
-    }*/
-    /*
+    }*//*
+    *//*
     private void getAccelValues(MuseDataPacket p) {
         accelBuffer[0] = p.getAccelerometerValue(Accelerometer.X);
         accelBuffer[1] = p.getAccelerometerValue(Accelerometer.Y);
@@ -595,103 +564,7 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
         debug.setText(toWrite);
     }
 
-    //---------------bot-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-    @Override
-    public void handleRobotChangedState(Robot robot, RobotChangedStateNotificationType type) { //bot
-        switch( type ) {
-            case Online: {
-                writeScreenLog("Robot Trovato");
-                //If robot uses Bluetooth LE, Developer Mode can be turned on.
-                //This turns off DOS protection. This generally isn't required.
-                if( robot instanceof RobotLE) {
-                    ( (RobotLE) robot ).setDeveloperMode( true );
-                }
-
-                //Save the robot as a ConvenienceRobot for additional utility methods
-                mRobot = new ConvenienceRobot( robot );
-
-                //Start blinking the robot's LED
-                //blink( false );
-                break;
-            }
-        }
-    }
-
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        switch ( requestCode ) {
-            case REQUEST_CODE_LOCATION_PERMISSION: {
-                for( int i = 0; i < permissions.length; i++ ) {
-                    if( grantResults[i] == PackageManager.PERMISSION_GRANTED ) {
-                        startDiscovery();
-                        Log.d( "Permissions", "Permission Granted: " + permissions[i] );
-                    } else if( grantResults[i] == PackageManager.PERMISSION_DENIED ) {
-                        Log.d( "Permissions", "Permission Denied: " + permissions[i] );
-                    }
-                }
-            }
-            break;
-            default: {
-                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-            }
-        }
-    }
-
-    //Turn the robot LED on or off every two seconds
-    private void blink( final boolean lit ) {
-        if( mRobot == null )
-            return;
-
-        if( lit ) {
-            mRobot.setLed( 0.0f, 0.0f, 0.0f );
-        } else {
-            mRobot.setLed( 0.0f, 0.0f, 1.0f );
-        }
-
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                blink(!lit);
-            }
-        }, 2000);
-    }
-
-    private void startDiscovery() {
-        writeScreenLog("startDiscovery");
-        //If the DiscoveryAgent is not already looking for robots, start discovery.
-        if( !DualStackDiscoveryAgent.getInstance().isDiscovering() ) {
-            try {
-                DualStackDiscoveryAgent.getInstance().startDiscovery(getApplicationContext());
-            } catch (DiscoveryException e) {
-                Log.e("Sphero", "DiscoveryException: " + e.getMessage());
-            }
-        }
-    }
-
-    @Override
-    protected void onStop() {
-        //If the DiscoveryAgent is in discovery mode, stop it.
-        if( DualStackDiscoveryAgent.getInstance().isDiscovering() ) {
-            DualStackDiscoveryAgent.getInstance().stopDiscovery();
-        }
-
-        //If a robot is connected to the device, disconnect it
-        if( mRobot != null ) {
-            mRobot.disconnect();
-            mRobot = null;
-        }
-
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        DualStackDiscoveryAgent.getInstance().addRobotStateListener(null);
-    }
-
-    //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     /**
      * The runnable that is used to update the UI at 60Hz.
@@ -823,7 +696,7 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
             VolleyClient.volleyRequest("http://192.168.4.1/message?message=destra", getApplicationContext());
         }
     }*/
-    //--------------------------------------
+/*    //--------------------------------------
     // Listener translators
     //
     // Each of these classes extend from the appropriate listener and contain a weak reference
@@ -870,5 +743,5 @@ public class MainActivity extends Activity implements OnClickListener, RobotChan
         public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
             activityRef.get().receiveMuseArtifactPacket(p, muse);
         }
-    }
+    }*/
 }
