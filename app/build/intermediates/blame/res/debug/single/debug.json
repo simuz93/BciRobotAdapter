@@ -12,6 +12,10 @@
         "source": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
+        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bb8_connection.xml.flat",
+        "source": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\src\\main\\res\\layout\\activity_bb8_connection.xml"
+    },
+    {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     },

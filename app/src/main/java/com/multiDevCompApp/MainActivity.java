@@ -5,11 +5,14 @@
 
 package com.multiDevCompApp;
 
-import com.multiDevCompApp.drivers.Controller;
+import com.multiDevCompApp.drivers.SpheroBB8Driver;
+import com.multiDevCompApp.drivers.interfaces.Controller;
 import com.multiDevCompApp.drivers.MuseHeadsetDriver;
+import com.multiDevCompApp.drivers.interfaces.Robot;
 
 import android.app.Activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -28,7 +31,7 @@ public class MainActivity extends Activity implements OnClickListener{
     private ArrayAdapter<String> spinnerAdapterCtrl;
     private ArrayAdapter<String> spinnerAdapterRobot;
     private Controller controller;
-
+    private Robot robot;
     //--------------------------------------
     // Lifecycle / Connection code
 
@@ -36,9 +39,11 @@ public class MainActivity extends Activity implements OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setController(ControllerType.MUSE_HEADBAND); //static
-
         initUI();
+        setController(ControllerType.MUSE_HEADBAND); //static
+        setRobot(RobotType.SPHERO_BB8); //static
+
+
     }
 
     protected void onPause() {
@@ -74,13 +79,27 @@ public class MainActivity extends Activity implements OnClickListener{
 
         else if (v.getId() == R.id.refreshRobot) {
             writeScreenLog("refreshRobot");
+
         }
 
         else if (v.getId() == R.id.BtnUp) writeScreenLog("Forward Pressed");
-        else if (v.getId() == R.id.BtnL) writeScreenLog("Left Pressed");
-        else if (v.getId() == R.id.BtnMid) writeScreenLog("Stop Pressed");
-        else if (v.getId() == R.id.BtnR) writeScreenLog("Right Pressed");
-        else if (v.getId() == R.id.BtnDown) writeScreenLog("Backward Pressed");
+        else if (v.getId() == R.id.BtnL) {
+            writeScreenLog("Left Pressed");
+            robot.ledOn(1, 0,0);
+        }
+        else if (v.getId() == R.id.BtnMid) {
+            writeScreenLog("Stop Pressed");
+            robot.ledOn(0, 1,0);
+        }
+        else if (v.getId() == R.id.BtnR) {
+            writeScreenLog("Right Pressed");
+            robot.ledOn(0, 0, 1);
+        }
+
+        else if (v.getId() == R.id.BtnDown) {
+            writeScreenLog("Backward Pressed");
+            robot.ledOff();
+        }
 
         /*else if (v.getId() == R.id.disconnect) {
 
@@ -108,7 +127,7 @@ public class MainActivity extends Activity implements OnClickListener{
     private void initUI() {
         setContentView(R.layout.activity_main);
         addButtonListener();
-        addSpinnerListener();
+        setSpinners();
     }
 
     private void addButtonListener() {
@@ -140,7 +159,7 @@ public class MainActivity extends Activity implements OnClickListener{
         //pauseButton.setOnClickListener(this);
     }
 
-    private void addSpinnerListener() {
+    private void setSpinners() {
         spinnerAdapterCtrl = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         Spinner spinnerCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
         spinnerCtrl.setAdapter(spinnerAdapterCtrl);
@@ -168,7 +187,21 @@ public class MainActivity extends Activity implements OnClickListener{
         }
     }
 
-    public void setRobot(RobotType name) {this.robotName = name;}
+    public void setRobot(RobotType name) {
+        this.robotName = name;
+
+        switch(name) {
+            case SPHERO_BB8:
+                robot = new SpheroBB8Driver(this);
+                break;
+
+            case SANBOT:
+            case CAR:
+
+            default:
+                break;
+        }
+    }
 
     public void writeScreenLog(String toWrite) {
         TextView log = (TextView) findViewById(R.id.log);
@@ -195,4 +228,5 @@ public class MainActivity extends Activity implements OnClickListener{
         debug.setText(toWrite);
     }
 
+    public Context getContext() {return this.getApplicationContext();}
 }

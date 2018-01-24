@@ -22,6 +22,7 @@ import com.choosemuse.libmuse.MuseListener;
 import com.choosemuse.libmuse.MuseManagerAndroid;
 import com.choosemuse.libmuse.MuseVersion;
 import com.multiDevCompApp.R;
+import com.multiDevCompApp.drivers.interfaces.Controller;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -50,7 +51,6 @@ public class MuseHeadsetDriver implements Controller {
 
     public MuseHeadsetDriver(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
-
         manager = MuseManagerAndroid.getInstance();
         manager.setContext(mainActivity);
 

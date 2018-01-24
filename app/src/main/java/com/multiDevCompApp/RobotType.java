@@ -7,7 +7,7 @@ package com.multiDevCompApp;
 public enum RobotType {
     SPHERO_BB8,
     SANBOT,
-    CAR_WITH_NO_NAME_STILL;
+    CAR;
 
 }
 

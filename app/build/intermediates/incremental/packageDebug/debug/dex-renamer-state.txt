@@ -1,4 +1,4 @@
-#Wed Jan 24 11:08:25 CET 2018
+#Wed Jan 24 17:11:51 CET 2018
 path.1=classes.dex
 path.0=classes.dex
 renamed.5=classes6.dex
@@ -7,12 +7,12 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.4=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
-base.3=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
-base.2=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-base.1=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-base.0=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.5=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\71
+base.4=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\74
+base.3=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\69
+base.2=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\72
+base.1=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\73
+base.0=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\70
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex
