@@ -19,6 +19,6 @@ public interface Controller {
     void stopListening();
     void startListening();
 
-    ArrayList<String> getSpinnerCtrlList();
+    ArrayList<String> getCtrlList();
 
 }

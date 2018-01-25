@@ -14,48 +14,57 @@
          import com.orbotix.le.DiscoveryAgentLE;
          import com.orbotix.le.RobotRadioDescriptor;
 
+         import java.util.ArrayList;
          import java.util.List;
 
 public class SpheroBB8Driver implements RobotChangedStateListener, com.multiDevCompApp.drivers.interfaces.Robot {
     private MainActivity mainActivity;
     private DiscoveryAgentLE discoveryAgent;
     private static ConvenienceRobot robot;
-    private DiscoveryAgentEventListener discoveryAgentEventListener = new DiscoveryAgentEventListener() {
-        @Override
-        public void handleRobotsAvailable(List<Robot> robots) {
-            mainActivity.writeScreenLog("Robot found! Bring near the device to connect it");
-        }
-    };
-    private RobotChangedStateListener robotStateListener = new RobotChangedStateListener() {
-        @Override
-        public void handleRobotChangedState(Robot r, RobotChangedStateNotificationType robotChangedStateNotificationType) {
-            switch (robotChangedStateNotificationType) {
-                case Online:
-                    online(r);
-                    break;
-                case Offline:
-                    offline(r);
-                    break;
-                case Connecting:
-                    connecting(r);
-                    break;
-                case Connected:
-                    connected(r);
-                    break;
-                case Disconnected:
-                    disconnected(r);
-                    break;
-                case FailedConnect:
-                    failedConnect(r);
-                    break;
-            }
-        }
-    };
+    private DiscoveryAgentEventListener discoveryAgentEventListener;
+    private RobotChangedStateListener robotStateListener;
+
+    ArrayList<Robot> robotsList;
+    ArrayList<String> spinnerRobotList;
 
     public SpheroBB8Driver(MainActivity ma){
         this.mainActivity = ma;
+        spinnerRobotList = new ArrayList<>();
+        robotsList = new ArrayList<>();
+
         DiscoveryAgentLE.getInstance().addRobotStateListener(this);
-        connect();
+        discoveryAgentEventListener = new DiscoveryAgentEventListener() {
+            @Override
+            public void handleRobotsAvailable(List<Robot> robots) {
+                mainActivity.debug(1, robots.get(0).getName());
+                mainActivity.writeScreenLog("Robot found! Bring near the device to connect it");
+            }
+        };
+        robotStateListener = new RobotChangedStateListener() {
+            @Override
+            public void handleRobotChangedState(Robot r, RobotChangedStateNotificationType robotChangedStateNotificationType) {
+                switch (robotChangedStateNotificationType) {
+                    case Online:
+                        online(r);
+                        break;
+                    case Offline:
+                        offline(r);
+                        break;
+                    case Connecting:
+                        connecting(r);
+                        break;
+                    case Connected:
+                        connected(r);
+                        break;
+                    case Disconnected:
+                        disconnected(r);
+                        break;
+                    case FailedConnect:
+                        failedConnect(r);
+                        break;
+                }
+            }
+        };
     }
 
     //Ricerca bluetooth
@@ -72,6 +81,7 @@ public class SpheroBB8Driver implements RobotChangedStateListener, com.multiDevC
         discoveryAgent = null;
     }
     void connect() {
+        mainActivity.writeScreenLog("looking for robot");
         try {
             discoveryAgent = DiscoveryAgentLE.getInstance();
 
@@ -99,23 +109,12 @@ public class SpheroBB8Driver implements RobotChangedStateListener, com.multiDevC
     }
 
     //Led del robot
-    void setRobotLedRed(){
-        robot.setLed(1,0,0);
-    }
-    void setRobotLedGreen(){
-        robot.setLed(0,1,0);
-    }
-    void setRobotLedBlue(){
-        robot.setLed(0,0,1);
-    }
-    void setRobotLedYellow() {
-        robot.setLed(1,1,0);
-    }
 
     //Movimento
     void moveForward(double rotation, double velocity ){
         robot.drive((float) rotation, (float) velocity);
     }
+
     void stopRobot(){
         //robot.stop();
         robot.drive(0, 0);
@@ -131,9 +130,9 @@ public class SpheroBB8Driver implements RobotChangedStateListener, com.multiDevC
         stopDiscovery();
         mainActivity.debug(2,"Robot " + r.getName() + " is Online!");
         robot = new Sphero(r);
-        robot.setLed(0, 1, 0);
-
+        robot.setLed(0.0f, 1.0f, 0.0f);
     }
+
     private void offline(Robot r){
         connect();
     }
@@ -160,22 +159,27 @@ public class SpheroBB8Driver implements RobotChangedStateListener, com.multiDevC
 
     @Override
     public void forward() {
+        moveForward(0, 0.3);
+    }
 
+    public void backward() {
+        moveForward(180, 0.3);
     }
 
     @Override
     public void stop() {
+        stopRobot();
 
     }
 
     @Override
     public void turnL() {
-
+        moveForward(270, 0);
     }
 
     @Override
     public void turnR() {
-
+        moveForward(90, 0);
     }
 
     @Override
@@ -190,11 +194,13 @@ public class SpheroBB8Driver implements RobotChangedStateListener, com.multiDevC
 
     @Override
     public boolean connect(int index) {
-        return false;
+        connect();
+        return true;
     }
 
     @Override
     public boolean disconnect() {
         return false;
     }
+
 }
