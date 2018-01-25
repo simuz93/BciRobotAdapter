@@ -63,6 +63,7 @@ public class MuseHeadsetDriver implements Controller {
 
         spinnerCtrlList = new ArrayList<>();
         ensurePermissions();
+        manager.startListening();
     }
 
     @Override
@@ -91,7 +92,7 @@ public class MuseHeadsetDriver implements Controller {
         List<Muse> availableMuses = manager.getMuses();
 
         if (availableMuses.size() < 1 || spinnerCtrlList.size() < 1) {
-            //Log.w(TAG, "There is nothing to connect to");
+
         } else {
 
             // Cache the Muse that the user has selected.
@@ -165,7 +166,7 @@ public class MuseHeadsetDriver implements Controller {
         }
     }
 
-    public ArrayList<String> getSpinnerCtrlList() {return this.spinnerCtrlList;}
+    public ArrayList<String> getCtrlList() {return this.spinnerCtrlList;}
 
     // Listeners
 
@@ -233,21 +234,21 @@ public class MuseHeadsetDriver implements Controller {
         final long n = p.valuesSize();
         switch (p.packetType()) {
             case EEG:
-                mainActivity.debug(2, "eeg ch1:" + p.getEegChannelValue(Eeg.EEG1) + " ch2:" + p.getEegChannelValue(Eeg.EEG2) + " ch3:" + p.getEegChannelValue(Eeg.EEG3) + " ch4:" + p.getEegChannelValue(Eeg.EEG4));
+                //mainActivity.debug(2, "eeg ch1:" + p.getEegChannelValue(Eeg.EEG1) + " ch2:" + p.getEegChannelValue(Eeg.EEG2) + " ch3:" + p.getEegChannelValue(Eeg.EEG3) + " ch4:" + p.getEegChannelValue(Eeg.EEG4));
 
                 //assert(eegBuffer.length >= n);
                 //getEegChannelValues(eegBuffer,p);
                 //eegStale = true;
                 break;
             case ACCELEROMETER:
-                mainActivity.debug(3, "acc X:" + p.getAccelerometerValue(Accelerometer.X) + " Y:" + p.getAccelerometerValue(Accelerometer.Y) + " Z:" + p.getAccelerometerValue(Accelerometer.Z));
+                //mainActivity.debug(3, "acc X:" + p.getAccelerometerValue(Accelerometer.X) + " Y:" + p.getAccelerometerValue(Accelerometer.Y) + " Z:" + p.getAccelerometerValue(Accelerometer.Z));
                 //assert(accelBuffer.length >= n);
                 //getAccelValues(p);
                 //accelStale = true;
                 break;
             case ALPHA_RELATIVE:
                 //assert(alphaBuffer.length >= n);
-                mainActivity.debug(1, "alpha ch1:" + p.getEegChannelValue(Eeg.EEG1) + " ch2:" + p.getEegChannelValue(Eeg.EEG2) + " ch3:" + p.getEegChannelValue(Eeg.EEG3) + " ch4:" + p.getEegChannelValue(Eeg.EEG4));
+                //mainActivity.debug(1, "alpha ch1:" + p.getEegChannelValue(Eeg.EEG1) + " ch2:" + p.getEegChannelValue(Eeg.EEG2) + " ch3:" + p.getEegChannelValue(Eeg.EEG3) + " ch4:" + p.getEegChannelValue(Eeg.EEG4));
                 //getEegChannelValues(alphaBuffer,p);
                 //alphaStale = true;
                 break;

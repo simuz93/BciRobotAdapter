@@ -7,6 +7,7 @@ package com.multiDevCompApp.drivers.interfaces;
 public interface Robot {
 
     void forward();
+    void backward();
     void stop();
     void turnL();
     void turnR();
