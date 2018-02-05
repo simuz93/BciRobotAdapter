@@ -55,7 +55,7 @@ public class MuseHeadsetDriver implements Controller {
         manager.setContext(mainActivity);
 
         WeakReference<MuseHeadsetDriver> weakDriver;
-        weakDriver = new WeakReference<MuseHeadsetDriver>(this);
+        weakDriver = new WeakReference<>(this);
 
         connectionListener = new ConnectionListener(weakDriver);
         dataListener = new DataListener(weakDriver);
@@ -63,7 +63,6 @@ public class MuseHeadsetDriver implements Controller {
 
         spinnerCtrlList = new ArrayList<>();
         ensurePermissions();
-        manager.startListening();
     }
 
     @Override
@@ -97,6 +96,7 @@ public class MuseHeadsetDriver implements Controller {
 
             // Cache the Muse that the user has selected.
             muse = availableMuses.get(index);
+            museVersion = muse.getMuseVersion();
             // Unregister all prior listeners and register our data listener to
             // receive the MuseDataPacketTypes we are interested in.  If you do
             // not register a listener for a particular data type, you will not
@@ -127,12 +127,12 @@ public class MuseHeadsetDriver implements Controller {
     }
 
     @Override
-    public void startListening() {
+    public void startSearching() {
         manager.startListening();
     }
 
     @Override
-    public void stopListening() {
+    public void stopSearching() {
         manager.stopListening();
     }
 
@@ -248,7 +248,7 @@ public class MuseHeadsetDriver implements Controller {
                 break;
             case ALPHA_RELATIVE:
                 //assert(alphaBuffer.length >= n);
-                //mainActivity.debug(1, "alpha ch1:" + p.getEegChannelValue(Eeg.EEG1) + " ch2:" + p.getEegChannelValue(Eeg.EEG2) + " ch3:" + p.getEegChannelValue(Eeg.EEG3) + " ch4:" + p.getEegChannelValue(Eeg.EEG4));
+                mainActivity.writeScreenLog("alpha ch1:" + p.getEegChannelValue(Eeg.EEG1) + " ch2:" + p.getEegChannelValue(Eeg.EEG2) + " ch3:" + p.getEegChannelValue(Eeg.EEG3) + " ch4:" + p.getEegChannelValue(Eeg.EEG4));
                 //getEegChannelValues(alphaBuffer,p);
                 //alphaStale = true;
                 break;
@@ -311,7 +311,7 @@ class DataListener extends MuseDataListener {
 
     @Override
     public void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
-        MuseDriverRef.get().receiveMuseDataPacket(p, muse);
+        if(MuseDriverRef!=null) MuseDriverRef.get().receiveMuseDataPacket(p, muse);
     }
 
     @Override

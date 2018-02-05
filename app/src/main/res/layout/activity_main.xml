@@ -1,88 +1,111 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/ctrlName"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content" />
 
-        <LinearLayout
+        <Spinner
+            android:id="@+id/spinnerCtrl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:id="@+id/connectCtrl"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
 
 
-            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/connect" />
+
+            <Button
+                android:id="@+id/disconnectController"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/disconnect" />
+
+            <Button
+                android:id="@+id/refreshCtrl"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/refresh" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/robotName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerRobot"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                >
 
-                <Spinner
-                    android:id="@+id/spinnerCtrl"
-                    android:layout_width="173dp"
-                    android:layout_height="60dp" />
+            <Button
+                android:id="@+id/connectRobot"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/connect" />
 
-                <Button
-                    android:id="@+id/connectCtrl"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:text="@string/connect" />
+            <Button
+                android:id="@+id/disconnectRobot"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/disconnect" />
 
-                <!-- <Button
-                        android:id="@+id/disconnect"
-                        android:layout_width="120dp"
-                        android:layout_height="40dp"
-                        android:text="@string/disconnect" />-->
+            <Button
+                android:id="@+id/refreshRobot"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/refresh" />
+            </RelativeLayout>
 
-                <Button
-                    android:id="@+id/refreshCtrl"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:text="@string/refresh" />
-            </LinearLayout>
 
-            <LinearLayout
+        <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Spinner
-                    android:id="@+id/spinnerRobot"
-                    android:layout_width="173dp"
-                    android:layout_height="60dp" />
-
-                <Button
-                    android:id="@+id/connectRobot"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:text="@string/connect" />
-
-                <!-- <Button
-                     android:id="@+id/disconnect"
-                     android:layout_width="120dp"
-                     android:layout_height="40dp"
-                     android:text="@string/disconnect" />-->
-
-                <Button
-                    android:id="@+id/refreshRobot"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:text="@string/refresh" />
-            </LinearLayout>
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/BtnUp"
                     android:layout_width="120dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:text="Forward" />
@@ -97,17 +120,18 @@
                 <Button
                     android:id="@+id/BtnL"
                     android:layout_width="120dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
 
-                    android:layout_alignParentBottom="true"
+
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:text="Left" />
 
                 <Button
                     android:id="@+id/BtnMid"
                     android:layout_width="120dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:text="Stop" />
@@ -131,7 +155,7 @@
                 <Button
                     android:id="@+id/BtnDown"
                     android:layout_width="120dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:text="Backward" />
@@ -139,32 +163,20 @@
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/debugText1"
-                android:layout_width="match_parent"
-                android:layout_height="45dp" />
-
-            <TextView
-                android:id="@+id/debugText2"
-                android:layout_width="match_parent"
-                android:layout_height="45dp" />
-
-            <TextView
-                android:id="@+id/debugText3"
-                android:layout_width="match_parent"
-                android:layout_height="45dp" />
-
-            <TextView
                 android:id="@+id/log"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/darker_gray" />
 
-        </LinearLayout>
+            <Button
+                android:id="@+id/selectDevices"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Seleziona i dispositivi che vuoi usare" />
 
-    </ScrollView>
+    </LinearLayout>
 
-
-</LinearLayout>
 
 
 

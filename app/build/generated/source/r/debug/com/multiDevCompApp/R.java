@@ -613,47 +613,44 @@ public final class R {
     public static final int ControllerName=0x7f050005;
     public static final int RobotName=0x7f050006;
     public static final int action_settings=0x7f050007;
-    public static final int activity_bb8_connection=0x7f050008;
-    public static final int adjust_height=0x7f050009;
-    public static final int adjust_width=0x7f05000a;
-    public static final int all=0x7f05000b;
-    public static final int basic=0x7f05000c;
-    public static final int chains=0x7f05000d;
+    public static final int adjust_height=0x7f050008;
+    public static final int adjust_width=0x7f050009;
+    public static final int all=0x7f05000a;
+    public static final int basic=0x7f05000b;
+    public static final int chains=0x7f05000c;
+    public static final int confirmBtn=0x7f05000d;
     public static final int connectCtrl=0x7f05000e;
     public static final int connectRobot=0x7f05000f;
-    public static final int dastatus=0x7f050010;
-    public static final int debugText1=0x7f050011;
-    public static final int debugText2=0x7f050012;
-    public static final int debugText3=0x7f050013;
+    public static final int ctrlName=0x7f050010;
+    public static final int ctrlText=0x7f050011;
+    public static final int disconnectController=0x7f050012;
+    public static final int disconnectRobot=0x7f050013;
     public static final int hybrid=0x7f050014;
     public static final int log=0x7f050015;
-    public static final int newgamebutton=0x7f050016;
-    public static final int none=0x7f050017;
-    public static final int normal=0x7f050018;
-    public static final int packed=0x7f050019;
-    public static final int parent=0x7f05001a;
-    public static final int progressBar2=0x7f05001b;
-    public static final int refreshCtrl=0x7f05001c;
-    public static final int refreshRobot=0x7f05001d;
-    public static final int robotstatus=0x7f05001e;
-    public static final int satellite=0x7f05001f;
-    public static final int selectControllerBtn=0x7f050020;
-    public static final int selectRobotBtn=0x7f050021;
-    public static final int spinnerCtrl=0x7f050022;
-    public static final int spinnerRobot=0x7f050023;
-    public static final int spread=0x7f050024;
-    public static final int spread_inside=0x7f050025;
-    public static final int terrain=0x7f050026;
-    public static final int wrap=0x7f050027;
+    public static final int none=0x7f050016;
+    public static final int normal=0x7f050017;
+    public static final int packed=0x7f050018;
+    public static final int parent=0x7f050019;
+    public static final int refreshCtrl=0x7f05001a;
+    public static final int refreshRobot=0x7f05001b;
+    public static final int robotName=0x7f05001c;
+    public static final int robotText=0x7f05001d;
+    public static final int satellite=0x7f05001e;
+    public static final int selectDevices=0x7f05001f;
+    public static final int spinnerCtrl=0x7f050020;
+    public static final int spinnerRobot=0x7f050021;
+    public static final int spread=0x7f050022;
+    public static final int spread_inside=0x7f050023;
+    public static final int terrain=0x7f050024;
+    public static final int wrap=0x7f050025;
   }
   public static final class integer {
     public static final int google_play_services_version=0x7f060000;
   }
   public static final class layout {
-    public static final int activity_bb8_connection=0x7f070000;
-    public static final int activity_bluetooth_connection=0x7f070001;
-    public static final int activity_main=0x7f070002;
-    public static final int select_devices_activity=0x7f070003;
+    public static final int activity_bluetooth_connection=0x7f070000;
+    public static final int activity_main=0x7f070001;
+    public static final int select_devices_activity=0x7f070002;
   }
   public static final class menu {
     public static final int main=0x7f080000;

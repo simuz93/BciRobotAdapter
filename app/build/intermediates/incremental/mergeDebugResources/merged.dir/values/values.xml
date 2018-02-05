@@ -124,7 +124,7 @@
     <string name="accel">Accelerometer Data:</string>
     <string name="accept">Accept</string>
     <string name="action_settings">Settings</string>
-    <string name="app_name">TestLibMuseAndroid</string>
+    <string name="app_name">MultiDevCompApp</string>
     <string name="artifacts">Blinks, Jaw: </string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
@@ -183,14 +183,10 @@
     <string name="undefined">unknown</string>
     <string name="version">Version:</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
     <style name="Theme.IAPTheme" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>

@@ -3,16 +3,24 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/ctrlText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Che controller vuoi usare?" />
+
     <Spinner
         android:id="@+id/ControllerName"
         android:layout_width="match_parent"
         android:layout_height="70dp" />
 
-    <Button
-        android:id="@+id/selectControllerBtn"
+    <TextView
+        android:id="@+id/robotText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginTop="50dp"
+        android:text="Che Robot vuoi usare?" />
 
     <Spinner
         android:id="@+id/RobotName"
@@ -20,8 +28,9 @@
         android:layout_height="70dp" />
 
     <Button
-        android:id="@+id/selectRobotBtn"
+        android:id="@+id/confirmBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginTop="30dp"
+        android:text="Conferma" />
 </LinearLayout>

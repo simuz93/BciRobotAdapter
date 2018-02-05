@@ -16,8 +16,8 @@ public interface Controller {
     boolean connect(int index);
     boolean disconnect();
 
-    void stopListening();
-    void startListening();
+    void startSearching();
+    void stopSearching();
 
     ArrayList<String> getCtrlList();
 
