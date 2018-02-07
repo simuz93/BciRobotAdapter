@@ -1,6 +1,5 @@
 package com.multiDevCompApp.drivers.interfaces;
 
-import java.util.ArrayList;
 
 /**
  * Created by sserr on 23/01/2018.
@@ -8,17 +7,8 @@ import java.util.ArrayList;
 
 public interface Controller {
 
-    void forward();
-    void stop();
-    void turnL();
-    void turnR();
-
-    boolean connect(int index);
-    boolean disconnect();
-
+    void disconnect();
     void startSearching();
     void stopSearching();
-
-    ArrayList<String> getCtrlList();
 
 }

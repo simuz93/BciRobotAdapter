@@ -1,6 +1,7 @@
 package com.multiDevCompApp;
 
 import com.multiDevCompApp.drivers.SpheroBB8Driver;
+import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
 import com.multiDevCompApp.drivers.interfaces.Controller;
 import com.multiDevCompApp.drivers.MuseHeadsetDriver;
 import com.multiDevCompApp.drivers.interfaces.Robot;
@@ -11,7 +12,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.graphics.Color;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
@@ -23,7 +23,7 @@ import android.widget.TextView;
 import android.bluetooth.BluetoothAdapter;
 
 
-public class MainActivity extends Activity implements OnClickListener{
+public class MainActivity extends Activity implements OnClickListener, AdapterActivity {
 
         //Name (Enum) of the devices in use
         private ControllerType controllerName = null;
@@ -33,10 +33,13 @@ public class MainActivity extends Activity implements OnClickListener{
         private Controller controller = null;
         private Robot robot = null;
 
+        //Boolean to check if the devices are connected
+        private boolean controllerConnected = false;
+        private boolean robotConnected = false;
+
         //Spinners adapters
         private ArrayAdapter<String> spinnerAdapterCtrl;
         private ArrayAdapter<String> spinnerAdapterRobot;
-
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -57,50 +60,66 @@ public class MainActivity extends Activity implements OnClickListener{
             if(robot != null) robot.stopSearching();
         }
 
-        protected void onResume() {
-            super.onResume();
-
-            //Check if MainActivity has been called by SelectDevicesActivity and set Controller and Robot variables
-            Intent i = this.getIntent();
-            if(i.hasExtra("ctrlName") && i.hasExtra("robotName")) {
-                controllerName = (ControllerType) (i.getSerializableExtra("ctrlName"));
-                robotName = (RobotType) (i.getSerializableExtra("robotName"));
-                setController(controllerName);
-                setRobot(robotName);
-                setAllVisible(View.VISIBLE);
-                setAllClickable(true);
-            }
-            /*if(!checkDevices()) {
-                startActivity(new Intent(this, SelectDevicesActivity.class));
-            }*/
-
-        }
-
         // UI Specific methods
         private void initUI() {
-            //Set View, Spinners, Buttons, listeners and initial visibility
+            //Set View, Spinners, Buttons, listeners
             setContentView(R.layout.activity_main);
             addButtonListener();
             setSpinners();
-            if(!checkDevices()) {
-                setAllClickable(false);
-                setAllVisible(View.GONE);
-            }
-            else {
-                setAllClickable(true);
-                setAllVisible(View.VISIBLE);
-            }
+            onControllerConnected(false);
+            onRobotConnected(false);
+        }
+
+        private void showCtrlConnectBtn() {
+            Button connectCtrlBtn = (Button) findViewById(R.id.connectCtrl);
+            Button disconnectCtrlBtn = (Button) findViewById(R.id.disconnectCtrl);
+
+            connectCtrlBtn.setVisibility(View.VISIBLE);
+            connectCtrlBtn.setClickable(true);
+
+            disconnectCtrlBtn.setVisibility(View.GONE);
+            disconnectCtrlBtn.setClickable(false);
+        }
+
+        private void showRobotConnectBtn() {
+            Button connectRobotBtn = (Button) findViewById(R.id.connectRobot);
+            Button disconnectRobotBtn = (Button) findViewById(R.id.disconnectRobot);
+
+            connectRobotBtn.setVisibility(View.VISIBLE);
+            connectRobotBtn.setClickable(true);
+
+            disconnectRobotBtn.setVisibility(View.GONE);
+            disconnectRobotBtn.setClickable(false);
+        }
+
+        private void showCtrlDisconnectBtn() {
+            Button connectCtrlBtn = (Button) findViewById(R.id.connectCtrl);
+            Button disconnectCtrlBtn = (Button) findViewById(R.id.disconnectCtrl);
+
+            disconnectCtrlBtn.setVisibility(View.VISIBLE);
+            disconnectCtrlBtn.setClickable(true);
+
+            connectCtrlBtn.setVisibility(View.GONE);
+            connectCtrlBtn.setClickable(false);
+        }
+
+        private void showRobotDisconnectBtn() {
+            Button connectRobotBtn = (Button) findViewById(R.id.connectRobot);
+            Button disconnectRobotBtn = (Button) findViewById(R.id.disconnectRobot);
+
+            disconnectRobotBtn.setVisibility(View.VISIBLE);
+            disconnectRobotBtn.setClickable(true);
+
+            connectRobotBtn.setVisibility(View.GONE);
+            connectRobotBtn.setClickable(false);
         }
 
         //UI listener add methods
         private void addButtonListener() {
-            Button refreshCtrl = (Button) findViewById(R.id.refreshCtrl);
-            refreshCtrl.setOnClickListener(this);
+
             Button connectCtrl = (Button) findViewById(R.id.connectCtrl);
             connectCtrl.setOnClickListener(this);
 
-            Button refreshRobot = (Button) findViewById(R.id.refreshRobot);
-            refreshRobot.setOnClickListener(this);
             Button connectRobot = (Button) findViewById(R.id.connectRobot);
             connectRobot.setOnClickListener(this);
 
@@ -116,25 +135,26 @@ public class MainActivity extends Activity implements OnClickListener{
             Button btnMid = (Button) findViewById(R.id.BtnMid);
             btnMid.setOnClickListener(this);
 
-            Button selectDevices = (Button)findViewById((R.id.selectDevices));
-            selectDevices.setOnClickListener(this);
-
-            Button disconnectCtrlBtn = (Button) findViewById(R.id.disconnectController);
+            Button disconnectCtrlBtn = (Button) findViewById(R.id.disconnectCtrl);
             disconnectCtrlBtn.setOnClickListener(this);
             Button disconnectRobotBtn = (Button) findViewById(R.id.disconnectRobot);
             disconnectRobotBtn.setOnClickListener(this);
-
-            //Button pauseButton = (Button) findViewById(R.id.pause);
-            //pauseButton.setOnClickListener(this);
         }
 
         private void setSpinners() {
-            spinnerAdapterCtrl = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
+
+            spinnerAdapterCtrl = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
             Spinner spinnerCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
+            for(ControllerType ct : ControllerType.values()) {
+                spinnerAdapterCtrl.add(ct.toString());
+            }
             spinnerCtrl.setAdapter(spinnerAdapterCtrl);
 
-            spinnerAdapterRobot = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
+            spinnerAdapterRobot = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
             Spinner spinnerRobot = (Spinner) findViewById(R.id.spinnerRobot);
+            for(RobotType rt : RobotType.values()) {
+                spinnerAdapterRobot.add(rt.toString());
+            }
             spinnerRobot.setAdapter(spinnerAdapterRobot);
         }
 
@@ -156,18 +176,13 @@ public class MainActivity extends Activity implements OnClickListener{
             }
 
             ((TextView)findViewById(R.id.ctrlName)).setText("Looking for CONTROLLER: "+controllerName.name());
-            //controller.stopSearching();
-            //controller.startSearching();
-
-            //updateControllerSpinner();
-
         }
 
         //Set the Robot's name, instance and textview
         public void setRobot(RobotType name) {
             this.robotName = name;
 
-            switch(name) {
+            switch (name) {
                 case SPHERO_BB8:
                     robot = new SpheroBB8Driver(this);
                     break;
@@ -179,61 +194,7 @@ public class MainActivity extends Activity implements OnClickListener{
                     break;
             }
 
-            ((TextView)findViewById(R.id.robotName)).setText("Looking for ROBOT: "+robotName.name());
-            //robot.stopSearching();
-            //robot.startSearching();
-
-            //updateRobotSpinner();
-        }
-
-        //Set every view element (except for SelectDevices button) clickable or not, according to b
-        private void setAllClickable(boolean b) {
-
-            (findViewById(R.id.BtnUp)).setClickable(b);
-            (findViewById(R.id.BtnL)).setClickable(b);
-            (findViewById(R.id.BtnMid)).setClickable(b);
-            (findViewById(R.id.BtnR)).setClickable(b);
-            (findViewById(R.id.BtnDown)).setClickable(b);
-
-            (findViewById(R.id.connectCtrl)).setClickable(b);
-            (findViewById(R.id.refreshCtrl)).setClickable(b);
-            (findViewById(R.id.connectRobot)).setClickable(b);
-            (findViewById(R.id.refreshRobot)).setClickable(b);
-
-            (findViewById(R.id.spinnerCtrl)).setClickable(b);
-            (findViewById(R.id.spinnerRobot)).setClickable(b);
-        }
-
-        //Set every view element (except for SelectDevices button) visibile or not, according to v (View.VISIBLE, View.INVISIBILE, etc)
-        private void setAllVisible(int v) {
-            (findViewById(R.id.BtnUp)).setVisibility(v);
-            (findViewById(R.id.BtnL)).setVisibility(v);
-            (findViewById(R.id.BtnMid)).setVisibility(v);
-            (findViewById(R.id.BtnR)).setVisibility(v);
-            (findViewById(R.id.BtnDown)).setVisibility(v);
-
-            (findViewById(R.id.connectCtrl)).setVisibility(v);
-            (findViewById(R.id.refreshCtrl)).setVisibility(v);
-            (findViewById(R.id.connectRobot)).setVisibility(v);
-            (findViewById(R.id.refreshRobot)).setVisibility(v);
-
-            (findViewById(R.id.spinnerCtrl)).setVisibility(v);
-            (findViewById(R.id.spinnerRobot)).setVisibility(v);
-        }
-
-        //Check if both Controller and Robot are set and eventually modifies the SelectDevices button
-        private boolean checkDevices() {
-            Button b = (Button)findViewById(R.id.selectDevices);
-            if(controllerName == null || robotName == null) {
-                b.setText("Seleziona i dispositivi che vuoi usare");
-                b.setTextColor(Color.RED);
-                return false;
-            }
-            else {
-                b.setText("Modifica i dispositivi che vuoi usare");
-                b.setTextColor(Color.BLACK);
-                return true;
-            }
+            ((TextView) findViewById(R.id.robotName)).setText("Looking for ROBOT: " + robotName.name());
         }
 
         @Override
@@ -241,49 +202,34 @@ public class MainActivity extends Activity implements OnClickListener{
         public void onClick(View v) {
             switch (v.getId()) {
 
-                //Look for new Controllers
-                case R.id.refreshCtrl:
-                    writeScreenLog("Refreshing Controllers");
-                    controller.stopSearching();
-                    controller.startSearching();
-                    updateControllerSpinner();
-                    break;
-
                 //Connect to the selected Controller
                 case R.id.connectCtrl:
-                    writeScreenLog("Connecting to controller");
+                    Spinner ctrlSpinner = (Spinner) findViewById(R.id.spinnerCtrl);
+                    setController(ControllerType.valueOf((String)ctrlSpinner.getSelectedItem()));
                     controller.stopSearching();
-                    Spinner spinnerCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
-                    if (spinnerCtrl.getSelectedItemPosition() >= 0) controller.connect(spinnerCtrl.getSelectedItemPosition());
+                    controller.startSearching();
                     break;
 
                 //Disconnect from Controller
-                case R.id.disconnectController:
-                    if(controller!=null) {
+                case R.id.disconnectCtrl:
+                    if(checkController()) {
                         controller.disconnect();
                         controller = null;
                     }
                     break;
 
-                //Look for new Robots
-                case R.id.refreshRobot:
-                    writeScreenLog("refreshRobot");
-                    robot.stopSearching();
-                    robot.startSearching();
-                    updateRobotSpinner();
-                    break;
-
                 //Connect to the selected Robot
                 case R.id.connectRobot:
-                    writeScreenLog("Connecting to robot");
+
+                    Spinner robotSpinner = (Spinner) findViewById((R.id.spinnerRobot));
+                    setRobot(RobotType.valueOf((String)robotSpinner.getSelectedItem()));
                     robot.stopSearching();
-                    Spinner spinnerRobot = (Spinner) findViewById(R.id.spinnerRobot);
-                    if (spinnerRobot.getSelectedItemPosition() >= 0) robot.connect(spinnerRobot.getSelectedItemPosition());
+                    robot.startSearching();
                     break;
 
                 //Disconnect from Robot
                 case R.id.disconnectRobot:
-                    if(robot!=null) {
+                    if(checkRobot()) {
                         robot.disconnect();
                         robot = null;
                     }
@@ -291,81 +237,87 @@ public class MainActivity extends Activity implements OnClickListener{
 
                 //Buttons cases
                 case R.id.BtnUp:
-                    writeScreenLog("Forward Pressed");
-                    robot.moveForward(0, 0.2); //static
+                    if(checkRobot())robot.moveForward(0, 0.2); //static
                     break;
 
                 case R.id.BtnL:
-                    writeScreenLog("Left Pressed");
-                    robot.turnL();
+                    if(checkRobot())robot.turnL(90);
                     break;
 
                 case R.id.BtnMid:
-                    writeScreenLog("Stop Pressed");
-                    robot.stop();
+                    if(checkRobot())robot.stop();
                     break;
 
                 case R.id.BtnR:
-                    writeScreenLog("Right Pressed");
-                    robot.turnR();
+                    if(checkRobot())robot.turnR(90);
                     break;
 
                 case R.id.BtnDown:
-                    writeScreenLog("Backward Pressed");
-                    robot.moveBackward(0, 0.2); //static
-                    break;
-
-                //Launch the SelectDevicesActivity
-                case R.id.selectDevices:
-                    Intent i = new Intent(this, SelectDevicesActivity.class);
-                    startActivity(i);
+                    if(checkRobot())robot.moveBackward(180, 0.2); //static
                     break;
 
                 default:
-                    writeScreenLog("default");
+
                     break;
             }
 
-
-            /*else if (v.getId() == R.id.disconnect) {
-
-                // The user has pressed the "Disconnect" button.
-                // Disconnect from the selected Muse.
-                if (muse != null) {
-                    muse.disconnect();
-                }
-
-            } else if (v.getId() == R.id.pause) {
-
-                // The user has pressed the "Pause/Resume" button to either pause or
-                // resume data transmission.  Toggle the state and pause or resume the
-                // transmission on the headband.
-                if (muse != null) {
-                    dataTransmission = !dataTransmission;
-                    muse.enableDataTransmission(dataTransmission);
-                }
-             else if
-            }*/
         }
 
-        //Update the list of avaiable Controllers for the spinner
-        private void updateControllerSpinner() {
-            if (controller != null && controller.getCtrlList().size() > 0) {
-                Spinner spinnerCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
-                spinnerAdapterCtrl.addAll(controller.getCtrlList());
-                spinnerCtrl.setAdapter(spinnerAdapterCtrl);
+        public void moveForward(double rotation, double speed) {
+            if (checkRobot()) robot.moveForward(rotation, speed);
+        }
+        public void moveBackward(double rotation, double speed){
+            if(checkRobot()) robot.moveBackward(rotation, speed);
+        }
+        public void stop() {
+            if(checkRobot()) robot.stop();
+        }
+        public void turnL(double rotation) {
+            if(checkRobot()) robot.turnL(rotation);
+        }
+        public void turnR(double rotation) {
+            if(checkRobot())robot.turnR(rotation);
+        }
+
+        //Led
+        public void setLedRed() {if(checkRobot()) robot.setLedRed();}
+        public void setLedBlue() {if(checkRobot()) robot.setLedBlue();}
+        public void setLedGreen() {if(checkRobot()) robot.setLedGreen();}
+        public void setLedYellow() {if(checkRobot()) robot.setLedYellow();}
+        public void setLedWhite() {if(checkRobot()) robot.setLedWhite();}
+        public void setLedOff() {if(checkRobot()) robot.setLedOff();}
+
+        public Activity getActivity() {
+        return this;
+    }
+
+        public void onControllerConnected(boolean connected){
+            controllerConnected = connected;
+            if(connected) {
+                showCtrlDisconnectBtn();
+                ((TextView) findViewById(R.id.ctrlName)).setText("Connected to CONTROLLER: " + controllerName.name());
+            }
+            else {
+                showCtrlConnectBtn();
+                ((TextView) findViewById(R.id.ctrlName)).setText("No CONTROLLER connected. Press Connect to search");
             }
         }
 
-        //Update the list of avaiable Robots for the spinner
-        private void updateRobotSpinner() {
-            if (robot != null && robot.getRobotList().size() > 0) {
-                Spinner spinnerRobot = (Spinner) findViewById(R.id.spinnerRobot);
-                spinnerAdapterRobot.addAll(robot.getRobotList());
-                spinnerRobot.setAdapter(spinnerAdapterRobot);
+        public void onRobotConnected(boolean connected){
+            robotConnected = connected;
+            if(connected) {
+                showRobotDisconnectBtn();
+                ((TextView) findViewById(R.id.robotName)).setText("Connected to ROBOT: " + robotName.name());
             }
-
+            else {
+                showRobotConnectBtn();
+                ((TextView) findViewById(R.id.robotName)).setText("No ROBOT connected. Press Connect to search");
+            }
         }
+
+        private boolean checkController() {return controller!=null && controllerConnected;}
+
+        private boolean checkRobot() {return robot!=null && robotConnected;}
 
         //Bluetooth methods
         private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -400,10 +352,27 @@ public class MainActivity extends Activity implements OnClickListener{
         }
 
         //Log and debug methods
-        public void writeScreenLog(String toWrite) {
-            TextView log = (TextView) findViewById(R.id.log);
+        public void log(int n, String toWrite) {
+
+            TextView log;
+
+            switch (n) {
+                case 1:
+                    log = (TextView) findViewById(R.id.log_1);
+                    break;
+                case 2:
+                    log = (TextView) findViewById(R.id.log_2);
+                    break;
+                case 3:
+                    log = (TextView) findViewById(R.id.log_3);
+                    break;
+                default:
+                    log = (TextView) findViewById(R.id.log_1);
+                    break;
+            }
+
             log.setText(toWrite);
-            System.out.println("LOG: "+toWrite);
+            System.out.println("LOG "+n+": "+toWrite);
         }
 
 }

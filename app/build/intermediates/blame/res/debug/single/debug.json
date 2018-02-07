@@ -416,10 +416,6 @@
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-7.8.0.aar\\5c437bd864cd0bbae10e4734b35f799e\\res\\drawable-mdpi\\common_signin_btn_text_focus_light.9.png"
     },
     {
-        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_devices_activity.xml.flat",
-        "source": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\src\\main\\res\\layout\\select_devices_activity.xml"
-    },
-    {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_common_signin_btn_text_disabled_dark.9.png.flat",
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-7.8.0.aar\\5c437bd864cd0bbae10e4734b35f799e\\res\\drawable-hdpi\\common_signin_btn_text_disabled_dark.9.png"
     },

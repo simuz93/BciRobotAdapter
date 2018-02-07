@@ -7,7 +7,6 @@ import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
-import com.multiDevCompApp.MainActivity;
 import com.choosemuse.libmuse.Accelerometer;
 import com.choosemuse.libmuse.ConnectionState;
 import com.choosemuse.libmuse.Eeg;
@@ -22,19 +21,22 @@ import com.choosemuse.libmuse.MuseListener;
 import com.choosemuse.libmuse.MuseManagerAndroid;
 import com.choosemuse.libmuse.MuseVersion;
 import com.multiDevCompApp.R;
+import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
 import com.multiDevCompApp.drivers.interfaces.Controller;
 
 import java.lang.ref.WeakReference;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by sserr on 23/01/2018.
  */
 
+
 public class MuseHeadsetDriver implements Controller {
 
-    private final MainActivity mainActivity;
+    private static final int FREQUENCY = 5;
+
+    private final AdapterActivity adapterActivity;
 
     private MuseManagerAndroid manager;
     private Muse muse;
@@ -43,16 +45,13 @@ public class MuseHeadsetDriver implements Controller {
     private ConnectionListener connectionListener;
     private DataListener dataListener;
 
-    ArrayList<String> spinnerCtrlList;
+    int count = 0;
+    int blinkColor = 0;
 
-    //private boolean dataTransmission = true;
-    //private final AtomicReference<MuseFileWriter> fileWriter = new AtomicReference<>();
-    //private final AtomicReference<Handler> fileHandler = new AtomicReference<>();
-
-    public MuseHeadsetDriver(MainActivity mainActivity) {
-        this.mainActivity = mainActivity;
+    public MuseHeadsetDriver(AdapterActivity adapterActivity) {
+        this.adapterActivity = adapterActivity;
         manager = MuseManagerAndroid.getInstance();
-        manager.setContext(mainActivity);
+        manager.setContext(adapterActivity.getActivity().getApplicationContext());
 
         WeakReference<MuseHeadsetDriver> weakDriver;
         weakDriver = new WeakReference<>(this);
@@ -61,41 +60,24 @@ public class MuseHeadsetDriver implements Controller {
         dataListener = new DataListener(weakDriver);
         manager.setMuseListener(new MuseL(weakDriver));
 
-        spinnerCtrlList = new ArrayList<>();
         ensurePermissions();
     }
 
-    @Override
-    public void forward() {
-
-    }
-
-    @Override
-    public void stop() {
-
-    }
-
-    @Override
-    public void turnL() {
-
-    }
-
-    @Override
-    public void turnR() {
-
-    }
-
-    @Override
-    public boolean connect(int index) {
+    public void connect() {
         manager.stopListening();
         List<Muse> availableMuses = manager.getMuses();
 
-        if (availableMuses.size() < 1 || spinnerCtrlList.size() < 1) {
-
-        } else {
+        if (availableMuses.size() > 0) {
 
             // Cache the Muse that the user has selected.
-            muse = availableMuses.get(index);
+            for (int i = 0; i<availableMuses.size(); i++){
+                if(!availableMuses.get(i).isPaired()) muse = availableMuses.get(i);
+            }
+            if (muse == null) {
+                adapterActivity.log(1, "No free MUSES found");
+                adapterActivity.onControllerConnected(false);
+                return;
+            }
             museVersion = muse.getMuseVersion();
             // Unregister all prior listeners and register our data listener to
             // receive the MuseDataPacketTypes we are interested in.  If you do
@@ -113,17 +95,19 @@ public class MuseHeadsetDriver implements Controller {
             muse.registerDataListener(dataListener, MuseDataPacketType.BATTERY);
             muse.registerDataListener(dataListener, MuseDataPacketType.DRL_REF);
             muse.registerDataListener(dataListener, MuseDataPacketType.QUANTIZATION);
+            muse.registerDataListener(dataListener, MuseDataPacketType.ARTIFACTS);
+
 
             // Initiate a connection to the headband and stream the data asynchronously.
             muse.runAsynchronously();
-
+            adapterActivity.onControllerConnected(true);
         }
-        return true;
     }
 
     @Override
-    public boolean disconnect() {
-        return true;
+    public void disconnect() {
+        muse.disconnect();
+        adapterActivity.onControllerConnected(false);
     }
 
     @Override
@@ -138,7 +122,7 @@ public class MuseHeadsetDriver implements Controller {
 
     private void ensurePermissions() {
 
-        if (ContextCompat.checkSelfPermission(mainActivity,
+        if (ContextCompat.checkSelfPermission(adapterActivity.getActivity(),
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // We don't have the ACCESS_COARSE_LOCATION permission so create the dialogs asking
             // the user to grant us the permission.
@@ -147,7 +131,7 @@ public class MuseHeadsetDriver implements Controller {
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.dismiss();
-                            ActivityCompat.requestPermissions(mainActivity,
+                            ActivityCompat.requestPermissions(adapterActivity.getActivity(),
                                     new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
                                     0);
                         }
@@ -157,7 +141,7 @@ public class MuseHeadsetDriver implements Controller {
             // this permission.  When the user presses the positive (I Understand) button, the
             // standard Android permission dialog will be displayed (as defined in the button
             // listener above).
-            AlertDialog introDialog = new AlertDialog.Builder(mainActivity)
+            AlertDialog introDialog = new AlertDialog.Builder(adapterActivity.getActivity())
                     .setTitle(R.string.permission_dialog_title)
                     .setMessage(R.string.permission_dialog_description)
                     .setPositiveButton(R.string.permission_dialog_understand, buttonListener)
@@ -166,17 +150,7 @@ public class MuseHeadsetDriver implements Controller {
         }
     }
 
-    public ArrayList<String> getCtrlList() {return this.spinnerCtrlList;}
-
     // Listeners
-
-    public void deviceListChanged() {
-        final List<Muse> list = manager.getMuses();
-        spinnerCtrlList.clear();
-        for (Muse m : list) {
-            spinnerCtrlList.add(m.getName() + " - " + m.getMacAddress());
-        }
-    }
 
     /**
      * You will receive a callback to this method each time there is a change to the
@@ -230,34 +204,70 @@ public class MuseHeadsetDriver implements Controller {
      */
     public void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
 
-        // valuesSize returns the number of data values contained in the packet.
-        final long n = p.valuesSize();
-        switch (p.packetType()) {
-            case EEG:
-                //mainActivity.debug(2, "eeg ch1:" + p.getEegChannelValue(Eeg.EEG1) + " ch2:" + p.getEegChannelValue(Eeg.EEG2) + " ch3:" + p.getEegChannelValue(Eeg.EEG3) + " ch4:" + p.getEegChannelValue(Eeg.EEG4));
+        if(count%FREQUENCY == 0) {
+            switch (p.packetType()) {
+                case EEG:
+                    double eeg_1 = p.getEegChannelValue(Eeg.EEG1);
+                    double eeg_2 = p.getEegChannelValue(Eeg.EEG1);
+                    double eeg_3 = p.getEegChannelValue(Eeg.EEG1);
+                    double eeg_4 = p.getEegChannelValue(Eeg.EEG1);
+                    adapterActivity.log(1, "eeg ch1:" + String.format("%.2f", eeg_1) + " ch2:" + String.format("%.2f", eeg_2) + " ch3:" + String.format("%.2f", eeg_3) + " ch4:" + String.format("%.2f", eeg_4));
+                    break;
 
-                //assert(eegBuffer.length >= n);
-                //getEegChannelValues(eegBuffer,p);
-                //eegStale = true;
-                break;
-            case ACCELEROMETER:
-                //mainActivity.debug(3, "acc X:" + p.getAccelerometerValue(Accelerometer.X) + " Y:" + p.getAccelerometerValue(Accelerometer.Y) + " Z:" + p.getAccelerometerValue(Accelerometer.Z));
-                //assert(accelBuffer.length >= n);
-                //getAccelValues(p);
-                //accelStale = true;
-                break;
-            case ALPHA_RELATIVE:
-                //assert(alphaBuffer.length >= n);
-                mainActivity.writeScreenLog("alpha ch1:" + p.getEegChannelValue(Eeg.EEG1) + " ch2:" + p.getEegChannelValue(Eeg.EEG2) + " ch3:" + p.getEegChannelValue(Eeg.EEG3) + " ch4:" + p.getEegChannelValue(Eeg.EEG4));
-                //getEegChannelValues(alphaBuffer,p);
-                //alphaStale = true;
-                break;
-            case BATTERY:
-            case DRL_REF:
-            case QUANTIZATION:
-            default:
-                break;
+                case ACCELEROMETER:
+                    double x = p.getAccelerometerValue(Accelerometer.X);
+                    double y = p.getAccelerometerValue(Accelerometer.Y);
+                    double z = p.getAccelerometerValue(Accelerometer.Z);
+                    adapterActivity.log(2,"acc X:" + String.format("%.3f", x) + " Y:" + String.format("%.3f", y) + " Z:" + String.format("%.3f", z));
+
+                    /*
+
+                        double speed = 0;
+                        double rotation = 0;
+
+                        if(x>0.3) {
+                            adapterActivity.setLedGreen();
+                            speed = x-0.2;
+                            if (y > 0.2) rotation = 90;
+                            if (y < -0.2) rotation = 270;
+                            adapterActivity.moveForward(rotation, speed);
+                        }
+
+                        else if(x<0.2 && x>-0.2) {
+                            adapterActivity.setLedBlue();
+                            adapterActivity.stop();
+                        }
+
+                        else if(x<-0.3){
+                            adapterActivity.setLedRed();
+                            speed = (-x)-0.2;
+                            if (y > 0.2) rotation = 90;
+                            if (y < -0.2) rotation = 270;
+                            adapterActivity.moveBackward(180, speed);
+                        }
+
+                    */
+                    break;
+
+                case ALPHA_RELATIVE:
+                    double alpha_1 = p.getEegChannelValue(Eeg.EEG1);
+                    double alpha_2 = p.getEegChannelValue(Eeg.EEG2);
+                    double alpha_3 = p.getEegChannelValue(Eeg.EEG3);
+                    double alpha_4 = p.getEegChannelValue(Eeg.EEG4);
+                    adapterActivity.log(3, "alpha ch1:" + String.format("%.2f", alpha_1) + " ch2:" + String.format("%.2f", alpha_2) + " ch3:" + String.format("%.2f", alpha_3) + " ch4:" + String.format("%.2f", alpha_4));
+                    break;
+
+                case BATTERY:
+                case DRL_REF:
+                case QUANTIZATION:
+                default:
+                    break;
+
+
+            }
         }
+        count++;
+        if(count > 1000) count = 0;
     }
 
     /**
@@ -269,6 +279,22 @@ public class MuseHeadsetDriver implements Controller {
      * @param muse The headband that sent the information.
      */
     public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
+
+        if(p.getBlink()) {
+            switch(blinkColor%3) {
+                case 0:
+                    adapterActivity.setLedBlue();
+                    break;
+                case 1:
+                    adapterActivity.setLedGreen();
+                    break;
+
+                case 2:
+                    adapterActivity.setLedRed();
+                    break;
+            }
+            blinkColor++;
+        }
     }
 
 }
@@ -285,7 +311,7 @@ class MuseL extends MuseListener {
 
     @Override
     public void museListChanged() {
-        MuseDriverRef.get().deviceListChanged();
+        MuseDriverRef.get().connect();
     }
 }
 
@@ -311,7 +337,7 @@ class DataListener extends MuseDataListener {
 
     @Override
     public void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
-        if(MuseDriverRef!=null) MuseDriverRef.get().receiveMuseDataPacket(p, muse);
+        MuseDriverRef.get().receiveMuseDataPacket(p, muse);
     }
 
     @Override

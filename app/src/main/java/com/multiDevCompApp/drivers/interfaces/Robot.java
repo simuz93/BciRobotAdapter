@@ -15,8 +15,8 @@ public interface Robot {
     void moveBackward(double rotation, double speed);
 
     void stop();
-    void turnL();//Face Left
-    void turnR();//Face Right
+    void turnL(double rotation);//Face Left
+    void turnR(double rotation);//Face Right
 
     //Led methods
     void setLedRed();
@@ -26,13 +26,8 @@ public interface Robot {
     void setLedWhite();
     void setLedOff();
 
-    //Connection methods
-    void connect(int index);
     void disconnect();
 
     void startSearching();
     void stopSearching();
-
-    ArrayList<String> getRobotList();
-
 }
