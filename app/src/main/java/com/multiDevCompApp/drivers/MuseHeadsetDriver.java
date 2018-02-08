@@ -1,6 +1,7 @@
 package com.multiDevCompApp.drivers;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -27,10 +28,6 @@ import com.multiDevCompApp.drivers.interfaces.Controller;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-/**
- * Created by sserr on 23/01/2018.
- */
-
 
 public class MuseHeadsetDriver implements Controller {
 
@@ -45,8 +42,6 @@ public class MuseHeadsetDriver implements Controller {
     private ConnectionListener connectionListener;
     private DataListener dataListener;
 
-    int count = 0;
-    int blinkColor = 0;
 
     public MuseHeadsetDriver(AdapterActivity adapterActivity) {
         this.adapterActivity = adapterActivity;
@@ -159,7 +154,7 @@ public class MuseHeadsetDriver implements Controller {
      * @param p    A packet containing the current and prior connection states
      * @param muse The headband whose state changed.
      */
-    public void receiveMuseConnectionPacket(final MuseConnectionPacket p, final Muse muse) {
+    void receiveMuseConnectionPacket(final MuseConnectionPacket p, final Muse muse) {
 
         final ConnectionState current = p.getCurrentConnectionState();
 
@@ -202,7 +197,11 @@ public class MuseHeadsetDriver implements Controller {
      * @param p    The data packet containing the data from the headband (eg. EEG data)
      * @param muse The headband that sent the information.
      */
-    public void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
+
+    private int count = 0;
+
+    @SuppressLint("DefaultLocale")
+    void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
 
         if(count%FREQUENCY == 0) {
             switch (p.packetType()) {
@@ -278,7 +277,9 @@ public class MuseHeadsetDriver implements Controller {
      * @param p    The artifact packet with the data from the headband.
      * @param muse The headband that sent the information.
      */
-    public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
+    private int blinkColor = 0;
+
+    void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
 
         if(p.getBlink()) {
             switch(blinkColor%3) {
@@ -303,7 +304,7 @@ public class MuseHeadsetDriver implements Controller {
 // Each of these classes extend from the appropriate listener and contain a weak reference
 // to the activity.  Each class simply forwards the messages it receives back to the Activity.
 class MuseL extends MuseListener {
-    final WeakReference<MuseHeadsetDriver> MuseDriverRef;
+    private final WeakReference<MuseHeadsetDriver> MuseDriverRef;
 
     MuseL(final WeakReference<MuseHeadsetDriver> activityRef) {
         this.MuseDriverRef = activityRef;
@@ -316,7 +317,7 @@ class MuseL extends MuseListener {
 }
 
 class ConnectionListener extends MuseConnectionListener {
-    final WeakReference<MuseHeadsetDriver> MuseDriverRef;
+    private final WeakReference<MuseHeadsetDriver> MuseDriverRef;
 
     ConnectionListener(final WeakReference<MuseHeadsetDriver> activityRef) {
         this.MuseDriverRef = activityRef;
@@ -329,7 +330,7 @@ class ConnectionListener extends MuseConnectionListener {
 }
 
 class DataListener extends MuseDataListener {
-    final WeakReference<MuseHeadsetDriver> MuseDriverRef;
+    private final WeakReference<MuseHeadsetDriver> MuseDriverRef;
 
     DataListener(final WeakReference<MuseHeadsetDriver> activityRef) {
         this.MuseDriverRef = activityRef;

@@ -1,10 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-42:12
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\6852c137b4cc0202b1913e85a1ce2106\AndroidManifest.xml:2:1-11:12
+ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-ads-7.8.0.aar\71f7b44b5e3c8021e258a47a80029121\AndroidManifest.xml:16:1-33:12
 MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-location-7.8.0.aar\898775e4bf2913484151f1f98831556a\AndroidManifest.xml:16:1-20:12
 MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-analytics-7.8.0.aar\657f5e02cf054fa2e7437ac758e01a51\AndroidManifest.xml:16:1-25:12
@@ -18,9 +17,9 @@ MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\sserr\.gr
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\78e6b3ca002739f66765cea23ef81947\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\be3b4625e53bf0f908c1249d60ddc2ae\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\02bf3ab6548d205dc66de8e259ab41e3\AndroidManifest.xml:17:1-31:12
-INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml
@@ -39,8 +38,6 @@ uses-sdk
 ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:7:5-9:41
 INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:7:5-9:41
 INJECTED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\6852c137b4cc0202b1913e85a1ce2106\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\6852c137b4cc0202b1913e85a1ce2106\AndroidManifest.xml:7:5-43
 MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-ads-7.8.0.aar\71f7b44b5e3c8021e258a47a80029121\AndroidManifest.xml:23:5-42
 MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-ads-7.8.0.aar\71f7b44b5e3c8021e258a47a80029121\AndroidManifest.xml:23:5-42
 MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-location-7.8.0.aar\898775e4bf2913484151f1f98831556a\AndroidManifest.xml:18:5-42
@@ -116,9 +113,7 @@ ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\And
 	android:name
 		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:17:22-77
 application
-ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:19:5-40:19
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\6852c137b4cc0202b1913e85a1ce2106\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\6852c137b4cc0202b1913e85a1ce2106\AndroidManifest.xml:9:5-20
+ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:19:5-39:19
 MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-ads-7.8.0.aar\71f7b44b5e3c8021e258a47a80029121\AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-ads-7.8.0.aar\71f7b44b5e3c8021e258a47a80029121\AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-location-7.8.0.aar\898775e4bf2913484151f1f98831556a\AndroidManifest.xml:19:5-20
@@ -171,18 +166,12 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
 		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:31:27-74
-activity#com.multiDevCompApp.SelectDevicesActivity
-ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:34:9-36:48
-	android:exported
-		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:36:13-36
-	android:name
-		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:35:13-50
 activity#com.multiDevCompApp.BluetoothConnectionActivity
-ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:37:9-39:84
+ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:35:9-37:84
 	android:label
-		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:39:13-72
+		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:37:13-72
 	android:name
-		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:38:13-56
+		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:36:13-56
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-ads-7.8.0.aar\71f7b44b5e3c8021e258a47a80029121\AndroidManifest.xml:21:5-78
 MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-analytics-7.8.0.aar\657f5e02cf054fa2e7437ac758e01a51\AndroidManifest.xml:22:5-79

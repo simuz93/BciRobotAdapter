@@ -2,7 +2,6 @@ package com.multiDevCompApp.drivers;
 
 import android.util.Log;
 
-import com.multiDevCompApp.MainActivity;
 import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
 import com.orbotix.ConvenienceRobot;
 import com.orbotix.Sphero;
@@ -46,18 +45,22 @@ public class SpheroBB8Driver implements com.multiDevCompApp.drivers.interfaces.R
     }
 
     //Calibration
-    void startCalibrating(){
+    private void startCalibrating(){
         calibrating = true;
+        adapterActivity.log(3, "CALIBRAZIONE: porta il  joystick in basso per confermare");
         robot.calibrating(true);
     }
-    void stopCalibrating(){
+    private void stopCalibrating(){
         calibrating = false;
         robot.calibrating(false);
     }
 
     //Movimento
 
-    public void moveForward(double rotation, double speed){robot.drive((float) rotation, (float) speed);}
+    public void moveForward(double rotation, double speed){
+        robot.drive((float) rotation, (float) speed);
+        if(calibrating && rotation>170 && rotation < 190) stopCalibrating();
+    }
     public void moveBackward(double rotation, double speed) {robot.drive((float) rotation, (float)speed, true);}
 
     public void stop(){

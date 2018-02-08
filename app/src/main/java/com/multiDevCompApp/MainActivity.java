@@ -1,13 +1,7 @@
 package com.multiDevCompApp;
 
-import com.multiDevCompApp.drivers.SpheroBB8Driver;
-import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
-import com.multiDevCompApp.drivers.interfaces.Controller;
-import com.multiDevCompApp.drivers.MuseHeadsetDriver;
-import com.multiDevCompApp.drivers.interfaces.Robot;
-
 import android.app.Activity;
-
+import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -20,10 +14,23 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.bluetooth.BluetoothAdapter;
+
+
+import com.multiDevCompApp.drivers.MuseHeadsetDriver;
+import com.multiDevCompApp.drivers.PhoneAccelerometerDriver;
+import com.multiDevCompApp.drivers.SpheroBB8Driver;
+import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
+import com.multiDevCompApp.drivers.interfaces.Controller;
+import com.multiDevCompApp.drivers.interfaces.Robot;
+import com.multiDevCompApp.joystickLib.Joystick;
+import com.multiDevCompApp.joystickLib.JoystickListener;
 
 
 public class MainActivity extends Activity implements OnClickListener, AdapterActivity {
+
+
+        public Joystick joystick;
+        public JoystickListener joystickListener;
 
         //Name (Enum) of the devices in use
         private ControllerType controllerName = null;
@@ -37,11 +44,8 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
         private boolean controllerConnected = false;
         private boolean robotConnected = false;
 
-        //Spinners adapters
-        private ArrayAdapter<String> spinnerAdapterCtrl;
-        private ArrayAdapter<String> spinnerAdapterRobot;
 
-        @Override
+    @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
@@ -64,6 +68,9 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
         private void initUI() {
             //Set View, Spinners, Buttons, listeners
             setContentView(R.layout.activity_main);
+            joystick = (Joystick) findViewById(R.id.joystick);
+            joystickListener = new JSListener(this);
+            joystick.setJoystickListener(joystickListener);
             addButtonListener();
             setSpinners();
             onControllerConnected(false);
@@ -122,19 +129,6 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
             Button connectRobot = (Button) findViewById(R.id.connectRobot);
             connectRobot.setOnClickListener(this);
-
-            Button btnUp = (Button) findViewById(R.id.BtnUp);
-            btnUp.setOnClickListener(this);
-            Button btnL = (Button) findViewById(R.id.BtnL);
-            btnL.setOnClickListener(this);
-            Button btnR = (Button) findViewById(R.id.BtnR);
-            btnR.setOnClickListener(this);
-            Button btnDown = (Button) findViewById(R.id.BtnDown);
-            btnDown.setOnClickListener(this);
-
-            Button btnMid = (Button) findViewById(R.id.BtnMid);
-            btnMid.setOnClickListener(this);
-
             Button disconnectCtrlBtn = (Button) findViewById(R.id.disconnectCtrl);
             disconnectCtrlBtn.setOnClickListener(this);
             Button disconnectRobotBtn = (Button) findViewById(R.id.disconnectRobot);
@@ -143,14 +137,14 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
         private void setSpinners() {
 
-            spinnerAdapterCtrl = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
+            ArrayAdapter<String> spinnerAdapterCtrl = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
             Spinner spinnerCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
             for(ControllerType ct : ControllerType.values()) {
                 spinnerAdapterCtrl.add(ct.toString());
             }
             spinnerCtrl.setAdapter(spinnerAdapterCtrl);
 
-            spinnerAdapterRobot = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
+            ArrayAdapter<String> spinnerAdapterRobot = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
             Spinner spinnerRobot = (Spinner) findViewById(R.id.spinnerRobot);
             for(RobotType rt : RobotType.values()) {
                 spinnerAdapterRobot.add(rt.toString());
@@ -166,7 +160,9 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
                 case MUSE_HEADBAND:
                     controller = new MuseHeadsetDriver(this);
                     break;
-
+                case PHONE_ACCELEROMETER:
+                    controller = new PhoneAccelerometerDriver(this);
+                    break;
                 case MINDWAVE_HEADBAND:
                 case MYO_ARMBAND:
                 case EPOC_INSIGHT_HEADBAND:
@@ -233,27 +229,6 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
                         robot.disconnect();
                         robot = null;
                     }
-                    break;
-
-                //Buttons cases
-                case R.id.BtnUp:
-                    if(checkRobot())robot.moveForward(0, 0.2); //static
-                    break;
-
-                case R.id.BtnL:
-                    if(checkRobot())robot.turnL(90);
-                    break;
-
-                case R.id.BtnMid:
-                    if(checkRobot())robot.stop();
-                    break;
-
-                case R.id.BtnR:
-                    if(checkRobot())robot.turnR(90);
-                    break;
-
-                case R.id.BtnDown:
-                    if(checkRobot())robot.moveBackward(180, 0.2); //static
                     break;
 
                 default:
@@ -324,6 +299,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             @Override
             public void onReceive(Context context, Intent intent) {
                 final String action = intent.getAction();
+                assert action != null;
                 if (action.equals(BluetoothAdapter.ACTION_STATE_CHANGED)) {
                     final int state = intent.getIntExtra(BluetoothAdapter.EXTRA_STATE,
                             BluetoothAdapter.ERROR);
@@ -340,6 +316,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             // Check if location is still enabled
             final LocationManager mLocationManager = (LocationManager) getSystemService(
                     Context.LOCATION_SERVICE );
+            assert mLocationManager != null;
             if (!mLocationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
                 startActivity(new Intent(MainActivity.this, BluetoothConnectionActivity.class));
             }
@@ -375,4 +352,29 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             System.out.println("LOG "+n+": "+toWrite);
         }
 
+}
+
+class JSListener implements com.multiDevCompApp.joystickLib.JoystickListener {
+
+    private AdapterActivity mainActivity;
+
+    JSListener(AdapterActivity mainActivity) {
+        this.mainActivity = mainActivity;
+    }
+
+    @Override
+    public void onDown() {
+
+    }
+
+    @Override
+    public void onDrag(float degrees, float offset) {
+        if(offset == 0) mainActivity.stop();
+        else mainActivity.moveForward(degrees, offset);
+    }
+
+    @Override
+    public void onUp() {
+        mainActivity.stop();
+    }
 }

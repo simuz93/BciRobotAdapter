@@ -17,19 +17,19 @@ public final class R {
         public static final int cameraTilt = 0x7f010006;
         public static final int cameraZoom = 0x7f010007;
         public static final int circleCrop = 0x7f010008;
-        public static final int imageAspectRatio = 0x7f01000a;
-        public static final int imageAspectRatioAdjust = 0x7f01000b;
-        public static final int liteMode = 0x7f010037;
-        public static final int mapType = 0x7f010038;
-        public static final int uiCompass = 0x7f010039;
-        public static final int uiMapToolbar = 0x7f01003a;
-        public static final int uiRotateGestures = 0x7f01003b;
-        public static final int uiScrollGestures = 0x7f01003c;
-        public static final int uiTiltGestures = 0x7f01003d;
-        public static final int uiZoomControls = 0x7f01003e;
-        public static final int uiZoomGestures = 0x7f01003f;
-        public static final int useViewLifecycle = 0x7f010040;
-        public static final int zOrderOnTop = 0x7f010041;
+        public static final int imageAspectRatio = 0x7f01000b;
+        public static final int imageAspectRatioAdjust = 0x7f01000c;
+        public static final int liteMode = 0x7f010038;
+        public static final int mapType = 0x7f010039;
+        public static final int uiCompass = 0x7f01003d;
+        public static final int uiMapToolbar = 0x7f01003e;
+        public static final int uiRotateGestures = 0x7f01003f;
+        public static final int uiScrollGestures = 0x7f010040;
+        public static final int uiTiltGestures = 0x7f010041;
+        public static final int uiZoomControls = 0x7f010042;
+        public static final int uiZoomGestures = 0x7f010043;
+        public static final int useViewLifecycle = 0x7f010044;
+        public static final int zOrderOnTop = 0x7f010045;
     }
     public static final class color {
         public static final int common_action_bar_splitter = 0x7f020000;
@@ -72,17 +72,17 @@ public final class R {
         public static final int common_signin_btn_text_normal_light = 0x7f040017;
         public static final int common_signin_btn_text_pressed_dark = 0x7f040018;
         public static final int common_signin_btn_text_pressed_light = 0x7f040019;
-        public static final int powered_by_google_dark = 0x7f04001b;
-        public static final int powered_by_google_light = 0x7f04001c;
+        public static final int powered_by_google_dark = 0x7f04001d;
+        public static final int powered_by_google_light = 0x7f04001e;
     }
     public static final class id {
-        public static final int adjust_height = 0x7f050006;
-        public static final int adjust_width = 0x7f050007;
-        public static final int hybrid = 0x7f050010;
-        public static final int none = 0x7f050014;
-        public static final int normal = 0x7f050015;
-        public static final int satellite = 0x7f050019;
-        public static final int terrain = 0x7f05001e;
+        public static final int adjust_height = 0x7f050004;
+        public static final int adjust_width = 0x7f050005;
+        public static final int hybrid = 0x7f05000e;
+        public static final int none = 0x7f050013;
+        public static final int normal = 0x7f050014;
+        public static final int satellite = 0x7f050018;
+        public static final int terrain = 0x7f05001d;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f060000;
@@ -140,11 +140,11 @@ public final class R {
         public static final int AdsAttrs_adSize = 0;
         public static final int AdsAttrs_adSizes = 1;
         public static final int AdsAttrs_adUnitId = 2;
-        public static final int[] LoadingImageView = { 0x7f010008, 0x7f01000a, 0x7f01000b };
+        public static final int[] LoadingImageView = { 0x7f010008, 0x7f01000b, 0x7f01000c };
         public static final int LoadingImageView_circleCrop = 0;
         public static final int LoadingImageView_imageAspectRatio = 1;
         public static final int LoadingImageView_imageAspectRatioAdjust = 2;
-        public static final int[] MapAttrs = { 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010037, 0x7f010038, 0x7f010039, 0x7f01003a, 0x7f01003b, 0x7f01003c, 0x7f01003d, 0x7f01003e, 0x7f01003f, 0x7f010040, 0x7f010041 };
+        public static final int[] MapAttrs = { 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010038, 0x7f010039, 0x7f01003d, 0x7f01003e, 0x7f01003f, 0x7f010040, 0x7f010041, 0x7f010042, 0x7f010043, 0x7f010044, 0x7f010045 };
         public static final int MapAttrs_cameraBearing = 0;
         public static final int MapAttrs_cameraTargetLat = 1;
         public static final int MapAttrs_cameraTargetLng = 2;

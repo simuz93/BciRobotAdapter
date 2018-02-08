@@ -57,9 +57,14 @@ public final class R {
      */
     public static final int constraintSet=0x7f010009;
     /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int force_square=0x7f01000a;
+    /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int imageAspectRatio=0x7f01000a;
+    public static final int imageAspectRatio=0x7f01000b;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -72,11 +77,11 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int imageAspectRatioAdjust=0x7f01000b;
+    public static final int imageAspectRatioAdjust=0x7f01000c;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintBaseline_creator=0x7f01000c;
+    public static final int layout_constraintBaseline_creator=0x7f01000d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -91,11 +96,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBaseline_toBaselineOf=0x7f01000d;
+    public static final int layout_constraintBaseline_toBaselineOf=0x7f01000e;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintBottom_creator=0x7f01000e;
+    public static final int layout_constraintBottom_creator=0x7f01000f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -110,7 +115,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBottom_toBottomOf=0x7f01000f;
+    public static final int layout_constraintBottom_toBottomOf=0x7f010010;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -125,12 +130,12 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBottom_toTopOf=0x7f010010;
+    public static final int layout_constraintBottom_toTopOf=0x7f010011;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_constraintDimensionRatio=0x7f010011;
+    public static final int layout_constraintDimensionRatio=0x7f010012;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -145,7 +150,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintEnd_toEndOf=0x7f010012;
+    public static final int layout_constraintEnd_toEndOf=0x7f010013;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -160,7 +165,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintEnd_toStartOf=0x7f010013;
+    public static final int layout_constraintEnd_toStartOf=0x7f010014;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -168,7 +173,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintGuide_begin=0x7f010014;
+    public static final int layout_constraintGuide_begin=0x7f010015;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -176,11 +181,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintGuide_end=0x7f010015;
+    public static final int layout_constraintGuide_end=0x7f010016;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintGuide_percent=0x7f010016;
+    public static final int layout_constraintGuide_percent=0x7f010017;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -192,7 +197,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_default=0x7f010017;
+    public static final int layout_constraintHeight_default=0x7f010018;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -200,7 +205,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintHeight_max=0x7f010018;
+    public static final int layout_constraintHeight_max=0x7f010019;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -208,11 +213,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintHeight_min=0x7f010019;
+    public static final int layout_constraintHeight_min=0x7f01001a;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHorizontal_bias=0x7f01001a;
+    public static final int layout_constraintHorizontal_bias=0x7f01001b;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -225,15 +230,15 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHorizontal_chainStyle=0x7f01001b;
+    public static final int layout_constraintHorizontal_chainStyle=0x7f01001c;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHorizontal_weight=0x7f01001c;
+    public static final int layout_constraintHorizontal_weight=0x7f01001d;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintLeft_creator=0x7f01001d;
+    public static final int layout_constraintLeft_creator=0x7f01001e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -248,7 +253,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintLeft_toLeftOf=0x7f01001e;
+    public static final int layout_constraintLeft_toLeftOf=0x7f01001f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -263,11 +268,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintLeft_toRightOf=0x7f01001f;
+    public static final int layout_constraintLeft_toRightOf=0x7f010020;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintRight_creator=0x7f010020;
+    public static final int layout_constraintRight_creator=0x7f010021;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -282,7 +287,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintRight_toLeftOf=0x7f010021;
+    public static final int layout_constraintRight_toLeftOf=0x7f010022;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -297,7 +302,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintRight_toRightOf=0x7f010022;
+    public static final int layout_constraintRight_toRightOf=0x7f010023;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -312,7 +317,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintStart_toEndOf=0x7f010023;
+    public static final int layout_constraintStart_toEndOf=0x7f010024;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -327,11 +332,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintStart_toStartOf=0x7f010024;
+    public static final int layout_constraintStart_toStartOf=0x7f010025;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintTop_creator=0x7f010025;
+    public static final int layout_constraintTop_creator=0x7f010026;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -346,7 +351,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintTop_toBottomOf=0x7f010026;
+    public static final int layout_constraintTop_toBottomOf=0x7f010027;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -361,11 +366,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintTop_toTopOf=0x7f010027;
+    public static final int layout_constraintTop_toTopOf=0x7f010028;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintVertical_bias=0x7f010028;
+    public static final int layout_constraintVertical_bias=0x7f010029;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -378,11 +383,11 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintVertical_chainStyle=0x7f010029;
+    public static final int layout_constraintVertical_chainStyle=0x7f01002a;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintVertical_weight=0x7f01002a;
+    public static final int layout_constraintVertical_weight=0x7f01002b;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -394,7 +399,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_default=0x7f01002b;
+    public static final int layout_constraintWidth_default=0x7f01002c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -402,7 +407,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintWidth_max=0x7f01002c;
+    public static final int layout_constraintWidth_max=0x7f01002d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -410,7 +415,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintWidth_min=0x7f01002d;
+    public static final int layout_constraintWidth_min=0x7f01002e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -418,7 +423,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_editor_absoluteX=0x7f01002e;
+    public static final int layout_editor_absoluteX=0x7f01002f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -426,7 +431,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_editor_absoluteY=0x7f01002f;
+    public static final int layout_editor_absoluteY=0x7f010030;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -434,7 +439,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginBottom=0x7f010030;
+    public static final int layout_goneMarginBottom=0x7f010031;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -442,7 +447,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginEnd=0x7f010031;
+    public static final int layout_goneMarginEnd=0x7f010032;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -450,7 +455,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginLeft=0x7f010032;
+    public static final int layout_goneMarginLeft=0x7f010033;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -458,7 +463,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginRight=0x7f010033;
+    public static final int layout_goneMarginRight=0x7f010034;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -466,7 +471,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginStart=0x7f010034;
+    public static final int layout_goneMarginStart=0x7f010035;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -474,7 +479,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginTop=0x7f010035;
+    public static final int layout_goneMarginTop=0x7f010036;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -488,12 +493,12 @@ public final class R {
      * <tr><td>none</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_optimizationLevel=0x7f010036;
+    public static final int layout_optimizationLevel=0x7f010037;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int liteMode=0x7f010037;
+    public static final int liteMode=0x7f010038;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -508,52 +513,78 @@ public final class R {
      * <tr><td>terrain</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int mapType=0x7f010038;
+    public static final int mapType=0x7f010039;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>Horizontal</td><td>1</td><td></td></tr>
+     * <tr><td>None</td><td>0</td><td></td></tr>
+     * <tr><td>Vertical</td><td>2</td><td></td></tr>
+     * </table>
+     */
+    public static final int motion_constraint=0x7f01003a;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int radius=0x7f01003b;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiCompass=0x7f010039;
+    public static final int start_on_first_touch=0x7f01003c;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiMapToolbar=0x7f01003a;
+    public static final int uiCompass=0x7f01003d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiRotateGestures=0x7f01003b;
+    public static final int uiMapToolbar=0x7f01003e;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiScrollGestures=0x7f01003c;
+    public static final int uiRotateGestures=0x7f01003f;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiTiltGestures=0x7f01003d;
+    public static final int uiScrollGestures=0x7f010040;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiZoomControls=0x7f01003e;
+    public static final int uiTiltGestures=0x7f010041;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiZoomGestures=0x7f01003f;
+    public static final int uiZoomControls=0x7f010042;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int useViewLifecycle=0x7f010040;
+    public static final int uiZoomGestures=0x7f010043;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int zOrderOnTop=0x7f010041;
+    public static final int useViewLifecycle=0x7f010044;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int zOrderOnTop=0x7f010045;
   }
   public static final class color {
     public static final int common_action_bar_splitter=0x7f020000;
@@ -601,42 +632,43 @@ public final class R {
     public static final int common_signin_btn_text_pressed_dark=0x7f040018;
     public static final int common_signin_btn_text_pressed_light=0x7f040019;
     public static final int ic_launcher=0x7f04001a;
-    public static final int powered_by_google_dark=0x7f04001b;
-    public static final int powered_by_google_light=0x7f04001c;
+    public static final int joystick_background=0x7f04001b;
+    public static final int joystick_button=0x7f04001c;
+    public static final int powered_by_google_dark=0x7f04001d;
+    public static final int powered_by_google_light=0x7f04001e;
   }
   public static final class id {
-    public static final int BtnDown=0x7f050000;
-    public static final int BtnL=0x7f050001;
-    public static final int BtnMid=0x7f050002;
-    public static final int BtnR=0x7f050003;
-    public static final int BtnUp=0x7f050004;
-    public static final int action_settings=0x7f050005;
-    public static final int adjust_height=0x7f050006;
-    public static final int adjust_width=0x7f050007;
-    public static final int all=0x7f050008;
-    public static final int basic=0x7f050009;
-    public static final int chains=0x7f05000a;
-    public static final int connectCtrl=0x7f05000b;
-    public static final int connectRobot=0x7f05000c;
-    public static final int ctrlName=0x7f05000d;
-    public static final int disconnectCtrl=0x7f05000e;
-    public static final int disconnectRobot=0x7f05000f;
-    public static final int hybrid=0x7f050010;
-    public static final int log_1=0x7f050011;
-    public static final int log_2=0x7f050012;
-    public static final int log_3=0x7f050013;
-    public static final int none=0x7f050014;
-    public static final int normal=0x7f050015;
-    public static final int packed=0x7f050016;
-    public static final int parent=0x7f050017;
-    public static final int robotName=0x7f050018;
-    public static final int satellite=0x7f050019;
-    public static final int spinnerCtrl=0x7f05001a;
-    public static final int spinnerRobot=0x7f05001b;
-    public static final int spread=0x7f05001c;
-    public static final int spread_inside=0x7f05001d;
-    public static final int terrain=0x7f05001e;
-    public static final int wrap=0x7f05001f;
+    public static final int Horizontal=0x7f050000;
+    public static final int None=0x7f050001;
+    public static final int Vertical=0x7f050002;
+    public static final int action_settings=0x7f050003;
+    public static final int adjust_height=0x7f050004;
+    public static final int adjust_width=0x7f050005;
+    public static final int all=0x7f050006;
+    public static final int basic=0x7f050007;
+    public static final int chains=0x7f050008;
+    public static final int connectCtrl=0x7f050009;
+    public static final int connectRobot=0x7f05000a;
+    public static final int ctrlName=0x7f05000b;
+    public static final int disconnectCtrl=0x7f05000c;
+    public static final int disconnectRobot=0x7f05000d;
+    public static final int hybrid=0x7f05000e;
+    public static final int joystick=0x7f05000f;
+    public static final int log_1=0x7f050010;
+    public static final int log_2=0x7f050011;
+    public static final int log_3=0x7f050012;
+    public static final int none=0x7f050013;
+    public static final int normal=0x7f050014;
+    public static final int packed=0x7f050015;
+    public static final int parent=0x7f050016;
+    public static final int robotName=0x7f050017;
+    public static final int satellite=0x7f050018;
+    public static final int spinnerCtrl=0x7f050019;
+    public static final int spinnerRobot=0x7f05001a;
+    public static final int spread=0x7f05001b;
+    public static final int spread_inside=0x7f05001c;
+    public static final int terrain=0x7f05001d;
+    public static final int wrap=0x7f05001e;
   }
   public static final class integer {
     public static final int google_play_services_version=0x7f060000;
@@ -727,9 +759,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AdsAttrs_adSize com.choosemuse.example.libmuse:adSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AdsAttrs_adSizes com.choosemuse.example.libmuse:adSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AdsAttrs_adUnitId com.choosemuse.example.libmuse:adUnitId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adSize com.multiDevCompApp:adSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adSizes com.multiDevCompApp:adSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adUnitId com.multiDevCompApp:adUnitId}</code></td><td></td></tr>
      * </table>
      * @see #AdsAttrs_adSize
      * @see #AdsAttrs_adSizes
@@ -739,33 +771,33 @@ public final class R {
         0x7f010000, 0x7f010001, 0x7f010002
       };
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#adSize}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#adSize}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.choosemuse.example.libmuse:adSize
+     * @attr name com.multiDevCompApp:adSize
      */
     public static final int AdsAttrs_adSize=0;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#adSizes}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#adSizes}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.choosemuse.example.libmuse:adSizes
+     * @attr name com.multiDevCompApp:adSizes
      */
     public static final int AdsAttrs_adSizes=1;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#adUnitId}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#adUnitId}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.choosemuse.example.libmuse:adUnitId
+     * @attr name com.multiDevCompApp:adUnitId
      */
     public static final int AdsAttrs_adUnitId=2;
     /**
@@ -780,50 +812,50 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.choosemuse.example.libmuse:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.choosemuse.example.libmuse:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.choosemuse.example.libmuse:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.choosemuse.example.libmuse:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.choosemuse.example.libmuse:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.choosemuse.example.libmuse:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.choosemuse.example.libmuse:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.choosemuse.example.libmuse:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.choosemuse.example.libmuse:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.choosemuse.example.libmuse:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.choosemuse.example.libmuse:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.choosemuse.example.libmuse:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.choosemuse.example.libmuse:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.choosemuse.example.libmuse:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.choosemuse.example.libmuse:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.choosemuse.example.libmuse:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.choosemuse.example.libmuse:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.choosemuse.example.libmuse:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.choosemuse.example.libmuse:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.choosemuse.example.libmuse:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.choosemuse.example.libmuse:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.choosemuse.example.libmuse:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.choosemuse.example.libmuse:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.choosemuse.example.libmuse:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.choosemuse.example.libmuse:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.choosemuse.example.libmuse:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.choosemuse.example.libmuse:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.choosemuse.example.libmuse:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.choosemuse.example.libmuse:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.choosemuse.example.libmuse:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.choosemuse.example.libmuse:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.choosemuse.example.libmuse:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.choosemuse.example.libmuse:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.choosemuse.example.libmuse:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.choosemuse.example.libmuse:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.choosemuse.example.libmuse:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.choosemuse.example.libmuse:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.choosemuse.example.libmuse:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.choosemuse.example.libmuse:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.choosemuse.example.libmuse:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.choosemuse.example.libmuse:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.choosemuse.example.libmuse:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.choosemuse.example.libmuse:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.choosemuse.example.libmuse:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.multiDevCompApp:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.multiDevCompApp:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.multiDevCompApp:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.multiDevCompApp:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.multiDevCompApp:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.multiDevCompApp:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.multiDevCompApp:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.multiDevCompApp:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.multiDevCompApp:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.multiDevCompApp:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.multiDevCompApp:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.multiDevCompApp:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.multiDevCompApp:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.multiDevCompApp:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.multiDevCompApp:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.multiDevCompApp:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.multiDevCompApp:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.multiDevCompApp:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.multiDevCompApp:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.multiDevCompApp:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.multiDevCompApp:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.multiDevCompApp:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.multiDevCompApp:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.multiDevCompApp:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.multiDevCompApp:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.multiDevCompApp:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.multiDevCompApp:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.multiDevCompApp:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.multiDevCompApp:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.multiDevCompApp:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.multiDevCompApp:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.multiDevCompApp:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.multiDevCompApp:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.multiDevCompApp:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.multiDevCompApp:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.multiDevCompApp:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.multiDevCompApp:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.multiDevCompApp:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.multiDevCompApp:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.multiDevCompApp:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.multiDevCompApp:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.multiDevCompApp:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.multiDevCompApp:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.multiDevCompApp:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -877,18 +909,18 @@ public final class R {
      */
     public static final int[] ConstraintLayout_Layout={
         0x010100c4, 0x0101011f, 0x01010120, 0x0101013f, 
-        0x01010140, 0x7f010009, 0x7f01000c, 0x7f01000d, 
-        0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 
-        0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015, 
-        0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 
-        0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 
-        0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021, 
-        0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 
-        0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 
-        0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d, 
-        0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031, 
-        0x7f010032, 0x7f010033, 0x7f010034, 0x7f010035, 
-        0x7f010036
+        0x01010140, 0x7f010009, 0x7f01000d, 0x7f01000e, 
+        0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 
+        0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016, 
+        0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 
+        0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 
+        0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022, 
+        0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 
+        0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 
+        0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e, 
+        0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032, 
+        0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036, 
+        0x7f010037
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#maxHeight}
@@ -960,7 +992,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_orientation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -968,20 +1000,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.choosemuse.example.libmuse:constraintSet
+     * @attr name com.multiDevCompApp:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=5;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBaseline_creator
+     * @attr name com.multiDevCompApp:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=6;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -997,20 +1029,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBaseline_toBaselineOf
+     * @attr name com.multiDevCompApp:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=7;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBottom_creator
+     * @attr name com.multiDevCompApp:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=8;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1026,11 +1058,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBottom_toBottomOf
+     * @attr name com.multiDevCompApp:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=9;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1046,21 +1078,21 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBottom_toTopOf
+     * @attr name com.multiDevCompApp:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=10;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintDimensionRatio
+     * @attr name com.multiDevCompApp:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=11;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1076,11 +1108,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintEnd_toEndOf
+     * @attr name com.multiDevCompApp:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=12;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1096,11 +1128,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintEnd_toStartOf
+     * @attr name com.multiDevCompApp:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=13;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1109,11 +1141,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintGuide_begin
+     * @attr name com.multiDevCompApp:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=14;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1122,20 +1154,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintGuide_end
+     * @attr name com.multiDevCompApp:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=15;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintGuide_percent
+     * @attr name com.multiDevCompApp:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=16;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -1148,11 +1180,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHeight_default
+     * @attr name com.multiDevCompApp:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=17;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1161,11 +1193,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHeight_max
+     * @attr name com.multiDevCompApp:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=18;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1174,20 +1206,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHeight_min
+     * @attr name com.multiDevCompApp:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=19;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHorizontal_bias
+     * @attr name com.multiDevCompApp:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=20;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -1201,29 +1233,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHorizontal_chainStyle
+     * @attr name com.multiDevCompApp:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=21;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHorizontal_weight
+     * @attr name com.multiDevCompApp:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=22;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintLeft_creator
+     * @attr name com.multiDevCompApp:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=23;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1239,11 +1271,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintLeft_toLeftOf
+     * @attr name com.multiDevCompApp:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=24;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1259,20 +1291,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintLeft_toRightOf
+     * @attr name com.multiDevCompApp:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=25;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintRight_creator
+     * @attr name com.multiDevCompApp:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=26;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1288,11 +1320,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintRight_toLeftOf
+     * @attr name com.multiDevCompApp:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=27;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1308,11 +1340,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintRight_toRightOf
+     * @attr name com.multiDevCompApp:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=28;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1328,11 +1360,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintStart_toEndOf
+     * @attr name com.multiDevCompApp:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=29;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1348,20 +1380,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintStart_toStartOf
+     * @attr name com.multiDevCompApp:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=30;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintTop_creator
+     * @attr name com.multiDevCompApp:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=31;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1377,11 +1409,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintTop_toBottomOf
+     * @attr name com.multiDevCompApp:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=32;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -1397,20 +1429,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintTop_toTopOf
+     * @attr name com.multiDevCompApp:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=33;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintVertical_bias
+     * @attr name com.multiDevCompApp:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=34;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -1424,20 +1456,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintVertical_chainStyle
+     * @attr name com.multiDevCompApp:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintVertical_weight
+     * @attr name com.multiDevCompApp:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=36;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -1450,11 +1482,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintWidth_default
+     * @attr name com.multiDevCompApp:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=37;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1463,11 +1495,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintWidth_max
+     * @attr name com.multiDevCompApp:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=38;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1476,11 +1508,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintWidth_min
+     * @attr name com.multiDevCompApp:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=39;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1489,11 +1521,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_editor_absoluteX
+     * @attr name com.multiDevCompApp:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=40;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1502,11 +1534,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_editor_absoluteY
+     * @attr name com.multiDevCompApp:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=41;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1515,11 +1547,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginBottom
+     * @attr name com.multiDevCompApp:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=42;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1528,11 +1560,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginEnd
+     * @attr name com.multiDevCompApp:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=43;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1541,11 +1573,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginLeft
+     * @attr name com.multiDevCompApp:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=44;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1554,11 +1586,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginRight
+     * @attr name com.multiDevCompApp:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=45;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1567,11 +1599,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginStart
+     * @attr name com.multiDevCompApp:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=46;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1580,11 +1612,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginTop
+     * @attr name com.multiDevCompApp:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=47;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -1599,7 +1631,7 @@ public final class R {
      * <tr><td>none</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_optimizationLevel
+     * @attr name com.multiDevCompApp:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=48;
     /**
@@ -1631,48 +1663,48 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.choosemuse.example.libmuse:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.choosemuse.example.libmuse:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.choosemuse.example.libmuse:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.choosemuse.example.libmuse:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.choosemuse.example.libmuse:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.choosemuse.example.libmuse:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.choosemuse.example.libmuse:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.choosemuse.example.libmuse:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.choosemuse.example.libmuse:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.choosemuse.example.libmuse:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.choosemuse.example.libmuse:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.choosemuse.example.libmuse:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.choosemuse.example.libmuse:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.choosemuse.example.libmuse:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.choosemuse.example.libmuse:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.choosemuse.example.libmuse:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.choosemuse.example.libmuse:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.choosemuse.example.libmuse:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.choosemuse.example.libmuse:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.choosemuse.example.libmuse:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.choosemuse.example.libmuse:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.choosemuse.example.libmuse:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.choosemuse.example.libmuse:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.choosemuse.example.libmuse:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.choosemuse.example.libmuse:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.choosemuse.example.libmuse:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.choosemuse.example.libmuse:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.choosemuse.example.libmuse:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.choosemuse.example.libmuse:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.choosemuse.example.libmuse:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.choosemuse.example.libmuse:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.choosemuse.example.libmuse:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.choosemuse.example.libmuse:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.choosemuse.example.libmuse:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.choosemuse.example.libmuse:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.choosemuse.example.libmuse:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.choosemuse.example.libmuse:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.choosemuse.example.libmuse:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.choosemuse.example.libmuse:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.choosemuse.example.libmuse:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.choosemuse.example.libmuse:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.choosemuse.example.libmuse:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.multiDevCompApp:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.multiDevCompApp:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.multiDevCompApp:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.multiDevCompApp:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.multiDevCompApp:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.multiDevCompApp:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.multiDevCompApp:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.multiDevCompApp:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.multiDevCompApp:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.multiDevCompApp:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.multiDevCompApp:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.multiDevCompApp:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.multiDevCompApp:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.multiDevCompApp:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.multiDevCompApp:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.multiDevCompApp:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.multiDevCompApp:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.multiDevCompApp:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.multiDevCompApp:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.multiDevCompApp:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.multiDevCompApp:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.multiDevCompApp:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.multiDevCompApp:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.multiDevCompApp:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.multiDevCompApp:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.multiDevCompApp:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.multiDevCompApp:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.multiDevCompApp:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.multiDevCompApp:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.multiDevCompApp:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.multiDevCompApp:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.multiDevCompApp:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.multiDevCompApp:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.multiDevCompApp:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.multiDevCompApp:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.multiDevCompApp:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.multiDevCompApp:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.multiDevCompApp:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.multiDevCompApp:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.multiDevCompApp:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.multiDevCompApp:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.multiDevCompApp:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -1745,17 +1777,17 @@ public final class R {
         0x010100fa, 0x0101031f, 0x01010320, 0x01010321, 
         0x01010322, 0x01010323, 0x01010324, 0x01010325, 
         0x01010327, 0x01010328, 0x010103b5, 0x010103b6, 
-        0x010103fa, 0x01010440, 0x7f01000c, 0x7f01000d, 
-        0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 
-        0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015, 
-        0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 
-        0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 
-        0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021, 
-        0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 
-        0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 
-        0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d, 
-        0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031, 
-        0x7f010032, 0x7f010033, 0x7f010034, 0x7f010035
+        0x010103fa, 0x01010440, 0x7f01000d, 0x7f01000e, 
+        0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 
+        0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016, 
+        0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 
+        0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 
+        0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022, 
+        0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 
+        0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 
+        0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e, 
+        0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032, 
+        0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#alpha}
@@ -2052,16 +2084,16 @@ public final class R {
      */
     public static final int ConstraintSet_android_visibility=2;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBaseline_creator
+     * @attr name com.multiDevCompApp:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=22;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2077,20 +2109,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBaseline_toBaselineOf
+     * @attr name com.multiDevCompApp:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=23;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBottom_creator
+     * @attr name com.multiDevCompApp:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=24;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2106,11 +2138,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBottom_toBottomOf
+     * @attr name com.multiDevCompApp:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=25;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2126,21 +2158,21 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintBottom_toTopOf
+     * @attr name com.multiDevCompApp:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=26;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintDimensionRatio
+     * @attr name com.multiDevCompApp:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=27;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2156,11 +2188,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintEnd_toEndOf
+     * @attr name com.multiDevCompApp:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=28;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2176,11 +2208,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintEnd_toStartOf
+     * @attr name com.multiDevCompApp:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=29;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2189,11 +2221,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintGuide_begin
+     * @attr name com.multiDevCompApp:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=30;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2202,20 +2234,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintGuide_end
+     * @attr name com.multiDevCompApp:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=31;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintGuide_percent
+     * @attr name com.multiDevCompApp:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=32;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -2228,11 +2260,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHeight_default
+     * @attr name com.multiDevCompApp:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=33;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2241,11 +2273,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHeight_max
+     * @attr name com.multiDevCompApp:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=34;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2254,20 +2286,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHeight_min
+     * @attr name com.multiDevCompApp:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=35;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHorizontal_bias
+     * @attr name com.multiDevCompApp:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=36;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -2281,29 +2313,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHorizontal_chainStyle
+     * @attr name com.multiDevCompApp:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintHorizontal_weight
+     * @attr name com.multiDevCompApp:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=38;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintLeft_creator
+     * @attr name com.multiDevCompApp:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=39;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2319,11 +2351,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintLeft_toLeftOf
+     * @attr name com.multiDevCompApp:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=40;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2339,20 +2371,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintLeft_toRightOf
+     * @attr name com.multiDevCompApp:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=41;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintRight_creator
+     * @attr name com.multiDevCompApp:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=42;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2368,11 +2400,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintRight_toLeftOf
+     * @attr name com.multiDevCompApp:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2388,11 +2420,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintRight_toRightOf
+     * @attr name com.multiDevCompApp:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=44;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2408,11 +2440,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintStart_toEndOf
+     * @attr name com.multiDevCompApp:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=45;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2428,20 +2460,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintStart_toStartOf
+     * @attr name com.multiDevCompApp:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=46;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintTop_creator
+     * @attr name com.multiDevCompApp:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=47;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2457,11 +2489,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintTop_toBottomOf
+     * @attr name com.multiDevCompApp:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=48;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -2477,20 +2509,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintTop_toTopOf
+     * @attr name com.multiDevCompApp:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=49;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintVertical_bias
+     * @attr name com.multiDevCompApp:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=50;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -2504,20 +2536,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintVertical_chainStyle
+     * @attr name com.multiDevCompApp:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=51;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintVertical_weight
+     * @attr name com.multiDevCompApp:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -2530,11 +2562,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintWidth_default
+     * @attr name com.multiDevCompApp:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=53;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2543,11 +2575,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintWidth_max
+     * @attr name com.multiDevCompApp:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=54;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2556,11 +2588,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_constraintWidth_min
+     * @attr name com.multiDevCompApp:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=55;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2569,11 +2601,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_editor_absoluteX
+     * @attr name com.multiDevCompApp:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=56;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2582,11 +2614,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_editor_absoluteY
+     * @attr name com.multiDevCompApp:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=57;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2595,11 +2627,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginBottom
+     * @attr name com.multiDevCompApp:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=58;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2608,11 +2640,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginEnd
+     * @attr name com.multiDevCompApp:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=59;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2621,11 +2653,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginLeft
+     * @attr name com.multiDevCompApp:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=60;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2634,11 +2666,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginRight
+     * @attr name com.multiDevCompApp:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=61;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2647,11 +2679,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginStart
+     * @attr name com.multiDevCompApp:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=62;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2660,9 +2692,80 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.choosemuse.example.libmuse:layout_goneMarginTop
+     * @attr name com.multiDevCompApp:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=63;
+    /**
+     * Attributes that can be used with a Joystick.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Joystick_force_square com.multiDevCompApp:force_square}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Joystick_motion_constraint com.multiDevCompApp:motion_constraint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Joystick_radius com.multiDevCompApp:radius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Joystick_start_on_first_touch com.multiDevCompApp:start_on_first_touch}</code></td><td></td></tr>
+     * </table>
+     * @see #Joystick_force_square
+     * @see #Joystick_motion_constraint
+     * @see #Joystick_radius
+     * @see #Joystick_start_on_first_touch
+     */
+    public static final int[] Joystick={
+        0x7f01000a, 0x7f01003a, 0x7f01003b, 0x7f01003c
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#force_square}
+     * attribute's value can be found in the {@link #Joystick} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.multiDevCompApp:force_square
+     */
+    public static final int Joystick_force_square=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#motion_constraint}
+     * attribute's value can be found in the {@link #Joystick} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>Horizontal</td><td>1</td><td></td></tr>
+     * <tr><td>None</td><td>0</td><td></td></tr>
+     * <tr><td>Vertical</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.multiDevCompApp:motion_constraint
+     */
+    public static final int Joystick_motion_constraint=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#radius}
+     * attribute's value can be found in the {@link #Joystick} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.multiDevCompApp:radius
+     */
+    public static final int Joystick_radius=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#start_on_first_touch}
+     * attribute's value can be found in the {@link #Joystick} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.multiDevCompApp:start_on_first_touch
+     */
+    public static final int Joystick_start_on_first_touch=3;
     /**
      * Attributes that can be used with a LinearConstraintLayout.
      * <p>Includes the following attributes:</p>
@@ -2701,38 +2804,38 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LoadingImageView_circleCrop com.choosemuse.example.libmuse:circleCrop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.choosemuse.example.libmuse:imageAspectRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.choosemuse.example.libmuse:imageAspectRatioAdjust}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_circleCrop com.multiDevCompApp:circleCrop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.multiDevCompApp:imageAspectRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.multiDevCompApp:imageAspectRatioAdjust}</code></td><td></td></tr>
      * </table>
      * @see #LoadingImageView_circleCrop
      * @see #LoadingImageView_imageAspectRatio
      * @see #LoadingImageView_imageAspectRatioAdjust
      */
     public static final int[] LoadingImageView={
-        0x7f010008, 0x7f01000a, 0x7f01000b
+        0x7f010008, 0x7f01000b, 0x7f01000c
       };
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#circleCrop}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#circleCrop}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:circleCrop
+     * @attr name com.multiDevCompApp:circleCrop
      */
     public static final int LoadingImageView_circleCrop=0;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#imageAspectRatio}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#imageAspectRatio}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:imageAspectRatio
+     * @attr name com.multiDevCompApp:imageAspectRatio
      */
     public static final int LoadingImageView_imageAspectRatio=1;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#imageAspectRatioAdjust}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#imageAspectRatioAdjust}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -2746,7 +2849,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:imageAspectRatioAdjust
+     * @attr name com.multiDevCompApp:imageAspectRatioAdjust
      */
     public static final int LoadingImageView_imageAspectRatioAdjust=2;
     /**
@@ -2756,22 +2859,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraBearing com.choosemuse.example.libmuse:cameraBearing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraTargetLat com.choosemuse.example.libmuse:cameraTargetLat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraTargetLng com.choosemuse.example.libmuse:cameraTargetLng}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraTilt com.choosemuse.example.libmuse:cameraTilt}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraZoom com.choosemuse.example.libmuse:cameraZoom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_liteMode com.choosemuse.example.libmuse:liteMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_mapType com.choosemuse.example.libmuse:mapType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiCompass com.choosemuse.example.libmuse:uiCompass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiMapToolbar com.choosemuse.example.libmuse:uiMapToolbar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiRotateGestures com.choosemuse.example.libmuse:uiRotateGestures}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiScrollGestures com.choosemuse.example.libmuse:uiScrollGestures}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiTiltGestures com.choosemuse.example.libmuse:uiTiltGestures}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiZoomControls com.choosemuse.example.libmuse:uiZoomControls}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiZoomGestures com.choosemuse.example.libmuse:uiZoomGestures}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_useViewLifecycle com.choosemuse.example.libmuse:useViewLifecycle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_zOrderOnTop com.choosemuse.example.libmuse:zOrderOnTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraBearing com.multiDevCompApp:cameraBearing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLat com.multiDevCompApp:cameraTargetLat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLng com.multiDevCompApp:cameraTargetLng}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTilt com.multiDevCompApp:cameraTilt}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraZoom com.multiDevCompApp:cameraZoom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_liteMode com.multiDevCompApp:liteMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_mapType com.multiDevCompApp:mapType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiCompass com.multiDevCompApp:uiCompass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiMapToolbar com.multiDevCompApp:uiMapToolbar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiRotateGestures com.multiDevCompApp:uiRotateGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGestures com.multiDevCompApp:uiScrollGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiTiltGestures com.multiDevCompApp:uiTiltGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomControls com.multiDevCompApp:uiZoomControls}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomGestures com.multiDevCompApp:uiZoomGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_useViewLifecycle com.multiDevCompApp:useViewLifecycle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_zOrderOnTop com.multiDevCompApp:zOrderOnTop}</code></td><td></td></tr>
      * </table>
      * @see #MapAttrs_cameraBearing
      * @see #MapAttrs_cameraTargetLat
@@ -2792,67 +2895,67 @@ public final class R {
      */
     public static final int[] MapAttrs={
         0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 
-        0x7f010007, 0x7f010037, 0x7f010038, 0x7f010039, 
-        0x7f01003a, 0x7f01003b, 0x7f01003c, 0x7f01003d, 
-        0x7f01003e, 0x7f01003f, 0x7f010040, 0x7f010041
+        0x7f010007, 0x7f010038, 0x7f010039, 0x7f01003d, 
+        0x7f01003e, 0x7f01003f, 0x7f010040, 0x7f010041, 
+        0x7f010042, 0x7f010043, 0x7f010044, 0x7f010045
       };
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#cameraBearing}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#cameraBearing}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:cameraBearing
+     * @attr name com.multiDevCompApp:cameraBearing
      */
     public static final int MapAttrs_cameraBearing=0;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#cameraTargetLat}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#cameraTargetLat}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:cameraTargetLat
+     * @attr name com.multiDevCompApp:cameraTargetLat
      */
     public static final int MapAttrs_cameraTargetLat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#cameraTargetLng}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#cameraTargetLng}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:cameraTargetLng
+     * @attr name com.multiDevCompApp:cameraTargetLng
      */
     public static final int MapAttrs_cameraTargetLng=2;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#cameraTilt}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#cameraTilt}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:cameraTilt
+     * @attr name com.multiDevCompApp:cameraTilt
      */
     public static final int MapAttrs_cameraTilt=3;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#cameraZoom}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#cameraZoom}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:cameraZoom
+     * @attr name com.multiDevCompApp:cameraZoom
      */
     public static final int MapAttrs_cameraZoom=4;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#liteMode}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#liteMode}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:liteMode
+     * @attr name com.multiDevCompApp:liteMode
      */
     public static final int MapAttrs_liteMode=5;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#mapType}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#mapType}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -2868,97 +2971,97 @@ public final class R {
      * <tr><td>terrain</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.choosemuse.example.libmuse:mapType
+     * @attr name com.multiDevCompApp:mapType
      */
     public static final int MapAttrs_mapType=6;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#uiCompass}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#uiCompass}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:uiCompass
+     * @attr name com.multiDevCompApp:uiCompass
      */
     public static final int MapAttrs_uiCompass=7;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#uiMapToolbar}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#uiMapToolbar}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:uiMapToolbar
+     * @attr name com.multiDevCompApp:uiMapToolbar
      */
     public static final int MapAttrs_uiMapToolbar=8;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#uiRotateGestures}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#uiRotateGestures}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:uiRotateGestures
+     * @attr name com.multiDevCompApp:uiRotateGestures
      */
     public static final int MapAttrs_uiRotateGestures=9;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#uiScrollGestures}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#uiScrollGestures}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:uiScrollGestures
+     * @attr name com.multiDevCompApp:uiScrollGestures
      */
     public static final int MapAttrs_uiScrollGestures=10;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#uiTiltGestures}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#uiTiltGestures}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:uiTiltGestures
+     * @attr name com.multiDevCompApp:uiTiltGestures
      */
     public static final int MapAttrs_uiTiltGestures=11;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#uiZoomControls}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#uiZoomControls}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:uiZoomControls
+     * @attr name com.multiDevCompApp:uiZoomControls
      */
     public static final int MapAttrs_uiZoomControls=12;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#uiZoomGestures}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#uiZoomGestures}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:uiZoomGestures
+     * @attr name com.multiDevCompApp:uiZoomGestures
      */
     public static final int MapAttrs_uiZoomGestures=13;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#useViewLifecycle}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#useViewLifecycle}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:useViewLifecycle
+     * @attr name com.multiDevCompApp:useViewLifecycle
      */
     public static final int MapAttrs_useViewLifecycle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.choosemuse.example.libmuse.R.attr#zOrderOnTop}
+     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#zOrderOnTop}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.choosemuse.example.libmuse:zOrderOnTop
+     * @attr name com.multiDevCompApp:zOrderOnTop
      */
     public static final int MapAttrs_zOrderOnTop=15;
   }

@@ -104,6 +104,7 @@ public class BluetoothConnectionActivity extends Activity {
             }
         } else if (requestCode == LOCATION_ENABLE_RCODE){
             final LocationManager mLocationManager = (LocationManager) getSystemService( Context.LOCATION_SERVICE );
+            assert mLocationManager != null;
             if (mLocationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
                 lcIsOn = true;
                 checkToContinue();
@@ -123,6 +124,7 @@ public class BluetoothConnectionActivity extends Activity {
     // Attiva il GPS
     private void enableLocation() {
         final LocationManager mLocationManager = (LocationManager) getSystemService( Context.LOCATION_SERVICE );
+        assert mLocationManager != null;
         if (!mLocationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             displayLocationSettingsRequest(getApplicationContext());
         }else{

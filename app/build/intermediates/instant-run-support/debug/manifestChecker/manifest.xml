@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.choosemuse.example.libmuse"
+    package="com.multiDevCompApp"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -43,11 +43,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.multiDevCompApp.SelectDevicesActivity"
-            android:exported="true" />
-        <activity
             android:name="com.multiDevCompApp.BluetoothConnectionActivity"
             android:label="@string/title_activity_bluetooth_connection" />
+
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -63,7 +61,7 @@
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.choosemuse.example.libmuse.com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.multiDevCompApp.com.android.tools.ir.server.InstantRunContentProvider"
             android:multiprocess="true" />
     </application>
 

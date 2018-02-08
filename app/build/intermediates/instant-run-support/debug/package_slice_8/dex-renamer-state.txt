@@ -1,4 +1,4 @@
-#Wed Feb 07 15:06:57 CET 2018
-base.0=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+#Thu Feb 08 12:27:30 CET 2018
+base.0=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
 path.0=classes.dex
 renamed.0=classes.dex
