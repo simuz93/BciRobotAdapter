@@ -1,23 +1,27 @@
 #Internal package file, do not edit.
-#Thu Feb 08 12:22:52 CET 2018
-2.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+#Fri Feb 09 15:56:56 CET 2018
+7.path=classes.dex
+2.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 5.set=DEX
 0.path=classes.dex
 2.baseType=DIRECTORY
-3.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
-2.set=DEX
-1.path=lib/armeabi-v7a/libmuse_android.so
-4.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-count=7
+3.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+7.baseType=DIRECTORY
+2.set=NATIVE_RESOURCE
+1.path=lib/armeabi-v7a/libgesture-classifier.so
+4.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+7.set=DEX
+count=8
 5.baseType=DIRECTORY
-2.path=classes.dex
-5.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+2.path=lib/armeabi-v7a/libmuse_android.so
+5.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 4.set=DEX
 3.path=classes.dex
-6.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+6.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 3.baseType=DIRECTORY
 1.set=NATIVE_RESOURCE
 4.path=classes.dex
+7.base=C\:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 6.set=DEX
 1.baseType=DIRECTORY
 6.baseType=DIRECTORY

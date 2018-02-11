@@ -74,84 +74,24 @@
 
     </RelativeLayout>
 
-
-        <!--<RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/BtnUp"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:text="Forward" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/BtnL"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-
-
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:text="Left" />
-
-                <Button
-                    android:id="@+id/BtnMid"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:text="Stop" />
-
-                <Button
-                    android:id="@+id/BtnR"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:text="Right" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/BtnDown"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:text="Backward" />
-
-
-
-            </RelativeLayout>-->
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         xmlns:app = "http://schemas.android.com/apk/res-auto">
 
+        <Button
+            android:id="@+id/btnL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="L" />
+
         <com.multiDevCompApp.joystickLib.Joystick
             android:id="@+id/joystick"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/joystick_background"
             app:force_square="false"
@@ -165,6 +105,15 @@
                 android:background="@drawable/joystick_button" />
 
         </com.multiDevCompApp.joystickLib.Joystick>
+
+        <Button
+            android:id="@+id/btnR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="R" />
     </RelativeLayout>
 
     <TextView

@@ -22,14 +22,17 @@ import com.choosemuse.libmuse.MuseListener;
 import com.choosemuse.libmuse.MuseManagerAndroid;
 import com.choosemuse.libmuse.MuseVersion;
 import com.multiDevCompApp.R;
-import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
-import com.multiDevCompApp.drivers.interfaces.Controller;
+import com.multiDevCompApp.drivers.abstractDrivers.AbstractControllerDriver;
+import com.multiDevCompApp.drivers.driversInterfaces.AdapterActivity;
+import com.multiDevCompApp.drivers.driversInterfaces.Controller;
 
 import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
-public class MuseHeadsetDriver implements Controller {
+public class MuseHeadsetDriver extends AbstractControllerDriver {
 
     private static final int FREQUENCY = 5;
 
@@ -42,6 +45,7 @@ public class MuseHeadsetDriver implements Controller {
     private ConnectionListener connectionListener;
     private DataListener dataListener;
 
+    //private boolean active = true;
 
     public MuseHeadsetDriver(AdapterActivity adapterActivity) {
         this.adapterActivity = adapterActivity;
@@ -200,23 +204,42 @@ public class MuseHeadsetDriver implements Controller {
 
     private int count = 0;
 
+    double eeg_1 = 0;
+    double eeg_2 = 0 ;
+    double eeg_3 = 0;
+    double eeg_4 = 0;
+
+    double x = 0;
+    double y = 0;
+    double z = 0;
+
+    double alpha_1 = 0;
+    double alpha_2 = 0;
+    double alpha_3 = 0;
+    double alpha_4 = 0;
+
+    double beta_1 = 0;
+    double beta_2 = 0;
+    double beta_3 = 0;
+    double beta_4 = 0;
+
     @SuppressLint("DefaultLocale")
     void receiveMuseDataPacket(final MuseDataPacket p, final Muse muse) {
 
         if(count%FREQUENCY == 0) {
             switch (p.packetType()) {
                 case EEG:
-                    double eeg_1 = p.getEegChannelValue(Eeg.EEG1);
-                    double eeg_2 = p.getEegChannelValue(Eeg.EEG1);
-                    double eeg_3 = p.getEegChannelValue(Eeg.EEG1);
-                    double eeg_4 = p.getEegChannelValue(Eeg.EEG1);
-                    adapterActivity.log(1, "eeg ch1:" + String.format("%.2f", eeg_1) + " ch2:" + String.format("%.2f", eeg_2) + " ch3:" + String.format("%.2f", eeg_3) + " ch4:" + String.format("%.2f", eeg_4));
+                    eeg_1 = p.getEegChannelValue(Eeg.EEG1);
+                    eeg_2 = p.getEegChannelValue(Eeg.EEG1);
+                    eeg_3 = p.getEegChannelValue(Eeg.EEG1);
+                    eeg_4 = p.getEegChannelValue(Eeg.EEG1);
+                    //adapterActivity.log(1, "eeg ch1:" + String.format("%.2f", eeg_1) + " ch2:" + String.format("%.2f", eeg_2) + " ch3:" + String.format("%.2f", eeg_3) + " ch4:" + String.format("%.2f", eeg_4));
                     break;
 
                 case ACCELEROMETER:
-                    double x = p.getAccelerometerValue(Accelerometer.X);
-                    double y = p.getAccelerometerValue(Accelerometer.Y);
-                    double z = p.getAccelerometerValue(Accelerometer.Z);
+                    x = p.getAccelerometerValue(Accelerometer.X);
+                    y = p.getAccelerometerValue(Accelerometer.Y);
+                    z = p.getAccelerometerValue(Accelerometer.Z);
                     adapterActivity.log(2,"acc X:" + String.format("%.3f", x) + " Y:" + String.format("%.3f", y) + " Z:" + String.format("%.3f", z));
 
                     /*
@@ -249,11 +272,38 @@ public class MuseHeadsetDriver implements Controller {
                     break;
 
                 case ALPHA_RELATIVE:
-                    double alpha_1 = p.getEegChannelValue(Eeg.EEG1);
-                    double alpha_2 = p.getEegChannelValue(Eeg.EEG2);
-                    double alpha_3 = p.getEegChannelValue(Eeg.EEG3);
-                    double alpha_4 = p.getEegChannelValue(Eeg.EEG4);
-                    adapterActivity.log(3, "alpha ch1:" + String.format("%.2f", alpha_1) + " ch2:" + String.format("%.2f", alpha_2) + " ch3:" + String.format("%.2f", alpha_3) + " ch4:" + String.format("%.2f", alpha_4));
+                    alpha_1 = p.getEegChannelValue(Eeg.EEG1);
+                    alpha_2 = p.getEegChannelValue(Eeg.EEG2);
+                    alpha_3 = p.getEegChannelValue(Eeg.EEG3);
+                    alpha_4 = p.getEegChannelValue(Eeg.EEG4);
+                    double alpha_sum = alpha_1+alpha_2+alpha_3+alpha_4;
+                    if(super.active) {
+                        //if(sum>0.8&& sum<=1.2) adapterActivity.moveForward(0, 0.2);
+                        //if(sum>1.2) adapterActivity.moveForward(0, 0.4);
+                        //else adapterActivity.stop();
+                    }
+                    adapterActivity.log(3, "alpha ch1:" + String.format("%.2f", alpha_1) + " ch2:" + String.format("%.2f", alpha_2) + " ch3:" + String.format("%.2f", alpha_3) + " ch4:" + String.format("%.2f", alpha_4) +" sum:"+ String.format("%.2f", alpha_sum));
+                    break;
+
+                case BETA_RELATIVE:
+                    beta_1 = p.getEegChannelValue(Eeg.EEG1);
+                    beta_2 = p.getEegChannelValue(Eeg.EEG2);
+                    beta_3 = p.getEegChannelValue(Eeg.EEG3);
+                    beta_4 = p.getEegChannelValue(Eeg.EEG4);
+                    List l = new ArrayList();
+                    l.clear();
+                    l.add(beta_1);
+                    l.add(beta_2);
+                    l.add(beta_3);
+                    l.add(beta_4);
+                    double beta_sum = beta_1+beta_2+beta_3+beta_4;
+                    double beta_max = (double)Collections.max(l);
+                    if(active) {
+                        //if(beta_sum>0.4 && beta_sum<=0.8) adapterActivity.moveForward(0, 0.2);
+                        //if(beta_sum>0.4) adapterActivity.moveForward(0, 0.4);
+                        //else adapterActivity.stop();
+                    }
+                    adapterActivity.log(1, "beta ch1:" + String.format("%.2f", beta_1) + " ch2:" + String.format("%.2f", beta_2) + " ch3:" + String.format("%.2f", beta_3) + " ch4:" + String.format("%.2f", beta_4)+" sum: "+ String.format("%.2f", beta_sum) +" max: "+ String.format("%.2f", beta_max));
                     break;
 
                 case BATTERY:

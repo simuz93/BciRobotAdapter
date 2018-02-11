@@ -7,12 +7,13 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
-import com.multiDevCompApp.drivers.interfaces.Controller;
+import com.multiDevCompApp.drivers.driversInterfaces.AdapterActivity;
+import com.multiDevCompApp.drivers.driversInterfaces.Controller;
 
 public class PhoneAccelerometerDriver implements Controller, SensorEventListener {
 
         private AdapterActivity adapterActivity;
+        private boolean active;
 
         private SensorManager mSensorManager;
         private Sensor mSensor;
@@ -21,6 +22,11 @@ public class PhoneAccelerometerDriver implements Controller, SensorEventListener
             this.adapterActivity = adapterActivity;
         }
 
+
+    public boolean activate(boolean active) {
+        this.active = active;
+        return this.active;
+    }
 
     @Override
     public void disconnect() {

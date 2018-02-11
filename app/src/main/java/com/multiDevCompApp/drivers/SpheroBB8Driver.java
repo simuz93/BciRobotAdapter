@@ -2,7 +2,7 @@ package com.multiDevCompApp.drivers;
 
 import android.util.Log;
 
-import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
+import com.multiDevCompApp.drivers.driversInterfaces.AdapterActivity;
 import com.orbotix.ConvenienceRobot;
 import com.orbotix.Sphero;
 import com.orbotix.common.DiscoveryAgentEventListener;
@@ -14,7 +14,10 @@ import com.orbotix.le.RobotRadioDescriptor;
 
 import java.util.List;
 
-public class SpheroBB8Driver implements com.multiDevCompApp.drivers.interfaces.Robot, RobotChangedStateListener{
+public class SpheroBB8Driver implements com.multiDevCompApp.drivers.driversInterfaces.Robot, RobotChangedStateListener{
+
+    private static final int CALIBRATING_DEG_UNITY = 10;
+    private float heading = 0;
 
     private AdapterActivity adapterActivity;
     private DiscoveryAgentLE discoveryAgent;
@@ -47,38 +50,54 @@ public class SpheroBB8Driver implements com.multiDevCompApp.drivers.interfaces.R
     //Calibration
     private void startCalibrating(){
         calibrating = true;
-        adapterActivity.log(3, "CALIBRAZIONE: porta il  joystick in basso per confermare");
+        adapterActivity.log(3, "CALIBRAZIONE: porta il  joystick in alto per confermare");
         robot.calibrating(true);
     }
     private void stopCalibrating(){
         calibrating = false;
+        adapterActivity.log(3, "CALIBRAZIONE TERMINATA");
         robot.calibrating(false);
     }
 
     //Movimento
 
     public void moveForward(double rotation, double speed){
-        robot.drive((float) rotation, (float) speed);
-        if(calibrating && rotation>170 && rotation < 190) stopCalibrating();
+
+        adapterActivity.log(3, heading+" "+robot.getLastHeading());
+        double realRotation = (rotation + heading + 360)%360;
+
+        if(!calibrating) robot.drive((float) realRotation, (float) speed);
+        else if(calibrating && (realRotation>350 || realRotation < 10) && speed>=0.9) stopCalibrating();
+
+
     }
     public void moveBackward(double rotation, double speed) {robot.drive((float) rotation, (float)speed, true);}
 
     public void stop(){
-        if(!calibrating) robot.drive(0, 0);
-        else stopCalibrating();
-    }
-    public void turnL(double rotation) {
-        double realRotation = 360 - rotation;
         if(!calibrating) {
-            robot.drive((float) realRotation, 0);
+            robot.drive(heading, 0);
+            robot.stop();
+        }
+    }
+
+    public void turnL(double rotation) {
+        double realRotation =(heading-rotation+360)%360;
+        if(!calibrating) {
+            robot.drive((float)realRotation, 0);
+            heading = robot.getLastHeading();
         }
         else {
-            robot.drive((float)(robot.getLastHeading()+rotation), 0);
+            robot.drive((robot.getLastHeading()-CALIBRATING_DEG_UNITY+360)%360, 0);
         }
     }
     public void turnR(double rotation) {
-        if(!calibrating)robot.drive((float)rotation, 0);
-        else robot.drive((float)(robot.getLastHeading()+rotation), 0);
+        double realRotation = (rotation+heading+360)%360;
+        if(!calibrating){
+            robot.drive((float)(realRotation), 0);
+            heading = robot.getLastHeading();
+            adapterActivity.log(3, heading+" "+robot.getLastHeading());
+        }
+        else robot.drive((robot.getLastHeading()+CALIBRATING_DEG_UNITY+360)%360, 0);
     }
 
     //Led

@@ -17,20 +17,21 @@ import android.widget.TextView;
 
 
 import com.multiDevCompApp.drivers.MuseHeadsetDriver;
+import com.multiDevCompApp.drivers.MyoArmbandDriver;
 import com.multiDevCompApp.drivers.PhoneAccelerometerDriver;
 import com.multiDevCompApp.drivers.SpheroBB8Driver;
-import com.multiDevCompApp.drivers.interfaces.AdapterActivity;
-import com.multiDevCompApp.drivers.interfaces.Controller;
-import com.multiDevCompApp.drivers.interfaces.Robot;
+import com.multiDevCompApp.drivers.driversInterfaces.AdapterActivity;
+import com.multiDevCompApp.drivers.driversInterfaces.Controller;
+import com.multiDevCompApp.drivers.driversInterfaces.Robot;
 import com.multiDevCompApp.joystickLib.Joystick;
 import com.multiDevCompApp.joystickLib.JoystickListener;
 
 
 public class MainActivity extends Activity implements OnClickListener, AdapterActivity {
 
-
-        public Joystick joystick;
-        public JoystickListener joystickListener;
+        //Joystick variables
+        private Joystick joystick;
+        private JoystickListener joystickListener;
 
         //Name (Enum) of the devices in use
         private ControllerType controllerName = null;
@@ -69,7 +70,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             //Set View, Spinners, Buttons, listeners
             setContentView(R.layout.activity_main);
             joystick = (Joystick) findViewById(R.id.joystick);
-            joystickListener = new JSListener(this);
+            joystickListener = new JSListener(this, controller);
             joystick.setJoystickListener(joystickListener);
             addButtonListener();
             setSpinners();
@@ -83,6 +84,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
             connectCtrlBtn.setVisibility(View.VISIBLE);
             connectCtrlBtn.setClickable(true);
+            connectCtrlBtn.setText("Connect");
 
             disconnectCtrlBtn.setVisibility(View.GONE);
             disconnectCtrlBtn.setClickable(false);
@@ -94,6 +96,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
             connectRobotBtn.setVisibility(View.VISIBLE);
             connectRobotBtn.setClickable(true);
+            connectRobotBtn.setText("Connect");
 
             disconnectRobotBtn.setVisibility(View.GONE);
             disconnectRobotBtn.setClickable(false);
@@ -126,13 +129,18 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
             Button connectCtrl = (Button) findViewById(R.id.connectCtrl);
             connectCtrl.setOnClickListener(this);
-
             Button connectRobot = (Button) findViewById(R.id.connectRobot);
             connectRobot.setOnClickListener(this);
+
             Button disconnectCtrlBtn = (Button) findViewById(R.id.disconnectCtrl);
             disconnectCtrlBtn.setOnClickListener(this);
             Button disconnectRobotBtn = (Button) findViewById(R.id.disconnectRobot);
             disconnectRobotBtn.setOnClickListener(this);
+
+            Button btnL = (Button)findViewById(R.id.btnL);
+            btnL.setOnClickListener(this);
+            Button btnR = (Button)findViewById(R.id.btnR);
+            btnR.setOnClickListener(this);
         }
 
         private void setSpinners() {
@@ -163,8 +171,11 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
                 case PHONE_ACCELEROMETER:
                     controller = new PhoneAccelerometerDriver(this);
                     break;
-                case MINDWAVE_HEADBAND:
                 case MYO_ARMBAND:
+                    controller = new MyoArmbandDriver(this);
+                    break;
+                case MINDWAVE_HEADBAND:
+
                 case EPOC_INSIGHT_HEADBAND:
 
                 default:
@@ -200,6 +211,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
                 //Connect to the selected Controller
                 case R.id.connectCtrl:
+                    ((Button)findViewById(R.id.connectCtrl)).setText("Wait");
                     Spinner ctrlSpinner = (Spinner) findViewById(R.id.spinnerCtrl);
                     setController(ControllerType.valueOf((String)ctrlSpinner.getSelectedItem()));
                     controller.stopSearching();
@@ -216,7 +228,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
                 //Connect to the selected Robot
                 case R.id.connectRobot:
-
+                    ((Button)findViewById(R.id.connectRobot)).setText("Wait");
                     Spinner robotSpinner = (Spinner) findViewById((R.id.spinnerRobot));
                     setRobot(RobotType.valueOf((String)robotSpinner.getSelectedItem()));
                     robot.stopSearching();
@@ -231,8 +243,15 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
                     }
                     break;
 
-                default:
+                case R.id.btnL:
+                    turnL(90);
+                    break;
 
+                case R.id.btnR:
+                    turnR(90);
+                    break;
+
+                default:
                     break;
             }
 
@@ -242,7 +261,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             if (checkRobot()) robot.moveForward(rotation, speed);
         }
         public void moveBackward(double rotation, double speed){
-            if(checkRobot()) robot.moveBackward(rotation, speed);
+            //if(checkRobot()) robot.moveBackward(rotation, speed);
         }
         public void stop() {
             if(checkRobot()) robot.stop();
@@ -357,14 +376,17 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 class JSListener implements com.multiDevCompApp.joystickLib.JoystickListener {
 
     private AdapterActivity mainActivity;
+    private Controller controller;
 
-    JSListener(AdapterActivity mainActivity) {
+    JSListener(AdapterActivity mainActivity, Controller controller) {
+
         this.mainActivity = mainActivity;
+        this.controller = controller;
     }
 
     @Override
     public void onDown() {
-
+        if(controller != null) controller.activate(false);
     }
 
     @Override
@@ -375,6 +397,7 @@ class JSListener implements com.multiDevCompApp.joystickLib.JoystickListener {
 
     @Override
     public void onUp() {
+        if(controller != null) controller.activate(true);
         mainActivity.stop();
     }
 }
