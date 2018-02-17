@@ -2,82 +2,76 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
 
     <TextView
-        android:id="@+id/ctrlName"
+        android:id="@+id/controllerLog"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="35dp"
+        android:gravity="bottom" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Spinner
             android:id="@+id/spinnerCtrl"
-            android:layout_width="240dp"
-            android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true" />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:background="@color/btn_bg_color"
+            android:dropDownWidth="match_parent"
+            android:textColor="@color/btn_text_color" />
 
         <Button
             android:id="@+id/connectCtrl"
-            android:layout_width="120dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:background="@color/btn_bg_color"
+            android:textColor="@color/btn_text_color"
             android:text="@string/connect" />
 
-        <Button
-            android:id="@+id/disconnectCtrl"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="@string/disconnect" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/robotName"
+        android:id="@+id/robotLog"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="bottom" />
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
-
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:orientation="horizontal">
 
         <Spinner
             android:id="@+id/spinnerRobot"
-            android:layout_width="240dp"
-            android:layout_height="60dp" />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:background="@color/btn_bg_color"
+            android:dropDownWidth="match_parent"
+            android:textColor="@color/btn_text_color" />
         <Button
             android:id="@+id/connectRobot"
-            android:layout_width="120dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:background="@color/btn_bg_color"
+            android:textColor="@color/btn_text_color"
             android:text="@string/connect" />
-
-        <Button
-            android:id="@+id/disconnectRobot"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="@string/disconnect" />
-
-    </RelativeLayout>
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        xmlns:app = "http://schemas.android.com/apk/res-auto">
+        android:layout_marginTop="20dp"
+        xmlns:joystick = "http://schemas.android.com/apk/res-auto">
 
         <Button
             android:id="@+id/btnL"
@@ -85,26 +79,29 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:text="L" />
+            android:background="@color/btn_bg_color"
+            android:textColor="@color/btn_text_color"
+            android:text="L"
+            android:layout_alignParentStart="true"
+            />
 
-        <com.multiDevCompApp.joystickLib.Joystick
+        <com.bciRobotAdapter.joystickLib.Joystick
             android:id="@+id/joystick"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/joystick_background"
-            app:force_square="false"
-            app:motion_constraint="None"
-            app:start_on_first_touch="false">
+            joystick:force_square="false"
+            joystick:motion_constraint="None"
+            joystick:start_on_first_touch="false">
 
-            <!-- You may use any View here. -->
             <Button
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:background="@drawable/joystick_button" />
 
-        </com.multiDevCompApp.joystickLib.Joystick>
+        </com.bciRobotAdapter.joystickLib.Joystick>
 
         <Button
             android:id="@+id/btnR"
@@ -113,28 +110,17 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:background="@color/btn_bg_color"
+            android:textColor="@color/btn_text_color"
             android:text="R" />
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/log_1"
+        android:id="@+id/log"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/darker_gray" />
-
-    <TextView
-        android:id="@+id/log_2"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/darker_gray" />
-
-    <TextView
-        android:id="@+id/log_3"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
         android:background="@android:color/darker_gray" />
 
 </LinearLayout>
