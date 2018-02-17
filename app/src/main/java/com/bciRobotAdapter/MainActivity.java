@@ -57,6 +57,9 @@ import com.bciRobotAdapter.joystickLib.JoystickListener;
  *
  * 5. Add the proper value in the ControllerType/RobotType enum to make the system aware of the new driver.
  *
+ * 6. Add the proper case in the setController/setRobot method here in the MainActivity.
+ *      In the new case you should simply create the new controller or robot class and save its instance in the controller or robot variable.
+ *      This should be the only MainActivity's modification you do.
  *
  * While writing a new driver, you should not modify AdapterActivity or other existing drivers to solve any of the new driver's problem.
  * This could compromise the app multi compatibility and make other drivers unusable.
