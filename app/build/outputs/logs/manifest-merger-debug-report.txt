@@ -11,6 +11,7 @@ MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\ss
 MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-maps-7.8.0.aar\c161c9b3621d0966a2a924fcdf8edbf6\AndroidManifest.xml:16:1-29:12
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-base-7.8.0.aar\5c437bd864cd0bbae10e4734b35f799e\AndroidManifest.xml:16:1-26:12
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\5db5329711bab71d97c43294bc957b3c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.emotiv.sdk:community:3.5.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\community-3.5.0.aar\30abf6cf1d8dc5b1406bc879f735298e\AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3842ca1957095d724982d88ff8c01f95\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\ff5f9a52f9c465d416dafebc8684e0e9\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\049f89d85897ca35122f81c775bdca4e\AndroidManifest.xml:17:1-31:12
@@ -52,6 +53,8 @@ MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\sserr\.gr
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-base-7.8.0.aar\5c437bd864cd0bbae10e4734b35f799e\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\5db5329711bab71d97c43294bc957b3c\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\5db5329711bab71d97c43294bc957b3c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.emotiv.sdk:community:3.5.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\community-3.5.0.aar\30abf6cf1d8dc5b1406bc879f735298e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.emotiv.sdk:community:3.5.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\community-3.5.0.aar\30abf6cf1d8dc5b1406bc879f735298e\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3842ca1957095d724982d88ff8c01f95\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3842ca1957095d724982d88ff8c01f95\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\ff5f9a52f9c465d416dafebc8684e0e9\AndroidManifest.xml:21:5-23:60
@@ -128,6 +131,8 @@ MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\sserr\.gr
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\play-services-base-7.8.0.aar\5c437bd864cd0bbae10e4734b35f799e\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\5db5329711bab71d97c43294bc957b3c\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\5db5329711bab71d97c43294bc957b3c\AndroidManifest.xml:29:5-20
+MERGED from [com.emotiv.sdk:community:3.5.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\community-3.5.0.aar\30abf6cf1d8dc5b1406bc879f735298e\AndroidManifest.xml:11:5-15:19
+MERGED from [com.emotiv.sdk:community:3.5.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\community-3.5.0.aar\30abf6cf1d8dc5b1406bc879f735298e\AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3842ca1957095d724982d88ff8c01f95\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3842ca1957095d724982d88ff8c01f95\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\ff5f9a52f9c465d416dafebc8684e0e9\AndroidManifest.xml:29:5-20
@@ -140,6 +145,8 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\sserr\.gradle\
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\be3b4625e53bf0f908c1249d60ddc2ae\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\02bf3ab6548d205dc66de8e259ab41e3\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\02bf3ab6548d205dc66de8e259ab41e3\AndroidManifest.xml:29:5-20
+	android:supportsRtl
+		ADDED from [com.emotiv.sdk:community:3.5.0] C:\Users\sserr\.gradle\caches\transforms-1\files-1.1\community-3.5.0.aar\30abf6cf1d8dc5b1406bc879f735298e\AndroidManifest.xml:14:9-35
 	android:label
 		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:22:9-41
 	android:icon

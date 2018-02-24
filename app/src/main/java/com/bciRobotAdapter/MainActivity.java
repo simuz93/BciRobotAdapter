@@ -17,6 +17,8 @@ import android.widget.TextView;
 
 import com.bciRobotAdapter.devicesTypes.ControllerType;
 import com.bciRobotAdapter.devicesTypes.RobotType;
+import com.bciRobotAdapter.drivers.controllerDrivers.EmotivInsightDriver;
+import com.bciRobotAdapter.drivers.controllerDrivers.MindwaveDriver;
 import com.bciRobotAdapter.drivers.controllerDrivers.MuseHeadsetDriver;
 import com.bciRobotAdapter.drivers.controllerDrivers.MyoArmbandDriver;
 import com.bciRobotAdapter.drivers.controllerDrivers.PhoneAccelerometerDriver;
@@ -52,8 +54,10 @@ import com.bciRobotAdapter.joystickLib.JoystickListener;
  * 3. Be SURE that EVERYTIME the physical controller/robot connects/disconnects to the driver you make also a call to notifyControllerConnected(true/false)/notifyRobotConnected(true/false).
  *      This is needed by the AdapterActivity to know when the device is online or not.
  *
- * 4. ONLY FOR CONTROLLER'S DRIVERS: Be sure that every command method is "filtered" by the active variable (managed by the active(boolean active) method).
- *      If it's false, no command should be sent to the AdapterActivity, which is probably trying to control the robot only using the joystick on screen bypassing the controller.
+ * 4. ONLY FOR CONTROLLER'S DRIVERS: While sending multiple commands to the robot, be sure that every movement method is "filtered" by the boolean readyToSend() method,
+ *      implemented in AbstractController and set by the robot itself.
+ *      This method limits the packets send speed according to the robot capacity, which could not handle as well too many commands incoming.
+ *      "Instant" commands (like stop or setLed) shouldn't be filtered by this method because of the risk to discard the packet.
  *
  * 5. Add the proper value in the ControllerType/RobotType enum to make the system aware of the new driver.
  *
@@ -83,6 +87,9 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     //Boolean to check if the devices are connected
     private boolean controllerConnected = false;
     private boolean robotConnected = false;
+
+    private int FREQUENCY = 1;
+
 
     //Bluetooth receiver
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -126,8 +133,6 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     @Override
     protected void onPause() {
         super.onPause();
-        //if(controller != null) controller.stopSearching();
-        //if(robot != null) robot.stopSearching();
     }
 
     // UI Specific methods
@@ -192,13 +197,18 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             case MYO_ARMBAND:
                 controller = new MyoArmbandDriver(this);
                 break;
-            //case MINDWAVE_HEADBAND:
+            case MINDWAVE_HEADBAND:
+                controller =  new MindwaveDriver(this);
+                break;
 
-            //case EMOTIV_INSIGHT_HEADBAND:
+            case EMOTIV_INSIGHT_HEADBAND:
+                controller = new EmotivInsightDriver(this);
+                break;
 
             default:
                 break;
         }
+        controller.setFrequency(FREQUENCY);
         setControllerLog("Looking for CONTROLLER: "+controllerName.name());
     }
 
@@ -217,6 +227,11 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             default:
                 break;
         }
+    }
+
+    public void setFrequency(int frequency_Hz) {
+        this.FREQUENCY = frequency_Hz;
+        if(controller!=null) controller.setFrequency(frequency_Hz);
     }
 
     @Override
@@ -298,30 +313,29 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             default:
                 break;
         }
-
     }
 
     //Movement methods
     public void moveForward(double rotation, double speed) {
-        if (checkRobot()) robot.moveRobotForward(rotation, speed);
+        if (checkRobot()) robot.moveForward(rotation, speed);
     }
     public void stop() {
-        if(checkRobot()) robot.stopRobot();
+        if(checkRobot()) robot.stop();
     }
     public void turnL(double rotation) {
-        if(checkRobot()) robot.turnRobotL(rotation);
+        if(checkRobot()) robot.turnL(rotation);
     }
     public void turnR(double rotation) {
-        if(checkRobot())robot.turnRobotR(rotation);
+        if(checkRobot())robot.turnR(rotation);
     }
 
     //Led
-    public void setLedRed() {if(checkRobot()) robot.setRobotLedRed();}
-    public void setLedBlue() {if(checkRobot()) robot.setRobotLedBlue();}
-    public void setLedGreen() {if(checkRobot()) robot.setRobotLedGreen();}
-    public void setLedYellow() {if(checkRobot()) robot.setRobotLedYellow();}
-    public void setLedWhite() {if(checkRobot()) robot.setRobotLedWhite();}
-    public void setLedOff() {if(checkRobot()) robot.setRobotLedOff();}
+    public void setLedRed() {if(checkRobot()) robot.setLedRed();}
+    public void setLedBlue() {if(checkRobot()) robot.setLedBlue();}
+    public void setLedGreen() {if(checkRobot()) robot.setLedGreen();}
+    public void setLedYellow() {if(checkRobot()) robot.setLedYellow();}
+    public void setLedWhite() {if(checkRobot()) robot.setLedWhite();}
+    public void setLedOff() {if(checkRobot()) robot.setLedOff();}
 
     //Callback to these methods when a controller or a robot connect to his driver
     public void onControllerConnected(boolean connected){
@@ -333,6 +347,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             connectCtrlBtn.setText(R.string.disconnect);
         }
         else {
+            if(checkRobot())robot.stop();
             setControllerLog("CONTROLLER disconnected");
             connectCtrlBtn.setText(R.string.connect);
         }

@@ -730,10 +730,11 @@ public final class R {
     public static final int create_calendar_title=0x7f0a0026;
     public static final int decline=0x7f0a0027;
     public static final int disconnect=0x7f0a0028;
-    public static final int stop=0x7f0a0029;
-    public static final int store_picture_message=0x7f0a002a;
-    public static final int store_picture_title=0x7f0a002b;
-    public static final int title_activity_bluetooth_connection=0x7f0a002c;
+    public static final int joystickToTurnSwitch=0x7f0a0029;
+    public static final int stop=0x7f0a002a;
+    public static final int store_picture_message=0x7f0a002b;
+    public static final int store_picture_title=0x7f0a002c;
+    public static final int title_activity_bluetooth_connection=0x7f0a002d;
   }
   public static final class style {
     public static final int AppBaseTheme=0x7f0b0000;

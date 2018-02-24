@@ -28,7 +28,7 @@ public class MyoArmbandDriver extends AbstractController {
             Hub.getInstance().detach(m.getMacAddress());
         }
         Hub.getInstance().removeListener(myoListener);
-        setControllerLog("myo disconnected");
+        setControllerLog("Myo disconnected from this device");
         notifyControllerConnected(false);
     }
 
@@ -49,7 +49,6 @@ public class MyoArmbandDriver extends AbstractController {
 class MyoListener extends AbstractDeviceListener {
 
     MyoArmbandDriver myoDriver;
-    float centerYaw = 0;
 
     public MyoListener(MyoArmbandDriver myoDriver) {
         this.myoDriver = myoDriver;
@@ -67,58 +66,79 @@ class MyoListener extends AbstractDeviceListener {
 
     @Override
     public void onConnect(Myo myo, long l) {
-        myoDriver.setControllerLog("myo connected"+ myo.isConnected()+" " + myo.isUnlocked());
+        myoDriver.setControllerLog("Myo connected");
         myoDriver.notifyControllerConnected(true);
     }
 
     @Override
     public void onDisconnect(Myo myo, long l) {
-        myoDriver.setControllerLog("myo disconnected");
+        myoDriver.disconnect();
     }
 
     @Override
     public void onArmSync(Myo myo, long l, Arm arm, XDirection xDirection) {
-        myoDriver.setControllerLog("arm sync");
+        myoDriver.setControllerLog("Arm synchronized!");
     }
 
     @Override
     public void onArmUnsync(Myo myo, long l) {
-        myoDriver.setControllerLog("arm unsync");
+        myoDriver.setControllerLog("Arm unsynchronized: do the sync gesture");
     }
 
     @Override
     public void onUnlock(Myo myo, long l) {
-        //super.onUnlock(myo, l);
-        myoDriver.setControllerLog("unlocked");
     }
 
     @Override
     public void onLock(Myo myo, long l) {
-        //super.onLock(myo, l);
-        myoDriver.setControllerLog("locked");
+
     }
 
+    int colorNumber = 0;
+    private void changeRobotLedColor() {
+       switch (colorNumber) {
+           case 0:
+               myoDriver.setRobotLedWhite();
+               break;
+           case 1:
+               myoDriver.setRobotLedWhite();
+               break;
+           case 2:
+               myoDriver.setRobotLedBlue();
+               break;
+           case 3:
+               myoDriver.setRobotLedYellow();
+               break;
+           case 4:
+               myoDriver.setRobotLedRed();
+               break;
+           case 5:
+               myoDriver.setRobotLedGreen();
+               break;
+           case 6:
+           default:
+                myoDriver.setRobotLedOff();
+       }
+       colorNumber++;
+       if(colorNumber>6) colorNumber = 0;
+    }
+
+    Pose wave_pose = null;
     @Override
     public void onPose(Myo myo, long l, Pose pose) {
 
         if(pose.equals(Pose.DOUBLE_TAP)){
-            myoDriver.setControllerLog("double tap");
+            changeRobotLedColor();
         }
 
-        if(pose.equals(Pose.FIST)) {
-            myoDriver.setControllerLog("fist");
+        else if(pose.equals((Pose.WAVE_IN))) {
+            wave_pose = pose;
         }
 
-        else if(pose.equals(Pose.REST)) {
-            myoDriver.setControllerLog("rest");
-        }
-
-        else if(pose.equals(Pose.FINGERS_SPREAD)) {
-            myoDriver.setControllerLog("spread");
-        }
+        else if(pose.equals((Pose.WAVE_OUT))) {
+            wave_pose = pose;        }
 
     }
-
 
     //Orientation
     double oriz;
@@ -142,28 +162,41 @@ class MyoListener extends AbstractDeviceListener {
             orix = rotation.x();
             oriy = rotation.y();
             oriw = rotation.w();
-
-            printData();
     }
 
     @Override
     public void onAccelerometerData(Myo myo, long l, Vector3 vector3) {
+
+        if(myoDriver.readyToSend()) {
             accx = vector3.x();
             accy = vector3.y();
             accz = vector3.z();
+
+            //Wave in to turn left, wave out to turn right
+            if(wave_pose != null) {
+                if(wave_pose.equals(Pose.WAVE_IN)) {
+                    myoDriver.stopRobot();
+                    myoDriver.turnRobotL(90);
+                }
+                else if (wave_pose.equals(Pose.WAVE_OUT)) {
+                    myoDriver.stopRobot();
+                    myoDriver.turnRobotR(90);
+                }
+                wave_pose = null;
+            }
 
             //Speed calculated from the arm position:
             //Down to the floor: speed = 0;
             //Horizontal: speed = 1 (max);
             //Up to the ceiling: the robot moves backward at reduced speed
-
-            double speed = (-accx)+1;
-            if(speed>0.3&&speed<1.5)myoDriver.moveRobotForward(0,speed);
-            else if(speed>=1.3)myoDriver.moveRobotForward(180, speed-1.3);
-            else myoDriver.stopRobot();
-
-            //printData();
-
+            //double rotation = 0;
+            else {
+                double speed = (-accx) + 1;
+                if (speed > 0.3 && speed < 1.5) myoDriver.moveRobotForward(0, speed);
+                else if (speed >= 1.3) myoDriver.moveRobotForward(180, speed - 1.3);
+                else myoDriver.stopRobot();
+            }
+        }
     }
 
     @Override
@@ -171,7 +204,6 @@ class MyoListener extends AbstractDeviceListener {
         gyrx = vector3.x();
         gyry = vector3.y();
         gyrz = vector3.z();
-        //printData();
     }
 
     public void printData() {

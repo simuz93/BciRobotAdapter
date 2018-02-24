@@ -30,4 +30,6 @@ public interface AdapterActivity {
     void setGeneralLog(String toWrite);
     void setControllerLog(String toWrite);
     void setRobotLog(String toWrite);
+
+    void setFrequency(int frequency_Hz);
 }

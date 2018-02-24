@@ -6,15 +6,32 @@ import android.content.Context;
 import com.bciRobotAdapter.AdapterActivity;
 import com.bciRobotAdapter.drivers.interfaces.Controller;
 
+import java.sql.Timestamp;
+
 //Abstract controller driver. A new controller driver should extends this class.
 //However, it's also possible to directly implement the Controller interface, manually managing every method needed
 public abstract class AbstractController implements Controller {
 
     private boolean active = true; //If false, every movement call from the controller is ignored
     private final AdapterActivity adapterActivity;//The main activity
+    private int FREQUENCY; //Packet send frequency in Hz
+    private boolean forceSend;
 
     public AbstractController(AdapterActivity adapterActivity) {
         this.adapterActivity = adapterActivity;
+        final Thread forceSendThread = new Thread() {
+            public void run() {
+                while(true) {
+                    try {
+                        sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    forceSend=true;
+                }
+            }
+        };
+        forceSendThread.start();
     }
 
     //Returns the adapterActivity instance in use
@@ -39,6 +56,19 @@ public abstract class AbstractController implements Controller {
         this.adapterActivity.onControllerConnected(connected);
     }
 
+    //Set the send frequency incoming from the robot
+    public void setFrequency(int frequency_Hz) {
+        this.FREQUENCY=frequency_Hz;
+    }
+
+    //Return true if the controller should send a packet, according to FREQUENCY
+    public boolean readyToSend() {
+        if(forceSend) {
+            forceSend = false;
+            return true;
+        }
+        else return System.currentTimeMillis()%(1000/FREQUENCY)==0;
+    }
 
     /*================================Print and debug methods================================*/
 

@@ -4,8 +4,8 @@ package com.bciRobotAdapter.devicesTypes;
 //Must be modified when adding/removing a driver
 public enum ControllerType {
     MUSE_HEADBAND,
-    //MINDWAVE_HEADBAND,
+    MINDWAVE_HEADBAND,
     MYO_ARMBAND,
-    //EMOTIV_INSIGHT_HEADBAND,
+    EMOTIV_INSIGHT_HEADBAND,
     PHONE_ACCELEROMETER
 }

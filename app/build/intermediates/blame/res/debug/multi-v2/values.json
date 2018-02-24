@@ -31,12 +31,12 @@
                         "endOffsets": "472"
                     },
                     "to": {
-                        "startLines": "190",
+                        "startLines": "191",
                         "startColumns": "4",
-                        "startOffsets": "18113",
-                        "endLines": "197",
+                        "startOffsets": "18183",
+                        "endLines": "198",
                         "endColumns": "10",
-                        "endOffsets": "18532"
+                        "endOffsets": "18602"
                     }
                 },
                 {
@@ -50,29 +50,29 @@
                         "endOffsets": "472,665"
                     },
                     "to": {
-                        "startLines": "180,187",
+                        "startLines": "181,188",
                         "startColumns": "4,4",
-                        "startOffsets": "17662,17953",
-                        "endLines": "186,189",
+                        "startOffsets": "17732,18023",
+                        "endLines": "187,190",
                         "endColumns": "12,12",
-                        "endOffsets": "17948,18108"
+                        "endOffsets": "18018,18178"
                     }
                 },
                 {
                     "source": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "56,109,153,203,242",
-                        "endColumns": "52,43,49,37,91",
-                        "endOffsets": "104,148,198,236,329"
+                        "startLines": "3,4,5,7,6,9",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "56,109,153,241,203,312",
+                        "endColumns": "52,43,49,69,37,91",
+                        "endOffsets": "104,148,198,306,236,399"
                     },
                     "to": {
-                        "startLines": "136,171,175,176,179",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "12515,17078,17327,17377,17570",
-                        "endColumns": "52,43,49,37,91",
-                        "endOffsets": "12563,17117,17372,17410,17657"
+                        "startLines": "136,171,175,176,177,180",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "12515,17078,17327,17377,17447,17640",
+                        "endColumns": "52,43,49,69,37,91",
+                        "endOffsets": "12563,17117,17372,17442,17480,17727"
                     }
                 },
                 {
@@ -189,11 +189,11 @@
                         "endOffsets": "247,452,363,291,205,109"
                     },
                     "to": {
-                        "startLines": "135,172,173,174,177,178",
+                        "startLines": "135,172,173,174,178,179",
                         "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "12473,17122,17211,17283,17415,17511",
+                        "startOffsets": "12473,17122,17211,17283,17485,17581",
                         "endColumns": "41,88,71,43,95,58",
-                        "endOffsets": "12510,17206,17278,17322,17506,17565"
+                        "endOffsets": "12510,17206,17278,17322,17576,17635"
                     }
                 }
             ]

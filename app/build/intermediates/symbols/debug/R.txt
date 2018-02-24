@@ -195,10 +195,11 @@ int string create_calendar_message 0x7f0a0025
 int string create_calendar_title 0x7f0a0026
 int string decline 0x7f0a0027
 int string disconnect 0x7f0a0028
-int string stop 0x7f0a0029
-int string store_picture_message 0x7f0a002a
-int string store_picture_title 0x7f0a002b
-int string title_activity_bluetooth_connection 0x7f0a002c
+int string joystickToTurnSwitch 0x7f0a0029
+int string stop 0x7f0a002a
+int string store_picture_message 0x7f0a002b
+int string store_picture_title 0x7f0a002c
+int string title_activity_bluetooth_connection 0x7f0a002d
 int style AppBaseTheme 0x7f0b0000
 int style AppTheme 0x7f0b0001
 int style Theme_IAPTheme 0x7f0b0002

@@ -28,12 +28,12 @@ public class SpheroBB8Driver extends AbstractRobot implements RobotChangedStateL
 
     public SpheroBB8Driver(final AdapterActivity adapterActivity) {
         super(adapterActivity);
-        setFrequency(50); //Set how often (in hertz) bb8 will use a packet to move. Others are discarded
+        setFrequency(80); //Set how often (in hertz) bb8 will use a packet to move. Others are discarded
 
         discoveryAgentEventListener = new DiscoveryAgentEventListener() {
             @Override
             public void handleRobotsAvailable(List<Robot> robots) {
-                setRobotLog("Found "+robots.size()+" robots");
+                setRobotLog("Robot found, connecting... Bring this device near BB8");
             }
         };
 
@@ -50,12 +50,12 @@ public class SpheroBB8Driver extends AbstractRobot implements RobotChangedStateL
     //Calibration
     private void startCalibrating(){
         calibrating = true;
-        setRobotLog("CALIBRAZIONE: porta il  joystick in alto per confermare");
+        setRobotLog("CALIBRATION: L/R to rotate and move the robot forward to confirm");
         robot.calibrating(true);
     }
     private void stopCalibrating(){
         calibrating = false;
-        setRobotLog("CALIBRAZIONE TERMINATA");
+        setRobotLog("Now you can move BB8");
         robot.calibrating(false);
     }
 
@@ -103,7 +103,7 @@ public class SpheroBB8Driver extends AbstractRobot implements RobotChangedStateL
     public void setLedRed() {robot.setLed(1,0,0);}
     public void setLedBlue() {robot.setLed(0,0,1);}
     public void setLedGreen() {robot.setLed(0,1,0);}
-    public void setLedYellow() {robot.setLed(0,1,1);}
+    public void setLedYellow() {robot.setLed(1,1,0);}
     public void setLedWhite() {robot.setLed(1, 1, 1);}
     public void setLedOff() {robot.setLed(0,0,0);}
 
@@ -129,6 +129,7 @@ public class SpheroBB8Driver extends AbstractRobot implements RobotChangedStateL
                 case Disconnected:
                     robot  = null;
                     r.disconnect();
+                    disconnect();
                     break;
 
                 case FailedConnect:
