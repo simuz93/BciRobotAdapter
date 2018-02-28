@@ -76,13 +76,13 @@ public final class R {
         public static final int powered_by_google_light = 0x7f04001e;
     }
     public static final class id {
-        public static final int adjust_height = 0x7f050004;
-        public static final int adjust_width = 0x7f050005;
-        public static final int hybrid = 0x7f05000e;
-        public static final int none = 0x7f050011;
-        public static final int normal = 0x7f050012;
-        public static final int satellite = 0x7f050016;
-        public static final int terrain = 0x7f05001b;
+        public static final int adjust_height = 0x7f050005;
+        public static final int adjust_width = 0x7f050006;
+        public static final int hybrid = 0x7f050012;
+        public static final int none = 0x7f050016;
+        public static final int normal = 0x7f050017;
+        public static final int satellite = 0x7f05001b;
+        public static final int terrain = 0x7f050022;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f060000;

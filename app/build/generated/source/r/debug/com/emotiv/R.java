@@ -8,8 +8,8 @@ package com.emotiv;
 
 public final class R {
     public static final class id {
-        public static final int none = 0x7f050011;
-        public static final int normal = 0x7f050012;
+        public static final int none = 0x7f050016;
+        public static final int normal = 0x7f050017;
     }
     public static final class string {
         public static final int app_name = 0x7f0a0001;

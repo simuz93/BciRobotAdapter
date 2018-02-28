@@ -17,22 +17,23 @@ import com.neurosky.connection.TgStreamReader;
 
 public class MindwaveDriver extends AbstractController {
 
-    private int algoTypes = NskAlgoType.NSK_ALGO_TYPE_ATT.value;
+    private int algoTypes = 0;
     private NskAlgoSdk nskAlgoSdk;
     public TgStreamReader tgStreamReader;
     private boolean bInited = false;
     private TgStreamHandler mindwaveListener;
 
 
-    public MindwaveDriver(AdapterActivity adapterActivity) {
-        super(adapterActivity);
+    public MindwaveDriver(AdapterActivity adapterActivity, boolean isAuxiliar) {
+        super(adapterActivity, isAuxiliar);
         nskAlgoSdk = new NskAlgoSdk();
+        mindwaveListener = new MindwaveListener(this);
+
     }
 
     @Override
     public void searchAndConnect(){
         BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        mindwaveListener = new MindwaveListener(this);
         tgStreamReader = new TgStreamReader(mBluetoothAdapter,mindwaveListener);
 
         if(tgStreamReader.isBTConnected()) {
@@ -52,21 +53,12 @@ public class MindwaveDriver extends AbstractController {
         nskAlgoSdk.setOnAttAlgoIndexListener(new NskAlgoSdk.OnAttAlgoIndexListener() {
             @Override
             public void onAttAlgoIndex(int value) {
-                setGeneralLog("value: "+value);
+                Log.e("value",""+value);
 
                 final int midValue = 65;
                 final int highValue = 90;
-
-                if(value<midValue){
-                }
-                else if(value>=midValue && value<highValue){
-                }
-                else if(value >=highValue){
-                }
             }
         });
-
-        //mindwaveStart();
     }
 
     public void setAlgos() {
@@ -86,7 +78,7 @@ public class MindwaveDriver extends AbstractController {
             @Override
             public void onSignalQuality(int level) {
                 if(NskAlgoSignalQuality.values()[level].toString().equals("POOR") || NskAlgoSignalQuality.values()[level].toString().equals("NOT DETECTED")){
-                    setControllerLog("Segnale perso");
+                    System.out.println("Segnale perso");
                 }
             }
         });
@@ -103,14 +95,16 @@ public class MindwaveDriver extends AbstractController {
 
     @Override
     public void disconnect() {
-        //tgStreamReader.stop();
-        //tgStreamReader.close();
+        tgStreamReader.stop();
+        tgStreamReader.close();
+        notifyControllerConnected(false);
     }
 
     @Override
     public void stopSearching() {
         if(tgStreamReader!=null)tgStreamReader.stop();
     }
+
 }
 
 class MindwaveListener implements TgStreamHandler {
@@ -126,6 +120,8 @@ class MindwaveListener implements TgStreamHandler {
         switch (datatype) {
             case MindDataType.CODE_ATTENTION:
                 short attValue[] = {(short)data};
+                if(data!=0) Log.e("DATARECEIVED",datatype+" "+data);
+
                 NskAlgoSdk.NskAlgoDataStream(NskAlgoDataType.NSK_ALGO_DATA_TYPE_ATT.value, attValue, 1);
                 break;
             case MindDataType.CODE_POOR_SIGNAL:
@@ -148,11 +144,13 @@ class MindwaveListener implements TgStreamHandler {
             case ConnectionStates.STATE_CONNECTED:
                 System.out.println("MindWave: Connected!");
                 mindwaveDriver.notifyControllerConnected(true);
-                //mindwaveDriver.tgStreamReader.start();
-                //mindwaveDriver.mindwaveStart();
+
+                mindwaveDriver.tgStreamReader.start();
+                mindwaveDriver.mindwaveStart();
                 break;
 
             case ConnectionStates.STATE_WORKING:
+                System.out.println("WORKING");
                 mindwaveDriver.setAlgos();
                 break;
 
@@ -173,7 +171,7 @@ class MindwaveListener implements TgStreamHandler {
                 break;
 
             case ConnectionStates.STATE_FAILED: //Quando è spento
-                mindwaveDriver.notifyControllerConnected(false);
+                mindwaveDriver.searchAndConnect();
                 break;
         }
     }
@@ -187,4 +185,6 @@ class MindwaveListener implements TgStreamHandler {
     public void onRecordFail(int i) {
 
     }
+
+
 }

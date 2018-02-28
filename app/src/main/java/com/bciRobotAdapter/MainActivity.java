@@ -8,11 +8,14 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.bciRobotAdapter.devicesTypes.ControllerType;
@@ -45,7 +48,7 @@ import com.bciRobotAdapter.joystickLib.JoystickListener;
  *
  *      -void notifyControllerConnected(boolean connected) for the controller: this must call AdapterActivity.onControllerConnected(boolean connected) (see point 3 of this gguide)
  *      -void notifyRobotConnected(boolean connected) for the robot: this must call AdapterActivity.onControllerConnected(boolean connected) (see point 3 of this guide)
- *      -void activate(boolean active) for the controller: this must set a boolean variable (see point 4 of this guide)
+ *      -void activate(boolean active) for the controller: this must set a boolean variable, used to activate or pause the controller (e.g.: pausing when using the joystick)
  *      -if needed, log and debug methods for both
  *
  * 2. Implement every not implemented method, according to the device sdk (connection methods, for example).
@@ -55,13 +58,15 @@ import com.bciRobotAdapter.joystickLib.JoystickListener;
  *      This is needed by the AdapterActivity to know when the device is online or not.
  *
  * 4. ONLY FOR CONTROLLER'S DRIVERS: While sending multiple commands to the robot, be sure that every movement method is "filtered" by the boolean readyToSend() method,
- *      implemented in AbstractController and set by the robot itself.
+ *      implemented in AbstractController and set by the robot itself. This means that the controller should tell the robot to move only if readyToSend()==true.
  *      This method limits the packets send speed according to the robot capacity, which could not handle as well too many commands incoming.
  *      "Instant" commands (like stop or setLed) shouldn't be filtered by this method because of the risk to discard the packet.
  *
- * 5. Add the proper value in the ControllerType/RobotType enum to make the system aware of the new driver.
+ * 5. ONLY FOR ROBOT'S DRIVERS: Note that, if you need, Robots can use the setFrequency(int frequency_Hz) method to limit the number of packets received.
  *
- * 6. Add the proper case in the setController/setRobot method here in the MainActivity.
+ * 6. Add the proper value in the ControllerType/RobotType enum to make the system aware of the new driver.
+ *
+ * 7. Add the proper case in the setController/setRobot method here in the MainActivity.
  *      In the new case you should simply create the new controller or robot class and save its instance in the controller or robot variable.
  *      This should be the only MainActivity's modification you do.
  *
@@ -75,21 +80,38 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     //Joystick variables
     private Joystick joystick;
     private JoystickListener joystickListener;
+    private float jsDirection = 0;
+    private float jsOffset = 0;
+    private boolean isJoystickTurning = false;
 
     //Name (Enum) of the devices in use
-    private ControllerType controllerName = null;
+    private ControllerType mainControllerName = null;
+    private ControllerType auxControllerName = null;
     private RobotType robotName = null;
 
     //Devices (Instances) in use
-    private Controller controller = null;
+    private Controller mainController = null;
+    private Controller auxController = null;
     private Robot robot = null;
 
     //Boolean to check if the devices are connected
-    private boolean controllerConnected = false;
+    private boolean mainControllerConnected = false;
+    private boolean auxControllerConnected = false;
     private boolean robotConnected = false;
 
+    private double auxControllerDirection = 0;
     private int FREQUENCY = 1;
 
+    //View elements
+    Button connectMainCtrlBtn, connectAuxCtrlBtn, connectRobotBtn;
+    Spinner spinnerMainCtrl, spinnerAuxCtrl, spinnerRobot;
+    Button btnL, btnR;
+    RelativeLayout controlView;
+    Switch jsToTurnSwitch;
+    Button switchViewBtn;
+    boolean isConnectingView;
+    boolean isUseView;
+    TextView log, cLog, rLog, cAuxLog;
 
     //Bluetooth receiver
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -139,77 +161,127 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     private void initUI() {
         //Set View, Spinners, Buttons, listeners
         setContentView(R.layout.activity_main);
+        setAllUiElements();
         joystick = (Joystick) findViewById(R.id.joystick);
-        joystickListener = new JSListener(this, controller);
+        joystickListener = new JSListener(this, mainController, auxController);
         joystick.setJoystickListener(joystickListener);
         addButtonListener();
         setSpinners();
 
+        showConnectView(true);
+        showUseView(false);
         //No robot or controller connected yet
-        onControllerConnected(false);
+        onMainControllerConnected(false);
         onRobotConnected(false);
+        onAuxControllerConnected(false);
+    }
+
+    private void setAllUiElements() {
+        connectMainCtrlBtn = (Button) findViewById(R.id.connectMainCtrl);
+        connectRobotBtn = (Button) findViewById(R.id.connectRobot);
+        connectAuxCtrlBtn = (Button) findViewById(R.id.connectAuxCtrl);
+        btnL = (Button)findViewById(R.id.btnL);
+        btnR = (Button)findViewById(R.id.btnR);
+        jsToTurnSwitch = (Switch) findViewById(R.id.joystickToTurn);
+        spinnerMainCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
+        spinnerRobot = (Spinner) findViewById(R.id.spinnerRobot);
+        spinnerAuxCtrl = (Spinner) findViewById(R.id.spinnerAuxCtrl);
+        switchViewBtn = (Button) findViewById(R.id.switchViewBtn);
+        controlView = (RelativeLayout) findViewById(R.id.ControlView);
+        log = (TextView)findViewById(R.id.log);
+        cLog = (TextView)findViewById(R.id.controllerLog);
+        rLog = (TextView)findViewById(R.id.robotLog);
+        cAuxLog = (TextView)findViewById(R.id.auxCtrlLog);
     }
 
     //Add listener to buttons
     private void addButtonListener() {
-
-        Button connectCtrl = (Button) findViewById(R.id.connectCtrl);
-        connectCtrl.setOnClickListener(this);
-        Button connectRobot = (Button) findViewById(R.id.connectRobot);
-        connectRobot.setOnClickListener(this);
-
-        Button btnL = (Button)findViewById(R.id.btnL);
+        connectMainCtrlBtn.setOnClickListener(this);
+        connectRobotBtn.setOnClickListener(this);
+        connectAuxCtrlBtn.setOnClickListener(this);
         btnL.setOnClickListener(this);
-        Button btnR = (Button)findViewById(R.id.btnR);
         btnR.setOnClickListener(this);
+        jsToTurnSwitch.setOnClickListener(this);
+        switchViewBtn.setOnClickListener(this);
     }
 
     //Set up spinners
     private void setSpinners() {
-
         //Spinners values are from the ControllerType and RobotType enum
         ArrayAdapter<String> spinnerAdapterCtrl = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
-        Spinner spinnerCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
         for(ControllerType ct : ControllerType.values()) {
             spinnerAdapterCtrl.add(ct.toString());
         }
-        spinnerCtrl.setAdapter(spinnerAdapterCtrl);
+        spinnerMainCtrl.setAdapter(spinnerAdapterCtrl);
 
         ArrayAdapter<String> spinnerAdapterRobot = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
-        Spinner spinnerRobot = (Spinner) findViewById(R.id.spinnerRobot);
         for(RobotType rt : RobotType.values()) {
             spinnerAdapterRobot.add(rt.toString());
         }
         spinnerRobot.setAdapter(spinnerAdapterRobot);
+
+        ArrayAdapter<String> spinnerAdapterAuxCtrl = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
+        for(ControllerType ct : ControllerType.values()) {
+            spinnerAdapterAuxCtrl.add(ct.toString());
+        }
+        spinnerAuxCtrl.setAdapter(spinnerAdapterAuxCtrl);
     }
 
     //Set the Controller's name and instance
-    private void setController(ControllerType name) {
-        this.controllerName = name;
+    private void setMainController(ControllerType name) {
+        this.mainControllerName = name;
 
         switch(name) {
             case MUSE_HEADBAND:
-                controller = new MuseHeadsetDriver(this);
+                mainController = new MuseHeadsetDriver(this, false);
                 break;
             case PHONE_ACCELEROMETER:
-                controller = new PhoneAccelerometerDriver(this);
+                mainController = new PhoneAccelerometerDriver(this, false);
                 break;
             case MYO_ARMBAND:
-                controller = new MyoArmbandDriver(this);
+                mainController = new MyoArmbandDriver(this, false);
                 break;
             case MINDWAVE_HEADBAND:
-                controller =  new MindwaveDriver(this);
+                mainController =  new MindwaveDriver(this, false);
                 break;
-
             case EMOTIV_INSIGHT_HEADBAND:
-                controller = new EmotivInsightDriver(this);
+                mainController = new EmotivInsightDriver(this, false);
                 break;
 
             default:
                 break;
         }
-        controller.setFrequency(FREQUENCY);
-        setControllerLog("Looking for CONTROLLER: "+controllerName.name());
+        mainController.setFrequency(FREQUENCY);
+        if(auxController!=null) mainController.setHasAuxiliar(true);
+        setControllerLog("Looking for CONTROLLER: "+mainControllerName.name());
+    }
+
+    private void setAuxController(ControllerType name) {
+        this.auxControllerName = name;
+
+        switch(name) {
+            case MUSE_HEADBAND:
+                auxController = new MuseHeadsetDriver(this, true);
+                break;
+            case PHONE_ACCELEROMETER:
+                auxController = new PhoneAccelerometerDriver(this, true);
+                break;
+            case MYO_ARMBAND:
+                auxController = new MyoArmbandDriver(this, true);
+                break;
+            case MINDWAVE_HEADBAND:
+                auxController =  new MindwaveDriver(this, true);
+                break;
+            case EMOTIV_INSIGHT_HEADBAND:
+                auxController = new EmotivInsightDriver(this, true);
+                break;
+
+            default:
+                break;
+        }
+        auxController.setFrequency(FREQUENCY);
+        if(mainController!=null) mainController.setHasAuxiliar(true);
+        setAuxControllerLog("Looking for CONTROLLER: "+auxControllerName.name());
     }
 
     //Set the Robot's name and instance
@@ -231,12 +303,13 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
     public void setFrequency(int frequency_Hz) {
         this.FREQUENCY = frequency_Hz;
-        if(controller!=null) controller.setFrequency(frequency_Hz);
+        if(mainController!=null) mainController.setFrequency(frequency_Hz);
     }
 
     @Override
     //onClick methods
     public void onClick(View v) {
+
         switch (v.getId()) {
 
             //The connect buttons have multiple functions according to the context: Connect, Stop or Disconnect.
@@ -244,47 +317,41 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             //Stop: interrupts the connect's task and stops searching
             //Disconnect: disconnects from the connected device
 
-            case R.id.connectCtrl:
-                Button connectCtrlBtn = (Button)findViewById(R.id.connectCtrl);
-                String textCtrl = (String)connectCtrlBtn.getText();
+            case R.id.connectMainCtrl:
+                String textCtrl = (String)connectMainCtrlBtn.getText();
 
-                if(textCtrl.equals("Connect")) {
-                    connectCtrlBtn.setText("Stop");
-                    Spinner ctrlSpinner = (Spinner) findViewById(R.id.spinnerCtrl);
-                    setController(ControllerType.valueOf((String)ctrlSpinner.getSelectedItem()));
-                    setControllerLog("Looking for controller "+ctrlSpinner.getSelectedItem()+", press stop to abort");
-                    controller.stopSearching();
-                    controller.searchAndConnect();
+                if(textCtrl.equals(getString(R.string.connect))) {
+                    connectMainCtrlBtn.setText(R.string.stop);
+                    setMainController(ControllerType.valueOf((String)spinnerMainCtrl.getSelectedItem()));
+                    setControllerLog("Looking for controller "+spinnerMainCtrl.getSelectedItem()+", press stop to abort");
+                    mainController.searchAndConnect();
                 }
 
-                else if(textCtrl.equals("Stop")) {
+                else if(textCtrl.equals(getString(R.string.stop))) {
                     setControllerLog("Search stopped");
-                    if(controller!=null) controller.stopSearching();
-                    if(controllerConnected) controller.disconnect();
-                    connectCtrlBtn.setText(R.string.connect);
+                    if(mainController!=null) mainController.stopSearching();
+                    if(mainControllerConnected) mainController.disconnect();
+                    connectMainCtrlBtn.setText(R.string.connect);
                 }
 
-                else if(textCtrl.equals("Disconnect")) {
-                    connectCtrlBtn.setText(R.string.connect);
-                    controller.stopSearching();
-                    controller.disconnect();
+                else if(textCtrl.equals(getString(R.string.disconnect))) {
+                    connectMainCtrlBtn.setText(R.string.connect);
+                    mainController.stopSearching();
+                    mainController.disconnect();
                 }
                 break;
 
             case R.id.connectRobot:
-                Button connectRobotBtn =(Button)findViewById(R.id.connectRobot);
                 String textRobot = (String)connectRobotBtn.getText();
 
-                if(textRobot.equals("Connect")) {
-                    connectRobotBtn.setText("Stop");
-                    Spinner robotSpinner = (Spinner) findViewById((R.id.spinnerRobot));
-                    setRobot(RobotType.valueOf((String)robotSpinner.getSelectedItem()));
-                    setRobotLog("Looking for robot "+robotSpinner.getSelectedItem()+", press stop to abort");
-                    robot.stopSearching();
+                if(textRobot.equals(getString(R.string.connect))) {
+                    connectRobotBtn.setText(R.string.stop);
+                    setRobot(RobotType.valueOf((String)spinnerRobot.getSelectedItem()));
+                    setRobotLog("Looking for robot "+spinnerRobot.getSelectedItem()+", press stop to abort");
                     robot.searchAndConnect();
                 }
 
-                else if(textRobot.equals("Stop")) {
+                else if(textRobot.equals(getString(R.string.stop))) {
                     setRobotLog("Search stopped");
                     if(robot!=null)robot.stopSearching();
                     if(robotConnected)robot.disconnect();
@@ -292,11 +359,35 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
                     connectRobotBtn.setText(R.string.connect);
                 }
 
-                else if(textRobot.equals("Disconnect")) {
+                else if(textRobot.equals(getString(R.string.disconnect))) {
                     connectRobotBtn.setText(R.string.connect);
                     if(robot!=null)robot.stopSearching();
                     if(robotConnected)robot.disconnect();
                     robot = null;
+                }
+                break;
+
+            case R.id.connectAuxCtrl:
+                String textAuxCtrl = (String)connectAuxCtrlBtn.getText();
+
+                if(textAuxCtrl.equals(getString(R.string.connect))) {
+                    connectAuxCtrlBtn.setText(R.string.stop);
+                    setAuxController(ControllerType.valueOf((String)spinnerAuxCtrl.getSelectedItem()));
+                    setAuxControllerLog("Looking for controller "+spinnerAuxCtrl.getSelectedItem()+", press stop to abort");
+                    auxController.searchAndConnect();
+                }
+
+                else if(textAuxCtrl.equals(getString(R.string.stop))) {
+                    setAuxControllerLog("Search stopped");
+                    if(auxController!=null) auxController.stopSearching();
+                    if(auxControllerConnected) auxController.disconnect();
+                    connectAuxCtrlBtn.setText(R.string.connect);
+                }
+
+                else if(textAuxCtrl.equals(getString(R.string.disconnect))) {
+                    connectAuxCtrlBtn.setText(R.string.connect);
+                    auxController.stopSearching();
+                    auxController.disconnect();
                 }
                 break;
 
@@ -310,13 +401,102 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
                 turnR(90);//Turn the robot 90 degrees right
                 break;
 
+            case R.id.joystickToTurn:
+                isJoystickTurning = jsToTurnSwitch.isChecked();
+                if(isJoystickTurning) {
+                    joystick.setMotionConstraint(Joystick.MotionConstraint.HORIZONTAL);
+                }
+                else joystick.setMotionConstraint(Joystick.MotionConstraint.NONE);
+                break;
+
+            case R.id.switchViewBtn:
+                switchView();
+                break;
             default:
                 break;
         }
     }
 
+    private void switchView(){
+        if(isConnectingView && !isUseView) {
+            showConnectView(false);
+            showUseView(true);
+        }
+        else if(isUseView && !isConnectingView) {
+            showUseView(false);
+            showConnectView(true);
+        }
+        else Log.e("SwitchViewError", "Both connectingView and useView are on or off together");
+    }
+    private void showUseView(boolean wantToShow) {
+        if(wantToShow) {
+            jsToTurnSwitch.setVisibility(View.VISIBLE);
+            controlView.setVisibility(View.VISIBLE);
+            log.setVisibility(View.VISIBLE);
+            isUseView = true;
+        }
+        else {
+            jsToTurnSwitch.setVisibility(View.GONE);
+            controlView.setVisibility(View.GONE);
+            log.setVisibility(View.GONE);
+            isUseView=false;
+        }
+    }
+    private void showConnectView(boolean wantToShow) {
+        if(wantToShow) {
+            connectMainCtrlBtn.setVisibility(View.VISIBLE);
+            spinnerMainCtrl.setVisibility(View.VISIBLE);
+            connectRobotBtn.setVisibility(View.VISIBLE);
+            spinnerRobot.setVisibility(View.VISIBLE);
+            connectAuxCtrlBtn.setVisibility(View.VISIBLE);
+            spinnerAuxCtrl.setVisibility(View.VISIBLE);
+
+            cLog.setVisibility(View.VISIBLE);
+            rLog.setVisibility(View.VISIBLE);
+            cAuxLog.setVisibility(View.VISIBLE);
+
+            TextView explainTextView = (TextView) findViewById(R.id.explainTextView);
+            explainTextView.setVisibility(View.VISIBLE);
+            isConnectingView = true;
+        }
+        else {
+            connectMainCtrlBtn.setVisibility(View.GONE);
+            spinnerMainCtrl.setVisibility(View.GONE);
+            connectRobotBtn.setVisibility(View.GONE);
+            spinnerRobot.setVisibility(View.GONE);
+            connectAuxCtrlBtn.setVisibility(View.GONE);
+            spinnerAuxCtrl.setVisibility(View.GONE);
+
+            cLog.setVisibility(View.GONE);
+            rLog.setVisibility(View.GONE);
+            cAuxLog.setVisibility(View.GONE);
+
+            TextView explainTextView = (TextView) findViewById(R.id.explainTextView);
+            explainTextView.setVisibility(View.GONE);
+            isConnectingView = false;
+        }
+    }
+
+    public void setJsValues(float jsDirection, float jsOffset) {
+        this.jsDirection = jsDirection;
+        this.jsOffset = jsOffset;
+    }
+    public void setAuxCtrlDirection(double direction) {
+        this.auxControllerDirection = direction;
+    }
+
+    public boolean isJoystickTurning(){return isJoystickTurning;}
+    private float calculateJsRotation(float rotation, float offset) {
+        if(rotation > 0) rotation = offset*90;
+        else if(rotation < 0) rotation = -offset*90 ;
+        else rotation = 0;
+        return rotation;
+    }
+
     //Movement methods
     public void moveForward(double rotation, double speed) {
+        if (checkAuxController()) rotation = auxControllerDirection;
+        if (isJoystickTurning) rotation = calculateJsRotation(jsDirection, jsOffset);
         if (checkRobot()) robot.moveForward(rotation, speed);
     }
     public void stop() {
@@ -338,23 +518,21 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     public void setLedOff() {if(checkRobot()) robot.setLedOff();}
 
     //Callback to these methods when a controller or a robot connect to his driver
-    public void onControllerConnected(boolean connected){
-        controllerConnected = connected;
-        Button connectCtrlBtn =(Button)findViewById(R.id.connectCtrl);
+    public void onMainControllerConnected(boolean connected){
+        mainControllerConnected = connected;
 
         if(connected) {
-            setControllerLog("Connected to CONTROLLER: " + controllerName.name());
-            connectCtrlBtn.setText(R.string.disconnect);
+            setControllerLog("Connected to CONTROLLER: " + mainControllerName.name());
+            connectMainCtrlBtn.setText(R.string.disconnect);
         }
         else {
             if(checkRobot())robot.stop();
             setControllerLog("CONTROLLER disconnected");
-            connectCtrlBtn.setText(R.string.connect);
+            connectMainCtrlBtn.setText(R.string.connect);
         }
     }
     public void onRobotConnected(boolean connected){
         robotConnected = connected;
-        Button connectRobotBtn =(Button)findViewById(R.id.connectRobot);
 
         if(connected) {
             setRobotLog("Connected to ROBOT: " + robotName.name());
@@ -365,9 +543,23 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
             connectRobotBtn.setText(R.string.connect);
         }
     }
+    public void onAuxControllerConnected(boolean connected){
+        auxControllerConnected = connected;
 
+        if(connected) {
+            setAuxControllerLog("Connected to AUX CONTROLLER: " + auxControllerName.name());
+            connectAuxCtrlBtn.setText(R.string.disconnect);
+        }
+        else {
+            if(checkRobot())robot.stop();
+            setAuxControllerLog("AUX CONTROLLER disconnected");
+            connectAuxCtrlBtn.setText(R.string.connect);
+            if(mainController!=null) mainController.setHasAuxiliar(false);
+        }
+    }
     //Check controller/robot connection and instance
-    private boolean checkController() {return controller!=null && controllerConnected;}
+    private boolean checkMainController() {return mainController!=null && mainControllerConnected;}
+    private boolean checkAuxController() {return auxController!=null && auxControllerConnected;}
     private boolean checkRobot() {return robot!=null && robotConnected;}
 
     //Bluetooth methods
@@ -389,17 +581,18 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
     //Log and debug methods
     public void setGeneralLog(String toWrite) {
-        TextView log = (TextView)findViewById(R.id.log);
         log.setText(toWrite);
     }
 
     public void setControllerLog(String toWrite) {
-        TextView cLog = (TextView)findViewById(R.id.controllerLog);
         cLog.setText(toWrite);
     }
 
+    public void setAuxControllerLog(String toWrite) {
+        cAuxLog.setText(toWrite);
+    }
+
     public void setRobotLog(String toWrite) {
-        TextView rLog = (TextView)findViewById(R.id.robotLog);
         rLog.setText(toWrite);
     }
 
@@ -408,32 +601,47 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 //Joystick listener
 class JSListener implements com.bciRobotAdapter.joystickLib.JoystickListener {
 
-    private AdapterActivity mainActivity;
-    private Controller controller;
+    private MainActivity mainActivity;
+    private Controller mainController;
+    private Controller auxController;
 
-    JSListener(AdapterActivity mainActivity, Controller controller) {
+    JSListener(MainActivity mainActivity, Controller mainController, Controller auxController) {
 
         this.mainActivity = mainActivity;
-        this.controller = controller;
+        this.mainController = mainController;
+        this.auxController = auxController;
     }
 
     //When your finger goes down on the joystick
     @Override
     public void onDown() {
-        if(controller!=null)controller.activate(false);
+        if(mainController!=null&&!mainActivity.isJoystickTurning())mainController.activate(false);
+        if(auxController!=null&&!mainActivity.isJoystickTurning())auxController.activate(false);
+
     }//Pause the controller while using the joystick
 
     @Override
     public void onDrag(float degrees, float offset) {
-        if(controller!=null)controller.activate(false);//Pause the controller while using the joystick
-        if(offset == 0) mainActivity.stop();
-        else mainActivity.moveForward(degrees, offset);
+
+        if(!mainActivity.isJoystickTurning()) {
+            if (mainController != null) mainController.activate(false);//Pause the controller while using the joystick
+            if (auxController!=null) auxController.activate(false);
+
+            if (offset == 0) mainActivity.stop();
+            else mainActivity.moveForward(degrees, offset);
+        }
+        else mainActivity.setJsValues(degrees, offset);
+
     }
 
     //When your finger goes back up from the joystick
     @Override
     public void onUp() {
-        if(controller!=null)controller.activate(true);//Pause the controller while using the joystick
-        mainActivity.stop();
+        if(!mainActivity.isJoystickTurning()) {
+            if (mainController != null)mainController.activate(true);//Pause the controller while using the joystick
+            if (auxController!=null) auxController.activate(true);
+            mainActivity.stop();
+        }
+        else mainActivity.setJsValues(0, 0);
     }
 }

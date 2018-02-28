@@ -31,8 +31,8 @@ public class MuseHeadsetDriver extends AbstractController {
     private ConnectionListener connectionListener;
     private DataListener dataListener;
 
-    public MuseHeadsetDriver(AdapterActivity adapterActivity) {
-        super(adapterActivity);
+    public MuseHeadsetDriver(AdapterActivity adapterActivity, boolean isAuxiliar) {
+        super(adapterActivity, isAuxiliar);
         manager = MuseManagerAndroid.getInstance();
         manager.setContext(getContext());
 

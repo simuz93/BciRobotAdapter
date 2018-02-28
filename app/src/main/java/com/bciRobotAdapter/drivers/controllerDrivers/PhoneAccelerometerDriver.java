@@ -15,8 +15,8 @@ public class PhoneAccelerometerDriver extends AbstractController implements Sens
     private SensorManager mSensorManager;
     private Sensor mSensor;
 
-    public PhoneAccelerometerDriver(AdapterActivity adapterActivity) {
-        super(adapterActivity);
+    public PhoneAccelerometerDriver(AdapterActivity adapterActivity, boolean isAuxiliar) {
+        super(adapterActivity, isAuxiliar);
     }
 
     @Override
@@ -52,6 +52,7 @@ public class PhoneAccelerometerDriver extends AbstractController implements Sens
         double z = event.values[2];
 
         setGeneralLog("X: "+String.format("%.2f", x)+"Y "+String.format("%.2f", y)+"Z: "+String.format("%.2f", z));
+        moveRobotForward(0, 0.1);
     }
 
     @Override

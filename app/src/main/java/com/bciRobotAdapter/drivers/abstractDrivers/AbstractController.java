@@ -2,11 +2,10 @@ package com.bciRobotAdapter.drivers.abstractDrivers;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 
 import com.bciRobotAdapter.AdapterActivity;
 import com.bciRobotAdapter.drivers.interfaces.Controller;
-
-import java.sql.Timestamp;
 
 //Abstract controller driver. A new controller driver should extends this class.
 //However, it's also possible to directly implement the Controller interface, manually managing every method needed
@@ -15,10 +14,17 @@ public abstract class AbstractController implements Controller {
     private boolean active = true; //If false, every movement call from the controller is ignored
     private final AdapterActivity adapterActivity;//The main activity
     private int FREQUENCY; //Packet send frequency in Hz
-    private boolean forceSend;
+    private boolean forceSend = false;
+    private boolean isAuxiliar = false;
+    private boolean hasAuxiliar = false;
 
-    public AbstractController(AdapterActivity adapterActivity) {
+    public AbstractController(AdapterActivity adapterActivity, boolean isAuxiliar) {
         this.adapterActivity = adapterActivity;
+        this.isAuxiliar = isAuxiliar;
+        initForceSendThread();
+    }
+
+    private void initForceSendThread() {
         final Thread forceSendThread = new Thread() {
             public void run() {
                 while(true) {
@@ -44,6 +50,10 @@ public abstract class AbstractController implements Controller {
         return this.adapterActivity.getContext();
     }
 
+    public void setHasAuxiliar(boolean hasAuxiliar) {
+        this.hasAuxiliar = hasAuxiliar;
+    }
+
     //Manage the active boolean variable
     @Override
     public void activate(boolean active) {
@@ -53,7 +63,8 @@ public abstract class AbstractController implements Controller {
     //Notify the adapter that the controller is connected (connected = true) or disconnected (connected = false).
     // You MUST call this method everytime the controller's connection state changes
     public void notifyControllerConnected(boolean connected) {
-        this.adapterActivity.onControllerConnected(connected);
+        if(!isAuxiliar)this.adapterActivity.onMainControllerConnected(connected);
+        else this.adapterActivity.onAuxControllerConnected(connected);
     }
 
     //Set the send frequency incoming from the robot
@@ -129,55 +140,60 @@ public abstract class AbstractController implements Controller {
     //Movement methods, filtered by the active flag
     public void moveRobotForward(double rotation, double speed) {
         if(active) {
-            this.adapterActivity.moveForward(rotation, speed);
+            if (isAuxiliar) {
+                adapterActivity.setAuxCtrlDirection(rotation);
+            }
+            else {
+                adapterActivity.moveForward(rotation, speed);
+            }
         }
+
     }
     public void stopRobot() {
-
-        if(active) {
-            this.adapterActivity.stop();
+        if(active&&!isAuxiliar) {
+            adapterActivity.stop();
         }
     }
     public void turnRobotL(double rotation) {
-        if(active) {
-            this.adapterActivity.turnL(rotation);
+        if(active&&!hasAuxiliar) {
+            adapterActivity.turnL(rotation);
         }
     } //Face left
     public void turnRobotR(double rotation) {
-        if(active) {
-            this.adapterActivity.turnR(rotation);
+        if(active&&!hasAuxiliar) {
+            adapterActivity.turnR(rotation);
         }
     } //Face right
 
     //Led
     public void setRobotLedRed() {
-        if(active) {
-            this.adapterActivity.setLedRed();
+        if(active&&!isAuxiliar) {
+            adapterActivity.setLedRed();
         }
     }
     public void setRobotLedBlue() {
-        if(active) {
-            this.adapterActivity.setLedBlue();
+        if(active&&!isAuxiliar) {
+            adapterActivity.setLedBlue();
         }
     }
     public void setRobotLedGreen() {
-        if(active) {
-            this.adapterActivity.setLedGreen();
+        if(active&&!isAuxiliar) {
+            adapterActivity.setLedGreen();
         }
     }
     public void setRobotLedYellow() {
-        if(active) {
-            this.adapterActivity.setLedYellow();
+        if(active&&!isAuxiliar) {
+            adapterActivity.setLedYellow();
         }
     }
     public void setRobotLedWhite() {
-        if(active) {
-            this.adapterActivity.setLedWhite();
+        if(active&&!isAuxiliar) {
+            adapterActivity.setLedWhite();
         }
     }
     public void setRobotLedOff() {
-        if(active) {
-            this.adapterActivity.setLedOff();
+        if(active&&!isAuxiliar) {
+            adapterActivity.setLedOff();
         }
     }
 

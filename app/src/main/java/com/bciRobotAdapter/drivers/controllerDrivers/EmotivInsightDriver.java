@@ -43,8 +43,6 @@ public class EmotivInsightDriver extends AbstractController{
     private SWIGTYPE_p_void handleEvent;
     private SWIGTYPE_p_void emoState;
 
-    private boolean b = false;
-
     /* ============================================ */
     protected static final int TYPE_USER_ADD = 16;
     protected static final int TYPE_USER_REMOVE = 32;
@@ -68,8 +66,8 @@ public class EmotivInsightDriver extends AbstractController{
         EmotivInsightDriver.context = context;
     }*/
 
-    public EmotivInsightDriver(AdapterActivity adapterActivity) {
-        super(adapterActivity);
+    public EmotivInsightDriver(AdapterActivity adapterActivity, boolean isAuxiliar) {
+        super(adapterActivity, isAuxiliar);
         connectEngine();
     }
 
@@ -84,12 +82,14 @@ public class EmotivInsightDriver extends AbstractController{
 
         Channel_list = ChannelListTmp;
 
+        enableMentalcommandActions(IEE_MentalCommandAction_t.MC_PUSH);
+        startTrainingMetalcommand(false, IEE_MentalCommandAction_t.MC_PUSH);
         timer = new Timer();
         intTimerTask();
         timer.schedule(timerTask , 0, 10);
     }
 
-    /*
+
     public void enableMentalcommandActions(IEE_MentalCommandAction_t _MetalcommandAction) {
         //long MetaCommandActions;
         SWIGTYPE_p_unsigned_long uActiveAction = edkJava.new_ulong_p();
@@ -104,8 +104,9 @@ public class EmotivInsightDriver extends AbstractController{
             }
         }
         edkJava.delete_ulong_p(uActiveAction);
+
     }
-    */
+
 
     /*
     public boolean checkTrained(IEE_MentalCommandAction_t action) {
@@ -119,7 +120,7 @@ public class EmotivInsightDriver extends AbstractController{
         }
         return res;
     }
-*/
+
     /*
     public void trainningClear(IEE_MentalCommandAction_t _MetalcommandAction) {
         edkJava.IEE_MentalCommandSetTrainingAction(userId, _MetalcommandAction);
@@ -128,7 +129,7 @@ public class EmotivInsightDriver extends AbstractController{
         }
     }
 */
-    /*
+
     public boolean startTrainingMetalcommand(Boolean isTrain, IEE_MentalCommandAction_t MetaCommandAction) {
         if (!isTrain) {
             if (edkJava.IEE_MentalCommandSetTrainingAction(userId, MetaCommandAction) == edkJava.EDK_OK) {
@@ -143,13 +144,13 @@ public class EmotivInsightDriver extends AbstractController{
             }
         }
         return false;
-    }*/
-/*
+    }
+
     public void setTrainControl(IEE_MentalCommandTrainingControl_t type) {
         if (edkJava.IEE_MentalCommandSetTrainingControl(userId, type) == edkJava.EDK_OK) {
         }
 
-    }*/
+    }
 
     public int getEventEngineId(SWIGTYPE_p_void hEvent)
     {
@@ -173,7 +174,6 @@ public class EmotivInsightDriver extends AbstractController{
                         bleInUse = true;
                         Emotiv.IEE_ConnectInsightDevice(0);
                         Log.d("EMOTIV", "CONNESSO");
-                        b = true;
                     }
                 }
                 else {
@@ -193,6 +193,7 @@ public class EmotivInsightDriver extends AbstractController{
                     IEE_Event_t eventType = edkJava.IEE_EmoEngineEventGetType(handleEvent);
                     int tmpUserId = getEventEngineId(handleEvent);
                     switch (eventType) {
+
                         case IEE_UserAdded:
                             Log.e("connect", "User Added");
                             isConnected = true;
@@ -214,7 +215,9 @@ public class EmotivInsightDriver extends AbstractController{
                             edkJava.IEE_EmoEngineEventGetEmoState(handleEvent, emoState);
                             Log.e("MentalCommand", "EmoStateUpdated");
                             hander.sendMessage(hander.obtainMessage(HANDLER_ACTION_CURRENT));
+                            break;
 
+                        case IEE_MentalCommandEvent:
                             for(int i=0; i < Channel_list.length; i++) {
                                 SWIGTYPE_p_double ptheta = edkJava.new_double_p();
                                 SWIGTYPE_p_double palpha = edkJava.new_double_p();
@@ -223,71 +226,7 @@ public class EmotivInsightDriver extends AbstractController{
                                 SWIGTYPE_p_double pgamma = edkJava.new_double_p();
                                 int result = -1;
                                 result = edkJava.IEE_GetAverageBandPowers(userId, Channel_list[i], ptheta, palpha, plow_beta, phigh_beta, pgamma);
-
-
-                                System.out.println(edkJavaJNI.EDK_UNKNOWN_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_INVALID_DEV_ID_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_INVALID_PROFILE_ARCHIVE_get());
-                                System.out.println(edkJavaJNI.EDK_NO_USER_FOR_BASEPROFILE_get());
-                                System.out.println(edkJavaJNI.EDK_CANNOT_ACQUIRE_DATA_get());
-                                System.out.println(edkJavaJNI.EDK_BUFFER_TOO_SMALL_get());
-                                System.out.println(edkJavaJNI.EDK_OUT_OF_RANGE_get());
-                                System.out.println(edkJavaJNI.EDK_INVALID_PARAMETER_get());
-                                System.out.println(edkJavaJNI.EDK_PARAMETER_LOCKED_get());
-                                System.out.println(edkJavaJNI.EDK_MC_INVALID_TRAINING_ACTION_get());
-                                System.out.println(edkJavaJNI.EDK_MC_INVALID_TRAINING_CONTROL_get());
-                                System.out.println(edkJavaJNI.EDK_MC_INVALID_ACTIVE_ACTION_get());
-                                System.out.println(edkJavaJNI.EDK_MC_EXCESS_MAX_ACTIONS_get());
-                                System.out.println(edkJavaJNI.EDK_FE_NO_SIG_AVAILABLE_get());
-                                System.out.println(edkJavaJNI.EDK_FILESYSTEM_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_INVALID_USER_ID_get());
-                                System.out.println(edkJavaJNI.EDK_EMOENGINE_UNINITIALIZED_get());
-                                System.out.println(edkJavaJNI.EDK_EMOENGINE_DISCONNECTED_get());
-                                System.out.println(edkJavaJNI.EDK_EMOENGINE_PROXY_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_STREAM_UNINITIALIZED_get());
-                                System.out.println(edkJavaJNI.EDK_FILESTREAM_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_STREAM_NOT_SUPPORTED_get());
-                                System.out.println(edkJavaJNI.EDK_FILE_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_NO_EVENT_get());
-                                System.out.println(edkJavaJNI.EDK_GYRO_NOT_CALIBRATED_get());
-                                System.out.println(edkJavaJNI.EDK_OPTIMIZATION_IS_ON_get());
-                                System.out.println(edkJavaJNI.EDK_RESERVED1_get());
-                                System.out.println(edkJavaJNI.EDK_COULDNT_RESOLVE_PROXY_get());
-                                System.out.println(edkJavaJNI.EDK_COULDNT_RESOLVE_HOST_get());
-                                System.out.println(edkJavaJNI.EDK_COULDNT_CONNECT_get());
-                                System.out.println(edkJavaJNI.EDK_OPERATION_TIMEDOUT_get());
-                                System.out.println(edkJavaJNI.EDK_CLOUD_PROFILE_EXISTS_get());
-                                System.out.println(edkJavaJNI.EDK_UPLOAD_FAILED_get());
-                                System.out.println(edkJavaJNI.EDK_INVALID_CLOUD_USER_ID_get());
-                                System.out.println(edkJavaJNI.EDK_INVALID_ENGINE_USER_ID_get());
-                                System.out.println(edkJavaJNI.EDK_CLOUD_USER_ID_DONT_LOGIN_get());
-                                System.out.println(edkJavaJNI.EDK_EMOTIVCLOUD_UNINITIALIZED_get());
-                                System.out.println(edkJavaJNI.EDK_FILE_EXISTS_get());
-                                System.out.println(edkJavaJNI.EDK_HEADSET_NOT_AVAILABLE_get());
-                                System.out.println(edkJavaJNI.EDK_HEADSET_IS_OFF_get());
-                                System.out.println(edkJavaJNI.EDK_SAVING_IS_RUNNING_get());
-                                System.out.println(edkJavaJNI.EDK_DEVICE_CODE_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_LICENSE_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_LICENSE_EXPIRED_get());
-                                System.out.println(edkJavaJNI.EDK_LICENSE_NOT_FOUND_get());
-                                System.out.println(edkJavaJNI.EDK_OVER_QUOTA_get());
-                                System.out.println(edkJavaJNI.EDK_INVALID_DEBIT_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_OVER_DEVICE_LIST_get());
-                                System.out.println(edkJavaJNI.EDK_APP_QUOTA_EXCEEDED_get());
-                                System.out.println(edkJavaJNI.EDK_APP_INVALID_DATE_get());
-                                System.out.println(edkJavaJNI.EDK_LICENSE_DEVICE_LIMITED_get());
-                                System.out.println(edkJavaJNI.EDK_LICENSE_REGISTERED_get());
-                                System.out.println(edkJavaJNI.EDK_NO_ACTIVE_LICENSE_get());
-                                System.out.println(edkJavaJNI.EDK_LICENSE_NO_EEG_get());
-                                System.out.println(edkJavaJNI.EDK_UPDATE_LICENSE_get());
-                                System.out.println(edkJavaJNI.EDK_INVALID_DEBIT_NUMBER_get());
-                                System.out.println(edkJavaJNI.EDK_DAILY_DEBIT_LIMITED_get());
-                                System.out.println(edkJavaJNI.EDK_FILE_NOT_FOUND_get());
-                                System.out.println(edkJavaJNI.EDK_ACCESS_DENIED_get());
-                                System.out.println(edkJavaJNI.EDK_NO_INTERNET_CONNECTION_get());
-                                System.out.println(edkJavaJNI.EDK_AUTHENTICATION_ERROR_get());
-                                System.out.println(edkJavaJNI.EDK_LOGIN_ERROR_get());
-                                System.out.println(edkJavaJNI.MAX_NUM_OF_BACKUP_PROFILE_VERSION_get());
+                                System.out.println(result);
 
                                 if (result == edkJava.EDK_OK) {
                                     Log.e("FFT", "GetAverageBandPowers");
@@ -304,8 +243,7 @@ public class EmotivInsightDriver extends AbstractController{
                                 edkJava.delete_double_p(pgamma);
                             }
 
-                            break;
-                        /*case IEE_MentalCommandEvent:
+
                             IEE_MentalCommandEvent_t type = edkJava.IEE_MentalCommandEventGetType(handleEvent);
                             if (type == IEE_MentalCommandEvent_t.IEE_MentalCommandTrainingStarted) {
                                 Log.e("MentalCommand", "training started");
@@ -335,7 +273,7 @@ public class EmotivInsightDriver extends AbstractController{
                             //	IEE_MentalCommandSignatureUpdated;
                             break;
                         case IEE_FacialExpressionEvent:
-                            break;*/
+                            break;
                         default:
                             break;
                     }

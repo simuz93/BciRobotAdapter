@@ -9,8 +9,11 @@ public interface AdapterActivity {
     Context getContext(); //Return adapterActivity Context
 
     //Notify when a controller/robot connects (true) or disconnects (false).
-    void onControllerConnected(boolean connected);
+    void onMainControllerConnected(boolean connected);
+    void onAuxControllerConnected(boolean connected);
     void onRobotConnected(boolean connected);
+
+    void setAuxCtrlDirection(double direction);
 
     //Movements methods
     void moveForward(double rotation, double speed);

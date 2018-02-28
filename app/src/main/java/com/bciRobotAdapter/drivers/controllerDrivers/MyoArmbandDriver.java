@@ -15,8 +15,8 @@ public class MyoArmbandDriver extends AbstractController {
 
     private MyoListener myoListener;
 
-    public MyoArmbandDriver(AdapterActivity adapterActivity) {
-        super(adapterActivity);
+    public MyoArmbandDriver(AdapterActivity adapterActivity, boolean isAuxiliar) {
+        super(adapterActivity, isAuxiliar);
         myoListener = new MyoListener(this);
         Hub.getInstance().init(getContext());
     }
