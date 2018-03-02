@@ -78,7 +78,7 @@ public class MindwaveDriver extends AbstractController {
             @Override
             public void onSignalQuality(int level) {
                 if(NskAlgoSignalQuality.values()[level].toString().equals("POOR") || NskAlgoSignalQuality.values()[level].toString().equals("NOT DETECTED")){
-                    System.out.println("Segnale perso");
+                    System.out.println("Signal lost");
                 }
             }
         });
@@ -109,7 +109,7 @@ public class MindwaveDriver extends AbstractController {
 
 class MindwaveListener implements TgStreamHandler {
 
-    MindwaveDriver mindwaveDriver;
+    private MindwaveDriver mindwaveDriver;
 
     public MindwaveListener(MindwaveDriver mindwaveDriver) {
         this.mindwaveDriver = mindwaveDriver;

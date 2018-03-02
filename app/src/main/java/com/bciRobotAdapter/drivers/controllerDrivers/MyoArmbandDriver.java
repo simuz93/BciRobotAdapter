@@ -167,36 +167,35 @@ class MyoListener extends AbstractDeviceListener {
     @Override
     public void onAccelerometerData(Myo myo, long l, Vector3 vector3) {
 
-        if(myoDriver.readyToSend()) {
-            accx = vector3.x();
-            accy = vector3.y();
-            accz = vector3.z();
+        accx = vector3.x();
+        accy = vector3.y();
+        accz = vector3.z();
 
-            //Wave in to turn left, wave out to turn right
-            if(wave_pose != null) {
-                if(wave_pose.equals(Pose.WAVE_IN)) {
-                    myoDriver.stopRobot();
-                    myoDriver.turnRobotL(90);
-                }
-                else if (wave_pose.equals(Pose.WAVE_OUT)) {
-                    myoDriver.stopRobot();
-                    myoDriver.turnRobotR(90);
-                }
-                wave_pose = null;
+        //Wave in to turn left, wave out to turn right
+        if(wave_pose != null) {
+            if(wave_pose.equals(Pose.WAVE_IN)) {
+                myoDriver.stopRobot();
+                myoDriver.turnRobotL(90);
             }
-
-            //Speed calculated from the arm position:
-            //Down to the floor: speed = 0;
-            //Horizontal: speed = 1 (max);
-            //Up to the ceiling: the robot moves backward at reduced speed
-            //double rotation = 0;
-            else {
-                double speed = (-accx) + 1;
-                if (speed > 0.3 && speed < 1.5) myoDriver.moveRobotForward(0, speed);
-                else if (speed >= 1.3) myoDriver.moveRobotForward(180, speed - 1.3);
-                else myoDriver.stopRobot();
+            else if (wave_pose.equals(Pose.WAVE_OUT)) {
+                myoDriver.stopRobot();
+                myoDriver.turnRobotR(90);
             }
+            wave_pose = null;
         }
+
+        //Speed calculated from the arm position:
+        //Down to the floor: speed = 0;
+        //Horizontal: speed = 1 (max);
+        //Up to the ceiling: the robot moves backward at reduced speed
+        //double rotation = 0;
+        else {
+            double speed = (-accx) + 1;
+            if (speed > 0.3 && speed < 1.5) myoDriver.moveRobotForward(0, speed);
+            else if (speed >= 1.3) myoDriver.moveRobotForward(180, speed - 1.3);
+            else myoDriver.stopRobot();
+        }
+
     }
 
     @Override

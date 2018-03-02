@@ -139,7 +139,7 @@ public abstract class AbstractController implements Controller {
 
     //Movement methods, filtered by the active flag
     public void moveRobotForward(double rotation, double speed) {
-        if(active) {
+        if(active && readyToSend()) {
             if (isAuxiliar) {
                 adapterActivity.setAuxCtrlDirection(rotation);
             }
@@ -147,10 +147,10 @@ public abstract class AbstractController implements Controller {
                 adapterActivity.moveForward(rotation, speed);
             }
         }
-
     }
+
     public void stopRobot() {
-        if(active&&!isAuxiliar) {
+        if(active && !isAuxiliar && readyToSend()) {
             adapterActivity.stop();
         }
     }
