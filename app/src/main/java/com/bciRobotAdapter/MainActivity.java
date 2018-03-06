@@ -8,29 +8,23 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.RelativeLayout;
-import android.widget.Spinner;
-import android.widget.Switch;
-import android.widget.TextView;
+import android.widget.LinearLayout;
+import android.support.design.widget.NavigationView;
 
-import com.bciRobotAdapter.devicesTypes.ControllerType;
-import com.bciRobotAdapter.devicesTypes.RobotType;
-import com.bciRobotAdapter.drivers.controllerDrivers.EmotivInsightDriver;
-import com.bciRobotAdapter.drivers.controllerDrivers.MindwaveDriver;
-import com.bciRobotAdapter.drivers.controllerDrivers.MuseHeadsetDriver;
-import com.bciRobotAdapter.drivers.controllerDrivers.MyoArmbandDriver;
-import com.bciRobotAdapter.drivers.controllerDrivers.PhoneAccelerometerDriver;
-import com.bciRobotAdapter.drivers.robotDrivers.SpheroBB8Driver;
-import com.bciRobotAdapter.drivers.interfaces.Controller;
-import com.bciRobotAdapter.drivers.interfaces.Robot;
-
-import com.bciRobotAdapter.joystickLib.Joystick;
-import com.bciRobotAdapter.joystickLib.JoystickListener;
+import com.bciRobotAdapter.devicesTypes.*;
+import com.bciRobotAdapter.drivers.controllerDrivers.*;
+import com.bciRobotAdapter.drivers.robotDrivers.*;
+import com.bciRobotAdapter.drivers.interfaces.*;
 
 /**===============How to use bciRobotAdapter===============**/
 
@@ -75,11 +69,9 @@ import com.bciRobotAdapter.joystickLib.JoystickListener;
  *
  */
 
-public class MainActivity extends Activity implements OnClickListener, AdapterActivity {
+public class MainActivity extends AppCompatActivity implements AdapterActivity, NavigationView.OnNavigationItemSelectedListener {
 
     /*==========Joystick variables==========*/
-    private Joystick joystick;
-    private JoystickListener joystickListener;
     private float jsDirection = 0;
     private float jsOffset = 0;
     private boolean isJoystickTurning = false;
@@ -100,17 +92,6 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     //Misc
     private double auxControllerDirection = 0;
     private int FREQUENCY = 1;
-
-    /*==========View elements==========*/
-    Button connectMainCtrlBtn, connectAuxCtrlBtn, connectRobotBtn;
-    Spinner spinnerMainCtrl, spinnerAuxCtrl, spinnerRobot;
-    Button btnL, btnR;
-    RelativeLayout controlView;
-    Switch jsToTurnSwitch;
-    Button switchViewBtn;
-    boolean isConnectView;
-    boolean isUseView;
-    TextView log, cLog, rLog, cAuxLog;
 
     /*==========Bluetooth receiver==========*/
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -134,13 +115,14 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState == null) {
+            HomeFragment myf = new HomeFragment();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.dinamic_frame, myf);
+            transaction.commit();
+        }
 
         initUI();
-
-        //No robot or controller connected yet
-        onMainControllerConnected(false);
-        onRobotConnected(false);
-        onAuxControllerConnected(false);
 
         //Bluetooth and position check
         IntentFilter filter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
@@ -156,114 +138,46 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     protected void onResume() {
         super.onResume();
     }
-    @Override
-    public void onClick(View v) {
 
-        switch (v.getId()) {
+    public void onConnectMainControllerPressed(ControllerType name) {
+        setMainController(name);
+        mainController.searchAndConnect();
+    }
+    public void onStopMainControllerConnectionPressed() {
+        if(mainController!=null) mainController.stopSearching();
+        if(mainControllerConnected) mainController.disconnect();
+    }
+    public void onDisconnectMainControllerPressed() {
+        mainController.stopSearching();
+        mainController.disconnect();
+    }
 
-            //The connect buttons have multiple functions according to the context: Connect, Stop or Disconnect.
-            //Connect: starts searching for the selected device and connects to the first available
-            //Stop: interrupts the connect's task and stops searching
-            //Disconnect: disconnects from the connected device
+    public void onConnectAuxControllerPressed(ControllerType name) {
+        setAuxController(name);
+        auxController.searchAndConnect();
+    }
+    public void onStopAuxControllerConnectionPressed() {
+        if(auxController!=null) auxController.stopSearching();
+        if(auxControllerConnected) auxController.disconnect();
+    }
+    public void onDisconnectAuxControllerPressed() {
+        auxController.stopSearching();
+        auxController.disconnect();
+    }
 
-            case R.id.connectMainCtrl:
-                String textCtrl = (String)connectMainCtrlBtn.getText();
-
-                if(textCtrl.equals(getString(R.string.connect))) {
-                    connectMainCtrlBtn.setText(R.string.stop);
-                    setMainController(ControllerType.valueOf((String)spinnerMainCtrl.getSelectedItem()));
-                    setControllerLog("Looking for controller "+spinnerMainCtrl.getSelectedItem()+", press stop to abort");
-                    mainController.searchAndConnect();
-                }
-
-                else if(textCtrl.equals(getString(R.string.stop))) {
-                    setControllerLog("Search stopped");
-                    if(mainController!=null) mainController.stopSearching();
-                    if(mainControllerConnected) mainController.disconnect();
-                    connectMainCtrlBtn.setText(R.string.connect);
-                }
-
-                else if(textCtrl.equals(getString(R.string.disconnect))) {
-                    connectMainCtrlBtn.setText(R.string.connect);
-                    mainController.stopSearching();
-                    mainController.disconnect();
-                }
-                break;
-
-            case R.id.connectRobot:
-                String textRobot = (String)connectRobotBtn.getText();
-
-                if(textRobot.equals(getString(R.string.connect))) {
-                    connectRobotBtn.setText(R.string.stop);
-                    setRobot(RobotType.valueOf((String)spinnerRobot.getSelectedItem()));
-                    setRobotLog("Looking for robot "+spinnerRobot.getSelectedItem()+", press stop to abort");
-                    robot.searchAndConnect();
-                }
-
-                else if(textRobot.equals(getString(R.string.stop))) {
-                    setRobotLog("Search stopped");
-                    if(robot!=null)robot.stopSearching();
-                    if(robotConnected)robot.disconnect();
-                    robot = null;
-                    connectRobotBtn.setText(R.string.connect);
-                }
-
-                else if(textRobot.equals(getString(R.string.disconnect))) {
-                    connectRobotBtn.setText(R.string.connect);
-                    if(robot!=null)robot.stopSearching();
-                    if(robotConnected)robot.disconnect();
-                    robot = null;
-                }
-                break;
-
-            case R.id.connectAuxCtrl:
-                String textAuxCtrl = (String)connectAuxCtrlBtn.getText();
-
-                if(textAuxCtrl.equals(getString(R.string.connect))) {
-                    connectAuxCtrlBtn.setText(R.string.stop);
-                    setAuxController(ControllerType.valueOf((String)spinnerAuxCtrl.getSelectedItem()));
-                    setAuxControllerLog("Looking for controller "+spinnerAuxCtrl.getSelectedItem()+", press stop to abort");
-                    auxController.searchAndConnect();
-                }
-
-                else if(textAuxCtrl.equals(getString(R.string.stop))) {
-                    setAuxControllerLog("Search stopped");
-                    if(auxController!=null) auxController.stopSearching();
-                    if(auxControllerConnected) auxController.disconnect();
-                    connectAuxCtrlBtn.setText(R.string.connect);
-                }
-
-                else if(textAuxCtrl.equals(getString(R.string.disconnect))) {
-                    connectAuxCtrlBtn.setText(R.string.connect);
-                    auxController.stopSearching();
-                    auxController.disconnect();
-                }
-                break;
-
-            //Left button clicked
-            case R.id.btnL:
-                turnL(90);//Turn the robot 90 degrees left
-                break;
-
-            //Right button clicked
-            case R.id.btnR:
-                turnR(90);//Turn the robot 90 degrees right
-                break;
-
-            case R.id.joystickToTurn:
-                isJoystickTurning = jsToTurnSwitch.isChecked();
-                if(isJoystickTurning) {
-                    joystick.setMotionConstraint(Joystick.MotionConstraint.HORIZONTAL);
-                }
-                else joystick.setMotionConstraint(Joystick.MotionConstraint.NONE);
-                break;
-
-            case R.id.switchViewBtn:
-                switchView();
-                break;
-            default:
-                break;
-        }
+    public void onConnectRobotPressed(RobotType name) {
+        setRobot(name);
+        robot.searchAndConnect();
+    }
+    public void onStopRobotConnectionPressed() {
+        if(robot!=null)robot.stopSearching();
+        if(robotConnected)robot.disconnect();
+        robot = null;
+    }
+    public void onDisconnectRobotPressed() {
+        if(robot!=null)robot.stopSearching();
+        if(robotConnected)robot.disconnect();
+        robot = null;
     }
 
     /*===========================Bluetooth methods===========================*/
@@ -300,124 +214,19 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     /*===========================UI and View methods===========================*/
     private void initUI() {
         setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        getAllUiElements();//Saves an instance of every View element
-        initSpinners();
-        initJoystick();
-        addButtonsListener();
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
-        showConnectView(true);
-        showUseView(false);
-    }
-    private void getAllUiElements() {
-        connectMainCtrlBtn = (Button) findViewById(R.id.connectMainCtrl);
-        connectRobotBtn = (Button) findViewById(R.id.connectRobot);
-        connectAuxCtrlBtn = (Button) findViewById(R.id.connectAuxCtrl);
-        btnL = (Button)findViewById(R.id.btnL);
-        btnR = (Button)findViewById(R.id.btnR);
-        jsToTurnSwitch = (Switch) findViewById(R.id.joystickToTurn);
-        spinnerMainCtrl = (Spinner) findViewById(R.id.spinnerCtrl);
-        spinnerRobot = (Spinner) findViewById(R.id.spinnerRobot);
-        spinnerAuxCtrl = (Spinner) findViewById(R.id.spinnerAuxCtrl);
-        switchViewBtn = (Button) findViewById(R.id.switchViewBtn);
-        controlView = (RelativeLayout) findViewById(R.id.ControlView);
-        log = (TextView)findViewById(R.id.log);
-        cLog = (TextView)findViewById(R.id.controllerLog);
-        rLog = (TextView)findViewById(R.id.robotLog);
-        cAuxLog = (TextView)findViewById(R.id.auxCtrlLog);
-    }
-    private void addButtonsListener() {
-        connectMainCtrlBtn.setOnClickListener(this);
-        connectRobotBtn.setOnClickListener(this);
-        connectAuxCtrlBtn.setOnClickListener(this);
-        btnL.setOnClickListener(this);
-        btnR.setOnClickListener(this);
-        jsToTurnSwitch.setOnClickListener(this);
-        switchViewBtn.setOnClickListener(this);
-    }
-    private void initSpinners() {
-        //Spinners values are from the ControllerType and RobotType enum
-        ArrayAdapter<String> spinnerAdapterCtrl = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
-        for(ControllerType ct : ControllerType.values()) {
-            spinnerAdapterCtrl.add(ct.toString());
-        }
-        spinnerMainCtrl.setAdapter(spinnerAdapterCtrl);
-
-        ArrayAdapter<String> spinnerAdapterRobot = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
-        for(RobotType rt : RobotType.values()) {
-            spinnerAdapterRobot.add(rt.toString());
-        }
-        spinnerRobot.setAdapter(spinnerAdapterRobot);
-
-        ArrayAdapter<String> spinnerAdapterAuxCtrl = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
-        for(ControllerType ct : ControllerType.values()) {
-            spinnerAdapterAuxCtrl.add(ct.toString());
-        }
-        spinnerAuxCtrl.setAdapter(spinnerAdapterAuxCtrl);
-    }
-    private void initJoystick() {
-        joystick = (Joystick) findViewById(R.id.joystick);
-        joystickListener = new JSListener(this, mainController, auxController);
-        joystick.setJoystickListener(joystickListener);
-    }
-    private void switchView(){
-        if(isConnectView && !isUseView) {
-            showConnectView(false);
-            showUseView(true);
-        }
-        else if(isUseView && !isConnectView) {
-            showUseView(false);
-            showConnectView(true);
-        }
-        else Log.e("SwitchView", "Both connectingView and useView are ON or OFF together. SwitchView request ignored");
-    }
-    private void showUseView(boolean wantToShow) {
-        if(wantToShow) {
-            jsToTurnSwitch.setVisibility(View.VISIBLE);
-            controlView.setVisibility(View.VISIBLE);
-            log.setVisibility(View.VISIBLE);
-            isUseView = true;
-        }
-        else {
-            jsToTurnSwitch.setVisibility(View.GONE);
-            controlView.setVisibility(View.GONE);
-            log.setVisibility(View.GONE);
-            isUseView=false;
-        }
-    }
-    private void showConnectView(boolean wantToShow) {
-        if(wantToShow) {
-            connectMainCtrlBtn.setVisibility(View.VISIBLE);
-            spinnerMainCtrl.setVisibility(View.VISIBLE);
-            connectRobotBtn.setVisibility(View.VISIBLE);
-            spinnerRobot.setVisibility(View.VISIBLE);
-            connectAuxCtrlBtn.setVisibility(View.VISIBLE);
-            spinnerAuxCtrl.setVisibility(View.VISIBLE);
-
-            cLog.setVisibility(View.VISIBLE);
-            rLog.setVisibility(View.VISIBLE);
-            cAuxLog.setVisibility(View.VISIBLE);
-
-            TextView explainTextView = (TextView) findViewById(R.id.explainTextView);
-            explainTextView.setVisibility(View.VISIBLE);
-            isConnectView = true;
-        }
-        else {
-            connectMainCtrlBtn.setVisibility(View.GONE);
-            spinnerMainCtrl.setVisibility(View.GONE);
-            connectRobotBtn.setVisibility(View.GONE);
-            spinnerRobot.setVisibility(View.GONE);
-            connectAuxCtrlBtn.setVisibility(View.GONE);
-            spinnerAuxCtrl.setVisibility(View.GONE);
-
-            cLog.setVisibility(View.GONE);
-            rLog.setVisibility(View.GONE);
-            cAuxLog.setVisibility(View.GONE);
-
-            TextView explainTextView = (TextView) findViewById(R.id.explainTextView);
-            explainTextView.setVisibility(View.GONE);
-            isConnectView = false;
-        }
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+        View header = navigationView.getHeaderView(0);
+        LinearLayout sideNavLayout = (LinearLayout) header.findViewById(R.id.sideNavLayout);
+        //sideNavLayout.setBackgroundResource(R.drawable.ic_bb8_bg);
     }
 
     /*===========================Devices set methods===========================*/
@@ -446,7 +255,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
                 return;
         }
         mainController.setFrequency(FREQUENCY);
-        if(auxController!=null) mainController.setHasAuxiliar(true);
+        if(auxController!=null) mainController.setHasAuxiliary(true);
         setControllerLog("Looking for CONTROLLER: "+mainControllerName.name());
     }
     private void setAuxController(ControllerType name) {
@@ -474,7 +283,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
                 return;
         }
         auxController.setFrequency(FREQUENCY);
-        if(mainController!=null) mainController.setHasAuxiliar(true);
+        if(mainController!=null) mainController.setHasAuxiliary(true);
         setAuxControllerLog("Looking for CONTROLLER: "+auxControllerName.name());
     }
     private void setRobot(RobotType name) {
@@ -503,41 +312,23 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     //Listener
     public void onMainControllerConnected(boolean connected){
         mainControllerConnected = connected;
-
-        if(connected) {
-            setControllerLog("Connected to CONTROLLER: " + mainControllerName.name());
-            connectMainCtrlBtn.setText(R.string.disconnect);
-        }
-        else {
-            if(checkRobot())robot.stop();
-            setControllerLog("CONTROLLER disconnected");
-            connectMainCtrlBtn.setText(R.string.connect);
-        }
+        if(!connected&&checkRobot()) robot.stop();
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+        if(cf!=null)cf.onMainControllerConnected(connected, mainControllerName.name());
     }
     public void onRobotConnected(boolean connected){
         robotConnected = connected;
-
-        if(connected) {
-            setRobotLog("Connected to ROBOT: " + robotName.name());
-            connectRobotBtn.setText(R.string.disconnect);
-        }
-        else {
-            setRobotLog("ROBOT disconnected");
-            connectRobotBtn.setText(R.string.connect);
-        }
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+        if(cf!=null)cf.onRobotConnected(connected, robotName.name());
     }
     public void onAuxControllerConnected(boolean connected){
         auxControllerConnected = connected;
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+        if(cf!=null)cf.onAuxControllerConnected(connected, auxControllerName.name());
 
-        if(connected) {
-            setAuxControllerLog("Connected to AUX CONTROLLER: " + auxControllerName.name());
-            connectAuxCtrlBtn.setText(R.string.disconnect);
-        }
-        else {
+        if(!connected) {
+            if(mainController!=null) mainController.setHasAuxiliary(false);
             if(checkRobot())robot.stop();
-            setAuxControllerLog("AUX CONTROLLER disconnected");
-            connectAuxCtrlBtn.setText(R.string.connect);
-            if(mainController!=null) mainController.setHasAuxiliar(false);
         }
     }
 
@@ -551,7 +342,7 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
     }
 
     /*===========================Joystick management methods===========================*/
-    public void setJsValues(float jsDirection, float jsOffset) {
+    private void setJsValues(float jsDirection, float jsOffset) {
         this.jsDirection = jsDirection;
         this.jsOffset = jsOffset;
     }
@@ -562,7 +353,9 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
         else rotation = 0;
         return rotation;
     }
-
+    public void setJoystickTurning(boolean isJoystickTurning) {
+        this.isJoystickTurning = isJoystickTurning;
+    }
 
     /*===========================Movement and led methods===========================*/
     //Movement
@@ -591,62 +384,94 @@ public class MainActivity extends Activity implements OnClickListener, AdapterAc
 
     /*===========================Log and debug methods===========================*/
     public void setGeneralLog(String toWrite) {
-        log.setText(toWrite);
+        //log.setText(toWrite);
     }
     public void setControllerLog(String toWrite) {
-        cLog.setText(toWrite);
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+        if(cf!=null) cf.setMainControllerLog(toWrite);
     }
     public void setAuxControllerLog(String toWrite) {
-        cAuxLog.setText(toWrite);
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+        if(cf!=null) cf.setAuxControllerLog(toWrite);
+
     }
     public void setRobotLog(String toWrite) {
-        rLog.setText(toWrite);
-    }
-}
-
-/*===========================Joystick's listener===========================*/
-class JSListener implements com.bciRobotAdapter.joystickLib.JoystickListener {
-
-    private MainActivity mainActivity;
-    private Controller mainController;
-    private Controller auxController;
-
-    JSListener(MainActivity mainActivity, Controller mainController, Controller auxController) {
-        this.mainActivity = mainActivity;
-        this.mainController = mainController;
-        this.auxController = auxController;
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+        if(cf!=null) cf.setRobotLog(toWrite);
     }
 
-    //When your finger goes down on the joystick
     @Override
-    public void onDown() {
-        if(!mainActivity.isJoystickTurning()) {
-            if (mainController != null) mainController.activate(false);
-            if (auxController != null) auxController.activate(false);
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        // Handle navigation view item clicks here.
+        FragmentTransaction transaction;
+
+        switch (item.getItemId()) {
+
+            case R.id.nav_home:
+                HomeFragment hf = new HomeFragment();
+                transaction = getSupportFragmentManager().beginTransaction();
+                transaction.addToBackStack("homeFrag");
+                transaction.replace(R.id.dinamic_frame, hf);
+                transaction.commit();
+                break;
+
+            case R.id.nav_connection:
+                ConnectionFragment cf = new ConnectionFragment();
+                cf.initFragment(this);
+                transaction = getSupportFragmentManager().beginTransaction();
+                transaction.addToBackStack("connFrag");
+                transaction.replace(R.id.dinamic_frame, cf);
+                transaction.commit();
+                break;
+
+            case R.id.nav_drive:
+                JoystickFragment jf = new JoystickFragment();
+                jf.initFragment(this);
+                transaction = getSupportFragmentManager().beginTransaction();
+                transaction.addToBackStack("jsFrag");
+                transaction.replace(R.id.dinamic_frame, jf);
+                transaction.commit();
+                break;
         }
 
-    }//Pause the controller while using the joystick
-
-    @Override
-    public void onDrag(float degrees, float offset) {
-        if(!mainActivity.isJoystickTurning()) {
-            if (mainController != null) mainController.activate(false);//Pause the controller while using the joystick
-            if (auxController != null) auxController.activate(false);
-
-            if (offset == 0) mainActivity.stop();
-            else mainActivity.moveForward(degrees, offset);
-        }
-        else mainActivity.setJsValues(degrees, offset);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
-    //When your finger goes back up from the joystick
-    @Override
-    public void onUp() {
-        if(!mainActivity.isJoystickTurning()) {
-            if (mainController != null)mainController.activate(true);//Pause the controller while using the joystick
-            if (auxController!=null) auxController.activate(true);
-            mainActivity.stop();
+    public void activateMainController(boolean active) {
+        if(mainController!=null)mainController.activate(active);
+    }
+
+    public void activateAuxController(boolean active) {
+        if(auxController!=null)auxController.activate(active);
+    }
+
+    /*===========================Joystick Listener============================*/
+    public void onJsDown() {
+        if(!isJoystickTurning()) {
+            activateMainController(false);
+            activateAuxController(false);
         }
-        mainActivity.setJsValues(0, 0);
+    }
+
+    public void onJsDrag(float degrees, float offset) {
+        if(!isJoystickTurning()) {
+            activateMainController(false);//Pause the controller while using the joystick
+            activateAuxController(false);
+
+            if (offset == 0) stop();
+            else moveForward(degrees, offset);
+        }
+        else setJsValues(degrees, offset);
+    }
+
+    public void onJsUp() {
+        if(!isJoystickTurning()) {
+            activateMainController(true);//Pause the controller while using the joystick
+            activateAuxController(true);
+            stop();
+        }
+        setJsValues(0, 0);
     }
 }

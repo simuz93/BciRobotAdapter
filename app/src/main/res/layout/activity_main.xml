@@ -1,101 +1,35 @@
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+</android.support.v4.widget.DrawerLayout>
+
+
+<!--<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color">
-
-    <TextView
-        android:id="@+id/controllerLog"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:gravity="bottom" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Spinner
-            android:id="@+id/spinnerCtrl"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.65"
-            android:background="@color/btn_bg_color"
-            android:dropDownWidth="match_parent"
-            android:textColor="@color/btn_text_color" />
-
-        <Button
-            android:id="@+id/connectMainCtrl"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.35"
-            android:background="@color/btn_bg_color"
-            android:text="@string/connect"
-            android:textColor="@color/btn_text_color" />
-
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/robotLog"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:gravity="bottom" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Spinner
-            android:id="@+id/spinnerRobot"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.65"
-            android:background="@color/btn_bg_color"
-            android:dropDownWidth="match_parent"
-            android:textColor="@color/btn_text_color" />
-        <Button
-            android:id="@+id/connectRobot"
-            android:layout_width="0dp"
-            android:layout_weight="0.35"
-            android:layout_height="wrap_content"
-            android:background="@color/btn_bg_color"
-            android:textColor="@color/btn_text_color"
-            android:text="@string/connect" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/auxCtrlLog"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:gravity="bottom" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Spinner
-            android:id="@+id/spinnerAuxCtrl"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.65"
-            android:background="@color/btn_bg_color"
-            android:dropDownWidth="match_parent"
-            android:textColor="@color/btn_text_color" />
-        <Button
-            android:id="@+id/connectAuxCtrl"
-            android:layout_width="0dp"
-            android:layout_weight="0.35"
-            android:layout_height="wrap_content"
-            android:background="@color/btn_bg_color"
-            android:textColor="@color/btn_text_color"
-            android:text="@string/connect" />
-    </LinearLayout>
 
     <TextView
         android:id="@+id/explainTextView"
@@ -109,66 +43,6 @@
         android:layout_height="150dp"
         android:background="@android:color/darker_gray" />
 
-    <RelativeLayout
-        android:id="@+id/ControlView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        xmlns:joystick = "http://schemas.android.com/apk/res-auto">
-
-        <Button
-            android:id="@+id/btnL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:background="@color/btn_bg_color"
-            android:textColor="@color/btn_text_color"
-            android:text="L"
-            android:layout_alignParentStart="true"/>
-
-        <com.bciRobotAdapter.joystickLib.Joystick
-            android:id="@+id/joystick"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/joystick_background"
-            joystick:force_square="false"
-            joystick:motion_constraint="None"
-            joystick:start_on_first_touch="false">
-
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/joystick_button" />
-
-        </com.bciRobotAdapter.joystickLib.Joystick>
-
-        <Button
-            android:id="@+id/btnR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:background="@color/btn_bg_color"
-            android:textColor="@color/btn_text_color"
-            android:text="R" />
-    </RelativeLayout>
-
-    <RelativeLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Switch
-            android:id="@+id/joystickToTurn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_above="@id/switchViewBtn"
-            android:text="Switch"/>
-
         <Button
             android:id="@+id/switchViewBtn"
             android:layout_width="wrap_content"
@@ -176,10 +50,9 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
-            android:text="Button" />
-    </RelativeLayout>
+            android:text="@string/switchViewBtn" />
 
-</LinearLayout>
+</LinearLayout>-->
 
 
 

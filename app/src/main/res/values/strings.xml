@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MultiDevCompApp</string>
+    <string name="app_name">BciRobotAdapter</string>
     <string name="connect">Connect</string>
     <string name="disconnect">Disconnect</string>
     <string name="stop">Stop</string>
-    <string name="joystickToTurnSwitch">Use joystick to turn</string>
-
+    <string name="joystickToTurnSwitch">Use the joystick to turn the robot left or right</string>
+    <string name="switchViewBtn">Switch View</string>
     <string name="title_activity_bluetooth_connection">BluetoothConnectionActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="pauseControllers">Pause\nControllers</string>
+    <string name="resumeControllers">Resume</string>
+    <string name="notConnected">Not Connected</string>
+    <string name="turnLeft">Turn\nLeft</string>
+    <string name="turnRight">Turn\nRight</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

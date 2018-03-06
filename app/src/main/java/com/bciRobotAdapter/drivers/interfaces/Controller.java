@@ -7,5 +7,5 @@ public interface Controller {
     void stopSearching(); //stop searching for devices
     void activate(boolean active); //set the boolean variable 'activate' to 'active = (true/false)'
     void setFrequency(int frequency_Hz);
-    void setHasAuxiliar(boolean hasAuxiliar);
+    void setHasAuxiliary(boolean hasAuxiliary);
 }

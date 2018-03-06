@@ -1,0 +1,153 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:joystick="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_joystick"
+    tools:context="com.bciRobotAdapter.JoystickFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/driveLog"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_above="@+id/joystick"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/robotConnectedTitle" />
+
+        <com.bciRobotAdapter.joystickLib.Joystick
+            android:id="@+id/joystick"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_above="@+id/joystickToTurn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/joystick_background"
+            joystick:force_square="false"
+            joystick:motion_constraint="None"
+            joystick:start_on_first_touch="false">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/joystick_button" />
+
+        </com.bciRobotAdapter.joystickLib.Joystick>
+
+        <Switch
+            android:id="@+id/joystickToTurn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/btn_bg_color"
+            android:padding="7dp"
+            android:text="@string/joystickToTurnSwitch" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnL"
+                android:layout_alignBottom="@+id/btnL"
+                android:layout_alignParentEnd="true"
+                android:background="@color/btn_bg_color"
+                android:text="@string/turnRight"
+                android:textColor="@color/btn_text_color" />
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/btn_bg_color"
+                android:textColor="@color/btn_text_color"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/pauseControllers" />
+
+            <Button
+                android:id="@+id/btnL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@color/btn_bg_color"
+                android:text="@string/turnLeft"
+                android:textColor="@color/btn_text_color" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mainControllerConnectedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/mainControllerConnected"
+            android:padding="3dp"
+            android:text="Main Controller:\t" />
+
+        <TextView
+            android:id="@+id/auxControllerConnectedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mainControllerConnectedTitle"
+            android:layout_marginStart="49dp"
+            android:padding="3dp"
+            android:text="Auxiliary Controller:\t" />
+
+        <TextView
+            android:id="@+id/robotConnectedTitle"
+            android:padding="3dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auxControllerConnectedTitle"
+            android:layout_toStartOf="@+id/auxControllerConnected"
+            android:text="Robot:\t" />
+
+        <TextView
+            android:id="@+id/mainControllerConnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/auxControllerConnectedTitle"
+            android:padding="3dp"
+            android:text="@string/notConnected" />
+
+        <TextView
+            android:id="@+id/auxControllerConnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/robotConnected"
+            android:layout_alignStart="@+id/mainControllerConnected"
+            android:padding="3dp"
+            android:text="@string/notConnected" />
+
+        <TextView
+            android:id="@+id/robotConnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/robotConnectedTitle"
+            android:layout_alignBottom="@+id/robotConnectedTitle"
+            android:layout_toEndOf="@+id/robotConnectedTitle"
+            android:padding="3dp"
+            android:text="@string/notConnected" />
+
+    </RelativeLayout>
+
+</FrameLayout>

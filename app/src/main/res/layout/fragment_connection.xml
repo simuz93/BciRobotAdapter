@@ -1,0 +1,188 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_connection"
+    tools:context="com.bciRobotAdapter.ConnectionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mainControllerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:text="Main Controller" />
+
+            <TextView
+                android:id="@+id/mainControllerLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:textAlignment="viewEnd"
+                android:text="@string/notConnected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerCtrl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:background="@color/btn_bg_color"
+                android:dropDownWidth="match_parent"
+                android:textColor="@color/btn_text_color" />
+
+            <Button
+                android:id="@+id/connectMainCtrl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:background="@color/btn_bg_color"
+                android:text="@string/connect"
+                android:textColor="@color/btn_text_color" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/auxControllerTitle"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Auxiliary Controller" />
+            <TextView
+                android:id="@+id/auxControllerLog"
+                android:textAlignment="viewEnd"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/notConnected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerAuxCtrl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:background="@color/btn_bg_color"
+                android:dropDownWidth="match_parent"
+                android:textColor="@color/btn_text_color" />
+
+            <Button
+                android:id="@+id/connectAuxCtrl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:background="@color/btn_bg_color"
+                android:text="@string/connect"
+                android:textColor="@color/btn_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/robotTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:text="Robot" />
+            <TextView
+                android:id="@+id/robotLog"
+                android:textAlignment="viewEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:text="@string/notConnected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerRobot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:background="@color/btn_bg_color"
+                android:dropDownWidth="match_parent"
+                android:textColor="@color/btn_text_color" />
+
+            <Button
+                android:id="@+id/connectRobot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:background="@color/btn_bg_color"
+                android:text="@string/connect"
+                android:textColor="@color/btn_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mainControllerOutputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Main Controller Output" />
+
+        <TextView
+            android:id="@+id/mainControllerOutput"
+            android:layout_width="match_parent"
+            android:layout_height="65dp" />
+
+
+
+        <TextView
+            android:id="@+id/auxControllerOutputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Auxiliary Controller Output" />
+
+        <TextView
+            android:id="@+id/auxControllerOutput"
+            android:layout_width="match_parent"
+            android:layout_height="65dp" />
+
+        <TextView
+            android:id="@+id/robotOutputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Robot Output" />
+
+        <TextView
+            android:id="@+id/robotOutput"
+            android:layout_width="match_parent"
+            android:layout_height="65dp" />
+    </LinearLayout>
+</FrameLayout>

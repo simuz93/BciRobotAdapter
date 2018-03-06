@@ -15,12 +15,12 @@ public abstract class AbstractController implements Controller {
     private final AdapterActivity adapterActivity;//The main activity
     private int FREQUENCY; //Packet send frequency in Hz
     private boolean forceSend = false;
-    private boolean isAuxiliar = false;
-    private boolean hasAuxiliar = false;
+    private boolean isAuxiliary = false;
+    private boolean hasAuxiliary = false;
 
-    public AbstractController(AdapterActivity adapterActivity, boolean isAuxiliar) {
+    public AbstractController(AdapterActivity adapterActivity, boolean isAuxiliary) {
         this.adapterActivity = adapterActivity;
-        this.isAuxiliar = isAuxiliar;
+        this.isAuxiliary = isAuxiliary;
         initForceSendThread();
     }
 
@@ -50,8 +50,8 @@ public abstract class AbstractController implements Controller {
         return this.adapterActivity.getContext();
     }
 
-    public void setHasAuxiliar(boolean hasAuxiliar) {
-        this.hasAuxiliar = hasAuxiliar;
+    public void setHasAuxiliary(boolean hasAuxiliary) {
+        this.hasAuxiliary = hasAuxiliary;
     }
 
     //Manage the active boolean variable
@@ -63,7 +63,7 @@ public abstract class AbstractController implements Controller {
     //Notify the adapter that the controller is connected (connected = true) or disconnected (connected = false).
     // You MUST call this method everytime the controller's connection state changes
     public void notifyControllerConnected(boolean connected) {
-        if(!isAuxiliar)this.adapterActivity.onMainControllerConnected(connected);
+        if(!isAuxiliary)this.adapterActivity.onMainControllerConnected(connected);
         else this.adapterActivity.onAuxControllerConnected(connected);
     }
 
@@ -140,7 +140,7 @@ public abstract class AbstractController implements Controller {
     //Movement methods, filtered by the active flag
     public void moveRobotForward(double rotation, double speed) {
         if(active && readyToSend()) {
-            if (isAuxiliar) {
+            if (isAuxiliary) {
                 adapterActivity.setAuxCtrlDirection(rotation);
             }
             else {
@@ -150,49 +150,49 @@ public abstract class AbstractController implements Controller {
     }
 
     public void stopRobot() {
-        if(active && !isAuxiliar && readyToSend()) {
+        if(active && !isAuxiliary && readyToSend()) {
             adapterActivity.stop();
         }
     }
     public void turnRobotL(double rotation) {
-        if(active&&!hasAuxiliar) {
+        if(active&&!hasAuxiliary) {
             adapterActivity.turnL(rotation);
         }
     } //Face left
     public void turnRobotR(double rotation) {
-        if(active&&!hasAuxiliar) {
+        if(active&&!hasAuxiliary) {
             adapterActivity.turnR(rotation);
         }
     } //Face right
 
     //Led
     public void setRobotLedRed() {
-        if(active&&!isAuxiliar) {
+        if(active&&!isAuxiliary) {
             adapterActivity.setLedRed();
         }
     }
     public void setRobotLedBlue() {
-        if(active&&!isAuxiliar) {
+        if(active&&!isAuxiliary) {
             adapterActivity.setLedBlue();
         }
     }
     public void setRobotLedGreen() {
-        if(active&&!isAuxiliar) {
+        if(active&&!isAuxiliary) {
             adapterActivity.setLedGreen();
         }
     }
     public void setRobotLedYellow() {
-        if(active&&!isAuxiliar) {
+        if(active&&!isAuxiliary) {
             adapterActivity.setLedYellow();
         }
     }
     public void setRobotLedWhite() {
-        if(active&&!isAuxiliar) {
+        if(active&&!isAuxiliary) {
             adapterActivity.setLedWhite();
         }
     }
     public void setRobotLedOff() {
-        if(active&&!isAuxiliar) {
+        if(active&&!isAuxiliary) {
             adapterActivity.setLedOff();
         }
     }

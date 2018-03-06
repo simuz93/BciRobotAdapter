@@ -33,7 +33,7 @@ public class SpheroBB8Driver extends AbstractRobot implements RobotChangedStateL
         discoveryAgentEventListener = new DiscoveryAgentEventListener() {
             @Override
             public void handleRobotsAvailable(List<Robot> robots) {
-                setRobotLog("Robot found, connecting... Bring this device near BB8");
+                setRobotLog("Bring this device near BB8");
             }
         };
 

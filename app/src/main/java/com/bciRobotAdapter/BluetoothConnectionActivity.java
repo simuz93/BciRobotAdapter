@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -24,7 +25,7 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 
-public class BluetoothConnectionActivity extends Activity {
+public class BluetoothConnectionActivity extends AppCompatActivity {
 
     private int BLUETOOTH_ENABLE_RCODE = 1;
     private int LOCATION_PERMISSIONS_RCODE = 2;
