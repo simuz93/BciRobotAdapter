@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="bg_color">#ffffff</color>
-
     <color name="js_clicked_bg_color">#0d0d0d</color>
     <color name="js_notClicked_bg_color">#0d0d0d</color>
 

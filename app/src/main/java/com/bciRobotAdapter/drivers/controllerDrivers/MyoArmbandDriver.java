@@ -205,10 +205,6 @@ class MyoListener extends AbstractDeviceListener {
         gyrz = vector3.z();
     }
 
-    public void printData() {
-        myoDriver.multiLog(1, "Ori", "Acc", "Gyr", orix, oriy, oriz, oriw, accx, accy, accz, -255, gyrx, gyry, gyrz, -255);
-    }
-
     @Override
     public void onRssi(Myo myo, long l, int i) {
 

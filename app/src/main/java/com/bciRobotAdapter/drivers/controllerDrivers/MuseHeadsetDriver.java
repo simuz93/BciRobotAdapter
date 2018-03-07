@@ -175,7 +175,6 @@ public class MuseHeadsetDriver extends AbstractController {
 
         }
         //Print data
-        multiLog(2, "Alpha", "Beta", "Acc", "Eeg", alpha_1, alpha_2, alpha_3, alpha_4, beta_1, beta_2, beta_3, beta_4, x, y, z, 0, eeg_1, eeg_2, eeg_3, eeg_4);
 
         //0.9 -> 1.6
 

@@ -216,7 +216,7 @@ MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users
 	android:label
 		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:24:9-41
 	android:icon
-		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:23:9-45
+		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:23:9-43
 	android:allowBackup
 		ADDED from C:\Users\sserr\AndroidStudioProjects\MultiDevCompApp\app\src\main\AndroidManifest.xml:22:9-35
 	android:theme

@@ -76,7 +76,11 @@ public interface AdapterActivity {
     void setLedOff();
 
     /*===========================Log and debug methods===========================*/
-    void setGeneralLog(String toWrite);
-    void setControllerLog(String toWrite);
+    void setMainControllerLog(String toWrite);
+    void setAuxControllerLog(String toWrite);
     void setRobotLog(String toWrite);
+
+    void setMainControllerOutput(String toWrite);
+    void setAuxControllerOutput(String toWrite);
+    void setRobotOutput(String toWrite);
 }

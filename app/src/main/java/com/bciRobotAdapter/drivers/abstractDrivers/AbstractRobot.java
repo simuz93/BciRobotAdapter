@@ -40,10 +40,8 @@ public abstract class AbstractRobot implements Robot {
     public void setRobotLog(String toWrite) {
         this.adapterActivity.setRobotLog(toWrite);
     }
-
-    //Print in the main textview the String "toWrite"
-    public void setGeneralLog(String toWrite) {
-        this.adapterActivity.setGeneralLog(toWrite);
+    public void setRobotOutput(String toWrite) {
+        this.adapterActivity.setRobotOutput(toWrite);
     }
 
     //Interface methods

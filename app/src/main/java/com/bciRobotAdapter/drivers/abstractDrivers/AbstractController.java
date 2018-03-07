@@ -85,48 +85,14 @@ public abstract class AbstractController implements Controller {
 
     //Print in the robot textView the String "toWrite"
     public void setControllerLog(String toWrite) {
-        this.adapterActivity.setControllerLog(toWrite);
+        if(!isAuxiliary) this.adapterActivity.setMainControllerLog(toWrite);
+        else this.adapterActivity.setAuxControllerLog(toWrite);
     }
 
-    //Print in the main textview the String "toWrite"
-    public void setGeneralLog(String toWrite) {
-        this.adapterActivity.setGeneralLog(toWrite);
+    public void setControllerOutput(String toWrite) {
+        if(!isAuxiliary) this.adapterActivity.setMainControllerOutput(toWrite);
+        else this.adapterActivity.setAuxControllerOutput(toWrite);
     }
-
-    //Print more formatted logs in the general log
-    //2 lines
-    public void multiLog(int n_dec, String s1, String s2,
-                         double v11, double v12, double v13, double v14,
-                         double v21, double v22, double v23, double v24) {
-
-        setGeneralLog(s1+": "+String.format("%.2f", v11)+" - "+String.format("%.2f",v12)+" - "+String.format("%.2f",v13)+" - "+String.format("%.2f",v14)+
-                "\n"+s2+": "+String.format("%.2f",v21)+" - "+String.format("%.2f",v22)+" - "+String.format("%.2f",v23)+" - "+String.format("%.2f",v24));
-    }
-
-    //3 lines
-    public void multiLog(int n_dec, String s1, String s2, String s3,
-                         double v11, double v12, double v13, double v14,
-                         double v21, double v22, double v23, double v24,
-                         double v31, double v32, double v33, double v34) {
-
-        setGeneralLog(s1+": "+String.format("%."+n_dec+"f", v11)+" - "+String.format("%."+n_dec+"f",v12)+" - "+String.format("%."+n_dec+"f",v13)+" - "+String.format("%."+n_dec+"f",v14)+
-                "\n"+s2+": "+String.format("%."+n_dec+"f",v21)+" - "+String.format("%."+n_dec+"f",v22)+" - "+String.format("%."+n_dec+"f",v23)+" - "+String.format("%."+n_dec+"f",v24)+
-                "\n"+s3+": "+String.format("%."+n_dec+"f",v31)+" - "+String.format("%."+n_dec+"f",v32)+" - "+String.format("%."+n_dec+"f",v33)+" - "+String.format("%."+n_dec+"f",v34));
-    }
-
-    //4 lines
-    public void multiLog(int n_dec, String s1, String s2, String s3, String s4,
-                         double v11, double v12, double v13, double v14,
-                         double v21, double v22, double v23, double v24,
-                         double v31, double v32, double v33, double v34,
-                         double v41, double v42, double v43, double v44) {
-
-        setGeneralLog(s1+": "+String.format("%.2f", v11)+" - "+String.format("%.2f",v12)+" - "+String.format("%.2f",v13)+" - "+String.format("%.2f",v14)+
-                "\n"+s2+": "+String.format("%.2f",v21)+" - "+String.format("%.2f",v22)+" - "+String.format("%.2f",v23)+" - "+String.format("%.2f",v24)+
-                "\n"+s3+": "+String.format("%.2f",v31)+" - "+String.format("%.2f",v32)+" - "+String.format("%.2f",v33)+" - "+String.format("%.2f",v34)+
-                "\n"+s4+": "+String.format("%.2f",v41)+" - "+String.format("%.2f",v42)+" - "+String.format("%.2f",v43)+" - "+String.format("%.2f",v44));
-    }
-
     /*======================================================================================*/
 
     //Interface abstract methods

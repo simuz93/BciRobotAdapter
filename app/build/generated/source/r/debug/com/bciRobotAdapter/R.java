@@ -3003,88 +3003,87 @@ public final class R {
     public static final int background_floating_material_light=0x7f05001c;
     public static final int background_material_dark=0x7f05001d;
     public static final int background_material_light=0x7f05001e;
-    public static final int bg_color=0x7f05001f;
-    public static final int bright_foreground_disabled_material_dark=0x7f050020;
-    public static final int bright_foreground_disabled_material_light=0x7f050021;
-    public static final int bright_foreground_inverse_material_dark=0x7f050022;
-    public static final int bright_foreground_inverse_material_light=0x7f050023;
-    public static final int bright_foreground_material_dark=0x7f050024;
-    public static final int bright_foreground_material_light=0x7f050025;
-    public static final int btn_bg_color=0x7f050026;
-    public static final int btn_text_color=0x7f050027;
-    public static final int button_material_dark=0x7f050028;
-    public static final int button_material_light=0x7f050029;
-    public static final int common_google_signin_btn_text_dark=0x7f05002a;
-    public static final int common_google_signin_btn_text_dark_default=0x7f05002b;
-    public static final int common_google_signin_btn_text_dark_disabled=0x7f05002c;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f05002d;
-    public static final int common_google_signin_btn_text_dark_pressed=0x7f05002e;
-    public static final int common_google_signin_btn_text_light=0x7f05002f;
-    public static final int common_google_signin_btn_text_light_default=0x7f050030;
-    public static final int common_google_signin_btn_text_light_disabled=0x7f050031;
-    public static final int common_google_signin_btn_text_light_focused=0x7f050032;
-    public static final int common_google_signin_btn_text_light_pressed=0x7f050033;
-    public static final int common_google_signin_btn_tint=0x7f050034;
-    public static final int design_bottom_navigation_shadow_color=0x7f050035;
-    public static final int design_error=0x7f050036;
-    public static final int design_fab_shadow_end_color=0x7f050037;
-    public static final int design_fab_shadow_mid_color=0x7f050038;
-    public static final int design_fab_shadow_start_color=0x7f050039;
-    public static final int design_fab_stroke_end_inner_color=0x7f05003a;
-    public static final int design_fab_stroke_end_outer_color=0x7f05003b;
-    public static final int design_fab_stroke_top_inner_color=0x7f05003c;
-    public static final int design_fab_stroke_top_outer_color=0x7f05003d;
-    public static final int design_snackbar_background_color=0x7f05003e;
-    public static final int design_textinput_error_color_dark=0x7f05003f;
-    public static final int design_textinput_error_color_light=0x7f050040;
-    public static final int design_tint_password_toggle=0x7f050041;
-    public static final int dim_foreground_disabled_material_dark=0x7f050042;
-    public static final int dim_foreground_disabled_material_light=0x7f050043;
-    public static final int dim_foreground_material_dark=0x7f050044;
-    public static final int dim_foreground_material_light=0x7f050045;
-    public static final int foreground_material_dark=0x7f050046;
-    public static final int foreground_material_light=0x7f050047;
-    public static final int highlighted_text_material_dark=0x7f050048;
-    public static final int highlighted_text_material_light=0x7f050049;
-    public static final int js_clicked_bg_color=0x7f05004a;
-    public static final int js_clicked_btn_color=0x7f05004b;
-    public static final int js_notClicked_bg_color=0x7f05004c;
-    public static final int js_notClicked_btn_color=0x7f05004d;
-    public static final int material_blue_grey_800=0x7f05004e;
-    public static final int material_blue_grey_900=0x7f05004f;
-    public static final int material_blue_grey_950=0x7f050050;
-    public static final int material_deep_teal_200=0x7f050051;
-    public static final int material_deep_teal_500=0x7f050052;
-    public static final int material_grey_100=0x7f050053;
-    public static final int material_grey_300=0x7f050054;
-    public static final int material_grey_50=0x7f050055;
-    public static final int material_grey_600=0x7f050056;
-    public static final int material_grey_800=0x7f050057;
-    public static final int material_grey_850=0x7f050058;
-    public static final int material_grey_900=0x7f050059;
-    public static final int notification_action_color_filter=0x7f05005a;
-    public static final int notification_icon_bg_color=0x7f05005b;
-    public static final int notification_material_background_media_default_color=0x7f05005c;
-    public static final int primary_dark_material_dark=0x7f05005d;
-    public static final int primary_dark_material_light=0x7f05005e;
-    public static final int primary_material_dark=0x7f05005f;
-    public static final int primary_material_light=0x7f050060;
-    public static final int primary_text_default_material_dark=0x7f050061;
-    public static final int primary_text_default_material_light=0x7f050062;
-    public static final int primary_text_disabled_material_dark=0x7f050063;
-    public static final int primary_text_disabled_material_light=0x7f050064;
-    public static final int ripple_material_dark=0x7f050065;
-    public static final int ripple_material_light=0x7f050066;
-    public static final int secondary_text_default_material_dark=0x7f050067;
-    public static final int secondary_text_default_material_light=0x7f050068;
-    public static final int secondary_text_disabled_material_dark=0x7f050069;
-    public static final int secondary_text_disabled_material_light=0x7f05006a;
-    public static final int switch_thumb_disabled_material_dark=0x7f05006b;
-    public static final int switch_thumb_disabled_material_light=0x7f05006c;
-    public static final int switch_thumb_material_dark=0x7f05006d;
-    public static final int switch_thumb_material_light=0x7f05006e;
-    public static final int switch_thumb_normal_material_dark=0x7f05006f;
-    public static final int switch_thumb_normal_material_light=0x7f050070;
+    public static final int bright_foreground_disabled_material_dark=0x7f05001f;
+    public static final int bright_foreground_disabled_material_light=0x7f050020;
+    public static final int bright_foreground_inverse_material_dark=0x7f050021;
+    public static final int bright_foreground_inverse_material_light=0x7f050022;
+    public static final int bright_foreground_material_dark=0x7f050023;
+    public static final int bright_foreground_material_light=0x7f050024;
+    public static final int btn_bg_color=0x7f050025;
+    public static final int btn_text_color=0x7f050026;
+    public static final int button_material_dark=0x7f050027;
+    public static final int button_material_light=0x7f050028;
+    public static final int common_google_signin_btn_text_dark=0x7f050029;
+    public static final int common_google_signin_btn_text_dark_default=0x7f05002a;
+    public static final int common_google_signin_btn_text_dark_disabled=0x7f05002b;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f05002c;
+    public static final int common_google_signin_btn_text_dark_pressed=0x7f05002d;
+    public static final int common_google_signin_btn_text_light=0x7f05002e;
+    public static final int common_google_signin_btn_text_light_default=0x7f05002f;
+    public static final int common_google_signin_btn_text_light_disabled=0x7f050030;
+    public static final int common_google_signin_btn_text_light_focused=0x7f050031;
+    public static final int common_google_signin_btn_text_light_pressed=0x7f050032;
+    public static final int common_google_signin_btn_tint=0x7f050033;
+    public static final int design_bottom_navigation_shadow_color=0x7f050034;
+    public static final int design_error=0x7f050035;
+    public static final int design_fab_shadow_end_color=0x7f050036;
+    public static final int design_fab_shadow_mid_color=0x7f050037;
+    public static final int design_fab_shadow_start_color=0x7f050038;
+    public static final int design_fab_stroke_end_inner_color=0x7f050039;
+    public static final int design_fab_stroke_end_outer_color=0x7f05003a;
+    public static final int design_fab_stroke_top_inner_color=0x7f05003b;
+    public static final int design_fab_stroke_top_outer_color=0x7f05003c;
+    public static final int design_snackbar_background_color=0x7f05003d;
+    public static final int design_textinput_error_color_dark=0x7f05003e;
+    public static final int design_textinput_error_color_light=0x7f05003f;
+    public static final int design_tint_password_toggle=0x7f050040;
+    public static final int dim_foreground_disabled_material_dark=0x7f050041;
+    public static final int dim_foreground_disabled_material_light=0x7f050042;
+    public static final int dim_foreground_material_dark=0x7f050043;
+    public static final int dim_foreground_material_light=0x7f050044;
+    public static final int foreground_material_dark=0x7f050045;
+    public static final int foreground_material_light=0x7f050046;
+    public static final int highlighted_text_material_dark=0x7f050047;
+    public static final int highlighted_text_material_light=0x7f050048;
+    public static final int js_clicked_bg_color=0x7f050049;
+    public static final int js_clicked_btn_color=0x7f05004a;
+    public static final int js_notClicked_bg_color=0x7f05004b;
+    public static final int js_notClicked_btn_color=0x7f05004c;
+    public static final int material_blue_grey_800=0x7f05004d;
+    public static final int material_blue_grey_900=0x7f05004e;
+    public static final int material_blue_grey_950=0x7f05004f;
+    public static final int material_deep_teal_200=0x7f050050;
+    public static final int material_deep_teal_500=0x7f050051;
+    public static final int material_grey_100=0x7f050052;
+    public static final int material_grey_300=0x7f050053;
+    public static final int material_grey_50=0x7f050054;
+    public static final int material_grey_600=0x7f050055;
+    public static final int material_grey_800=0x7f050056;
+    public static final int material_grey_850=0x7f050057;
+    public static final int material_grey_900=0x7f050058;
+    public static final int notification_action_color_filter=0x7f050059;
+    public static final int notification_icon_bg_color=0x7f05005a;
+    public static final int notification_material_background_media_default_color=0x7f05005b;
+    public static final int primary_dark_material_dark=0x7f05005c;
+    public static final int primary_dark_material_light=0x7f05005d;
+    public static final int primary_material_dark=0x7f05005e;
+    public static final int primary_material_light=0x7f05005f;
+    public static final int primary_text_default_material_dark=0x7f050060;
+    public static final int primary_text_default_material_light=0x7f050061;
+    public static final int primary_text_disabled_material_dark=0x7f050062;
+    public static final int primary_text_disabled_material_light=0x7f050063;
+    public static final int ripple_material_dark=0x7f050064;
+    public static final int ripple_material_light=0x7f050065;
+    public static final int secondary_text_default_material_dark=0x7f050066;
+    public static final int secondary_text_default_material_light=0x7f050067;
+    public static final int secondary_text_disabled_material_dark=0x7f050068;
+    public static final int secondary_text_disabled_material_light=0x7f050069;
+    public static final int switch_thumb_disabled_material_dark=0x7f05006a;
+    public static final int switch_thumb_disabled_material_light=0x7f05006b;
+    public static final int switch_thumb_material_dark=0x7f05006c;
+    public static final int switch_thumb_material_light=0x7f05006d;
+    public static final int switch_thumb_normal_material_dark=0x7f05006e;
+    public static final int switch_thumb_normal_material_light=0x7f05006f;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f060000;
@@ -3346,9 +3345,9 @@ public final class R {
     public static final int design_snackbar_background=0x7f070073;
     public static final int googleg_disabled_color_18=0x7f070074;
     public static final int googleg_standard_color_18=0x7f070075;
-    public static final int ic_launcher=0x7f070076;
-    public static final int joystick_background=0x7f070077;
-    public static final int joystick_button=0x7f070078;
+    public static final int joystick_background=0x7f070076;
+    public static final int joystick_button=0x7f070077;
+    public static final int main_icon=0x7f070078;
     public static final int navigation_empty_icon=0x7f070079;
     public static final int notification_action_background=0x7f07007a;
     public static final int notification_bg=0x7f07007b;
@@ -3558,28 +3557,27 @@ public final class R {
     public static final int text2=0x7f0800bf;
     public static final int textSpacerNoButtons=0x7f0800c0;
     public static final int textSpacerNoTitle=0x7f0800c1;
-    public static final int textView=0x7f0800c2;
-    public static final int text_input_password_toggle=0x7f0800c3;
-    public static final int textinput_counter=0x7f0800c4;
-    public static final int textinput_error=0x7f0800c5;
-    public static final int time=0x7f0800c6;
-    public static final int title=0x7f0800c7;
-    public static final int titleDividerNoCustom=0x7f0800c8;
-    public static final int title_template=0x7f0800c9;
-    public static final int toolbar=0x7f0800ca;
-    public static final int top=0x7f0800cb;
-    public static final int topPanel=0x7f0800cc;
-    public static final int touch_outside=0x7f0800cd;
-    public static final int transition_current_scene=0x7f0800ce;
-    public static final int transition_scene_layoutid_cache=0x7f0800cf;
-    public static final int up=0x7f0800d0;
-    public static final int useLogo=0x7f0800d1;
-    public static final int view_offset_helper=0x7f0800d2;
-    public static final int visible=0x7f0800d3;
-    public static final int wide=0x7f0800d4;
-    public static final int withText=0x7f0800d5;
-    public static final int wrap=0x7f0800d6;
-    public static final int wrap_content=0x7f0800d7;
+    public static final int text_input_password_toggle=0x7f0800c2;
+    public static final int textinput_counter=0x7f0800c3;
+    public static final int textinput_error=0x7f0800c4;
+    public static final int time=0x7f0800c5;
+    public static final int title=0x7f0800c6;
+    public static final int titleDividerNoCustom=0x7f0800c7;
+    public static final int title_template=0x7f0800c8;
+    public static final int toolbar=0x7f0800c9;
+    public static final int top=0x7f0800ca;
+    public static final int topPanel=0x7f0800cb;
+    public static final int touch_outside=0x7f0800cc;
+    public static final int transition_current_scene=0x7f0800cd;
+    public static final int transition_scene_layoutid_cache=0x7f0800ce;
+    public static final int up=0x7f0800cf;
+    public static final int useLogo=0x7f0800d0;
+    public static final int view_offset_helper=0x7f0800d1;
+    public static final int visible=0x7f0800d2;
+    public static final int wide=0x7f0800d3;
+    public static final int withText=0x7f0800d4;
+    public static final int wrap=0x7f0800d5;
+    public static final int wrap_content=0x7f0800d6;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -3661,7 +3659,8 @@ public final class R {
     public static final int select_dialog_item_material=0x7f0a0040;
     public static final int select_dialog_multichoice_material=0x7f0a0041;
     public static final int select_dialog_singlechoice_material=0x7f0a0042;
-    public static final int support_simple_spinner_dropdown_item=0x7f0a0043;
+    public static final int spinner=0x7f0a0043;
+    public static final int support_simple_spinner_dropdown_item=0x7f0a0044;
   }
   public static final class menu {
     public static final int activity_main_drawer=0x7f0b0000;
@@ -3723,10 +3722,10 @@ public final class R {
     public static final int common_signin_button_text_long=0x7f0c0034;
     public static final int connect=0x7f0c0035;
     public static final int disconnect=0x7f0c0036;
-    public static final int hello_blank_fragment=0x7f0c0037;
-    public static final int joystickToTurnSwitch=0x7f0c0038;
-    public static final int navigation_drawer_close=0x7f0c0039;
-    public static final int navigation_drawer_open=0x7f0c003a;
+    public static final int joystickToTurnSwitch=0x7f0c0037;
+    public static final int navigation_drawer_close=0x7f0c0038;
+    public static final int navigation_drawer_open=0x7f0c0039;
+    public static final int notConnected=0x7f0c003a;
     public static final int password_toggle_content_description=0x7f0c003b;
     public static final int path_password_eye=0x7f0c003c;
     public static final int path_password_eye_mask_strike_through=0x7f0c003d;
@@ -3746,6 +3745,8 @@ public final class R {
     public static final int stop=0x7f0c004b;
     public static final int switchViewBtn=0x7f0c004c;
     public static final int title_activity_bluetooth_connection=0x7f0c004d;
+    public static final int turnLeft=0x7f0c004e;
+    public static final int turnRight=0x7f0c004f;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0d0000;
@@ -4141,35 +4142,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.multiDevCompApp:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.multiDevCompApp:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.multiDevCompApp:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.multiDevCompApp:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.multiDevCompApp:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.multiDevCompApp:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.multiDevCompApp:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.multiDevCompApp:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.multiDevCompApp:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.multiDevCompApp:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.multiDevCompApp:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.multiDevCompApp:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.multiDevCompApp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.multiDevCompApp:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.multiDevCompApp:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.multiDevCompApp:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.multiDevCompApp:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.multiDevCompApp:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.multiDevCompApp:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.multiDevCompApp:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.multiDevCompApp:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.multiDevCompApp:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.multiDevCompApp:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.multiDevCompApp:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.multiDevCompApp:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.multiDevCompApp:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.multiDevCompApp:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.multiDevCompApp:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.multiDevCompApp:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.bciRobotAdapter:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.bciRobotAdapter:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.bciRobotAdapter:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.bciRobotAdapter:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.bciRobotAdapter:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.bciRobotAdapter:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.bciRobotAdapter:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.bciRobotAdapter:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.bciRobotAdapter:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.bciRobotAdapter:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.bciRobotAdapter:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.bciRobotAdapter:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.bciRobotAdapter:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.bciRobotAdapter:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.bciRobotAdapter:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.bciRobotAdapter:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.bciRobotAdapter:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.bciRobotAdapter:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.bciRobotAdapter:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.bciRobotAdapter:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.bciRobotAdapter:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.bciRobotAdapter:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.bciRobotAdapter:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.bciRobotAdapter:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.bciRobotAdapter:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.bciRobotAdapter:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.bciRobotAdapter:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.bciRobotAdapter:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.bciRobotAdapter:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -4255,7 +4256,7 @@ public final class R {
      */
     public static final int ActionBarLayout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4263,11 +4264,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:background
+     * @attr name com.bciRobotAdapter:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4278,11 +4279,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:backgroundSplit
+     * @attr name com.bciRobotAdapter:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4293,11 +4294,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:backgroundStacked
+     * @attr name com.bciRobotAdapter:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4306,11 +4307,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetEnd
+     * @attr name com.bciRobotAdapter:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4319,11 +4320,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetEndWithActions
+     * @attr name com.bciRobotAdapter:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4332,11 +4333,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetLeft
+     * @attr name com.bciRobotAdapter:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4345,11 +4346,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetRight
+     * @attr name com.bciRobotAdapter:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4358,11 +4359,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetStart
+     * @attr name com.bciRobotAdapter:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4371,11 +4372,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetStartWithNavigation
+     * @attr name com.bciRobotAdapter:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4383,11 +4384,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:customNavigationLayout
+     * @attr name com.bciRobotAdapter:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -4405,11 +4406,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:displayOptions
+     * @attr name com.bciRobotAdapter:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4417,11 +4418,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:divider
+     * @attr name com.bciRobotAdapter:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4430,11 +4431,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:elevation
+     * @attr name com.bciRobotAdapter:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4443,21 +4444,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:height
+     * @attr name com.bciRobotAdapter:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:hideOnContentScroll
+     * @attr name com.bciRobotAdapter:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4465,11 +4466,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:homeAsUpIndicator
+     * @attr name com.bciRobotAdapter:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4477,11 +4478,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:homeLayout
+     * @attr name com.bciRobotAdapter:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4489,11 +4490,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:icon
+     * @attr name com.bciRobotAdapter:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4501,11 +4502,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:indeterminateProgressStyle
+     * @attr name com.bciRobotAdapter:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4514,11 +4515,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:itemPadding
+     * @attr name com.bciRobotAdapter:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4526,11 +4527,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:logo
+     * @attr name com.bciRobotAdapter:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4544,11 +4545,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:navigationMode
+     * @attr name com.bciRobotAdapter:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4556,11 +4557,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:popupTheme
+     * @attr name com.bciRobotAdapter:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4569,11 +4570,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:progressBarPadding
+     * @attr name com.bciRobotAdapter:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4581,21 +4582,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:progressBarStyle
+     * @attr name com.bciRobotAdapter:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:subtitle
+     * @attr name com.bciRobotAdapter:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4603,21 +4604,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:subtitleTextStyle
+     * @attr name com.bciRobotAdapter:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:title
+     * @attr name com.bciRobotAdapter:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4625,7 +4626,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:titleTextStyle
+     * @attr name com.bciRobotAdapter:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -4664,12 +4665,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.multiDevCompApp:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.multiDevCompApp:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.multiDevCompApp:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.multiDevCompApp:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.multiDevCompApp:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.multiDevCompApp:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.bciRobotAdapter:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.bciRobotAdapter:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.bciRobotAdapter:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.bciRobotAdapter:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.bciRobotAdapter:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.bciRobotAdapter:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -4683,7 +4684,7 @@ public final class R {
         0x7f03012d, 0x7f030163
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4691,11 +4692,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:background
+     * @attr name com.bciRobotAdapter:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4706,11 +4707,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:backgroundSplit
+     * @attr name com.bciRobotAdapter:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4718,11 +4719,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:closeItemLayout
+     * @attr name com.bciRobotAdapter:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4731,11 +4732,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:height
+     * @attr name com.bciRobotAdapter:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4743,11 +4744,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:subtitleTextStyle
+     * @attr name com.bciRobotAdapter:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4755,7 +4756,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:titleTextStyle
+     * @attr name com.bciRobotAdapter:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -4765,8 +4766,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.multiDevCompApp:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.multiDevCompApp:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.bciRobotAdapter:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.bciRobotAdapter:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -4775,7 +4776,7 @@ public final class R {
         0x7f03007e, 0x7f03009a
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4783,17 +4784,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:expandActivityOverflowButtonDrawable
+     * @attr name com.bciRobotAdapter:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:initialActivityCount
+     * @attr name com.bciRobotAdapter:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -4803,9 +4804,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AdsAttrs_adSize com.multiDevCompApp:adSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AdsAttrs_adSizes com.multiDevCompApp:adSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AdsAttrs_adUnitId com.multiDevCompApp:adUnitId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adSize com.bciRobotAdapter:adSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adSizes com.bciRobotAdapter:adSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adUnitId com.bciRobotAdapter:adUnitId}</code></td><td></td></tr>
      * </table>
      * @see #AdsAttrs_adSize
      * @see #AdsAttrs_adSizes
@@ -4815,33 +4816,33 @@ public final class R {
         0x7f030022, 0x7f030023, 0x7f030024
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#adSize}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#adSize}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:adSize
+     * @attr name com.bciRobotAdapter:adSize
      */
     public static final int AdsAttrs_adSize=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#adSizes}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#adSizes}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:adSizes
+     * @attr name com.bciRobotAdapter:adSizes
      */
     public static final int AdsAttrs_adSizes=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#adUnitId}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#adUnitId}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:adUnitId
+     * @attr name com.bciRobotAdapter:adUnitId
      */
     public static final int AdsAttrs_adUnitId=2;
     /**
@@ -4852,12 +4853,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.multiDevCompApp:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.multiDevCompApp:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.multiDevCompApp:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.multiDevCompApp:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.multiDevCompApp:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.multiDevCompApp:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.bciRobotAdapter:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.bciRobotAdapter:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.bciRobotAdapter:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.bciRobotAdapter:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.bciRobotAdapter:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.bciRobotAdapter:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonPanelSideLayout
@@ -4884,7 +4885,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4892,11 +4893,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonPanelSideLayout
+     * @attr name com.bciRobotAdapter:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4904,11 +4905,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:listItemLayout
+     * @attr name com.bciRobotAdapter:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4916,11 +4917,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:listLayout
+     * @attr name com.bciRobotAdapter:listLayout
      */
     public static final int AlertDialog_listLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4928,21 +4929,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:multiChoiceItemLayout
+     * @attr name com.bciRobotAdapter:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:showTitle
+     * @attr name com.bciRobotAdapter:showTitle
      */
     public static final int AlertDialog_showTitle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4950,7 +4951,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:singleChoiceItemLayout
+     * @attr name com.bciRobotAdapter:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=6;
     /**
@@ -4961,8 +4962,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.multiDevCompApp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded com.multiDevCompApp:expanded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.bciRobotAdapter:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded com.bciRobotAdapter:expanded}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_elevation
@@ -4978,8 +4979,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.multiDevCompApp:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.multiDevCompApp:state_collapsible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.bciRobotAdapter:state_collapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.bciRobotAdapter:state_collapsible}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
@@ -4988,23 +4989,23 @@ public final class R {
         0x7f030124, 0x7f030125
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#state_collapsed}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#state_collapsed}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:state_collapsed
+     * @attr name com.bciRobotAdapter:state_collapsed
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#state_collapsible}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#state_collapsible}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:state_collapsible
+     * @attr name com.bciRobotAdapter:state_collapsible
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
@@ -5014,8 +5015,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.multiDevCompApp:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.multiDevCompApp:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.bciRobotAdapter:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.bciRobotAdapter:layout_scrollInterpolator}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -5024,7 +5025,7 @@ public final class R {
         0x7f0300d8, 0x7f0300d9
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -5040,11 +5041,11 @@ public final class R {
      * <tr><td>snap</td><td>10</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_scrollFlags
+     * @attr name com.bciRobotAdapter:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_scrollInterpolator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_scrollInterpolator}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5052,7 +5053,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:layout_scrollInterpolator
+     * @attr name com.bciRobotAdapter:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -5071,7 +5072,7 @@ public final class R {
      */
     public static final int AppBarLayout_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#elevation}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5080,17 +5081,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:elevation
+     * @attr name com.bciRobotAdapter:elevation
      */
     public static final int AppBarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expanded}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expanded}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:expanded
+     * @attr name com.bciRobotAdapter:expanded
      */
     public static final int AppBarLayout_expanded=2;
     /**
@@ -5101,9 +5102,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.multiDevCompApp:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.multiDevCompApp:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.multiDevCompApp:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.bciRobotAdapter:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.bciRobotAdapter:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.bciRobotAdapter:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -5129,7 +5130,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5137,22 +5138,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:srcCompat
+     * @attr name com.bciRobotAdapter:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:tint
+     * @attr name com.bciRobotAdapter:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -5168,7 +5169,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:tintMode
+     * @attr name com.bciRobotAdapter:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -5179,9 +5180,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.multiDevCompApp:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.multiDevCompApp:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.multiDevCompApp:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.bciRobotAdapter:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.bciRobotAdapter:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.bciRobotAdapter:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -5204,7 +5205,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5212,22 +5213,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:tickMark
+     * @attr name com.bciRobotAdapter:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:tickMarkTint
+     * @attr name com.bciRobotAdapter:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -5244,7 +5245,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:tickMarkTintMode
+     * @attr name com.bciRobotAdapter:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -5384,7 +5385,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.multiDevCompApp:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.bciRobotAdapter:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_textAllCaps
@@ -5405,7 +5406,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5415,7 +5416,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:textAllCaps
+     * @attr name com.bciRobotAdapter:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=1;
     /**
@@ -5427,120 +5428,120 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.multiDevCompApp:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.multiDevCompApp:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.multiDevCompApp:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.multiDevCompApp:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.multiDevCompApp:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.multiDevCompApp:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.multiDevCompApp:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.multiDevCompApp:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.multiDevCompApp:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.multiDevCompApp:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.multiDevCompApp:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.multiDevCompApp:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.multiDevCompApp:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.multiDevCompApp:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.multiDevCompApp:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.multiDevCompApp:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.multiDevCompApp:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.multiDevCompApp:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.multiDevCompApp:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.multiDevCompApp:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.multiDevCompApp:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.multiDevCompApp:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.multiDevCompApp:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.multiDevCompApp:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.multiDevCompApp:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.multiDevCompApp:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.multiDevCompApp:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.multiDevCompApp:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.multiDevCompApp:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.multiDevCompApp:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.multiDevCompApp:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.multiDevCompApp:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.multiDevCompApp:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.multiDevCompApp:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.multiDevCompApp:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.multiDevCompApp:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.multiDevCompApp:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.multiDevCompApp:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.multiDevCompApp:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.multiDevCompApp:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.multiDevCompApp:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.multiDevCompApp:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.multiDevCompApp:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.multiDevCompApp:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.multiDevCompApp:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.multiDevCompApp:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.multiDevCompApp:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.multiDevCompApp:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.multiDevCompApp:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.multiDevCompApp:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.multiDevCompApp:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.multiDevCompApp:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.multiDevCompApp:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.multiDevCompApp:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.multiDevCompApp:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.multiDevCompApp:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.multiDevCompApp:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.multiDevCompApp:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.multiDevCompApp:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.multiDevCompApp:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.multiDevCompApp:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.multiDevCompApp:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.multiDevCompApp:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.multiDevCompApp:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.multiDevCompApp:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.multiDevCompApp:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.multiDevCompApp:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.multiDevCompApp:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.multiDevCompApp:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.multiDevCompApp:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.multiDevCompApp:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.multiDevCompApp:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.multiDevCompApp:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.multiDevCompApp:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.multiDevCompApp:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.multiDevCompApp:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.multiDevCompApp:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.multiDevCompApp:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.multiDevCompApp:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.multiDevCompApp:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.multiDevCompApp:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.multiDevCompApp:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.multiDevCompApp:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.multiDevCompApp:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.multiDevCompApp:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.multiDevCompApp:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.multiDevCompApp:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.multiDevCompApp:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.multiDevCompApp:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.multiDevCompApp:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.multiDevCompApp:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.multiDevCompApp:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.multiDevCompApp:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.multiDevCompApp:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.multiDevCompApp:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.multiDevCompApp:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.multiDevCompApp:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.multiDevCompApp:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.multiDevCompApp:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.multiDevCompApp:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.multiDevCompApp:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.multiDevCompApp:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.multiDevCompApp:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.multiDevCompApp:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.multiDevCompApp:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.multiDevCompApp:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.multiDevCompApp:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.multiDevCompApp:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.multiDevCompApp:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.multiDevCompApp:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.multiDevCompApp:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.multiDevCompApp:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.multiDevCompApp:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.multiDevCompApp:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.bciRobotAdapter:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.bciRobotAdapter:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.bciRobotAdapter:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.bciRobotAdapter:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.bciRobotAdapter:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.bciRobotAdapter:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.bciRobotAdapter:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.bciRobotAdapter:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.bciRobotAdapter:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.bciRobotAdapter:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.bciRobotAdapter:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.bciRobotAdapter:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.bciRobotAdapter:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.bciRobotAdapter:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.bciRobotAdapter:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.bciRobotAdapter:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.bciRobotAdapter:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.bciRobotAdapter:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.bciRobotAdapter:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.bciRobotAdapter:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.bciRobotAdapter:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.bciRobotAdapter:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.bciRobotAdapter:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.bciRobotAdapter:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.bciRobotAdapter:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.bciRobotAdapter:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.bciRobotAdapter:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.bciRobotAdapter:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.bciRobotAdapter:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.bciRobotAdapter:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.bciRobotAdapter:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.bciRobotAdapter:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.bciRobotAdapter:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.bciRobotAdapter:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.bciRobotAdapter:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.bciRobotAdapter:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.bciRobotAdapter:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.bciRobotAdapter:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.bciRobotAdapter:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.bciRobotAdapter:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.bciRobotAdapter:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.bciRobotAdapter:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.bciRobotAdapter:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.bciRobotAdapter:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.bciRobotAdapter:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.bciRobotAdapter:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.bciRobotAdapter:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.bciRobotAdapter:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.bciRobotAdapter:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.bciRobotAdapter:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.bciRobotAdapter:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.bciRobotAdapter:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.bciRobotAdapter:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.bciRobotAdapter:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.bciRobotAdapter:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.bciRobotAdapter:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.bciRobotAdapter:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.bciRobotAdapter:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.bciRobotAdapter:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.bciRobotAdapter:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.bciRobotAdapter:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.bciRobotAdapter:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.bciRobotAdapter:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.bciRobotAdapter:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.bciRobotAdapter:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.bciRobotAdapter:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.bciRobotAdapter:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.bciRobotAdapter:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.bciRobotAdapter:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.bciRobotAdapter:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.bciRobotAdapter:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.bciRobotAdapter:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.bciRobotAdapter:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.bciRobotAdapter:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.bciRobotAdapter:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.bciRobotAdapter:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.bciRobotAdapter:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.bciRobotAdapter:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.bciRobotAdapter:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.bciRobotAdapter:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.bciRobotAdapter:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.bciRobotAdapter:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.bciRobotAdapter:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.bciRobotAdapter:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.bciRobotAdapter:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.bciRobotAdapter:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.bciRobotAdapter:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.bciRobotAdapter:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.bciRobotAdapter:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.bciRobotAdapter:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.bciRobotAdapter:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.bciRobotAdapter:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.bciRobotAdapter:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.bciRobotAdapter:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.bciRobotAdapter:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.bciRobotAdapter:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.bciRobotAdapter:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.bciRobotAdapter:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.bciRobotAdapter:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.bciRobotAdapter:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.bciRobotAdapter:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.bciRobotAdapter:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.bciRobotAdapter:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.bciRobotAdapter:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.bciRobotAdapter:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.bciRobotAdapter:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.bciRobotAdapter:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.bciRobotAdapter:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.bciRobotAdapter:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.bciRobotAdapter:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.bciRobotAdapter:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.bciRobotAdapter:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.bciRobotAdapter:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.bciRobotAdapter:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -5691,7 +5692,7 @@ public final class R {
         0x7f030172, 0x7f030173, 0x7f030174, 0x7f030175
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5699,11 +5700,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarDivider
+     * @attr name com.bciRobotAdapter:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5711,11 +5712,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarItemBackground
+     * @attr name com.bciRobotAdapter:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5723,11 +5724,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarPopupTheme
+     * @attr name com.bciRobotAdapter:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5744,11 +5745,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:actionBarSize
+     * @attr name com.bciRobotAdapter:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5756,11 +5757,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarSplitStyle
+     * @attr name com.bciRobotAdapter:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5768,11 +5769,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarStyle
+     * @attr name com.bciRobotAdapter:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5780,11 +5781,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarTabBarStyle
+     * @attr name com.bciRobotAdapter:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5792,11 +5793,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarTabStyle
+     * @attr name com.bciRobotAdapter:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5804,11 +5805,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarTabTextStyle
+     * @attr name com.bciRobotAdapter:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5816,11 +5817,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarTheme
+     * @attr name com.bciRobotAdapter:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5828,11 +5829,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionBarWidgetTheme
+     * @attr name com.bciRobotAdapter:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5840,11 +5841,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionButtonStyle
+     * @attr name com.bciRobotAdapter:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5852,11 +5853,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionDropDownStyle
+     * @attr name com.bciRobotAdapter:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5864,11 +5865,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionMenuTextAppearance
+     * @attr name com.bciRobotAdapter:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5879,11 +5880,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionMenuTextColor
+     * @attr name com.bciRobotAdapter:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5891,11 +5892,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeBackground
+     * @attr name com.bciRobotAdapter:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5903,11 +5904,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeCloseButtonStyle
+     * @attr name com.bciRobotAdapter:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5915,11 +5916,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeCloseDrawable
+     * @attr name com.bciRobotAdapter:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5927,11 +5928,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeCopyDrawable
+     * @attr name com.bciRobotAdapter:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5939,11 +5940,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeCutDrawable
+     * @attr name com.bciRobotAdapter:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5951,11 +5952,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeFindDrawable
+     * @attr name com.bciRobotAdapter:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5963,11 +5964,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModePasteDrawable
+     * @attr name com.bciRobotAdapter:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5975,11 +5976,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModePopupWindowStyle
+     * @attr name com.bciRobotAdapter:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5987,11 +5988,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeSelectAllDrawable
+     * @attr name com.bciRobotAdapter:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5999,11 +6000,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeShareDrawable
+     * @attr name com.bciRobotAdapter:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6011,11 +6012,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeSplitBackground
+     * @attr name com.bciRobotAdapter:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6023,11 +6024,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeStyle
+     * @attr name com.bciRobotAdapter:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6035,11 +6036,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionModeWebSearchDrawable
+     * @attr name com.bciRobotAdapter:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6047,11 +6048,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionOverflowButtonStyle
+     * @attr name com.bciRobotAdapter:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6059,11 +6060,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionOverflowMenuStyle
+     * @attr name com.bciRobotAdapter:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6071,11 +6072,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:activityChooserViewStyle
+     * @attr name com.bciRobotAdapter:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6083,21 +6084,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:alertDialogButtonGroupStyle
+     * @attr name com.bciRobotAdapter:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:alertDialogCenterButtons
+     * @attr name com.bciRobotAdapter:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6105,11 +6106,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:alertDialogStyle
+     * @attr name com.bciRobotAdapter:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6117,7 +6118,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:alertDialogTheme
+     * @attr name com.bciRobotAdapter:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
@@ -6143,7 +6144,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowIsFloating=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6151,11 +6152,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:autoCompleteTextViewStyle
+     * @attr name com.bciRobotAdapter:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6163,11 +6164,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:borderlessButtonStyle
+     * @attr name com.bciRobotAdapter:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6175,11 +6176,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonBarButtonStyle
+     * @attr name com.bciRobotAdapter:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6187,11 +6188,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonBarNegativeButtonStyle
+     * @attr name com.bciRobotAdapter:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6199,11 +6200,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonBarNeutralButtonStyle
+     * @attr name com.bciRobotAdapter:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6211,11 +6212,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonBarPositiveButtonStyle
+     * @attr name com.bciRobotAdapter:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6223,11 +6224,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonBarStyle
+     * @attr name com.bciRobotAdapter:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6235,11 +6236,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonStyle
+     * @attr name com.bciRobotAdapter:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6247,11 +6248,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonStyleSmall
+     * @attr name com.bciRobotAdapter:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6259,11 +6260,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:checkboxStyle
+     * @attr name com.bciRobotAdapter:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6271,110 +6272,110 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:checkedTextViewStyle
+     * @attr name com.bciRobotAdapter:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorAccent
+     * @attr name com.bciRobotAdapter:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorBackgroundFloating
+     * @attr name com.bciRobotAdapter:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorButtonNormal
+     * @attr name com.bciRobotAdapter:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorControlActivated
+     * @attr name com.bciRobotAdapter:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorControlHighlight
+     * @attr name com.bciRobotAdapter:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorControlNormal
+     * @attr name com.bciRobotAdapter:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorPrimary
+     * @attr name com.bciRobotAdapter:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=54;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorPrimaryDark
+     * @attr name com.bciRobotAdapter:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=55;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:colorSwitchThumbNormal
+     * @attr name com.bciRobotAdapter:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=56;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6382,11 +6383,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:controlBackground
+     * @attr name com.bciRobotAdapter:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=57;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6395,11 +6396,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:dialogPreferredPadding
+     * @attr name com.bciRobotAdapter:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=58;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6407,11 +6408,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:dialogTheme
+     * @attr name com.bciRobotAdapter:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=59;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6419,11 +6420,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:dividerHorizontal
+     * @attr name com.bciRobotAdapter:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=60;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6431,11 +6432,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:dividerVertical
+     * @attr name com.bciRobotAdapter:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=61;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6443,11 +6444,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:dropDownListViewStyle
+     * @attr name com.bciRobotAdapter:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=62;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6456,11 +6457,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:dropdownListPreferredItemHeight
+     * @attr name com.bciRobotAdapter:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=63;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6468,11 +6469,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:editTextBackground
+     * @attr name com.bciRobotAdapter:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=64;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6483,11 +6484,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:editTextColor
+     * @attr name com.bciRobotAdapter:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=65;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6495,11 +6496,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:editTextStyle
+     * @attr name com.bciRobotAdapter:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=66;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6507,11 +6508,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:homeAsUpIndicator
+     * @attr name com.bciRobotAdapter:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=67;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6519,11 +6520,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:imageButtonStyle
+     * @attr name com.bciRobotAdapter:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=68;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6531,11 +6532,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:listChoiceBackgroundIndicator
+     * @attr name com.bciRobotAdapter:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=69;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6543,11 +6544,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:listDividerAlertDialog
+     * @attr name com.bciRobotAdapter:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=70;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6555,11 +6556,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:listMenuViewStyle
+     * @attr name com.bciRobotAdapter:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=71;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6567,11 +6568,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:listPopupWindowStyle
+     * @attr name com.bciRobotAdapter:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=72;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6580,11 +6581,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:listPreferredItemHeight
+     * @attr name com.bciRobotAdapter:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=73;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6593,11 +6594,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:listPreferredItemHeightLarge
+     * @attr name com.bciRobotAdapter:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=74;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6606,11 +6607,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:listPreferredItemHeightSmall
+     * @attr name com.bciRobotAdapter:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=75;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6619,11 +6620,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:listPreferredItemPaddingLeft
+     * @attr name com.bciRobotAdapter:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=76;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6632,11 +6633,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:listPreferredItemPaddingRight
+     * @attr name com.bciRobotAdapter:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=77;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6644,11 +6645,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:panelBackground
+     * @attr name com.bciRobotAdapter:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=78;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6656,11 +6657,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:panelMenuListTheme
+     * @attr name com.bciRobotAdapter:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=79;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6669,11 +6670,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:panelMenuListWidth
+     * @attr name com.bciRobotAdapter:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=80;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6681,11 +6682,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:popupMenuStyle
+     * @attr name com.bciRobotAdapter:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=81;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6693,11 +6694,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:popupWindowStyle
+     * @attr name com.bciRobotAdapter:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=82;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6705,11 +6706,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:radioButtonStyle
+     * @attr name com.bciRobotAdapter:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6717,11 +6718,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:ratingBarStyle
+     * @attr name com.bciRobotAdapter:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6729,11 +6730,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:ratingBarStyleIndicator
+     * @attr name com.bciRobotAdapter:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=85;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6741,11 +6742,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:ratingBarStyleSmall
+     * @attr name com.bciRobotAdapter:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=86;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6753,11 +6754,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:searchViewStyle
+     * @attr name com.bciRobotAdapter:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=87;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6765,11 +6766,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:seekBarStyle
+     * @attr name com.bciRobotAdapter:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=88;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6777,11 +6778,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:selectableItemBackground
+     * @attr name com.bciRobotAdapter:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=89;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6789,11 +6790,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:selectableItemBackgroundBorderless
+     * @attr name com.bciRobotAdapter:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=90;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6801,11 +6802,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:spinnerDropDownItemStyle
+     * @attr name com.bciRobotAdapter:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=91;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6813,11 +6814,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:spinnerStyle
+     * @attr name com.bciRobotAdapter:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=92;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6825,11 +6826,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:switchStyle
+     * @attr name com.bciRobotAdapter:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6837,11 +6838,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:textAppearanceLargePopupMenu
+     * @attr name com.bciRobotAdapter:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=94;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6849,11 +6850,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:textAppearanceListItem
+     * @attr name com.bciRobotAdapter:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=95;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6861,11 +6862,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:textAppearanceListItemSecondary
+     * @attr name com.bciRobotAdapter:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=96;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6873,11 +6874,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:textAppearanceListItemSmall
+     * @attr name com.bciRobotAdapter:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=97;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6885,11 +6886,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:textAppearancePopupMenuHeader
+     * @attr name com.bciRobotAdapter:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=98;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6897,11 +6898,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:textAppearanceSearchResultSubtitle
+     * @attr name com.bciRobotAdapter:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=99;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6909,11 +6910,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:textAppearanceSearchResultTitle
+     * @attr name com.bciRobotAdapter:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=100;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6921,11 +6922,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:textAppearanceSmallPopupMenu
+     * @attr name com.bciRobotAdapter:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=101;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6936,11 +6937,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:textColorAlertDialogListItem
+     * @attr name com.bciRobotAdapter:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=102;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6951,11 +6952,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:textColorSearchUrl
+     * @attr name com.bciRobotAdapter:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=103;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6963,11 +6964,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:toolbarNavigationButtonStyle
+     * @attr name com.bciRobotAdapter:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=104;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6975,41 +6976,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:toolbarStyle
+     * @attr name com.bciRobotAdapter:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=105;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:windowActionBar
+     * @attr name com.bciRobotAdapter:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=106;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:windowActionBarOverlay
+     * @attr name com.bciRobotAdapter:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=107;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:windowActionModeOverlay
+     * @attr name com.bciRobotAdapter:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=108;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7022,11 +7023,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.multiDevCompApp:windowFixedHeightMajor
+     * @attr name com.bciRobotAdapter:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=109;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7039,11 +7040,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.multiDevCompApp:windowFixedHeightMinor
+     * @attr name com.bciRobotAdapter:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=110;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7056,11 +7057,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.multiDevCompApp:windowFixedWidthMajor
+     * @attr name com.bciRobotAdapter:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=111;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7073,11 +7074,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.multiDevCompApp:windowFixedWidthMinor
+     * @attr name com.bciRobotAdapter:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=112;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7090,11 +7091,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.multiDevCompApp:windowMinWidthMajor
+     * @attr name com.bciRobotAdapter:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=113;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7107,17 +7108,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.multiDevCompApp:windowMinWidthMinor
+     * @attr name com.bciRobotAdapter:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:windowNoTitle
+     * @attr name com.bciRobotAdapter:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=115;
     /**
@@ -7127,11 +7128,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.multiDevCompApp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.multiDevCompApp:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.multiDevCompApp:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.multiDevCompApp:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu com.multiDevCompApp:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.bciRobotAdapter:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.bciRobotAdapter:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.bciRobotAdapter:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.bciRobotAdapter:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.bciRobotAdapter:menu}</code></td><td></td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -7144,7 +7145,7 @@ public final class R {
         0x7f0300ea
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#elevation}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7153,11 +7154,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:elevation
+     * @attr name com.bciRobotAdapter:elevation
      */
     public static final int BottomNavigationView_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#itemBackground}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7165,33 +7166,33 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:itemBackground
+     * @attr name com.bciRobotAdapter:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:itemIconTint
+     * @attr name com.bciRobotAdapter:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:itemTextColor
+     * @attr name com.bciRobotAdapter:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#menu}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7199,7 +7200,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:menu
+     * @attr name com.bciRobotAdapter:menu
      */
     public static final int BottomNavigationView_menu=4;
     /**
@@ -7209,9 +7210,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.multiDevCompApp:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.multiDevCompApp:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.multiDevCompApp:behavior_skipCollapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.bciRobotAdapter:behavior_hideable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.bciRobotAdapter:behavior_peekHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.bciRobotAdapter:behavior_skipCollapsed}</code></td><td></td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_behavior_hideable
      * @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -7221,17 +7222,17 @@ public final class R {
         0x7f030035, 0x7f030037, 0x7f030038
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#behavior_hideable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#behavior_hideable}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:behavior_hideable
+     * @attr name com.bciRobotAdapter:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#behavior_peekHeight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#behavior_peekHeight}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7248,17 +7249,17 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:behavior_peekHeight
+     * @attr name com.bciRobotAdapter:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#behavior_skipCollapsed}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#behavior_skipCollapsed}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:behavior_skipCollapsed
+     * @attr name com.bciRobotAdapter:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=2;
     /**
@@ -7268,7 +7269,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.multiDevCompApp:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.bciRobotAdapter:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -7276,13 +7277,13 @@ public final class R {
         0x7f030029
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:allowStacking
+     * @attr name com.bciRobotAdapter:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -7292,22 +7293,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.multiDevCompApp:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.multiDevCompApp:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.multiDevCompApp:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.multiDevCompApp:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.multiDevCompApp:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.multiDevCompApp:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.multiDevCompApp:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.multiDevCompApp:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.multiDevCompApp:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.multiDevCompApp:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.multiDevCompApp:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.multiDevCompApp:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.multiDevCompApp:statusBarScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.multiDevCompApp:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.multiDevCompApp:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.multiDevCompApp:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.bciRobotAdapter:collapsedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.bciRobotAdapter:collapsedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.bciRobotAdapter:contentScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.bciRobotAdapter:expandedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.bciRobotAdapter:expandedTitleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.bciRobotAdapter:expandedTitleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.bciRobotAdapter:expandedTitleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.bciRobotAdapter:expandedTitleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.bciRobotAdapter:expandedTitleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.bciRobotAdapter:expandedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.bciRobotAdapter:scrimAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.bciRobotAdapter:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.bciRobotAdapter:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.bciRobotAdapter:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.bciRobotAdapter:titleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.bciRobotAdapter:toolbarId}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -7339,8 +7340,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.multiDevCompApp:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.multiDevCompApp:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.bciRobotAdapter:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.bciRobotAdapter:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -7349,7 +7350,7 @@ public final class R {
         0x7f0300a8, 0x7f0300a9
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7363,20 +7364,20 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_collapseMode
+     * @attr name com.bciRobotAdapter:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_collapseParallaxMultiplier}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_collapseParallaxMultiplier}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_collapseParallaxMultiplier
+     * @attr name com.bciRobotAdapter:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#collapsedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#collapsedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7397,11 +7398,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:collapsedTitleGravity
+     * @attr name com.bciRobotAdapter:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#collapsedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#collapsedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7409,22 +7410,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:collapsedTitleTextAppearance
+     * @attr name com.bciRobotAdapter:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentScrim}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:contentScrim
+     * @attr name com.bciRobotAdapter:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expandedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expandedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7445,11 +7446,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:expandedTitleGravity
+     * @attr name com.bciRobotAdapter:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expandedTitleMargin}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expandedTitleMargin}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7458,11 +7459,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:expandedTitleMargin
+     * @attr name com.bciRobotAdapter:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expandedTitleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expandedTitleMarginBottom}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7471,11 +7472,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:expandedTitleMarginBottom
+     * @attr name com.bciRobotAdapter:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expandedTitleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expandedTitleMarginEnd}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7484,11 +7485,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:expandedTitleMarginEnd
+     * @attr name com.bciRobotAdapter:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expandedTitleMarginStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expandedTitleMarginStart}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7497,11 +7498,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:expandedTitleMarginStart
+     * @attr name com.bciRobotAdapter:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expandedTitleMarginTop}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expandedTitleMarginTop}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7510,11 +7511,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:expandedTitleMarginTop
+     * @attr name com.bciRobotAdapter:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#expandedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#expandedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7522,20 +7523,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:expandedTitleTextAppearance
+     * @attr name com.bciRobotAdapter:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#scrimAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#scrimAnimationDuration}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:scrimAnimationDuration
+     * @attr name com.bciRobotAdapter:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#scrimVisibleHeightTrigger}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#scrimVisibleHeightTrigger}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7544,42 +7545,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:scrimVisibleHeightTrigger
+     * @attr name com.bciRobotAdapter:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#statusBarScrim}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#statusBarScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:statusBarScrim
+     * @attr name com.bciRobotAdapter:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#title}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:title
+     * @attr name com.bciRobotAdapter:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleEnabled}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleEnabled}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:titleEnabled
+     * @attr name com.bciRobotAdapter:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#toolbarId}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#toolbarId}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7587,7 +7588,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:toolbarId
+     * @attr name com.bciRobotAdapter:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -7599,7 +7600,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.multiDevCompApp:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.bciRobotAdapter:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -7609,12 +7610,12 @@ public final class R {
         0x010101a5, 0x0101031f, 0x7f03002a
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:alpha
+     * @attr name com.bciRobotAdapter:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -7645,8 +7646,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.multiDevCompApp:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.multiDevCompApp:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.bciRobotAdapter:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.bciRobotAdapter:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -7668,18 +7669,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:buttonTint
+     * @attr name com.bciRobotAdapter:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7695,7 +7696,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:buttonTintMode
+     * @attr name com.bciRobotAdapter:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -7710,50 +7711,50 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.multiDevCompApp:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.multiDevCompApp:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.multiDevCompApp:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.multiDevCompApp:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.multiDevCompApp:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.multiDevCompApp:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.multiDevCompApp:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.multiDevCompApp:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.multiDevCompApp:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.multiDevCompApp:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.multiDevCompApp:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.multiDevCompApp:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.multiDevCompApp:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.multiDevCompApp:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.multiDevCompApp:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.multiDevCompApp:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.multiDevCompApp:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.multiDevCompApp:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.multiDevCompApp:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.multiDevCompApp:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.multiDevCompApp:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.multiDevCompApp:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.multiDevCompApp:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.multiDevCompApp:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.multiDevCompApp:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.multiDevCompApp:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.multiDevCompApp:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.multiDevCompApp:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.multiDevCompApp:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.multiDevCompApp:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.multiDevCompApp:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.multiDevCompApp:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.multiDevCompApp:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.multiDevCompApp:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.multiDevCompApp:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.multiDevCompApp:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.multiDevCompApp:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.multiDevCompApp:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.multiDevCompApp:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.multiDevCompApp:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.multiDevCompApp:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.multiDevCompApp:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.multiDevCompApp:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.multiDevCompApp:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.bciRobotAdapter:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.bciRobotAdapter:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.bciRobotAdapter:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.bciRobotAdapter:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.bciRobotAdapter:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.bciRobotAdapter:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.bciRobotAdapter:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.bciRobotAdapter:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.bciRobotAdapter:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.bciRobotAdapter:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.bciRobotAdapter:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.bciRobotAdapter:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.bciRobotAdapter:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.bciRobotAdapter:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.bciRobotAdapter:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.bciRobotAdapter:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.bciRobotAdapter:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.bciRobotAdapter:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.bciRobotAdapter:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.bciRobotAdapter:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.bciRobotAdapter:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.bciRobotAdapter:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.bciRobotAdapter:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.bciRobotAdapter:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.bciRobotAdapter:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.bciRobotAdapter:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.bciRobotAdapter:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.bciRobotAdapter:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.bciRobotAdapter:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.bciRobotAdapter:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.bciRobotAdapter:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.bciRobotAdapter:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.bciRobotAdapter:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.bciRobotAdapter:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.bciRobotAdapter:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.bciRobotAdapter:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.bciRobotAdapter:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.bciRobotAdapter:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.bciRobotAdapter:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.bciRobotAdapter:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.bciRobotAdapter:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.bciRobotAdapter:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.bciRobotAdapter:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.bciRobotAdapter:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -7890,7 +7891,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_orientation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7898,20 +7899,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:constraintSet
+     * @attr name com.bciRobotAdapter:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintBaseline_creator
+     * @attr name com.bciRobotAdapter:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7927,20 +7928,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintBaseline_toBaselineOf
+     * @attr name com.bciRobotAdapter:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintBottom_creator
+     * @attr name com.bciRobotAdapter:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7956,11 +7957,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintBottom_toBottomOf
+     * @attr name com.bciRobotAdapter:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7976,21 +7977,21 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintBottom_toTopOf
+     * @attr name com.bciRobotAdapter:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:layout_constraintDimensionRatio
+     * @attr name com.bciRobotAdapter:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8006,11 +8007,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintEnd_toEndOf
+     * @attr name com.bciRobotAdapter:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8026,11 +8027,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintEnd_toStartOf
+     * @attr name com.bciRobotAdapter:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8039,11 +8040,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintGuide_begin
+     * @attr name com.bciRobotAdapter:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8052,20 +8053,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintGuide_end
+     * @attr name com.bciRobotAdapter:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=15;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintGuide_percent
+     * @attr name com.bciRobotAdapter:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=16;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8078,11 +8079,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintHeight_default
+     * @attr name com.bciRobotAdapter:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=17;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8091,11 +8092,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintHeight_max
+     * @attr name com.bciRobotAdapter:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=18;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8104,20 +8105,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintHeight_min
+     * @attr name com.bciRobotAdapter:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=19;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintHorizontal_bias
+     * @attr name com.bciRobotAdapter:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=20;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8131,29 +8132,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintHorizontal_chainStyle
+     * @attr name com.bciRobotAdapter:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=21;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintHorizontal_weight
+     * @attr name com.bciRobotAdapter:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=22;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintLeft_creator
+     * @attr name com.bciRobotAdapter:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=23;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8169,11 +8170,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintLeft_toLeftOf
+     * @attr name com.bciRobotAdapter:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=24;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8189,20 +8190,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintLeft_toRightOf
+     * @attr name com.bciRobotAdapter:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=25;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintRight_creator
+     * @attr name com.bciRobotAdapter:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=26;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8218,11 +8219,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintRight_toLeftOf
+     * @attr name com.bciRobotAdapter:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=27;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8238,11 +8239,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintRight_toRightOf
+     * @attr name com.bciRobotAdapter:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=28;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8258,11 +8259,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintStart_toEndOf
+     * @attr name com.bciRobotAdapter:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=29;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8278,20 +8279,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintStart_toStartOf
+     * @attr name com.bciRobotAdapter:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=30;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintTop_creator
+     * @attr name com.bciRobotAdapter:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=31;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8307,11 +8308,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintTop_toBottomOf
+     * @attr name com.bciRobotAdapter:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=32;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8327,20 +8328,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintTop_toTopOf
+     * @attr name com.bciRobotAdapter:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=33;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintVertical_bias
+     * @attr name com.bciRobotAdapter:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=34;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8354,20 +8355,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintVertical_chainStyle
+     * @attr name com.bciRobotAdapter:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintVertical_weight
+     * @attr name com.bciRobotAdapter:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=36;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8380,11 +8381,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintWidth_default
+     * @attr name com.bciRobotAdapter:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=37;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8393,11 +8394,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintWidth_max
+     * @attr name com.bciRobotAdapter:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=38;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8406,11 +8407,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintWidth_min
+     * @attr name com.bciRobotAdapter:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=39;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8419,11 +8420,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_editor_absoluteX
+     * @attr name com.bciRobotAdapter:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=40;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8432,11 +8433,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_editor_absoluteY
+     * @attr name com.bciRobotAdapter:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=41;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8445,11 +8446,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginBottom
+     * @attr name com.bciRobotAdapter:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=42;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8458,11 +8459,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginEnd
+     * @attr name com.bciRobotAdapter:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=43;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8471,11 +8472,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginLeft
+     * @attr name com.bciRobotAdapter:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=44;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8484,11 +8485,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginRight
+     * @attr name com.bciRobotAdapter:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=45;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8497,11 +8498,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginStart
+     * @attr name com.bciRobotAdapter:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=46;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8510,11 +8511,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginTop
+     * @attr name com.bciRobotAdapter:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=47;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8529,7 +8530,7 @@ public final class R {
      * <tr><td>none</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_optimizationLevel
+     * @attr name com.bciRobotAdapter:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=48;
     /**
@@ -8561,48 +8562,48 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.multiDevCompApp:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.multiDevCompApp:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.multiDevCompApp:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.multiDevCompApp:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.multiDevCompApp:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.multiDevCompApp:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.multiDevCompApp:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.multiDevCompApp:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.multiDevCompApp:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.multiDevCompApp:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.multiDevCompApp:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.multiDevCompApp:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.multiDevCompApp:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.multiDevCompApp:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.multiDevCompApp:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.multiDevCompApp:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.multiDevCompApp:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.multiDevCompApp:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.multiDevCompApp:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.multiDevCompApp:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.multiDevCompApp:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.multiDevCompApp:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.multiDevCompApp:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.multiDevCompApp:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.multiDevCompApp:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.multiDevCompApp:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.multiDevCompApp:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.multiDevCompApp:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.multiDevCompApp:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.multiDevCompApp:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.multiDevCompApp:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.multiDevCompApp:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.multiDevCompApp:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.multiDevCompApp:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.multiDevCompApp:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.multiDevCompApp:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.multiDevCompApp:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.multiDevCompApp:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.multiDevCompApp:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.multiDevCompApp:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.multiDevCompApp:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.multiDevCompApp:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.bciRobotAdapter:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.bciRobotAdapter:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.bciRobotAdapter:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.bciRobotAdapter:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.bciRobotAdapter:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.bciRobotAdapter:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.bciRobotAdapter:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.bciRobotAdapter:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.bciRobotAdapter:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.bciRobotAdapter:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.bciRobotAdapter:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.bciRobotAdapter:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.bciRobotAdapter:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.bciRobotAdapter:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.bciRobotAdapter:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.bciRobotAdapter:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.bciRobotAdapter:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.bciRobotAdapter:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.bciRobotAdapter:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.bciRobotAdapter:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.bciRobotAdapter:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.bciRobotAdapter:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.bciRobotAdapter:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.bciRobotAdapter:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.bciRobotAdapter:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.bciRobotAdapter:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.bciRobotAdapter:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.bciRobotAdapter:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.bciRobotAdapter:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.bciRobotAdapter:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.bciRobotAdapter:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.bciRobotAdapter:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.bciRobotAdapter:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.bciRobotAdapter:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.bciRobotAdapter:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.bciRobotAdapter:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.bciRobotAdapter:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.bciRobotAdapter:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.bciRobotAdapter:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.bciRobotAdapter:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.bciRobotAdapter:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.bciRobotAdapter:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -8982,16 +8983,16 @@ public final class R {
      */
     public static final int ConstraintSet_android_visibility=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintBaseline_creator
+     * @attr name com.bciRobotAdapter:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=22;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9007,20 +9008,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintBaseline_toBaselineOf
+     * @attr name com.bciRobotAdapter:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=23;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintBottom_creator
+     * @attr name com.bciRobotAdapter:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=24;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9036,11 +9037,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintBottom_toBottomOf
+     * @attr name com.bciRobotAdapter:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=25;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9056,21 +9057,21 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintBottom_toTopOf
+     * @attr name com.bciRobotAdapter:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=26;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:layout_constraintDimensionRatio
+     * @attr name com.bciRobotAdapter:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=27;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9086,11 +9087,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintEnd_toEndOf
+     * @attr name com.bciRobotAdapter:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=28;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9106,11 +9107,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintEnd_toStartOf
+     * @attr name com.bciRobotAdapter:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=29;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9119,11 +9120,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintGuide_begin
+     * @attr name com.bciRobotAdapter:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=30;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9132,20 +9133,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintGuide_end
+     * @attr name com.bciRobotAdapter:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=31;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintGuide_percent
+     * @attr name com.bciRobotAdapter:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=32;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9158,11 +9159,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintHeight_default
+     * @attr name com.bciRobotAdapter:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=33;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9171,11 +9172,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintHeight_max
+     * @attr name com.bciRobotAdapter:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=34;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9184,20 +9185,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintHeight_min
+     * @attr name com.bciRobotAdapter:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=35;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintHorizontal_bias
+     * @attr name com.bciRobotAdapter:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=36;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9211,29 +9212,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintHorizontal_chainStyle
+     * @attr name com.bciRobotAdapter:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintHorizontal_weight
+     * @attr name com.bciRobotAdapter:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=38;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintLeft_creator
+     * @attr name com.bciRobotAdapter:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=39;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9249,11 +9250,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintLeft_toLeftOf
+     * @attr name com.bciRobotAdapter:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=40;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9269,20 +9270,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintLeft_toRightOf
+     * @attr name com.bciRobotAdapter:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=41;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintRight_creator
+     * @attr name com.bciRobotAdapter:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=42;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9298,11 +9299,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintRight_toLeftOf
+     * @attr name com.bciRobotAdapter:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9318,11 +9319,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintRight_toRightOf
+     * @attr name com.bciRobotAdapter:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=44;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9338,11 +9339,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintStart_toEndOf
+     * @attr name com.bciRobotAdapter:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=45;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9358,20 +9359,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintStart_toStartOf
+     * @attr name com.bciRobotAdapter:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=46;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintTop_creator
+     * @attr name com.bciRobotAdapter:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=47;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9387,11 +9388,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintTop_toBottomOf
+     * @attr name com.bciRobotAdapter:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=48;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9407,20 +9408,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintTop_toTopOf
+     * @attr name com.bciRobotAdapter:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=49;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintVertical_bias
+     * @attr name com.bciRobotAdapter:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=50;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9434,20 +9435,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintVertical_chainStyle
+     * @attr name com.bciRobotAdapter:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=51;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:layout_constraintVertical_weight
+     * @attr name com.bciRobotAdapter:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9460,11 +9461,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_constraintWidth_default
+     * @attr name com.bciRobotAdapter:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=53;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9473,11 +9474,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintWidth_max
+     * @attr name com.bciRobotAdapter:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=54;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9486,11 +9487,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_constraintWidth_min
+     * @attr name com.bciRobotAdapter:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=55;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9499,11 +9500,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_editor_absoluteX
+     * @attr name com.bciRobotAdapter:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=56;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9512,11 +9513,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_editor_absoluteY
+     * @attr name com.bciRobotAdapter:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=57;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9525,11 +9526,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginBottom
+     * @attr name com.bciRobotAdapter:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=58;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9538,11 +9539,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginEnd
+     * @attr name com.bciRobotAdapter:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=59;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9551,11 +9552,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginLeft
+     * @attr name com.bciRobotAdapter:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=60;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9564,11 +9565,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginRight
+     * @attr name com.bciRobotAdapter:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=61;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9577,11 +9578,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginStart
+     * @attr name com.bciRobotAdapter:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=62;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9590,7 +9591,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:layout_goneMarginTop
+     * @attr name com.bciRobotAdapter:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=63;
     /**
@@ -9600,8 +9601,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.multiDevCompApp:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.multiDevCompApp:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.bciRobotAdapter:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.bciRobotAdapter:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -9617,12 +9618,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.multiDevCompApp:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.multiDevCompApp:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.multiDevCompApp:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.multiDevCompApp:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.multiDevCompApp:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.multiDevCompApp:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.bciRobotAdapter:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.bciRobotAdapter:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.bciRobotAdapter:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.bciRobotAdapter:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.bciRobotAdapter:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.bciRobotAdapter:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -9666,7 +9667,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_anchor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_anchor}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9674,11 +9675,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:layout_anchor
+     * @attr name com.bciRobotAdapter:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_anchorGravity}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_anchorGravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9703,21 +9704,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_anchorGravity
+     * @attr name com.bciRobotAdapter:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_behavior}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_behavior}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:layout_behavior
+     * @attr name com.bciRobotAdapter:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_dodgeInsetEdges}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_dodgeInsetEdges}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9736,11 +9737,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_dodgeInsetEdges
+     * @attr name com.bciRobotAdapter:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_insetEdge}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_insetEdge}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9758,20 +9759,20 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:layout_insetEdge
+     * @attr name com.bciRobotAdapter:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout_keyline}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout_keyline}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:layout_keyline
+     * @attr name com.bciRobotAdapter:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#keylines}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#keylines}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9779,11 +9780,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:keylines
+     * @attr name com.bciRobotAdapter:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#statusBarBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#statusBarBackground}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9791,7 +9792,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:statusBarBackground
+     * @attr name com.bciRobotAdapter:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -9801,9 +9802,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.multiDevCompApp:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.multiDevCompApp:bottomSheetStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_textColorError com.multiDevCompApp:textColorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.bciRobotAdapter:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.bciRobotAdapter:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_textColorError com.bciRobotAdapter:textColorError}</code></td><td></td></tr>
      * </table>
      * @see #DesignTheme_bottomSheetDialogTheme
      * @see #DesignTheme_bottomSheetStyle
@@ -9813,7 +9814,7 @@ public final class R {
         0x7f03003b, 0x7f03003c, 0x7f03014d
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9821,11 +9822,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:bottomSheetDialogTheme
+     * @attr name com.bciRobotAdapter:bottomSheetDialogTheme
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9833,18 +9834,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:bottomSheetStyle
+     * @attr name com.bciRobotAdapter:bottomSheetStyle
      */
     public static final int DesignTheme_bottomSheetStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textColorError}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textColorError}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:textColorError
+     * @attr name com.bciRobotAdapter:textColorError
      */
     public static final int DesignTheme_textColorError=2;
     /**
@@ -9854,14 +9855,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.multiDevCompApp:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.multiDevCompApp:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.multiDevCompApp:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.multiDevCompApp:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.multiDevCompApp:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.multiDevCompApp:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.multiDevCompApp:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.multiDevCompApp:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.bciRobotAdapter:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.bciRobotAdapter:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.bciRobotAdapter:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.bciRobotAdapter:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.bciRobotAdapter:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.bciRobotAdapter:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.bciRobotAdapter:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.bciRobotAdapter:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -9877,7 +9878,7 @@ public final class R {
         0x7f030074, 0x7f03008a, 0x7f03011c, 0x7f030150
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9886,11 +9887,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:arrowHeadLength
+     * @attr name com.bciRobotAdapter:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9899,11 +9900,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:arrowShaftLength
+     * @attr name com.bciRobotAdapter:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9912,22 +9913,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:barLength
+     * @attr name com.bciRobotAdapter:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:color
+     * @attr name com.bciRobotAdapter:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9936,11 +9937,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:drawableSize
+     * @attr name com.bciRobotAdapter:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9949,21 +9950,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:gapBetweenBars
+     * @attr name com.bciRobotAdapter:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:spinBars
+     * @attr name com.bciRobotAdapter:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9972,7 +9973,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:thickness
+     * @attr name com.bciRobotAdapter:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -9982,14 +9983,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.multiDevCompApp:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.multiDevCompApp:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.multiDevCompApp:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.multiDevCompApp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize com.multiDevCompApp:fabSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.multiDevCompApp:pressedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.multiDevCompApp:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.multiDevCompApp:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.bciRobotAdapter:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.bciRobotAdapter:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.bciRobotAdapter:borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.bciRobotAdapter:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize com.bciRobotAdapter:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.bciRobotAdapter:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.bciRobotAdapter:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.bciRobotAdapter:useCompatPadding}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -10011,7 +10012,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.multiDevCompApp:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.bciRobotAdapter:behavior_autoHide}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -10019,28 +10020,28 @@ public final class R {
         0x7f030034
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#behavior_autoHide}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#behavior_autoHide}
      * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:behavior_autoHide
+     * @attr name com.bciRobotAdapter:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:backgroundTint
+     * @attr name com.bciRobotAdapter:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10056,11 +10057,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:backgroundTintMode
+     * @attr name com.bciRobotAdapter:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#borderWidth}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#borderWidth}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10069,11 +10070,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:borderWidth
+     * @attr name com.bciRobotAdapter:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#elevation}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10082,11 +10083,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:elevation
+     * @attr name com.bciRobotAdapter:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#fabSize}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#fabSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10100,11 +10101,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:fabSize
+     * @attr name com.bciRobotAdapter:fabSize
      */
     public static final int FloatingActionButton_fabSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#pressedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#pressedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10113,28 +10114,28 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:pressedTranslationZ
+     * @attr name com.bciRobotAdapter:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#rippleColor}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:rippleColor
+     * @attr name com.bciRobotAdapter:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#useCompatPadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#useCompatPadding}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:useCompatPadding
+     * @attr name com.bciRobotAdapter:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=7;
     /**
@@ -10146,7 +10147,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.multiDevCompApp:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.bciRobotAdapter:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
@@ -10198,13 +10199,13 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:foregroundInsidePadding
+     * @attr name com.bciRobotAdapter:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -10214,10 +10215,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Joystick_force_square com.multiDevCompApp:force_square}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Joystick_motion_constraint com.multiDevCompApp:motion_constraint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Joystick_radius com.multiDevCompApp:radius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Joystick_start_on_first_touch com.multiDevCompApp:start_on_first_touch}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Joystick_force_square com.bciRobotAdapter:force_square}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Joystick_motion_constraint com.bciRobotAdapter:motion_constraint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Joystick_radius com.bciRobotAdapter:radius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Joystick_start_on_first_touch com.bciRobotAdapter:start_on_first_touch}</code></td><td></td></tr>
      * </table>
      * @see #Joystick_force_square
      * @see #Joystick_motion_constraint
@@ -10228,17 +10229,17 @@ public final class R {
         0x7f030088, 0x7f0300eb, 0x7f030107, 0x7f030122
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#force_square}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#force_square}
      * attribute's value can be found in the {@link #Joystick} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:force_square
+     * @attr name com.bciRobotAdapter:force_square
      */
     public static final int Joystick_force_square=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#motion_constraint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#motion_constraint}
      * attribute's value can be found in the {@link #Joystick} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10252,11 +10253,11 @@ public final class R {
      * <tr><td>Vertical</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:motion_constraint
+     * @attr name com.bciRobotAdapter:motion_constraint
      */
     public static final int Joystick_motion_constraint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#radius}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#radius}
      * attribute's value can be found in the {@link #Joystick} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10265,17 +10266,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:radius
+     * @attr name com.bciRobotAdapter:radius
      */
     public static final int Joystick_radius=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#start_on_first_touch}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#start_on_first_touch}
      * attribute's value can be found in the {@link #Joystick} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:start_on_first_touch
+     * @attr name com.bciRobotAdapter:start_on_first_touch
      */
     public static final int Joystick_start_on_first_touch=3;
     /**
@@ -10321,10 +10322,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.multiDevCompApp:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.multiDevCompApp:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.multiDevCompApp:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.multiDevCompApp:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.bciRobotAdapter:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.bciRobotAdapter:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.bciRobotAdapter:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.bciRobotAdapter:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -10520,7 +10521,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10528,11 +10529,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:divider
+     * @attr name com.bciRobotAdapter:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10541,21 +10542,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:dividerPadding
+     * @attr name com.bciRobotAdapter:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:measureWithLargestChild
+     * @attr name com.bciRobotAdapter:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10570,7 +10571,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:showDividers
+     * @attr name com.bciRobotAdapter:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -10622,9 +10623,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LoadingImageView_circleCrop com.multiDevCompApp:circleCrop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.multiDevCompApp:imageAspectRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.multiDevCompApp:imageAspectRatioAdjust}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_circleCrop com.bciRobotAdapter:circleCrop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.bciRobotAdapter:imageAspectRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.bciRobotAdapter:imageAspectRatioAdjust}</code></td><td></td></tr>
      * </table>
      * @see #LoadingImageView_circleCrop
      * @see #LoadingImageView_imageAspectRatio
@@ -10634,26 +10635,26 @@ public final class R {
         0x7f03004b, 0x7f030096, 0x7f030097
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#circleCrop}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#circleCrop}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:circleCrop
+     * @attr name com.bciRobotAdapter:circleCrop
      */
     public static final int LoadingImageView_circleCrop=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#imageAspectRatio}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#imageAspectRatio}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.multiDevCompApp:imageAspectRatio
+     * @attr name com.bciRobotAdapter:imageAspectRatio
      */
     public static final int LoadingImageView_imageAspectRatio=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#imageAspectRatioAdjust}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#imageAspectRatioAdjust}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10667,7 +10668,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:imageAspectRatioAdjust
+     * @attr name com.bciRobotAdapter:imageAspectRatioAdjust
      */
     public static final int LoadingImageView_imageAspectRatioAdjust=2;
     /**
@@ -10793,10 +10794,10 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.multiDevCompApp:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.multiDevCompApp:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.multiDevCompApp:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.multiDevCompApp:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.bciRobotAdapter:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.bciRobotAdapter:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.bciRobotAdapter:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.bciRobotAdapter:showAsAction}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -10824,7 +10825,7 @@ public final class R {
         0x7f030116
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10832,27 +10833,27 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:actionLayout
+     * @attr name com.bciRobotAdapter:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:actionProviderClass
+     * @attr name com.bciRobotAdapter:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:actionViewClass
+     * @attr name com.bciRobotAdapter:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
@@ -10998,7 +10999,7 @@ public final class R {
      */
     public static final int MenuItem_android_visible=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11014,7 +11015,7 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:showAsAction
+     * @attr name com.bciRobotAdapter:showAsAction
      */
     public static final int MenuItem_showAsAction=16;
     /**
@@ -11031,8 +11032,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.multiDevCompApp:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.multiDevCompApp:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.bciRobotAdapter:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.bciRobotAdapter:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -11137,17 +11138,17 @@ public final class R {
      */
     public static final int MenuView_android_windowAnimationStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:preserveIconSpacing
+     * @attr name com.bciRobotAdapter:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11155,7 +11156,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:subMenuArrow
+     * @attr name com.bciRobotAdapter:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -11168,13 +11169,13 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.multiDevCompApp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout com.multiDevCompApp:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground com.multiDevCompApp:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint com.multiDevCompApp:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.multiDevCompApp:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor com.multiDevCompApp:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu com.multiDevCompApp:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.bciRobotAdapter:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout com.bciRobotAdapter:headerLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground com.bciRobotAdapter:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint com.bciRobotAdapter:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.bciRobotAdapter:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor com.bciRobotAdapter:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.bciRobotAdapter:menu}</code></td><td></td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -11231,7 +11232,7 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#elevation}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11240,11 +11241,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:elevation
+     * @attr name com.bciRobotAdapter:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#headerLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#headerLayout}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11252,11 +11253,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:headerLayout
+     * @attr name com.bciRobotAdapter:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#itemBackground}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11264,22 +11265,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:itemBackground
+     * @attr name com.bciRobotAdapter:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:itemIconTint
+     * @attr name com.bciRobotAdapter:itemIconTint
      */
     public static final int NavigationView_itemIconTint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11287,22 +11288,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:itemTextAppearance
+     * @attr name com.bciRobotAdapter:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:itemTextColor
+     * @attr name com.bciRobotAdapter:itemTextColor
      */
     public static final int NavigationView_itemTextColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#menu}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11310,7 +11311,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:menu
+     * @attr name com.bciRobotAdapter:menu
      */
     public static final int NavigationView_menu=9;
     /**
@@ -11322,7 +11323,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.multiDevCompApp:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.bciRobotAdapter:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -11338,7 +11339,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.multiDevCompApp:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.bciRobotAdapter:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -11346,13 +11347,13 @@ public final class R {
         0x7f030123
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:state_above_anchor
+     * @attr name com.bciRobotAdapter:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -11383,13 +11384,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:overlapAnchor
+     * @attr name com.bciRobotAdapter:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -11399,8 +11400,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.multiDevCompApp:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.multiDevCompApp:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.bciRobotAdapter:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.bciRobotAdapter:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -11409,7 +11410,7 @@ public final class R {
         0x7f0300f1, 0x7f0300f4
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11418,11 +11419,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:paddingBottomNoButtons
+     * @attr name com.bciRobotAdapter:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11431,7 +11432,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:paddingTopNoTitle
+     * @attr name com.bciRobotAdapter:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -11443,10 +11444,10 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.multiDevCompApp:layoutManager}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout com.multiDevCompApp:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount com.multiDevCompApp:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.multiDevCompApp:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.bciRobotAdapter:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout com.bciRobotAdapter:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount com.bciRobotAdapter:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.bciRobotAdapter:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_descendantFocusability
@@ -11495,42 +11496,42 @@ public final class R {
      */
     public static final int RecyclerView_android_orientation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layoutManager}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layoutManager}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:layoutManager
+     * @attr name com.bciRobotAdapter:layoutManager
      */
     public static final int RecyclerView_layoutManager=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:reverseLayout
+     * @attr name com.bciRobotAdapter:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:spanCount
+     * @attr name com.bciRobotAdapter:spanCount
      */
     public static final int RecyclerView_spanCount=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:stackFromEnd
+     * @attr name com.bciRobotAdapter:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=5;
     /**
@@ -11540,7 +11541,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.multiDevCompApp:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.bciRobotAdapter:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
@@ -11548,7 +11549,7 @@ public final class R {
         0x7f03009b
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11559,7 +11560,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:insetForeground
+     * @attr name com.bciRobotAdapter:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -11569,7 +11570,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.multiDevCompApp:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.bciRobotAdapter:behavior_overlapTop}</code></td><td></td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -11577,7 +11578,7 @@ public final class R {
         0x7f030036
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#behavior_overlapTop}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#behavior_overlapTop}
      * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11586,7 +11587,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:behavior_overlapTop
+     * @attr name com.bciRobotAdapter:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -11600,19 +11601,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.multiDevCompApp:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.multiDevCompApp:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.multiDevCompApp:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.multiDevCompApp:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.multiDevCompApp:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.multiDevCompApp:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.multiDevCompApp:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.multiDevCompApp:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.multiDevCompApp:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.multiDevCompApp:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.multiDevCompApp:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.multiDevCompApp:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.multiDevCompApp:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.bciRobotAdapter:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.bciRobotAdapter:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.bciRobotAdapter:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.bciRobotAdapter:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.bciRobotAdapter:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.bciRobotAdapter:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.bciRobotAdapter:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.bciRobotAdapter:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.bciRobotAdapter:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.bciRobotAdapter:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.bciRobotAdapter:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.bciRobotAdapter:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.bciRobotAdapter:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -11741,7 +11742,7 @@ public final class R {
      */
     public static final int SearchView_android_maxWidth=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11749,11 +11750,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:closeIcon
+     * @attr name com.bciRobotAdapter:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11761,21 +11762,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:commitIcon
+     * @attr name com.bciRobotAdapter:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:defaultQueryHint
+     * @attr name com.bciRobotAdapter:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11783,21 +11784,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:goIcon
+     * @attr name com.bciRobotAdapter:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:iconifiedByDefault
+     * @attr name com.bciRobotAdapter:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11805,11 +11806,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:layout
+     * @attr name com.bciRobotAdapter:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11817,21 +11818,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:queryBackground
+     * @attr name com.bciRobotAdapter:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:queryHint
+     * @attr name com.bciRobotAdapter:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11839,11 +11840,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:searchHintIcon
+     * @attr name com.bciRobotAdapter:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11851,11 +11852,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:searchIcon
+     * @attr name com.bciRobotAdapter:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11863,11 +11864,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:submitBackground
+     * @attr name com.bciRobotAdapter:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11875,11 +11876,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:suggestionRowLayout
+     * @attr name com.bciRobotAdapter:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11887,7 +11888,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:voiceIcon
+     * @attr name com.bciRobotAdapter:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -11897,9 +11898,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SignInButton_buttonSize com.multiDevCompApp:buttonSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_colorScheme com.multiDevCompApp:colorScheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_scopeUris com.multiDevCompApp:scopeUris}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_buttonSize com.bciRobotAdapter:buttonSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_colorScheme com.bciRobotAdapter:colorScheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_scopeUris com.bciRobotAdapter:scopeUris}</code></td><td></td></tr>
      * </table>
      * @see #SignInButton_buttonSize
      * @see #SignInButton_colorScheme
@@ -11909,7 +11910,7 @@ public final class R {
         0x7f030044, 0x7f03005b, 0x7f03010d
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonSize}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonSize}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11927,11 +11928,11 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:buttonSize
+     * @attr name com.bciRobotAdapter:buttonSize
      */
     public static final int SignInButton_buttonSize=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#colorScheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#colorScheme}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11949,11 +11950,11 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:colorScheme
+     * @attr name com.bciRobotAdapter:colorScheme
      */
     public static final int SignInButton_colorScheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#scopeUris}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#scopeUris}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11963,7 +11964,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:scopeUris
+     * @attr name com.bciRobotAdapter:scopeUris
      */
     public static final int SignInButton_scopeUris=2;
     /**
@@ -11974,8 +11975,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.multiDevCompApp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.multiDevCompApp:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.bciRobotAdapter:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.bciRobotAdapter:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_elevation
@@ -11998,7 +11999,7 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#elevation}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12007,11 +12008,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:elevation
+     * @attr name com.bciRobotAdapter:elevation
      */
     public static final int SnackbarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12020,7 +12021,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:maxActionInlineWidth
+     * @attr name com.bciRobotAdapter:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=2;
     /**
@@ -12034,7 +12035,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.multiDevCompApp:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.bciRobotAdapter:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -12109,7 +12110,7 @@ public final class R {
      */
     public static final int Spinner_android_prompt=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12117,7 +12118,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:popupTheme
+     * @attr name com.bciRobotAdapter:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -12130,17 +12131,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.multiDevCompApp:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.multiDevCompApp:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.multiDevCompApp:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.multiDevCompApp:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.multiDevCompApp:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.multiDevCompApp:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.multiDevCompApp:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.multiDevCompApp:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.multiDevCompApp:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.multiDevCompApp:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.multiDevCompApp:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.bciRobotAdapter:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.bciRobotAdapter:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.bciRobotAdapter:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.bciRobotAdapter:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.bciRobotAdapter:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.bciRobotAdapter:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.bciRobotAdapter:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.bciRobotAdapter:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.bciRobotAdapter:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.bciRobotAdapter:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.bciRobotAdapter:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -12196,27 +12197,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:showText
+     * @attr name com.bciRobotAdapter:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:splitTrack
+     * @attr name com.bciRobotAdapter:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12225,11 +12226,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:switchMinWidth
+     * @attr name com.bciRobotAdapter:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12238,11 +12239,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:switchPadding
+     * @attr name com.bciRobotAdapter:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12250,11 +12251,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:switchTextAppearance
+     * @attr name com.bciRobotAdapter:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12263,22 +12264,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:thumbTextPadding
+     * @attr name com.bciRobotAdapter:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:thumbTint
+     * @attr name com.bciRobotAdapter:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12295,11 +12296,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:thumbTintMode
+     * @attr name com.bciRobotAdapter:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12307,22 +12308,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:track
+     * @attr name com.bciRobotAdapter:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:trackTint
+     * @attr name com.bciRobotAdapter:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12339,7 +12340,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:trackTintMode
+     * @attr name com.bciRobotAdapter:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -12401,22 +12402,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground com.multiDevCompApp:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart com.multiDevCompApp:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity com.multiDevCompApp:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.multiDevCompApp:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.multiDevCompApp:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.multiDevCompApp:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth com.multiDevCompApp:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode com.multiDevCompApp:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding com.multiDevCompApp:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.multiDevCompApp:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.multiDevCompApp:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.multiDevCompApp:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.multiDevCompApp:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.multiDevCompApp:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.multiDevCompApp:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor com.multiDevCompApp:tabTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground com.bciRobotAdapter:tabBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart com.bciRobotAdapter:tabContentStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity com.bciRobotAdapter:tabGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.bciRobotAdapter:tabIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.bciRobotAdapter:tabIndicatorHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.bciRobotAdapter:tabMaxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth com.bciRobotAdapter:tabMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode com.bciRobotAdapter:tabMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding com.bciRobotAdapter:tabPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.bciRobotAdapter:tabPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.bciRobotAdapter:tabPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.bciRobotAdapter:tabPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.bciRobotAdapter:tabPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.bciRobotAdapter:tabSelectedTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.bciRobotAdapter:tabTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor com.bciRobotAdapter:tabTextColor}</code></td><td></td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -12442,7 +12443,7 @@ public final class R {
         0x7f03013f, 0x7f030140, 0x7f030141, 0x7f030142
       };
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabBackground}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabBackground}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12450,11 +12451,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:tabBackground
+     * @attr name com.bciRobotAdapter:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabContentStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabContentStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12463,11 +12464,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabContentStart
+     * @attr name com.bciRobotAdapter:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabGravity}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12480,22 +12481,22 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:tabGravity
+     * @attr name com.bciRobotAdapter:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabIndicatorColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabIndicatorColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:tabIndicatorColor
+     * @attr name com.bciRobotAdapter:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabIndicatorHeight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabIndicatorHeight}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12504,11 +12505,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabIndicatorHeight
+     * @attr name com.bciRobotAdapter:tabIndicatorHeight
      */
     public static final int TabLayout_tabIndicatorHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabMaxWidth}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabMaxWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12517,11 +12518,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabMaxWidth
+     * @attr name com.bciRobotAdapter:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabMinWidth}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabMinWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12530,11 +12531,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabMinWidth
+     * @attr name com.bciRobotAdapter:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12547,11 +12548,11 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:tabMode
+     * @attr name com.bciRobotAdapter:tabMode
      */
     public static final int TabLayout_tabMode=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabPadding}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabPadding}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12560,11 +12561,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabPadding
+     * @attr name com.bciRobotAdapter:tabPadding
      */
     public static final int TabLayout_tabPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabPaddingBottom}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12573,11 +12574,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabPaddingBottom
+     * @attr name com.bciRobotAdapter:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabPaddingEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabPaddingEnd}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12586,11 +12587,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabPaddingEnd
+     * @attr name com.bciRobotAdapter:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabPaddingStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabPaddingStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12599,11 +12600,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabPaddingStart
+     * @attr name com.bciRobotAdapter:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabPaddingTop}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabPaddingTop}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12612,22 +12613,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:tabPaddingTop
+     * @attr name com.bciRobotAdapter:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabSelectedTextColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabSelectedTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:tabSelectedTextColor
+     * @attr name com.bciRobotAdapter:tabSelectedTextColor
      */
     public static final int TabLayout_tabSelectedTextColor=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabTextAppearance}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12635,18 +12636,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:tabTextAppearance
+     * @attr name com.bciRobotAdapter:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#tabTextColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#tabTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:tabTextColor
+     * @attr name com.bciRobotAdapter:tabTextColor
      */
     public static final int TabLayout_tabTextColor=15;
     /**
@@ -12665,7 +12666,7 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDx android:shadowDx}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.multiDevCompApp:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.bciRobotAdapter:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -12802,7 +12803,7 @@ public final class R {
      */
     public static final int TextAppearance_android_typeface=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12812,7 +12813,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:textAllCaps
+     * @attr name com.bciRobotAdapter:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=9;
     /**
@@ -12824,20 +12825,20 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.multiDevCompApp:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.multiDevCompApp:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.multiDevCompApp:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.multiDevCompApp:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.multiDevCompApp:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.multiDevCompApp:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.multiDevCompApp:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.multiDevCompApp:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.multiDevCompApp:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.multiDevCompApp:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.multiDevCompApp:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.multiDevCompApp:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.multiDevCompApp:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.multiDevCompApp:passwordToggleTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.bciRobotAdapter:counterEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.bciRobotAdapter:counterMaxLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.bciRobotAdapter:counterOverflowTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.bciRobotAdapter:counterTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.bciRobotAdapter:errorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.bciRobotAdapter:errorTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.bciRobotAdapter:hintAnimationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.bciRobotAdapter:hintEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.bciRobotAdapter:hintTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.bciRobotAdapter:passwordToggleContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.bciRobotAdapter:passwordToggleDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.bciRobotAdapter:passwordToggleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.bciRobotAdapter:passwordToggleTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.bciRobotAdapter:passwordToggleTintMode}</code></td><td></td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -12888,26 +12889,26 @@ public final class R {
      */
     public static final int TextInputLayout_android_textColorHint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#counterEnabled}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#counterEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:counterEnabled
+     * @attr name com.bciRobotAdapter:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#counterMaxLength}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#counterMaxLength}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.multiDevCompApp:counterMaxLength
+     * @attr name com.bciRobotAdapter:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#counterOverflowTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#counterOverflowTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12915,11 +12916,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:counterOverflowTextAppearance
+     * @attr name com.bciRobotAdapter:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#counterTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#counterTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12927,21 +12928,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:counterTextAppearance
+     * @attr name com.bciRobotAdapter:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#errorEnabled}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#errorEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:errorEnabled
+     * @attr name com.bciRobotAdapter:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#errorTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#errorTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12949,31 +12950,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:errorTextAppearance
+     * @attr name com.bciRobotAdapter:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#hintAnimationEnabled}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#hintAnimationEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:hintAnimationEnabled
+     * @attr name com.bciRobotAdapter:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#hintEnabled}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#hintEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:hintEnabled
+     * @attr name com.bciRobotAdapter:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#hintTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#hintTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12981,21 +12982,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:hintTextAppearance
+     * @attr name com.bciRobotAdapter:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#passwordToggleContentDescription}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#passwordToggleContentDescription}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:passwordToggleContentDescription
+     * @attr name com.bciRobotAdapter:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#passwordToggleDrawable}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#passwordToggleDrawable}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13003,32 +13004,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:passwordToggleDrawable
+     * @attr name com.bciRobotAdapter:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#passwordToggleEnabled}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#passwordToggleEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.multiDevCompApp:passwordToggleEnabled
+     * @attr name com.bciRobotAdapter:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#passwordToggleTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#passwordToggleTint}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:passwordToggleTint
+     * @attr name com.bciRobotAdapter:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#passwordToggleTintMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#passwordToggleTintMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13044,7 +13045,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:passwordToggleTintMode
+     * @attr name com.bciRobotAdapter:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=15;
     /**
@@ -13056,33 +13057,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.multiDevCompApp:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.multiDevCompApp:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.multiDevCompApp:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.multiDevCompApp:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.multiDevCompApp:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.multiDevCompApp:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.multiDevCompApp:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.multiDevCompApp:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.multiDevCompApp:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.multiDevCompApp:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.multiDevCompApp:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.multiDevCompApp:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.multiDevCompApp:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.multiDevCompApp:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.multiDevCompApp:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.multiDevCompApp:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.multiDevCompApp:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.multiDevCompApp:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.multiDevCompApp:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.multiDevCompApp:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.multiDevCompApp:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.multiDevCompApp:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.multiDevCompApp:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.multiDevCompApp:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.multiDevCompApp:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.multiDevCompApp:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.multiDevCompApp:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.bciRobotAdapter:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.bciRobotAdapter:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.bciRobotAdapter:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.bciRobotAdapter:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.bciRobotAdapter:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.bciRobotAdapter:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.bciRobotAdapter:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.bciRobotAdapter:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.bciRobotAdapter:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.bciRobotAdapter:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.bciRobotAdapter:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.bciRobotAdapter:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.bciRobotAdapter:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.bciRobotAdapter:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.bciRobotAdapter:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.bciRobotAdapter:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.bciRobotAdapter:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.bciRobotAdapter:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.bciRobotAdapter:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.bciRobotAdapter:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.bciRobotAdapter:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.bciRobotAdapter:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.bciRobotAdapter:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.bciRobotAdapter:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.bciRobotAdapter:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.bciRobotAdapter:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.bciRobotAdapter:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -13167,7 +13168,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13180,21 +13181,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:buttonGravity
+     * @attr name com.bciRobotAdapter:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:collapseContentDescription
+     * @attr name com.bciRobotAdapter:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13202,11 +13203,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:collapseIcon
+     * @attr name com.bciRobotAdapter:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13215,11 +13216,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetEnd
+     * @attr name com.bciRobotAdapter:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13228,11 +13229,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetEndWithActions
+     * @attr name com.bciRobotAdapter:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13241,11 +13242,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetLeft
+     * @attr name com.bciRobotAdapter:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13254,11 +13255,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetRight
+     * @attr name com.bciRobotAdapter:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13267,11 +13268,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetStart
+     * @attr name com.bciRobotAdapter:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13280,11 +13281,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:contentInsetStartWithNavigation
+     * @attr name com.bciRobotAdapter:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13292,21 +13293,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:logo
+     * @attr name com.bciRobotAdapter:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:logoDescription
+     * @attr name com.bciRobotAdapter:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13315,21 +13316,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:maxButtonHeight
+     * @attr name com.bciRobotAdapter:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:navigationContentDescription
+     * @attr name com.bciRobotAdapter:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13337,11 +13338,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:navigationIcon
+     * @attr name com.bciRobotAdapter:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13349,21 +13350,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:popupTheme
+     * @attr name com.bciRobotAdapter:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:subtitle
+     * @attr name com.bciRobotAdapter:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13371,32 +13372,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:subtitleTextAppearance
+     * @attr name com.bciRobotAdapter:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:subtitleTextColor
+     * @attr name com.bciRobotAdapter:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.multiDevCompApp:title
+     * @attr name com.bciRobotAdapter:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13405,11 +13406,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:titleMargin
+     * @attr name com.bciRobotAdapter:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13418,11 +13419,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:titleMarginBottom
+     * @attr name com.bciRobotAdapter:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13431,11 +13432,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:titleMarginEnd
+     * @attr name com.bciRobotAdapter:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13444,11 +13445,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:titleMarginStart
+     * @attr name com.bciRobotAdapter:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13457,11 +13458,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:titleMarginTop
+     * @attr name com.bciRobotAdapter:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13470,11 +13471,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:titleMargins
+     * @attr name com.bciRobotAdapter:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13482,18 +13483,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:titleTextAppearance
+     * @attr name com.bciRobotAdapter:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:titleTextColor
+     * @attr name com.bciRobotAdapter:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -13505,9 +13506,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.multiDevCompApp:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.multiDevCompApp:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.multiDevCompApp:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.bciRobotAdapter:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.bciRobotAdapter:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.bciRobotAdapter:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -13527,8 +13528,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.multiDevCompApp:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.multiDevCompApp:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.bciRobotAdapter:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.bciRobotAdapter:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -13553,18 +13554,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.multiDevCompApp:backgroundTint
+     * @attr name com.bciRobotAdapter:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13580,7 +13581,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.multiDevCompApp:backgroundTintMode
+     * @attr name com.bciRobotAdapter:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**
@@ -13660,7 +13661,7 @@ public final class R {
      */
     public static final int View_android_theme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13669,11 +13670,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:paddingEnd
+     * @attr name com.bciRobotAdapter:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13682,11 +13683,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.multiDevCompApp:paddingStart
+     * @attr name com.bciRobotAdapter:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.multiDevCompApp.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.bciRobotAdapter.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13694,7 +13695,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.multiDevCompApp:theme
+     * @attr name com.bciRobotAdapter:theme
      */
     public static final int View_theme=4;
   }

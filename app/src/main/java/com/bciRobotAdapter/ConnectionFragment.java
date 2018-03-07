@@ -29,7 +29,35 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
         getUiElements();
         initSpinners();
         addButtonsListener();
+        if(mainActivity.getFragmentData("mainControllerLog")!=null) cMainLog.setText(mainActivity.getFragmentData("mainControllerLog"));
+        if(mainActivity.getFragmentData("auxControllerLog")!=null) cAuxLog.setText(mainActivity.getFragmentData("auxControllerLog"));
+        if(mainActivity.getFragmentData("robotLog")!=null) rLog.setText(mainActivity.getFragmentData("robotLog"));
+
+        if(mainActivity.getFragmentData("mainControllerOutput")!=null) cMainOutput.setText(mainActivity.getFragmentData("mainControllerOutput"));
+        if(mainActivity.getFragmentData("auxControllerOutput")!=null) cAuxOutput.setText(mainActivity.getFragmentData("auxControllerOutput"));
+        if(mainActivity.getFragmentData("robotOutput")!=null) rOutput.setText(mainActivity.getFragmentData("robotOutput"));
+
+        if(mainActivity.getFragmentData("connectMainCtrlBtn")!=null) connectMainCtrlBtn.setText(mainActivity.getFragmentData("connectMainCtrlBtn"));
+        if(mainActivity.getFragmentData("connectAuxCtrlBtn")!=null) connectAuxCtrlBtn.setText(mainActivity.getFragmentData("connectAuxCtrlBtn"));
+        if(mainActivity.getFragmentData("connectRobotBtn")!=null) connectRobotBtn.setText(mainActivity.getFragmentData("connectRobotBtn"));
+
         return view;
+    }
+
+    @Override
+    public void onPause() {
+        mainActivity.addFragmentData("mainControllerLog", (String)cMainLog.getText());
+        mainActivity.addFragmentData("auxControllerLog", (String)cAuxLog.getText());
+        mainActivity.addFragmentData("robotLog", (String)rLog.getText());
+
+        mainActivity.addFragmentData("mainControllerOutput", (String)cMainOutput.getText());
+        mainActivity.addFragmentData("auxControllerOutput", (String)cAuxOutput.getText());
+        mainActivity.addFragmentData("robotOutput", (String)rOutput.getText());
+
+        mainActivity.addFragmentData("connectMainCtrlBtn", (String)connectMainCtrlBtn.getText());
+        mainActivity.addFragmentData("connectAuxCtrlBtn", (String)connectAuxCtrlBtn.getText());
+        mainActivity.addFragmentData("connectRobotBtn", (String)connectRobotBtn.getText());
+        super.onPause();
     }
 
     public void initFragment(MainActivity mainActivity) {
@@ -58,19 +86,19 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
     }
     private void initSpinners() {
         //Spinners values are from the ControllerType and RobotType enum
-        ArrayAdapter<String> spinnerAdapterCtrl = new ArrayAdapter<>(mainActivity.getContext(), android.R.layout.simple_spinner_item);
+        ArrayAdapter<String> spinnerAdapterCtrl = new ArrayAdapter<>(mainActivity.getContext(), R.layout.spinner);
         for(ControllerType ct : ControllerType.values()) {
             spinnerAdapterCtrl.add(ct.toString());
         }
         spinnerMainCtrl.setAdapter(spinnerAdapterCtrl);
 
-        ArrayAdapter<String> spinnerAdapterRobot = new ArrayAdapter<>(mainActivity.getContext(), android.R.layout.simple_spinner_item);
+        ArrayAdapter<String> spinnerAdapterRobot = new ArrayAdapter<>(mainActivity.getContext(), R.layout.spinner);
         for(RobotType rt : RobotType.values()) {
             spinnerAdapterRobot.add(rt.toString());
         }
         spinnerRobot.setAdapter(spinnerAdapterRobot);
 
-        ArrayAdapter<String> spinnerAdapterAuxCtrl = new ArrayAdapter<>(mainActivity.getContext(), android.R.layout.simple_spinner_item);
+        ArrayAdapter<String> spinnerAdapterAuxCtrl = new ArrayAdapter<>(mainActivity.getContext(), R.layout.spinner);
         for(ControllerType ct : ControllerType.values()) {
             spinnerAdapterAuxCtrl.add(ct.toString());
         }
@@ -102,7 +130,7 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
                 else if (textCtrl.equals(getString(R.string.disconnect))) {
                     mainActivity.onDisconnectMainControllerPressed();
                     connectMainCtrlBtn.setText(R.string.connect);
-                    setMainControllerLog("Main controller disconnected");
+                    setMainControllerLog(getString(R.string.notConnected));
                 }
                 break;
 
@@ -122,7 +150,7 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
                 else if (textRobot.equals(getString(R.string.disconnect))) {
                     mainActivity.onDisconnectRobotPressed();
                     connectRobotBtn.setText(R.string.connect);
-                    setRobotLog("Robot disconnected");
+                    setRobotLog(getString(R.string.notConnected));
                 }
                 break;
 
@@ -133,14 +161,16 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
                     mainActivity.onConnectAuxControllerPressed(ControllerType.valueOf((String) spinnerAuxCtrl.getSelectedItem()));
                     connectAuxCtrlBtn.setText(R.string.stop);
                     setAuxControllerLog("Looking for controller " + spinnerAuxCtrl.getSelectedItem() + ", press stop to abort");
-                } else if (textAuxCtrl.equals(getString(R.string.stop))) {
+                }
+                else if (textAuxCtrl.equals(getString(R.string.stop))) {
                     mainActivity.onStopAuxControllerConnectionPressed();
                     setAuxControllerLog("Search stopped");
                     connectAuxCtrlBtn.setText(R.string.connect);
-                } else if (textAuxCtrl.equals(getString(R.string.disconnect))) {
+                }
+                else if (textAuxCtrl.equals(getString(R.string.disconnect))) {
                     mainActivity.onDisconnectAuxControllerPressed();
                     connectAuxCtrlBtn.setText(R.string.connect);
-                    setAuxControllerLog("Aux controller disconnected");
+                    setAuxControllerLog(getString(R.string.notConnected));
                 }
                 break;
         }

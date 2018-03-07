@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.bciRobotAdapter.devicesTypes.ControllerType;
+import com.bciRobotAdapter.devicesTypes.RobotType;
 import com.bciRobotAdapter.joystickLib.Joystick;
 import com.bciRobotAdapter.joystickLib.JoystickListener;
 
@@ -32,9 +34,30 @@ public class JoystickFragment extends Fragment implements View.OnClickListener, 
         getUiElements();
         initJoystick();
         addButtonsListener();
+        if(mainActivity.getFragmentData("mainControllerConnected")!=null) mainControllerConnected.setText(mainActivity.getFragmentData("mainControllerConnected"));
+        if(mainActivity.getFragmentData("auxControllerConnected")!=null) auxControllerConnected.setText(mainActivity.getFragmentData("auxControllerConnected"));
+        if(mainActivity.getFragmentData("robotConnected")!=null) robotConnected.setText(mainActivity.getFragmentData("robotConnected"));
+
+        if(mainActivity.getFragmentData("driveLog")!=null) driveLog.setText(mainActivity.getFragmentData("driveLog"));
+        if(mainActivity.getFragmentData("jsToTurnSwitch")!=null) jsToTurnSwitch.setChecked(Boolean.valueOf(mainActivity.getFragmentData("jsToTurnSwitch")));
+        if(mainActivity.getFragmentData("btnPauseText")!=null) btnPause.setText(mainActivity.getFragmentData("btnPauseText"));
+
+        if (mainActivity.isJoystickTurning()) joystick.setMotionConstraint(Joystick.MotionConstraint.HORIZONTAL);
+        else joystick.setMotionConstraint(Joystick.MotionConstraint.NONE);
         return view;
     }
 
+    @Override
+    public void onPause() {
+        mainActivity.addFragmentData("mainControllerConnected", (String)mainControllerConnected.getText());
+        mainActivity.addFragmentData("auxControllerConnected", (String)auxControllerConnected.getText());
+        mainActivity.addFragmentData("robotConnected", (String)robotConnected.getText());
+
+        mainActivity.addFragmentData("driveLog", (String)driveLog.getText());
+        mainActivity.addFragmentData("jsToTurnSwitch", Boolean.toString(jsToTurnSwitch.isChecked()));
+        mainActivity.addFragmentData("btnPauseText", (String)btnPause.getText());
+        super.onPause();
+    }
     public void initFragment(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
     }
@@ -103,18 +126,8 @@ public class JoystickFragment extends Fragment implements View.OnClickListener, 
         }
     }
 
-    public void driveLog(String toWrite) {
+    public void setDriveLog(String toWrite) {
         driveLog.setText(toWrite);
-    }
-    public void setConnectedDevices(String mainController, String auxController, String robot) {
-        if(mainController!=null) mainControllerConnected.setText(mainController);
-        else mainControllerConnected.setText("Not Connected");
-
-        if(auxController!=null) auxControllerConnected.setText(auxController);
-        else auxControllerConnected.setText("Not Connected");
-
-        if(robot!=null) robotConnected.setText(robot);
-        else robotConnected.setText("Not Connected");
     }
 
     @Override

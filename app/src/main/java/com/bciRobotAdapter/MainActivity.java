@@ -26,6 +26,8 @@ import com.bciRobotAdapter.drivers.controllerDrivers.*;
 import com.bciRobotAdapter.drivers.robotDrivers.*;
 import com.bciRobotAdapter.drivers.interfaces.*;
 
+import java.util.HashMap;
+
 /**===============How to use bciRobotAdapter===============**/
 
 /**MainActivity should not be modified unless you want to add some features or change the view (add buttons or something else).
@@ -93,6 +95,8 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
     private double auxControllerDirection = 0;
     private int FREQUENCY = 1;
 
+    private FragmentDataMap fragmentDataMap;
+
     /*==========Bluetooth receiver==========*/
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
@@ -116,9 +120,10 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (savedInstanceState == null) {
-            HomeFragment myf = new HomeFragment();
+            HomeFragment homeFragment = new HomeFragment();
+            fragmentDataMap = new FragmentDataMap();
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.dinamic_frame, myf);
+            transaction.replace(R.id.dinamic_frame, homeFragment, "homeFrag");
             transaction.commit();
         }
 
@@ -211,6 +216,13 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
         return this.getApplicationContext();
     }
 
+    public void addFragmentData(String key, String value){
+        fragmentDataMap.addData(key,value);
+    }
+    public String getFragmentData (String key) {
+        return fragmentDataMap.getData(key);
+    }
+
     /*===========================UI and View methods===========================*/
     private void initUI() {
         setContentView(R.layout.activity_main);
@@ -256,7 +268,7 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
         }
         mainController.setFrequency(FREQUENCY);
         if(auxController!=null) mainController.setHasAuxiliary(true);
-        setControllerLog("Looking for CONTROLLER: "+mainControllerName.name());
+        setMainControllerLog("Looking for: "+mainControllerName.name());
     }
     private void setAuxController(ControllerType name) {
         this.auxControllerName = name;
@@ -284,7 +296,7 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
         }
         auxController.setFrequency(FREQUENCY);
         if(mainController!=null) mainController.setHasAuxiliary(true);
-        setAuxControllerLog("Looking for CONTROLLER: "+auxControllerName.name());
+        setAuxControllerLog("Looking for: "+auxControllerName.name());
     }
     private void setRobot(RobotType name) {
         this.robotName = name;
@@ -301,6 +313,7 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
                 Log.e("setRobot", "Robot's name unknown. No Robot has been set");
                 return;
         }
+        setRobotLog("Looking for: "+robotName.name());
     }
 
     /*===========================Devices management methods===========================*/
@@ -313,18 +326,30 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
     public void onMainControllerConnected(boolean connected){
         mainControllerConnected = connected;
         if(!connected&&checkRobot()) robot.stop();
-        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
         if(cf!=null)cf.onMainControllerConnected(connected, mainControllerName.name());
+
+        if(connected) addFragmentData("mainControllerConnected", mainControllerName.name());
+        else addFragmentData("mainControllerConnected", null);
     }
     public void onRobotConnected(boolean connected){
         robotConnected = connected;
-        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
         if(cf!=null)cf.onRobotConnected(connected, robotName.name());
+
+        if(connected) addFragmentData("robotConnected", robotName.name());
+        else addFragmentData("robotConnected", null);
     }
     public void onAuxControllerConnected(boolean connected){
         auxControllerConnected = connected;
-        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
         if(cf!=null)cf.onAuxControllerConnected(connected, auxControllerName.name());
+
+        if(connected) addFragmentData("auxControllerConnected", auxControllerName.name());
+        else addFragmentData("robotConnected", null);
 
         if(!connected) {
             if(mainController!=null) mainController.setHasAuxiliary(false);
@@ -381,55 +406,74 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
     public void setLedWhite() {if(checkRobot()) robot.setLedWhite();}
     public void setLedOff() {if(checkRobot()) robot.setLedOff();}
 
-
     /*===========================Log and debug methods===========================*/
-    public void setGeneralLog(String toWrite) {
-        //log.setText(toWrite);
-    }
-    public void setControllerLog(String toWrite) {
-        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+
+    public void setMainControllerLog(String toWrite) {
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
         if(cf!=null) cf.setMainControllerLog(toWrite);
+        addFragmentData("mainControllerLog", toWrite);
     }
     public void setAuxControllerLog(String toWrite) {
-        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
         if(cf!=null) cf.setAuxControllerLog(toWrite);
-
+        addFragmentData("auxControllerLog", toWrite);
     }
     public void setRobotLog(String toWrite) {
-        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentById(R.id.dinamic_frame);
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
         if(cf!=null) cf.setRobotLog(toWrite);
+        addFragmentData("robotLog", toWrite);
+    }
+
+    public void setMainControllerOutput(String toWrite) {
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
+        if(cf!=null) cf.setMainControllerOutput(toWrite);
+        addFragmentData("mainControllerOutput", toWrite);
+    }
+    public void setAuxControllerOutput(String toWrite) {
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
+        if(cf!=null) cf.setAuxControllerOutput(toWrite);
+        addFragmentData("auxControllerOutput", toWrite);
+    }
+    public void setRobotOutput(String toWrite) {
+        ConnectionFragment cf = (ConnectionFragment) getSupportFragmentManager().findFragmentByTag("connFrag");
+        if(cf!=null) cf.setRobotOutput(toWrite);
+        addFragmentData("robotOutput", toWrite);
+    }
+    public void setDriveLog(String toWrite) {
+        JoystickFragment jsf = (JoystickFragment) getSupportFragmentManager().findFragmentByTag("jsFrag");
+        if(jsf!=null) jsf.setDriveLog(toWrite);
+        addFragmentData("driveLog", toWrite);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        // Handle navigation view item clicks here.
         FragmentTransaction transaction;
 
         switch (item.getItemId()) {
 
             case R.id.nav_home:
-                HomeFragment hf = new HomeFragment();
+                HomeFragment homeFragment = new HomeFragment();
                 transaction = getSupportFragmentManager().beginTransaction();
                 transaction.addToBackStack("homeFrag");
-                transaction.replace(R.id.dinamic_frame, hf);
+                transaction.replace(R.id.dinamic_frame, homeFragment, "homeFrag");
                 transaction.commit();
                 break;
 
             case R.id.nav_connection:
-                ConnectionFragment cf = new ConnectionFragment();
-                cf.initFragment(this);
+                ConnectionFragment connectionFragment = new ConnectionFragment();
+                connectionFragment.initFragment(this);
                 transaction = getSupportFragmentManager().beginTransaction();
                 transaction.addToBackStack("connFrag");
-                transaction.replace(R.id.dinamic_frame, cf);
+                transaction.replace(R.id.dinamic_frame, connectionFragment, "connFrag");
                 transaction.commit();
                 break;
 
             case R.id.nav_drive:
-                JoystickFragment jf = new JoystickFragment();
-                jf.initFragment(this);
+                JoystickFragment joystickFragment = new JoystickFragment();
+                joystickFragment.initFragment(this);
                 transaction = getSupportFragmentManager().beginTransaction();
                 transaction.addToBackStack("jsFrag");
-                transaction.replace(R.id.dinamic_frame, jf);
+                transaction.replace(R.id.dinamic_frame, joystickFragment, "jsFrag");
                 transaction.commit();
                 break;
         }
@@ -442,7 +486,6 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
     public void activateMainController(boolean active) {
         if(mainController!=null)mainController.activate(active);
     }
-
     public void activateAuxController(boolean active) {
         if(auxController!=null)auxController.activate(active);
     }
@@ -473,5 +516,21 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
             stop();
         }
         setJsValues(0, 0);
+    }
+}
+
+class FragmentDataMap {
+    private HashMap<String, String> dataMap;
+    public FragmentDataMap() {
+        dataMap = new HashMap<>();
+    }
+    public void addData(String key, String value) {
+        dataMap.put(key, value);
+    }
+    public String getData(String key) {
+        return dataMap.get(key);
+    }
+    public void clearData() {
+        dataMap.clear();
     }
 }

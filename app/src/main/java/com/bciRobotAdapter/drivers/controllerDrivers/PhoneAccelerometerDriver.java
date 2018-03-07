@@ -51,7 +51,6 @@ public class PhoneAccelerometerDriver extends AbstractController implements Sens
         double y = event.values[1];
         double z = event.values[2];
 
-        setGeneralLog("X: "+String.format("%.2f", x)+"Y "+String.format("%.2f", y)+"Z: "+String.format("%.2f", z));
         moveRobotForward(0, 0.1);
     }
 
