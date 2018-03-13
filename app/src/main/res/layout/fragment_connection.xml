@@ -148,35 +148,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:background="@color/js_clicked_btn_color"
+            android:textColor="@color/btn_text_color"
+            android:padding="2dp"
             android:text="Main Controller Output" />
 
         <TextView
             android:id="@+id/mainControllerOutput"
             android:layout_width="match_parent"
-            android:layout_height="65dp" />
+            android:layout_height="65dp"
+            android:gravity="bottom"
+            android:maxLines="6"/>
 
         <TextView
             android:id="@+id/auxControllerOutputTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:background="@color/js_clicked_btn_color"
+            android:textColor="@color/btn_text_color"
+            android:padding="2dp"
             android:text="Auxiliary Controller Output" />
 
         <TextView
             android:id="@+id/auxControllerOutput"
             android:layout_width="match_parent"
-            android:layout_height="65dp" />
+            android:layout_height="65dp"
+            android:gravity="bottom"
+            android:maxLines="6"/>
 
         <TextView
             android:id="@+id/robotOutputTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:background="@color/js_clicked_btn_color"
+            android:textColor="@color/btn_text_color"
+            android:padding="2dp"
             android:text="Robot Output" />
 
         <TextView
             android:id="@+id/robotOutput"
             android:layout_width="match_parent"
-            android:layout_height="65dp" />
+            android:layout_height="65dp"
+            android:gravity="bottom"
+            android:maxLines="6"/>
     </LinearLayout>
 </FrameLayout>

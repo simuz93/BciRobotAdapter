@@ -33,7 +33,7 @@ public class SpheroBB8Driver extends AbstractRobot implements RobotChangedStateL
         discoveryAgentEventListener = new DiscoveryAgentEventListener() {
             @Override
             public void handleRobotsAvailable(List<Robot> robots) {
-                setRobotLog("Bring this device near BB8");
+                setRobotOutput("Robot Found! Bring this device near BB8 to connect");
             }
         };
 
@@ -50,12 +50,12 @@ public class SpheroBB8Driver extends AbstractRobot implements RobotChangedStateL
     //Calibration
     private void startCalibrating(){
         calibrating = true;
-        setRobotLog("CALIBRATION: L/R to rotate and move the robot forward to confirm");
+        setRobotOutput("CALIBRATION: L/R to rotate and move the robot forward to confirm");
         robot.calibrating(true);
     }
     private void stopCalibrating(){
         calibrating = false;
-        setRobotLog("Now you can move BB8");
+        setRobotOutput("Calibration done. Now you can move BB8");
         robot.calibrating(false);
     }
 

@@ -46,23 +46,21 @@ public class MindwaveDriver extends AbstractController {
         nskAlgoSdk.setOnSignalQualityListener(new NskAlgoSdk.OnSignalQualityListener() {
             @Override
             public void onSignalQuality(int level) {
-                setControllerLog("Signal quality: "+level);
+                setControllerOutput("Signal quality: "+level);
             }
         });
 
         nskAlgoSdk.setOnAttAlgoIndexListener(new NskAlgoSdk.OnAttAlgoIndexListener() {
             @Override
             public void onAttAlgoIndex(int value) {
-                Log.e("value",""+value);
-
-                final int midValue = 65;
-                final int highValue = 90;
+                setControllerOutput("Attention value: "+value);
+                //TODO: send commands
             }
         });
     }
 
     public void setAlgos() {
-        algoTypes += NskAlgoType.NSK_ALGO_TYPE_ATT.value;
+        algoTypes = NskAlgoType.NSK_ALGO_TYPE_ATT.value;
         if (bInited) {
             NskAlgoSdk.NskAlgoUninit();
             bInited = false;
@@ -79,6 +77,7 @@ public class MindwaveDriver extends AbstractController {
             public void onSignalQuality(int level) {
                 if(NskAlgoSignalQuality.values()[level].toString().equals("POOR") || NskAlgoSignalQuality.values()[level].toString().equals("NOT DETECTED")){
                     System.out.println("Signal lost");
+                    setControllerOutput("Signal lost");
                 }
             }
         });
@@ -120,8 +119,6 @@ class MindwaveListener implements TgStreamHandler {
         switch (datatype) {
             case MindDataType.CODE_ATTENTION:
                 short attValue[] = {(short)data};
-                if(data!=0) Log.e("DATARECEIVED",datatype+" "+data);
-
                 NskAlgoSdk.NskAlgoDataStream(NskAlgoDataType.NSK_ALGO_DATA_TYPE_ATT.value, attValue, 1);
                 break;
             case MindDataType.CODE_POOR_SIGNAL:
@@ -138,20 +135,19 @@ class MindwaveListener implements TgStreamHandler {
         Log.d("Connection", "connectionStates change to: " + connectionStates);
         switch (connectionStates) {
             case ConnectionStates.STATE_CONNECTING:
-                System.out.println("MindWave: Connecting...");
+                mindwaveDriver.setControllerOutput("MindWave: Connecting...");
                 break;
 
             case ConnectionStates.STATE_CONNECTED:
-                System.out.println("MindWave: Connected!");
+                mindwaveDriver.setControllerOutput("MindWave: Connected!");
                 mindwaveDriver.notifyControllerConnected(true);
-
+                mindwaveDriver.setAlgos();
                 mindwaveDriver.tgStreamReader.start();
                 mindwaveDriver.mindwaveStart();
                 break;
 
             case ConnectionStates.STATE_WORKING:
-                System.out.println("WORKING");
-                mindwaveDriver.setAlgos();
+                mindwaveDriver.setControllerOutput("Mindwave: working");
                 break;
 
             case ConnectionStates.STATE_GET_DATA_TIME_OUT:
@@ -162,6 +158,7 @@ class MindwaveListener implements TgStreamHandler {
                 break;
 
             case ConnectionStates.STATE_DISCONNECTED:
+                mindwaveDriver.setControllerOutput("Mindwave: disconnected");
                 NskAlgoSdk.NskAlgoUninit();
                 mindwaveDriver.notifyControllerConnected(false);
                 break;

@@ -10,6 +10,7 @@ import com.bciRobotAdapter.drivers.interfaces.Controller;
 //Abstract controller driver. A new controller driver should extends this class.
 //However, it's also possible to directly implement the Controller interface, manually managing every method needed
 public abstract class AbstractController implements Controller {
+    //todo inserire istruzioni per ogni controller
 
     private boolean active = true; //If false, every movement call from the controller is ignored
     private final AdapterActivity adapterActivity;//The main activity
@@ -63,8 +64,13 @@ public abstract class AbstractController implements Controller {
     //Notify the adapter that the controller is connected (connected = true) or disconnected (connected = false).
     // You MUST call this method everytime the controller's connection state changes
     public void notifyControllerConnected(boolean connected) {
-        if(!isAuxiliary)this.adapterActivity.onMainControllerConnected(connected);
+        if(!isAuxiliary) this.adapterActivity.onMainControllerConnected(connected);
         else this.adapterActivity.onAuxControllerConnected(connected);
+        if(!connected) {
+            if (!isAuxiliary && !hasAuxiliary) adapterActivity.resetAllInstructions();
+            else if (!isAuxiliary && hasAuxiliary) adapterActivity.resetMoveInstructions();
+            else if (isAuxiliary) adapterActivity.resetTurnInstructions();
+        }
     }
 
     //Set the send frequency incoming from the robot
@@ -83,12 +89,6 @@ public abstract class AbstractController implements Controller {
 
     /*================================Print and debug methods================================*/
 
-    //Print in the robot textView the String "toWrite"
-    public void setControllerLog(String toWrite) {
-        if(!isAuxiliary) this.adapterActivity.setMainControllerLog(toWrite);
-        else this.adapterActivity.setAuxControllerLog(toWrite);
-    }
-
     public void setControllerOutput(String toWrite) {
         if(!isAuxiliary) this.adapterActivity.setMainControllerOutput(toWrite);
         else this.adapterActivity.setAuxControllerOutput(toWrite);
@@ -105,6 +105,9 @@ public abstract class AbstractController implements Controller {
 
     //Movement methods, filtered by the active flag
     public void moveRobotForward(double rotation, double speed) {
+        if(speed < 0) speed = 0;
+        if(speed > 1) speed = 1;
+
         if(active && readyToSend()) {
             if (isAuxiliary) {
                 adapterActivity.setAuxCtrlDirection(rotation);
@@ -163,4 +166,32 @@ public abstract class AbstractController implements Controller {
         }
     }
 
+    @Override
+    public void setMoveForwardInst(String inst) {
+        adapterActivity.setMoveForwardInst(inst);
+    }
+    @Override
+    public void setMoveBackwardInst(String inst) {
+        adapterActivity.setMoveBackwardInst(inst);
+    }
+    @Override
+    public void setMoveLeftInst(String inst) {
+        adapterActivity.setMoveLeftInst(inst);
+    }
+    @Override
+    public void setMoveRightInst(String inst) {
+        adapterActivity.setMoveRightInst(inst);
+    }
+    @Override
+    public void setTurnLeftInst(String inst) {
+        adapterActivity.setTurnLeftInst(inst);
+    }
+    @Override
+    public void setTurnRightInst(String inst) {
+        adapterActivity.setTurnRightInst(inst);
+    }
+    @Override
+    public void setLedInst(String inst) {
+        adapterActivity.setLedInst(inst);
+    }
 }

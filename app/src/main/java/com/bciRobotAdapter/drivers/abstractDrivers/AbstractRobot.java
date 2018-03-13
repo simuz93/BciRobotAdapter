@@ -36,10 +36,6 @@ public abstract class AbstractRobot implements Robot {
         adapterActivity.setFrequency(frequency_Hz);
     }
 
-    //Print in the robot textView the String "toWrite"
-    public void setRobotLog(String toWrite) {
-        this.adapterActivity.setRobotLog(toWrite);
-    }
     public void setRobotOutput(String toWrite) {
         this.adapterActivity.setRobotOutput(toWrite);
     }

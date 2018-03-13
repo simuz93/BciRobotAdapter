@@ -76,11 +76,18 @@ public interface AdapterActivity {
     void setLedOff();
 
     /*===========================Log and debug methods===========================*/
-    void setMainControllerLog(String toWrite);
-    void setAuxControllerLog(String toWrite);
-    void setRobotLog(String toWrite);
-
     void setMainControllerOutput(String toWrite);
     void setAuxControllerOutput(String toWrite);
     void setRobotOutput(String toWrite);
+
+    void setMoveForwardInst(String inst);
+    void setMoveBackwardInst(String inst);
+    void setMoveLeftInst(String inst);
+    void setMoveRightInst(String inst);
+    void setTurnLeftInst(String inst);
+    void setTurnRightInst(String inst);
+    void setLedInst(String inst);
+    void resetAllInstructions();
+    void resetTurnInstructions();
+    void resetMoveInstructions();
 }

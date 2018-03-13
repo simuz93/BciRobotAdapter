@@ -56,7 +56,7 @@ public class MuseHeadsetDriver extends AbstractController {
                 if(!availableMuses.get(i).isPaired()) muse = availableMuses.get(i);
             }
             if (muse == null) {
-                setControllerLog("No free MUSES found");
+                setControllerOutput("No free MUSES found");
                 notifyControllerConnected(false);
                 return;
             }
@@ -79,12 +79,14 @@ public class MuseHeadsetDriver extends AbstractController {
 
             // Initiate a connection to the headband and stream the data asynchronously.
             muse.runAsynchronously();
+            setControllerOutput("Muse connected");
             notifyControllerConnected(true);
         }
     }
 
     @Override
     public void disconnect() {
+        setControllerOutput("Muse disconnected");
         muse.disconnect();
         notifyControllerConnected(false);
     }
@@ -100,13 +102,6 @@ public class MuseHeadsetDriver extends AbstractController {
     }
 
     // Listeners
-    /**
-     * You will receive a callback to this method each time there is a change to the
-     * connection state of one of the headbands.
-     *
-     * @param p    A packet containing the current and prior connection states
-     * @param muse The headband whose state changed.
-     */
     void receiveMuseConnectionPacket(final MuseConnectionPacket p, final Muse muse) {
 
         final ConnectionState current = p.getCurrentConnectionState();
@@ -189,20 +184,18 @@ public class MuseHeadsetDriver extends AbstractController {
             setRobotLedWhite();
         }*/
 
-        //Rotating the robot using the accelerometer datas. TESTING
+        //Rotating the robot using the accelerometer data. TESTING
         moveRobotForward(calculateRotation((float)y), 0.3);
-        setControllerLog(calculateRotation((float)y)+"");
     }
 
     //Callback to this method everytime an artifact packet arrives
     void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
 
         if(p.getBlink()) {
-
         }
     }
 
-    //Calculate rotation in degrees from accelerometer Y data. TESTING.
+    //Calculate rotation in degrees from accelerometer Y data. Todo.
     private float calculateRotation(float y) {
         if(y>-0.3 && y<0.3) return 0;
         else if (y<=-0.3 && y>-0.5) return -90; //left
@@ -211,7 +204,6 @@ public class MuseHeadsetDriver extends AbstractController {
         else if(y>=0.5) return (float) 90; //right max
         else return 0;
     }
-
 }
 // Listener translators
 //

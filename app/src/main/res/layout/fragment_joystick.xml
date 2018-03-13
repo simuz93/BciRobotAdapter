@@ -16,6 +16,10 @@
             android:layout_height="70dp"
             android:layout_above="@+id/joystick"
             android:layout_alignParentStart="true"
+            android:background="@color/btn_bg_color"
+            android:textColor="@color/js_clicked_btn_color"
+            android:gravity="bottom"
+            android:maxLines="6"
             android:layout_below="@+id/robotConnectedTitle" />
 
         <com.bciRobotAdapter.joystickLib.Joystick
@@ -24,7 +28,7 @@
             android:layout_height="220dp"
             android:layout_above="@+id/joystickToTurn"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="9dp"
+            android:layout_margin="9dp"
             android:background="@drawable/joystick_background"
             joystick:force_square="false"
             joystick:motion_constraint="None"

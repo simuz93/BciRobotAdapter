@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bciRobotAdapter.InstructionsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/mainControllerConnectedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/mainControllerConnected"
+                android:padding="3dp"
+                android:text="Main Controller:\t" />
+
+            <TextView
+                android:id="@+id/auxControllerConnectedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mainControllerConnectedTitle"
+                android:layout_marginStart="49dp"
+                android:padding="3dp"
+                android:text="Auxiliary Controller:\t" />
+
+            <TextView
+                android:id="@+id/robotConnectedTitle"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/auxControllerConnectedTitle"
+                android:layout_toStartOf="@+id/auxControllerConnected"
+                android:padding="3dp"
+                android:text="Robot:\t" />
+
+            <TextView
+                android:id="@+id/mainControllerConnected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/auxControllerConnectedTitle"
+                android:padding="3dp"
+                android:text="@string/notConnected" />
+
+            <TextView
+                android:id="@+id/auxControllerConnected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/robotConnected"
+                android:layout_alignStart="@+id/mainControllerConnected"
+                android:padding="3dp"
+                android:text="@string/notConnected" />
+
+            <TextView
+                android:id="@+id/robotConnected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/robotConnectedTitle"
+                android:layout_alignBottom="@+id/robotConnectedTitle"
+                android:layout_toEndOf="@+id/robotConnectedTitle"
+                android:padding="3dp"
+                android:text="@string/notConnected" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/instructionsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:paddingStart="10dp"
+            android:background="@color/btn_bg_color"
+            android:textColor="@color/js_notClicked_bg_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="HOW TO" />
+
+        <TextView
+            android:id="@+id/moveForwardInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/move_forward_inst"/>
+
+        <TextView
+            android:id="@+id/moveBackwardInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/move_backward_inst"/>
+
+        <TextView
+            android:id="@+id/moveLeftInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/move_left_inst"/>
+
+        <TextView
+            android:id="@+id/moveRightInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/move_right_inst"/>
+
+        <TextView
+            android:id="@+id/turnLeftInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/turn_left_inst"/>
+
+        <TextView
+            android:id="@+id/turnRightInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/turn_right_inst"/>
+
+        <TextView
+            android:id="@+id/ledInst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/led_inst"/>
+
+    </LinearLayout>
+</FrameLayout>

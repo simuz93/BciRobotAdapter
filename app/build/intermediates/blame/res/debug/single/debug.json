@@ -56,6 +56,10 @@
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_instructions.xml.flat",
+        "source": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\src\\main\\res\\layout\\fragment_instructions.xml"
+    },
+    {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
@@ -116,12 +120,12 @@
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_btn_colored_material.xml.flat",
-        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_btn_colored_material.xml.flat",
+        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -328,12 +332,12 @@
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\892ac458cf2668f5e563821c7284a397\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\d8408f4e60477877da425bf4e516625a\\res\\anim\\design_bottom_sheet_slide_in.xml"
-    },
-    {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner.xml.flat",
         "source": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\src\\main\\res\\layout\\spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
+        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\d8408f4e60477877da425bf4e516625a\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -408,20 +412,20 @@
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\892ac458cf2668f5e563821c7284a397\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
-        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
-        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\d8408f4e60477877da425bf4e516625a\\res\\drawable\\navigation_empty_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_notification_template_big_media_custom.xml.flat",
-        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
+        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_notification_template_big_media_custom.xml.flat",
+        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\4570e4c873de13e7e5eb44fbe916f2d1\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
+        "source": "C:\\Users\\sserr\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\d8408f4e60477877da425bf4e516625a\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
         "merged": "C:\\Users\\sserr\\AndroidStudioProjects\\MultiDevCompApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",

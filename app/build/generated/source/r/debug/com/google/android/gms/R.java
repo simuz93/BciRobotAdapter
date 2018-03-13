@@ -60,17 +60,17 @@ public final class R {
         public static final int auto = 0x7f08001e;
         public static final int center = 0x7f08002d;
         public static final int dark = 0x7f08003e;
-        public static final int icon_only = 0x7f08005d;
-        public static final int light = 0x7f080067;
-        public static final int none = 0x7f08007d;
-        public static final int normal = 0x7f08007e;
-        public static final int radio = 0x7f080089;
-        public static final int standard = 0x7f0800b8;
-        public static final int text = 0x7f0800be;
-        public static final int text2 = 0x7f0800bf;
-        public static final int toolbar = 0x7f0800c9;
-        public static final int wide = 0x7f0800d3;
-        public static final int wrap_content = 0x7f0800d6;
+        public static final int icon_only = 0x7f08005f;
+        public static final int light = 0x7f08006b;
+        public static final int none = 0x7f080086;
+        public static final int normal = 0x7f080087;
+        public static final int radio = 0x7f080092;
+        public static final int standard = 0x7f0800c1;
+        public static final int text = 0x7f0800c7;
+        public static final int text2 = 0x7f0800c8;
+        public static final int toolbar = 0x7f0800d2;
+        public static final int wide = 0x7f0800de;
+        public static final int wrap_content = 0x7f0800e1;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f090006;
@@ -94,13 +94,13 @@ public final class R {
         public static final int common_open_on_phone = 0x7f0c0032;
         public static final int common_signin_button_text = 0x7f0c0033;
         public static final int common_signin_button_text_long = 0x7f0c0034;
-        public static final int s1 = 0x7f0c0042;
-        public static final int s2 = 0x7f0c0043;
-        public static final int s3 = 0x7f0c0044;
-        public static final int s4 = 0x7f0c0045;
-        public static final int s5 = 0x7f0c0046;
-        public static final int s6 = 0x7f0c0047;
-        public static final int s7 = 0x7f0c0048;
+        public static final int s1 = 0x7f0c0048;
+        public static final int s2 = 0x7f0c0049;
+        public static final int s3 = 0x7f0c004a;
+        public static final int s4 = 0x7f0c004b;
+        public static final int s5 = 0x7f0c004c;
+        public static final int s6 = 0x7f0c004d;
+        public static final int s7 = 0x7f0c004e;
     }
     public static final class style {
         public static final int Theme_IAPTheme = 0x7f0d0123;

@@ -49,11 +49,7 @@ public class JoystickFragment extends Fragment implements View.OnClickListener, 
 
     @Override
     public void onPause() {
-        mainActivity.addFragmentData("mainControllerConnected", (String)mainControllerConnected.getText());
-        mainActivity.addFragmentData("auxControllerConnected", (String)auxControllerConnected.getText());
-        mainActivity.addFragmentData("robotConnected", (String)robotConnected.getText());
-
-        mainActivity.addFragmentData("driveLog", (String)driveLog.getText());
+        mainActivity.addFragmentData("driveLog", driveLog.getText().toString());
         mainActivity.addFragmentData("jsToTurnSwitch", Boolean.toString(jsToTurnSwitch.isChecked()));
         mainActivity.addFragmentData("btnPauseText", (String)btnPause.getText());
         super.onPause();
@@ -127,7 +123,8 @@ public class JoystickFragment extends Fragment implements View.OnClickListener, 
     }
 
     public void setDriveLog(String toWrite) {
-        driveLog.setText(toWrite);
+        toWrite = toWrite+"\n";
+        driveLog.append(toWrite);
     }
 
     @Override

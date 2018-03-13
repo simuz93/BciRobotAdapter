@@ -135,14 +135,6 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
         this.reactivateBluetoothOrLocation();
         this.unregisterReceiver(mReceiver);
     }
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
 
     public void onConnectMainControllerPressed(ControllerType name) {
         setMainController(name);
@@ -203,15 +195,9 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
     }
 
     /*===========================Get methods===========================*/
-    /**
-     * {@inheritDoc}
-     */
     public Activity getActivity() {
         return this;
     }
-    /**
-     * {@inheritDoc}
-     */
     public Context getContext() {
         return this.getApplicationContext();
     }
@@ -379,32 +365,69 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
         return rotation;
     }
     public void setJoystickTurning(boolean isJoystickTurning) {
+        if(isJoystickTurning) setDriveLog("Now you can use the joystick to turn the robot!");
+        else setDriveLog("Joystick turning function off");
         this.isJoystickTurning = isJoystickTurning;
     }
 
     /*===========================Movement and led methods===========================*/
     //Movement
     public void moveForward(double rotation, double speed) {
+        boolean isBackward = false;
+        if(rotation>-90 && rotation<90) isBackward = true;
+
         if (checkAuxController() && jsDirection == 0) rotation = auxControllerDirection;
         if (isJoystickTurning) rotation = calculateJsRotation(jsDirection, jsOffset);
-        if (checkRobot()) robot.moveForward(rotation, speed);
+        if (checkRobot()) {
+            setDriveLog("Moving: rotation: "+String.format("%.2f",rotation)+"\tspeed: "+String.format("%.2f", speed));
+            robot.moveForward(rotation, speed);
+        }
     }
     public void stop() {
-        if(checkRobot()) robot.stop();
+        if(checkRobot()) {
+            setDriveLog("Stopped");
+            robot.stop();
+        }
     }
     public void turnL(double rotation) {
-        if(checkRobot()) robot.turnL(rotation);
+        if(checkRobot()) {
+            setDriveLog("Turning Left: "+rotation);
+            if(checkRobot())robot.turnL(rotation);
+        }
     }
     public void turnR(double rotation) {
+        setDriveLog("Turning Right: "+rotation);
         if(checkRobot())robot.turnR(rotation);
     }
     //Led
-    public void setLedRed() {if(checkRobot()) robot.setLedRed();}
-    public void setLedBlue() {if(checkRobot()) robot.setLedBlue();}
-    public void setLedGreen() {if(checkRobot()) robot.setLedGreen();}
-    public void setLedYellow() {if(checkRobot()) robot.setLedYellow();}
-    public void setLedWhite() {if(checkRobot()) robot.setLedWhite();}
-    public void setLedOff() {if(checkRobot()) robot.setLedOff();}
+    public void setLedRed() {
+        if(checkRobot()) {
+            setDriveLog("Led: red");
+            robot.setLedRed();
+        }
+    }
+    public void setLedBlue() {
+        if(checkRobot()) {
+            setDriveLog("Led: blue");
+            robot.setLedBlue();
+        }
+    }
+    public void setLedGreen() {if(checkRobot()) {
+        setDriveLog("Led: green");
+        robot.setLedGreen();
+    }}
+    public void setLedYellow() {if(checkRobot()) {
+        setDriveLog("Led: yellow");
+        robot.setLedYellow();
+    }}
+    public void setLedWhite() {if(checkRobot()) {
+        setDriveLog("Led: white");
+        robot.setLedWhite();
+    }}
+    public void setLedOff() {if(checkRobot()) {
+        setDriveLog("Led: off");
+        robot.setLedOff();
+    }}
 
     /*===========================Log and debug methods===========================*/
 
@@ -439,6 +462,77 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
         if(cf!=null) cf.setRobotOutput(toWrite);
         addFragmentData("robotOutput", toWrite);
     }
+
+    @Override
+    public void setMoveForwardInst(String inst) {
+        InstructionsFragment instF = (InstructionsFragment) getSupportFragmentManager().findFragmentByTag("iFrag");
+        if(instF!=null)instF.setMoveForwardInst(inst);
+        addFragmentData("moveForwardInst", inst);
+    }
+    @Override
+    public void setMoveBackwardInst(String inst) {
+        InstructionsFragment instF = (InstructionsFragment) getSupportFragmentManager().findFragmentByTag("iFrag");
+        if(instF!=null)instF.setMoveBackwardInst(inst);
+        addFragmentData("moveBackwardInst", inst);
+    }
+    @Override
+    public void setMoveLeftInst(String inst) {
+        InstructionsFragment instF = (InstructionsFragment) getSupportFragmentManager().findFragmentByTag("iFrag");
+        if(instF!=null)instF.setMoveLeftInst(inst);
+        addFragmentData("moveLeftInst", inst);
+    }
+    @Override
+    public void setMoveRightInst(String inst) {
+        InstructionsFragment instF = (InstructionsFragment) getSupportFragmentManager().findFragmentByTag("iFrag");
+        if(instF!=null)instF.setMoveRightInst(inst);
+        addFragmentData("moveRightInst", inst);
+    }
+    @Override
+    public void setTurnLeftInst(String inst) {
+        InstructionsFragment instF = (InstructionsFragment) getSupportFragmentManager().findFragmentByTag("iFrag");
+        if(instF!=null)instF.setTurnLeftInst(inst);
+        addFragmentData("turnLeftInst", inst);
+    }
+    @Override
+    public void setTurnRightInst(String inst) {
+        InstructionsFragment instF = (InstructionsFragment) getSupportFragmentManager().findFragmentByTag("iFrag");
+        if(instF!=null)instF.setTurnRightInst(inst);
+        addFragmentData("turnRightInst", inst);
+    }
+    @Override
+    public void setLedInst(String inst) {
+        InstructionsFragment instF = (InstructionsFragment) getSupportFragmentManager().findFragmentByTag("iFrag");
+        if(instF!=null)instF.setLedInst(inst);
+        addFragmentData("ledInst", inst);
+    }
+
+    //todo: se viene disconnesso auxCtrl, ripristinare le istruzioni per usare mainCtrl
+    @Override
+    public void resetAllInstructions() {
+        addFragmentData("moveForwardInst", null);
+        addFragmentData("moveBackwardInst", null);
+        addFragmentData("moveLeftInst", null);
+        addFragmentData("moveRightInst", null);
+        addFragmentData("turnLeftInst", null);
+        addFragmentData("turnRightInst", null);
+        addFragmentData("ledInst", null);
+    }
+    @Override
+    public void resetTurnInstructions() {
+        addFragmentData("moveLeftInst", null);
+        addFragmentData("moveRightInst", null);
+        addFragmentData("turnLeftInst", null);
+        addFragmentData("turnRightInst", null);
+    }
+    @Override
+    public void resetMoveInstructions() {
+        addFragmentData("moveForwardInst", null);
+        addFragmentData("moveBackwardInst", null);
+        addFragmentData("moveLeftInst", null);
+        addFragmentData("moveRightInst", null);
+    }
+
+
     public void setDriveLog(String toWrite) {
         JoystickFragment jsf = (JoystickFragment) getSupportFragmentManager().findFragmentByTag("jsFrag");
         if(jsf!=null) jsf.setDriveLog(toWrite);
@@ -474,6 +568,15 @@ public class MainActivity extends AppCompatActivity implements AdapterActivity, 
                 transaction = getSupportFragmentManager().beginTransaction();
                 transaction.addToBackStack("jsFrag");
                 transaction.replace(R.id.dinamic_frame, joystickFragment, "jsFrag");
+                transaction.commit();
+                break;
+
+            case R.id.nav_instructions:
+                InstructionsFragment instructionsFragment = new InstructionsFragment();
+                instructionsFragment.initFragment(this);
+                transaction = getSupportFragmentManager().beginTransaction();
+                transaction.addToBackStack("iFrag");
+                transaction.replace(R.id.dinamic_frame, instructionsFragment, "iFrag");
                 transaction.commit();
                 break;
         }

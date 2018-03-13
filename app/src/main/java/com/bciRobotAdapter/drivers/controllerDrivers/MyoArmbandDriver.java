@@ -19,6 +19,14 @@ public class MyoArmbandDriver extends AbstractController {
         super(adapterActivity, isAuxiliar);
         myoListener = new MyoListener(this);
         Hub.getInstance().init(getContext());
+
+        setMoveForwardInst("Keep your arm down to stop. Max speed is when your arm is pointing forward");
+        setMoveBackwardInst("Arm up to ceiling, or just bend your elbow up while the arm is parallel to the floor");
+        setMoveLeftInst("Just wave left (in) while moving forward");
+        setMoveRightInst("Just wave right (out) while moving forward");
+        setTurnLeftInst("Just wave left (in) whit robot stopped");
+        setTurnRightInst("Just wave right (out) with robot stopped");
+        setLedInst("Double tap your fingers");
     }
 
 
@@ -28,7 +36,7 @@ public class MyoArmbandDriver extends AbstractController {
             Hub.getInstance().detach(m.getMacAddress());
         }
         Hub.getInstance().removeListener(myoListener);
-        setControllerLog("Myo disconnected from this device");
+        setControllerOutput("Myo disconnected");
         notifyControllerConnected(false);
     }
 
@@ -66,23 +74,24 @@ class MyoListener extends AbstractDeviceListener {
 
     @Override
     public void onConnect(Myo myo, long l) {
-        myoDriver.setControllerLog("Myo connected");
+        myoDriver.setControllerOutput("Myo connected");
         myoDriver.notifyControllerConnected(true);
     }
 
     @Override
     public void onDisconnect(Myo myo, long l) {
+        myoDriver.setControllerOutput("Myo disconnected");
         myoDriver.disconnect();
     }
 
     @Override
     public void onArmSync(Myo myo, long l, Arm arm, XDirection xDirection) {
-        myoDriver.setControllerLog("Arm synchronized!");
+        myoDriver.setControllerOutput("Arm synchronized!");
     }
 
     @Override
     public void onArmUnsync(Myo myo, long l) {
-        myoDriver.setControllerLog("Arm unsynchronized: do the sync gesture");
+        myoDriver.setControllerOutput("Arm unsynchronized: do the sync gesture");
     }
 
     @Override
@@ -123,7 +132,7 @@ class MyoListener extends AbstractDeviceListener {
        if(colorNumber>6) colorNumber = 0;
     }
 
-    Pose wave_pose = null;
+    private Pose wave_pose = null;
     @Override
     public void onPose(Myo myo, long l, Pose pose) {
 
@@ -141,20 +150,20 @@ class MyoListener extends AbstractDeviceListener {
     }
 
     //Orientation
-    double oriz;
-    double orix;
-    double oriy;
-    double oriw;
+    private double oriz;
+    private double orix;
+    private double oriy;
+    private double oriw;
 
     //Accelerometer
-    double accx;
-    double accy;
-    double accz;
+    private double accx;
+    private double accy;
+    private double accz;
 
     //Gyroscope
-    double gyrx;
-    double gyry;
-    double gyrz;
+    private double gyrx;
+    private double gyry;
+    private double gyrz;
 
     @Override
     public void onOrientationData(Myo myo, long l, Quaternion rotation) {

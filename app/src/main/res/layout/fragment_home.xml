@@ -1,13 +1,31 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fragment_home"
     tools:context="com.bciRobotAdapter.HomeFragment">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="" />
+        android:orientation="vertical"
+        android:background="@color/btn_bg_color">
 
+        <ImageView
+            android:id="@+id/homeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:src="@drawable/main_icon" />
+
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/js_clicked_btn_color"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:textColor="@color/btn_text_color"
+            android:text="@string/homeText" />
+
+    </LinearLayout>
 </FrameLayout>

@@ -18,4 +18,21 @@
     <string name="turnLeft">Turn\nLeft</string>
     <string name="turnRight">Turn\nRight</string>
 
+    <string name="homeText"><![CDATA[
+    Welcome to the Bci-Robot Adapter Application!<br><br>
+    You\'ll be able to control a robot via bluetooth (don\'t turn it off!) through up to 2 controllers.
+    Main Controller can drive the robot alone, or you can connect the Auxiliary Controller to turn the robot
+    left and right, while the Main one keeps moving it on. Of course, you can also use the joystick in the "Drive" section,
+    which usually gives you the control of the robot despite of the Controllers. <br>
+    Have fun!
+    ]]></string>
+
+    <string name="move_forward_inst">Move forward:</string>
+    <string name="move_backward_inst">Move backward:</string>
+    <string name="move_left_inst">Turn left (moving):</string>
+    <string name="move_right_inst">Turn right (moving):</string>
+    <string name="turn_left_inst">Turn left:</string>
+    <string name="turn_right_inst">Turn right:</string>
+    <string name="led_inst">Led:</string>
+
 </resources>

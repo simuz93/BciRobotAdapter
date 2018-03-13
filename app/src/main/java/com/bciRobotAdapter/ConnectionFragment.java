@@ -50,9 +50,9 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
         mainActivity.addFragmentData("auxControllerLog", (String)cAuxLog.getText());
         mainActivity.addFragmentData("robotLog", (String)rLog.getText());
 
-        mainActivity.addFragmentData("mainControllerOutput", (String)cMainOutput.getText());
-        mainActivity.addFragmentData("auxControllerOutput", (String)cAuxOutput.getText());
-        mainActivity.addFragmentData("robotOutput", (String)rOutput.getText());
+        mainActivity.addFragmentData("mainControllerOutput", cMainOutput.getText().toString());
+        mainActivity.addFragmentData("auxControllerOutput", cAuxOutput.getText().toString());
+        mainActivity.addFragmentData("robotOutput", rOutput.getText().toString());
 
         mainActivity.addFragmentData("connectMainCtrlBtn", (String)connectMainCtrlBtn.getText());
         mainActivity.addFragmentData("connectAuxCtrlBtn", (String)connectAuxCtrlBtn.getText());
@@ -120,7 +120,7 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
                 if (textCtrl.equals(getString(R.string.connect))) {
                     mainActivity.onConnectMainControllerPressed(ControllerType.valueOf((String) spinnerMainCtrl.getSelectedItem()));
                     connectMainCtrlBtn.setText(R.string.stop);
-                    setMainControllerLog("Looking for controller " + spinnerMainCtrl.getSelectedItem() + ", press stop to abort");
+                    setMainControllerLog("Looking for " + spinnerMainCtrl.getSelectedItem() + ", press stop to abort");
                 }
                 else if (textCtrl.equals(getString(R.string.stop))) {
                     mainActivity.onStopMainControllerConnectionPressed();
@@ -140,7 +140,7 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
                 if (textRobot.equals(getString(R.string.connect))) {
                     mainActivity.onConnectRobotPressed(RobotType.valueOf((String) spinnerRobot.getSelectedItem()));
                     connectRobotBtn.setText(R.string.stop);
-                    setRobotLog("Looking for robot " + spinnerRobot.getSelectedItem() + ", press stop to abort");
+                    setRobotLog("Looking for " + spinnerRobot.getSelectedItem() + ", press stop to abort");
                 }
                 else if (textRobot.equals(getString(R.string.stop))) {
                     mainActivity.onStopRobotConnectionPressed();
@@ -160,7 +160,7 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
                 if (textAuxCtrl.equals(getString(R.string.connect))) {
                     mainActivity.onConnectAuxControllerPressed(ControllerType.valueOf((String) spinnerAuxCtrl.getSelectedItem()));
                     connectAuxCtrlBtn.setText(R.string.stop);
-                    setAuxControllerLog("Looking for controller " + spinnerAuxCtrl.getSelectedItem() + ", press stop to abort");
+                    setAuxControllerLog("Looking for " + spinnerAuxCtrl.getSelectedItem() + ", press stop to abort");
                 }
                 else if (textAuxCtrl.equals(getString(R.string.stop))) {
                     mainActivity.onStopAuxControllerConnectionPressed();
@@ -178,31 +178,31 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
 
     public void onMainControllerConnected(boolean connected, String name) {
         if(connected) {
-            setMainControllerLog("Connected to CONTROLLER: " + name);
+            setMainControllerLog("Connected to: " + name);
             connectMainCtrlBtn.setText(R.string.disconnect);
         }
         else {
-            setMainControllerLog("CONTROLLER disconnected");
+            setMainControllerLog("Disconnected");
             connectMainCtrlBtn.setText(R.string.connect);
         }
     }
     public void onAuxControllerConnected(boolean connected, String name) {
         if(connected) {
-            setAuxControllerLog("Connected to AUX CONTROLLER: " + name);
+            setAuxControllerLog("Connected to: " + name);
             connectAuxCtrlBtn.setText(R.string.disconnect);
         }
         else {
-            setAuxControllerLog("AUX CONTROLLER disconnected");
+            setAuxControllerLog("Disconnected");
             connectAuxCtrlBtn.setText(R.string.connect);
         }
     }
     public void onRobotConnected(boolean connected, String name) {
         if(connected) {
-            setRobotLog("Connected to ROBOT: " + name);
+            setRobotLog("Connected to: " + name);
             connectRobotBtn.setText(R.string.disconnect);
         }
         else {
-            setRobotLog("ROBOT disconnected");
+            setRobotLog("Disconnected");
             connectRobotBtn.setText(R.string.connect);
         }
     }
@@ -218,12 +218,15 @@ public class ConnectionFragment extends Fragment implements View.OnClickListener
     }
 
     public void setMainControllerOutput(String toWrite) {
-        cMainOutput.setText(toWrite);
+        toWrite = toWrite+"\n";
+        cMainOutput.append(toWrite);
     }
     public void setAuxControllerOutput(String toWrite) {
-        cAuxOutput.setText(toWrite);
+        toWrite = toWrite+"\n";
+        cAuxOutput.append(toWrite);
     }
     public void setRobotOutput (String toWrite) {
-        rOutput.setText(toWrite);
+        toWrite = toWrite+"\n";
+        rOutput.append(toWrite);
     }
 }

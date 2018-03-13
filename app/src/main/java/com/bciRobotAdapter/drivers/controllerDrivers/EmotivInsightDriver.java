@@ -25,6 +25,8 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
+//TODO: This driver does not work and it's still work in progress
+
 public class EmotivInsightDriver extends AbstractController{
 
     IEE_DataChannel_t[] Channel_list;
